@@ -183,27 +183,39 @@
 
 
 // --- MIXINGS DE TYPOGRAPHIE ---
-@mixin special-title($size: 50px, $color: #ffffff, $weight:700) {
+@mixin special-title($color: #ffffff, $weight:700) {
   font-family: 'Playfair', serif;
-  font-size: $size;
+  font-size: 42px;
   font-weight: $weight;
   color: $color;
+
+  @include mquery.laptop {    
+    font-size: 72px;
+  }
+
+  @include mquery.desktop-xl {    
+    font-size: 90px;
+  }
 }
 
-@mixin title($size: 24px, $color: #242424, $weight:700) {
+@mixin title($color: #242424, $weight:700) {
   font-family: 'Alegreya', sans-serif;
-  font-size: $size;
-  font-weight: $weight;
-  color: $color;
-}
-
-@mixin text($size: 16px, $color: #242424, $weight:400) {
-  font-family: 'Assistant', sans-serif;
-  font-size: $size;
+  font-size: 18px;
   font-weight: $weight;
   color: $color;
 
   @include mquery.desktop-xl {    
-    color: red;
+    font-size: 24px;
+  }
+}
+
+@mixin text($color: #242424, $weight:400) {
+  font-family: 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: $weight;
+  color: $color;
+
+  @include mquery.desktop-xl {    
+    font-size: 18px;
   }
 }
