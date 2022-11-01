@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 400 900;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 400 900;
+  font-style: italic;
+}
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Playfair";
+    src: url("/assets/font/PlayfairDisplay-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Playfair";
+    src: url("/assets/font/PlayfairDisplay-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url("/assets/font/AlegreyaSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Assistant";
+  src: url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype"), url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 200 800;
+}
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Assistant";
+    src: url("/assets/font/Assistant-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Assistant";
+    src: url("/assets/font/Assistant-Bold.ttf");
+    font-weight: 700;
+  }
+}
+body h1 {
+  /*font-size: 72px;
+  color: color.$primary-100;
+  font-weight: 400;
+  font-family: 'Playfair';*/
+  font-family: "Playfair", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #FF6666;
+}
+body .ttl {
+  font-family: "Alegreya", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #242424;
+}
+body p {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #242424;
+}
+@media (min-width: 1600px) {
+  body p {
+    color: red;
+  }
+}
+@media (min-width: 1900px) {
+  body p {
+    color: purple;
+  }
+}/*# sourceMappingURL=style-accueil.css.map */

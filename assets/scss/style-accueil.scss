@@ -1,0 +1,24 @@
+@use 'color';
+@use 'mquery';
+@use 'typo';
+
+body {
+    h1 {
+        /*font-size: 72px;
+        color: color.$primary-100;
+        font-weight: 400;
+        font-family: 'Playfair';*/
+        @include typo.special-title($color:color.$primary-100);
+    }
+    .ttl {
+        @include typo.title;
+    }
+    p {
+        @include typo.text;
+
+        @include mquery.widescreen {    
+            color: purple; 
+        }
+    }
+}
+
