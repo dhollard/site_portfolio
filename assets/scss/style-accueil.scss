@@ -1,24 +1,184 @@
 @use 'color';
 @use 'mquery';
 @use 'typo';
+@use 'global';
 
-body {
-    h1 {
-        /*font-size: 72px;
-        color: color.$primary-100;
-        font-weight: 400;
-        font-family: 'Playfair';*/
+// section 01
+#sec-home-01 {
+    background: color.$ambiance-100;
+    padding: 80px 20px;
+    display: flex;
+
+    // media query
+    @include mquery.laptop { 
+        padding: 80px 100px;
+    }
+
+    // conteneur gros titre et jobs
+    .col-left {
+        display: block;
+        width: 100%;
+
+            // media query
+            @include mquery.phone {    
+                font-size: 36px;
+            }
+
+            // media query
+            @include mquery.laptop {    
+                width: 50%;
+            }
+
+            // media query
+            @include mquery.desktop {    
+                width: 60%;
+            }
+    }
+
+    // titre
+    .sec-title {
         @include typo.special-title($color:color.$primary-100);
-    }
-    .ttl {
-        @include typo.title;
-    }
-    p {
-        @include typo.text;
+        font-size: 50px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        width: -moz-fit-content;
+        width: fit-content;
+        
+            // media query
+            @include mquery.phone {    
+                font-size: 36px;
+            }
 
-        @include mquery.widescreen {    
-            color: purple; 
+            // media query
+            @include mquery.laptop {    
+                margin: 0 auto 20px 0;
+                text-align: left;
+                font-size: 50px;
+            }
+
+            @include mquery.desktop {
+                font-size: 70px;
+            }
+
+            @include mquery.desktop-xl {
+                font-size: 120px;
+            }
+    }
+
+    // conteneurs liens métiers
+    .job-box {
+        position: relative;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto 15px auto;
+        text-align: center;
+
+            // media query
+            @include mquery.laptop {    
+                text-align: left;
+                margin: 0 auto 20px 0;
+            }
+
+        p {
+            margin: 0;
         }
+
+        &:hover {
+            #job-1-txt1 {
+                color:#91D372;
+            }
+
+            #job-1-txt2 {
+                color:#F69965;
+            }
+
+            #p-code-left, #p-code-right {
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    // liens métiers
+    #job-1, #job-2, #job-3 {
+        @include typo.title($color:#ffffff);
+        font-size: 32px;
+        text-decoration: none;
+
+            // media query
+            @include mquery.phone {    
+                font-size: 28px;
+            }
+
+            // media query
+            @include mquery.desktop-xl {    
+                font-size: 72px;
+            }
+
+    }
+
+    #job-1 {
+        
+        #job-1-txt1, #job-1-txt2 {
+            transition: color 0.2s ease-in-out;
+        }
+    }
+
+    // fausses balises premier lien job
+    #p-code-left, #p-code-right {
+        font-family: 'Alegreya', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: color.$ambiance-80;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+
+            // media query
+            @include mquery.phone {    
+                font-size: 28px;
+            }
+
+            // media query
+            @include mquery.desktop-xl {    
+                font-size: 72px;
+            }
+    }
+
+    #p-code-left {
+        left: -1.7em;
+    }
+
+    #p-code-right {
+        right: -2em;
+    }
+
+    // conteneur photo "mon parcours"
+    .col-right {
+        display: none;
+        width: 50%;
+
+            // media query
+            @include mquery.laptop {    
+                display: flex;
+            }
+
+            // media query
+            @include mquery.desktop {    
+                width: 40%;
+            }
     }
 }
 
+// section 02
+#sec-home-02 {
+    background: color.$ambiance-100;
+}
+
+
+// section 03
+#sec-home-03 {
+    background: color.$ambiance-100;
+}

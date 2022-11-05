@@ -124,35 +124,192 @@
     font-weight: 700;
   }
 }
-body h1 {
-  /*font-size: 72px;
-  color: color.$primary-100;
-  font-weight: 400;
-  font-family: 'Playfair';*/
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #342B33;
+}
+
+main {
+  max-width: 2600px;
+  margin: auto;
+}
+
+#sec-home-01 {
+  background: #342B33;
+  padding: 80px 20px;
+  display: flex;
+}
+@media (min-width: 992px) {
+  #sec-home-01 {
+    padding: 80px 100px;
+  }
+}
+#sec-home-01 .col-left {
+  display: block;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  #sec-home-01 .col-left {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-left {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  #sec-home-01 .col-left {
+    width: 60%;
+  }
+}
+#sec-home-01 .sec-title {
   font-family: "Playfair", serif;
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 700;
   color: #FF6666;
+  font-size: 50px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-body .ttl {
-  font-family: "Alegreya", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #242424;
-}
-body p {
-  font-family: "Assistant", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #242424;
+@media (min-width: 992px) {
+  #sec-home-01 .sec-title {
+    font-size: 72px;
+  }
 }
 @media (min-width: 1600px) {
-  body p {
-    color: red;
+  #sec-home-01 .sec-title {
+    font-size: 90px;
   }
 }
-@media (min-width: 1900px) {
-  body p {
-    color: purple;
+@media (max-width: 400px) {
+  #sec-home-01 .sec-title {
+    font-size: 36px;
   }
+}
+@media (min-width: 992px) {
+  #sec-home-01 .sec-title {
+    margin: 0 auto 20px 0;
+    text-align: left;
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #sec-home-01 .sec-title {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-01 .sec-title {
+    font-size: 120px;
+  }
+}
+#sec-home-01 .job-box {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #sec-home-01 .job-box {
+    text-align: left;
+    margin: 0 auto 20px 0;
+  }
+}
+#sec-home-01 .job-box p {
+  margin: 0;
+}
+#sec-home-01 .job-box:hover #job-1-txt1 {
+  color: #91D372;
+}
+#sec-home-01 .job-box:hover #job-1-txt2 {
+  color: #F69965;
+}
+#sec-home-01 .job-box:hover #p-code-left, #sec-home-01 .job-box:hover #p-code-right {
+  opacity: 1;
+}
+#sec-home-01 #job-1, #sec-home-01 #job-2, #sec-home-01 #job-3 {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  text-decoration: none;
+}
+@media (min-width: 1600px) {
+  #sec-home-01 #job-1, #sec-home-01 #job-2, #sec-home-01 #job-3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 400px) {
+  #sec-home-01 #job-1, #sec-home-01 #job-2, #sec-home-01 #job-3 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-01 #job-1, #sec-home-01 #job-2, #sec-home-01 #job-3 {
+    font-size: 72px;
+  }
+}
+#sec-home-01 #job-1 #job-1-txt1, #sec-home-01 #job-1 #job-1-txt2 {
+  transition: color 0.2s ease-in-out;
+}
+#sec-home-01 #p-code-left, #sec-home-01 #p-code-right {
+  font-family: "Alegreya", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #544953;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+@media (max-width: 400px) {
+  #sec-home-01 #p-code-left, #sec-home-01 #p-code-right {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-01 #p-code-left, #sec-home-01 #p-code-right {
+    font-size: 72px;
+  }
+}
+#sec-home-01 #p-code-left {
+  left: -1.7em;
+}
+#sec-home-01 #p-code-right {
+  right: -2em;
+}
+#sec-home-01 .col-right {
+  display: none;
+  width: 50%;
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  #sec-home-01 .col-right {
+    width: 40%;
+  }
+}
+
+#sec-home-02 {
+  background: #342B33;
+}
+
+#sec-home-03 {
+  background: #342B33;
 }/*# sourceMappingURL=style-accueil.css.map */
