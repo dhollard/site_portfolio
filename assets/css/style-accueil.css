@@ -141,6 +141,132 @@ main {
   margin: auto;
 }
 
+.navbar {
+  background: rgba(38, 22, 36, 0.8);
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.navbar.active {
+  background: #261624;
+}
+.navbar .nav-logo {
+  text-decoration: none;
+  display: flex;
+}
+.navbar .nav-logo img {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+}
+.navbar .nav-logo .logo-txt p {
+  font-family: "Alegreya", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+}
+.navbar .nav-toggle {
+  display: block;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .navbar .nav-toggle {
+    display: none;
+  }
+}
+.navbar .nav-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #ffffff;
+}
+.navbar .nav-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar .nav-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar .nav-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.navbar .nav-menu {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 80px;
+  display: none;
+  gap: 0;
+  flex-direction: column;
+  background: #342B33;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-menu.active {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .navbar .nav-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    text-align: left;
+  }
+}
+.navbar .nav-menu .nav-item {
+  list-style: none;
+  margin: 16px 0;
+}
+@media (min-width: 992px) {
+  .navbar .nav-menu .nav-item {
+    margin: 0;
+  }
+}
+.navbar .nav-menu .nav-item .nav-link {
+  font-family: "Assistant", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: #342B33;
+}
+.nav-overlay.active {
+  display: block;
+}
+@media (min-width: 992px) {
+  .nav-overlay {
+    display: none !important;
+  }
+}
+
 #sec-home-01 {
   background: #342B33;
   padding: 80px 20px;
