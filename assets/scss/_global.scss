@@ -21,6 +21,7 @@ main {
 // navbar
 .navbar {
     background: rgba(38, 22, 36, 0.8);
+    backdrop-filter: blur(4px);
     min-height: 80px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +32,16 @@ main {
     width: 100%;
     box-sizing: border-box;
     z-index: 1000;
+
+    // media query
+    @include mquery.laptop {    
+        background: rgba(38, 22, 36, 0.5);
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+            background: rgba(38, 22, 36, 0.8);
+        }
+    }
 
     //navbar lorsqu'hamburger = ouvert
     &.active {
@@ -43,9 +54,11 @@ main {
         display: flex;
 
         img {
-            width: 20px;
-            height: 20px;
-            background: #ffffff;
+            width: 45px;
+            height: 45px;
+            margin: auto 12px auto 0px;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
         }
 
         .logo-txt {
@@ -56,7 +69,36 @@ main {
                 font-size: 22px;
                 color: #ffffff;
                 margin: 0;
+
+                &:nth-child(1) {
+                    //padding-left: 0px;
+                    //transition: padding 0.2s ease-in-out;
+                    transition: color 0.3s ease-in-out;
+                }
+
+                &:nth-child(2) {
+                    //padding-left: 0px;
+                    //transition: padding 0.2s ease-in-out;
+                    transition: color 0.3s ease-in-out;
+                }
             }
+
+            
+
+        }
+
+        &:hover .logo-txt p:nth-child(1)::first-letter {
+            //padding-left: 2px;
+            //color: color.$primary-80;
+        }
+
+        &:hover .logo-txt p:nth-child(2)::first-letter {
+            //padding-left: 5px;
+            //color: color.$primary-80;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
         }
         
     }
@@ -74,9 +116,9 @@ main {
         // barres de l'icone hamburger
         .bar {
             display: block;
-            width: 25px;
+            width: 40px;
             height: 3px;
-            margin: 5px auto;
+            margin: 10px auto;
             -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
             background: #ffffff;
@@ -87,18 +129,18 @@ main {
         }
 
         &.active .bar:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
+            transform: translateY(13px) rotate(45deg);
         }
 
         &.active .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-13px) rotate(-45deg);
         }
     }
 
     // conteneur éléments nav
     .nav-menu {
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         position: fixed;
         left: 0;
         top: 80px;
@@ -107,7 +149,7 @@ main {
         flex-direction: column;
         background: #342B33;
         width: 100%;
-        text-align: center;
+        text-align: left;
         margin: 0;
         padding: 0;
 
@@ -116,37 +158,86 @@ main {
             display: flex;
         }
 
-        // media query
+        // media query .nav-menu
         @include mquery.laptop {   
             position: relative;
             left: 0;
             top: 0;
             display: flex;
+            align-items: center;
             gap: 50px;
             flex-direction: row;
             background: none;
             width: auto;
             text-align: left;
+            text-align: center;
         }
 
         // élément nav
         .nav-item {
             list-style: none;
-            margin: 16px 0;
+            margin:0;
+            width: 100%;
 
             // media query
             @include mquery.laptop {  
-                margin: 0;
+                width: auto;
             }
 
             //lien nav
             .nav-link {
-                font-family: 'Assistant', sans-serif;
-                font-size: 20px;
-                font-weight: 600;
+                font-family: 'Alegreya', sans-serif;
+                font-size: 36px;
+                font-weight: 800;
                 color: #ffffff;
                 text-decoration: none;
+                display: inline-block;
+                position: relative;
+                text-transform: uppercase;
+                padding: 30px 30px 0 30px;
+                transition: padding 0.1s ease-in-out;
+                width: 100%;
 
+                &:hover {
+                    padding: 30px 30px 0 35px;
+                    color: color.$primary-100;
+                }
+
+                // media query
+                @include mquery.laptop { 
+                    font-family: 'Assistant', sans-serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #ffffff;
+                    text-transform: none;
+                    padding: 0px;
+                    transition: padding 0s ease-in-out;
+
+                    &:hover {
+                        padding: 0;
+                        color: #ffffff;
+                    }
+                    
+                    // effet de soulignage en hover
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 3px;
+                        bottom: -3px;
+                        left: 0;
+                        background-color: color.$primary-100;
+                        transform-origin: bottom right;
+                        transition: transform 0.4s ease-out;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+                
             }
         }
     }

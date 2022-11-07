@@ -1,7 +1,7 @@
 <nav class="navbar">
 
-    <a href="#" class="nav-logo">
-        <img>
+    <a href="/fr/accueil.php" class="nav-logo">
+        <img src="/assets/svg/logo-dh-blanc.svg">
         <div class="logo-txt">
             <p>DARIUS</p>
             <p>HOLLARD</p>

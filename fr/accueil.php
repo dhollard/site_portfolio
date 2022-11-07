@@ -50,6 +50,8 @@
                 
             </div>
 
+            <div style="height:2000px;"></div>
+
             <div id="sec-home-02"></div>
 
             <div id="sec-home-03"></div>
