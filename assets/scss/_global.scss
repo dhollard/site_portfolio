@@ -23,15 +23,23 @@ main {
     background: rgba(38, 22, 36, 0.8);
     backdrop-filter: blur(4px);
     min-height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 24px;
     position: fixed;
     top: 0;
     width: 100%;
     box-sizing: border-box;
     z-index: 1000;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 2600px;
+        min-height: 80px;
+        margin: auto;
+
+    }
 
     // media query
     @include mquery.laptop {    
@@ -69,32 +77,10 @@ main {
                 font-size: 22px;
                 color: #ffffff;
                 margin: 0;
-
-                &:nth-child(1) {
-                    //padding-left: 0px;
-                    //transition: padding 0.2s ease-in-out;
-                    transition: color 0.3s ease-in-out;
-                }
-
-                &:nth-child(2) {
-                    //padding-left: 0px;
-                    //transition: padding 0.2s ease-in-out;
-                    transition: color 0.3s ease-in-out;
-                }
             }
 
             
 
-        }
-
-        &:hover .logo-txt p:nth-child(1)::first-letter {
-            //padding-left: 2px;
-            //color: color.$primary-80;
-        }
-
-        &:hover .logo-txt p:nth-child(2)::first-letter {
-            //padding-left: 5px;
-            //color: color.$primary-80;
         }
 
         &:hover img {
