@@ -43,25 +43,22 @@
 
                 <div class="col-right">
                     
-                    <div class="portrait-content">
+                    <a class="portrait-content" href="#">
                         <div id="square-1"></div>
                         <div id="square-2"></div>
                         <img class="portrait" src="/assets/img/portrait-dh.jpg">
                         <div id="parcours-box">
-                            <!-- <svg viewBox="0 0 340 333">
-                                <path id="path-parc-1" d="M2 33.5C41.1667 46.1667 135.7 58.2 200.5 5" stroke="white" fill="transparent" stroke-width="11"/>
-                            </svg>-->
                             <svg width="auto" height="auto" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <text id="bulle-txt" x="0" y="30" fill="white">Mon parcours</text>
                                 <path id="path-parc-2" d="M154.5 71.5C160.333 84.1667 181 110.3 217 113.5" stroke="white" fill="none" stroke-width="11"/>
                                 <path id="path-parc-1"d="M2 33.5C41.1667 46.1667 135.7 58.2 200.5 5" stroke="white" fill="none" stroke-width="11"/>
                             </svg>
                         </div>
-                    </div>
+                    </a>
                     
                 </div>
 
-                <div class="bottom-tab">
+                <div class="bottom-tab" style="display: none;">
 
                 </div>
                 

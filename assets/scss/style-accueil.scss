@@ -8,16 +8,37 @@
     background: color.$ambiance-100;
     padding: 80px 20px;
     display: flex;
+    justify-content: center;
+    gap: 130px;
 
-    // media query
+    // media query #sec-home-01
     @include mquery.laptop { 
-        padding: 80px 100px;
+        //padding: 160px 100px 80px 100px;
+        padding: 125px 20px;
+        
+    }
+
+    // media query #sec-home-01
+    @include mquery.desktop { 
+        padding: 160px 20px;
+        gap: 200px;
+    }
+
+    // media query #sec-home-01
+    @include mquery.desktop-xl { 
+        //padding: 160px 140px 80px 140px;
+        gap: 150px;
+    }
+
+    // media query #sec-home-01
+    @include mquery.widescreen { 
+        gap: 250px;
     }
 
     // conteneur gros titre et jobs
     .col-left {
         display: block;
-        width: 100%;
+        width: fit-content;
 
             // media query
             @include mquery.phone {    
@@ -26,12 +47,12 @@
 
             // media query
             @include mquery.laptop {    
-                width: 50%;
+                //width: 50%;
             }
 
             // media query
-            @include mquery.desktop {    
-                width: 60%;
+            @include mquery.desktop-xl {    
+                //width: 65%;
             }
 
         // titre
@@ -159,51 +180,77 @@
     // conteneur photo "mon parcours"
     .col-right {
         display: none;
-        width: 50%;
+        width: fit-content;
 
-            // media query
+            // media query .col-right
             @include mquery.laptop {    
                 display: flex;
             }
 
-            // media query
+            // media query .col-right
             @include mquery.desktop {    
-                width: 40%;
+                //width: 50%;
+            }
+
+            // media query .col-right
+            @include mquery.desktop-xl {    
+                //width: 35%;
             }
 
             .portrait-content {
                 width: 100%;
-                max-width: 460px;
-                margin: auto;
+                max-width: 360px;
+                margin: auto 0 auto auto;
                 position: relative;
-                padding: 150px 0px;
+                padding: 40px 0px;
+
+                // media query .portrait-content
+                @include mquery.desktop-xl {    
+                    max-width: 460px;
+                }
 
                 #square-1 {
                     background: color.$ambiance-120;
-                    width: 300px;
-                    height: 300px;
+                    width: 200px;
+                    height: 200px;
                     transform-origin: center;
                     position: absolute;
                     transform: translate(-50%, 0);
                     left: 50%;
-                    top: 80px;
+                    //top: -10px;
+                    top: -20px;
                     -webkit-mask-image: url("/assets/mask/mask-losange.svg");
                     mask-image: url("/assets/mask/mask-losange.svg");
                     transition: transform 0.3s ease-out;
+                    pointer-events: none;
+
+                    // media query #square-1
+                    @include mquery.desktop-xl {    
+                        width: 250px;
+                        height: 250px;
+                    }
                 }
 
                 #square-2 {
                     background: color.$ambiance-120;
-                    width: 300px;
-                    height: 300px;
+                    width: 200px;
+                    height: 200px;
                     transform-origin: center;
                     position: absolute;
                     transform: translate(-50%, 0);
                     left: 50%;
-                    bottom: 80px;
+                    //bottom: 0px;
+                    bottom: -18px;
                     -webkit-mask-image: url("/assets/mask/mask-losange.svg");
                     mask-image: url("/assets/mask/mask-losange.svg");
                     transition: transform 0.3s ease-out;
+                    pointer-events: none;
+
+                    // media query #square-2
+                    @include mquery.desktop-xl {    
+                        width: 250px;
+                        height: 250px;
+                    }
                 }
 
                 .portrait {
@@ -220,19 +267,27 @@
                 }
 
                 &:hover #square-1 {
-                    transform: translate(-42%, -8%);
+                    transform: translate(-44%, -8%);
                 }
 
                 &:hover #square-2 {
-                    transform: translate(-58%, 8%);
+                    transform: translate(-56%, 8%);
                 }
 
                 #parcours-box {
                     position: absolute;
                     left: -100px;
-                    top: 20%;
+                    top: 4%;
                     width: 230px;
                     height: auto;
+                    pointer-events: none;
+                    transform: scale(0.8);
+
+                    // media query #parcours-box
+                    @include mquery.desktop-xl {    
+                        transform: scale(1);
+                        top: 9%;
+                    }
 
                     #path-parc-1 {
                         stroke-dasharray: 210;

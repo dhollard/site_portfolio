@@ -41,7 +41,7 @@ main {
 
     }
 
-    // media query
+    // media query .navbar
     @include mquery.laptop {    
         background: rgba(38, 22, 36, 0.5);
         transition: background 0.3s ease-in-out;
@@ -49,6 +49,16 @@ main {
         &:hover {
             background: rgba(38, 22, 36, 0.8);
         }
+    }
+
+    // media query .navbar
+    @include mquery.landscape {    
+        padding: 0 50px;
+    }
+
+    // media query .navbar
+    @include mquery.desktop-xl {    
+        padding: 0 100px;
     }
 
     //navbar lorsqu'hamburger = ouvert

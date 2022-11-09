@@ -6,7 +6,7 @@
     @media (min-width: 500px) { @content; }
 }
 
-@mixin mobile-xl {
+@mixin landscape {
     @media (min-width: 768px) { @content; }
 }
 
