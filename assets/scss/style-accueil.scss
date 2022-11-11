@@ -8,8 +8,9 @@
     background: color.$ambiance-100;
     padding: 80px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 130px;
+    gap: 0 130px;
 
     // media query #sec-home-01
     @include mquery.laptop { 
@@ -21,18 +22,18 @@
     // media query #sec-home-01
     @include mquery.desktop { 
         padding: 160px 20px;
-        gap: 200px;
+        gap: 0 200px;
     }
 
     // media query #sec-home-01
     @include mquery.desktop-xl { 
         //padding: 160px 140px 80px 140px;
-        gap: 150px;
+        gap: 0 3%;
     }
 
     // media query #sec-home-01
     @include mquery.widescreen { 
-        gap: 250px;
+        gap: 0 250px;
     }
 
     // conteneur gros titre et jobs
@@ -329,6 +330,81 @@
 
                 
             }
+    }
+
+    // conteneur bouton scroll down
+    .bottom-tab {
+        width: 100%;
+        display: flex;
+
+        .scroll-down {
+            position: relative;
+            margin: auto;
+            width: -moz-fit-content;
+            width: fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+
+
+            #ch-1, #ch-2, #ch-3 {
+                position: absolute;
+                display: block;
+                transform: rotate(45deg);
+                border-right: 4px solid white;
+                border-bottom: 4px solid white;
+                margin: 0;
+                width: 25px;
+                height: 25px;
+            }
+
+            #ch-1 {
+                top: 0px;
+                opacity: 1;
+                animation: mouse-scroll-1 3s infinite;
+                animation-delay: 1s;
+                
+            }
+
+            #ch-2 {
+                top: 20px;
+                opacity: 0.5;
+                animation: mouse-scroll-2 3s infinite;
+                animation-delay: 1.5s;
+                
+            }
+
+            #ch-3 {
+                top: 40px;
+                opacity: 0.15;
+                animation: mouse-scroll-3 3s infinite;
+                animation-delay: 2s;
+                
+            }
+
+            @keyframes mouse-scroll-1 {
+
+                0%   { opacity: 1; }
+                25%  { opacity: 0;}
+                75% { opacity: 1; }
+                100% { opacity: 1; }
+            }
+
+            @keyframes mouse-scroll-2 {
+
+                0%   { opacity: 0.5; }
+                25%  { opacity: 0;}
+                75% { opacity: 0.5; }
+                100% { opacity: 0.5; }
+            }
+
+            @keyframes mouse-scroll-3 {
+
+                0%   { opacity: 0.15; }
+                25%  { opacity: 0;}
+                75% { opacity: 0.15; }
+                100% { opacity: 0.15; }
+            }
+        }
     }
 }
 

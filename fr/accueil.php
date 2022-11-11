@@ -58,8 +58,12 @@
                     
                 </div>
 
-                <div class="bottom-tab" style="display: none;">
-
+                <div class="bottom-tab">
+                    <a class="scroll-down">
+                        <span id="ch-1"></span>
+                        <span id="ch-2"></span>
+                        <span id="ch-3"></span>
+                    </a>
                 </div>
                 
             </div>
