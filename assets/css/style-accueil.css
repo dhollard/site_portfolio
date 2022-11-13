@@ -357,18 +357,18 @@ main {
 }
 @media (min-width: 1200px) {
   #sec-home-01 {
-    padding: 160px 20px;
-    gap: 0 200px;
+    gap: 25px 200px;
   }
 }
 @media (min-width: 1600px) {
   #sec-home-01 {
-    gap: 0 3%;
+    padding: 160px 20px;
+    gap: 40px 110px;
   }
 }
 @media (min-width: 1900px) {
   #sec-home-01 {
-    gap: 0 250px;
+    gap: 100px 250px;
   }
 }
 #sec-home-01 .col-left {
@@ -378,6 +378,21 @@ main {
 @media (max-width: 400px) {
   #sec-home-01 .col-left {
     font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-left {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #sec-home-01 .col-left {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-01 .col-left {
+    padding-top: 0px;
   }
 }
 #sec-home-01 .col-left .sec-title {
@@ -429,6 +444,7 @@ main {
   width: fit-content;
   margin: 0 auto 15px auto;
   text-align: center;
+  transition: transform 0.3s ease-out;
 }
 @media (min-width: 992px) {
   #sec-home-01 .col-left .job-box {
@@ -436,8 +452,8 @@ main {
     margin: 0 auto 20px 0;
   }
 }
-#sec-home-01 .col-left .job-box p {
-  margin: 0;
+#sec-home-01 .col-left .job-box:hover {
+  transform: translateX(10px);
 }
 #sec-home-01 .col-left .job-box:hover #job-1-txt1 {
   color: #91D372;
@@ -448,6 +464,9 @@ main {
 #sec-home-01 .col-left .job-box:hover #p-code-left, #sec-home-01 .col-left .job-box:hover #p-code-right {
   opacity: 1;
 }
+#sec-home-01 .col-left .job-box p {
+  margin: 0;
+}
 #sec-home-01 .col-left #job-1, #sec-home-01 .col-left #job-2, #sec-home-01 .col-left #job-3 {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
@@ -455,6 +474,8 @@ main {
   color: #ffffff;
   font-size: 32px;
   text-decoration: none;
+  display: block;
+  opacity: 1;
 }
 @media (min-width: 1600px) {
   #sec-home-01 .col-left #job-1, #sec-home-01 .col-left #job-2, #sec-home-01 .col-left #job-3 {
@@ -471,6 +492,9 @@ main {
     font-size: 72px;
   }
 }
+#sec-home-01 .col-left #job-1 {
+  animation: fade-in-job-1 1.2s ease-out;
+}
 #sec-home-01 .col-left #job-1 #job-1-txt1, #sec-home-01 .col-left #job-1 #job-1-txt2 {
   transition: color 0.2s ease-in-out;
 }
@@ -484,6 +508,7 @@ main {
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
 }
 @media (max-width: 400px) {
   #sec-home-01 .col-left #p-code-left, #sec-home-01 .col-left #p-code-right {
@@ -496,10 +521,16 @@ main {
   }
 }
 #sec-home-01 .col-left #p-code-left {
-  left: -1.7em;
+  left: -1.6em;
 }
 #sec-home-01 .col-left #p-code-right {
-  right: -2em;
+  right: -1.9em;
+}
+#sec-home-01 .col-left #job-2 {
+  animation: fade-in-job-2 2s ease-out;
+}
+#sec-home-01 .col-left #job-3 {
+  animation: fade-in-job-3 2.4s ease-out;
 }
 #sec-home-01 .col-right {
   display: none;
@@ -704,6 +735,48 @@ main {
   }
   100% {
     opacity: 0.15;
+  }
+}
+@keyframes fade-in-job-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  10% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-job-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-job-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

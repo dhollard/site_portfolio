@@ -14,26 +14,24 @@
 
     // media query #sec-home-01
     @include mquery.laptop { 
-        //padding: 160px 100px 80px 100px;
         padding: 125px 20px;
         
     }
 
     // media query #sec-home-01
     @include mquery.desktop { 
-        padding: 160px 20px;
-        gap: 0 200px;
+        gap: 25px 200px;
     }
 
     // media query #sec-home-01
     @include mquery.desktop-xl { 
-        //padding: 160px 140px 80px 140px;
-        gap: 0 3%;
+        padding: 160px 20px;
+        gap: 40px 110px;
     }
 
     // media query #sec-home-01
     @include mquery.widescreen { 
-        gap: 0 250px;
+        gap: 100px 250px;
     }
 
     // conteneur gros titre et jobs
@@ -48,12 +46,17 @@
 
             // media query
             @include mquery.laptop {    
-                //width: 50%;
+                padding-top: 40px;
+            }
+
+            // media query
+            @include mquery.desktop {    
+                padding-top: 30px;
             }
 
             // media query
             @include mquery.desktop-xl {    
-                //width: 65%;
+                padding-top: 0px;
             }
 
         // titre
@@ -93,18 +96,17 @@
             width: fit-content;
             margin: 0 auto 15px auto;
             text-align: center;
+            transition: transform 0.3s ease-out;
 
-                // media query
-                @include mquery.laptop {    
-                    text-align: left;
-                    margin: 0 auto 20px 0;
-                }
-
-            p {
-                margin: 0;
+            // media query .job-box
+            @include mquery.laptop {    
+                text-align: left;
+                margin: 0 auto 20px 0;
             }
 
             &:hover {
+                transform: translateX(10px);
+
                 #job-1-txt1 {
                     color:#91D372;
                 }
@@ -117,6 +119,10 @@
                     opacity: 1;
                 }
             }
+
+            p {
+                margin: 0;
+            }
             
         }
 
@@ -125,6 +131,8 @@
             @include typo.title($color:#ffffff);
             font-size: 32px;
             text-decoration: none;
+            display: block;
+            opacity: 1;
 
                 // media query
                 @include mquery.phone {    
@@ -139,6 +147,7 @@
         }
 
         #job-1 {
+            animation: fade-in-job-1 1.2s ease-out;
             
             #job-1-txt1, #job-1-txt2 {
                 transition: color 0.2s ease-in-out;
@@ -156,6 +165,7 @@
             transform: translateY(-50%);
             opacity: 0;
             transition: opacity 0.2s ease-in-out;
+            pointer-events: none;
 
                 // media query
                 @include mquery.phone {    
@@ -169,11 +179,19 @@
         }
 
         #p-code-left {
-            left: -1.7em;
+            left: -1.6em;
         }
 
         #p-code-right {
-            right: -2em;
+            right: -1.9em;
+        }
+
+        #job-2 {
+            animation: fade-in-job-2 2s ease-out;
+        }
+
+        #job-3 {
+            animation: fade-in-job-3 2.4s ease-out;
         }
 
     }
@@ -381,30 +399,75 @@
                 
             }
 
-            @keyframes mouse-scroll-1 {
-
-                0%   { opacity: 1; }
-                25%  { opacity: 0;}
-                75% { opacity: 1; }
-                100% { opacity: 1; }
-            }
-
-            @keyframes mouse-scroll-2 {
-
-                0%   { opacity: 0.5; }
-                25%  { opacity: 0;}
-                75% { opacity: 0.5; }
-                100% { opacity: 0.5; }
-            }
-
-            @keyframes mouse-scroll-3 {
-
-                0%   { opacity: 0.15; }
-                25%  { opacity: 0;}
-                75% { opacity: 0.15; }
-                100% { opacity: 0.15; }
-            }
         }
+    }
+
+
+    // animations CSS section 01
+    @keyframes mouse-scroll-1 {
+
+        0%   { opacity: 1; }
+        25%  { opacity: 0;}
+        75% { opacity: 1; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes mouse-scroll-2 {
+
+        0%   { opacity: 0.5; }
+        25%  { opacity: 0;}
+        75% { opacity: 0.5; }
+        100% { opacity: 0.5; }
+    }
+
+    @keyframes mouse-scroll-3 {
+
+        0%   { opacity: 0.15; }
+        25%  { opacity: 0;}
+        75% { opacity: 0.15; }
+        100% { opacity: 0.15; }
+    }
+
+    @keyframes fade-in-job-1 {
+        0%   {  opacity: 0;
+                transform:translateY(-15px);
+            }
+
+        10%   {  opacity: 0;
+                transform:translateY(-15px);
+        }
+
+        100% {  opacity: 1;
+                transform:translateY(0);
+            }
+    }
+
+    @keyframes fade-in-job-2 {
+        0%   {  opacity: 0;
+                transform:translateY(-15px);
+            }
+
+        20%   {  opacity: 0;
+                transform:translateY(-15px);
+        }
+
+        100% {  opacity: 1;
+                transform:translateY(0);
+            }
+    }
+
+    @keyframes fade-in-job-3 {
+        0%   {  opacity: 0;
+                transform:translateY(-15px);
+            }
+
+        30%   {  opacity: 0;
+                transform:translateY(-15px);
+        }
+
+        100% {  opacity: 1;
+                transform:translateY(0);
+            }
     }
 }
 
