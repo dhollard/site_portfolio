@@ -29,13 +29,14 @@
                     
                     <div class="job-box">
                         <a href="#" id="job-2">
-                            <p>Motion Designer</p>
+                            <p>Motion designer</p>
+                            <p>Motion designer</p>
                         </a>
                     </div>
                 
                     <div class="job-box">
                         <a href="#" id="job-3">
-                            <p>Graphic Designer</p>
+                            <p><span id="job-3-txt1">Graphic</span> <span id="job-3-txt2">Designer</span></p>
                         </a>
                     </div>
                     
