@@ -358,21 +358,22 @@
         .scroll-down {
             position: relative;
             margin: auto;
-            width: -moz-fit-content;
-            width: fit-content;
-            height: -moz-fit-content;
-            height: fit-content;
+            width: 40px;
+            height: 80px;
 
 
             #ch-1, #ch-2, #ch-3 {
                 position: absolute;
+                left: 37%;
                 display: block;
-                transform: rotate(45deg);
+                transform: rotate(45deg) translate(-37%, 0);
                 border-right: 4px solid white;
                 border-bottom: 4px solid white;
                 margin: 0;
                 width: 25px;
                 height: 25px;
+                transition: all 0.3s ease-in-out;
+                pointer-events: none;
             }
 
             #ch-1 {
@@ -383,6 +384,11 @@
                 
             }
 
+            &:hover #ch-1 {
+                opacity: 1!important;
+                animation: none;
+            }
+
             #ch-2 {
                 top: 20px;
                 opacity: 0.5;
@@ -391,12 +397,24 @@
                 
             }
 
+            &:hover #ch-2 {
+                top: 22px;
+                opacity: 1!important;
+                animation: none;
+            }
+
             #ch-3 {
                 top: 40px;
                 opacity: 0.15;
                 animation: mouse-scroll-3 3s infinite;
                 animation-delay: 2s;
                 
+            }
+
+            &:hover #ch-3 {
+                top: 45px;
+                opacity: 1!important;
+                animation: none;
             }
 
         }

@@ -662,20 +662,21 @@ main {
 #sec-home-01 .bottom-tab .scroll-down {
   position: relative;
   margin: auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 40px;
+  height: 80px;
 }
 #sec-home-01 .bottom-tab .scroll-down #ch-1, #sec-home-01 .bottom-tab .scroll-down #ch-2, #sec-home-01 .bottom-tab .scroll-down #ch-3 {
   position: absolute;
+  left: 37%;
   display: block;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(-37%, 0);
   border-right: 4px solid white;
   border-bottom: 4px solid white;
   margin: 0;
   width: 25px;
   height: 25px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
 }
 #sec-home-01 .bottom-tab .scroll-down #ch-1 {
   top: 0px;
@@ -683,17 +684,31 @@ main {
   animation: mouse-scroll-1 3s infinite;
   animation-delay: 1s;
 }
+#sec-home-01 .bottom-tab .scroll-down:hover #ch-1 {
+  opacity: 1 !important;
+  animation: none;
+}
 #sec-home-01 .bottom-tab .scroll-down #ch-2 {
   top: 20px;
   opacity: 0.5;
   animation: mouse-scroll-2 3s infinite;
   animation-delay: 1.5s;
 }
+#sec-home-01 .bottom-tab .scroll-down:hover #ch-2 {
+  top: 22px;
+  opacity: 1 !important;
+  animation: none;
+}
 #sec-home-01 .bottom-tab .scroll-down #ch-3 {
   top: 40px;
   opacity: 0.15;
   animation: mouse-scroll-3 3s infinite;
   animation-delay: 2s;
+}
+#sec-home-01 .bottom-tab .scroll-down:hover #ch-3 {
+  top: 45px;
+  opacity: 1 !important;
+  animation: none;
 }
 @keyframes mouse-scroll-1 {
   0% {
