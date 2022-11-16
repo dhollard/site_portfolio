@@ -16,6 +16,7 @@
         <main>
 
             <div id="sec-home-01">
+
                 <div class="col-left">
                     <h2 class="sec-title">Darius Hollard</h2>
 

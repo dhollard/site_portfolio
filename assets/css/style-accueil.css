@@ -344,15 +344,15 @@ main {
 
 #sec-home-01 {
   background: #342B33;
-  padding: 80px 20px;
+  padding: 110px 20px 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0 130px;
+  gap: 50px 100px;
 }
 @media (min-width: 992px) {
   #sec-home-01 {
-    padding: 125px 20px;
+    padding: 125px 20px 40px 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -362,7 +362,7 @@ main {
 }
 @media (min-width: 1600px) {
   #sec-home-01 {
-    padding: 160px 20px;
+    padding: 160px 20px 60px 20px;
     gap: 40px 110px;
   }
 }
@@ -418,14 +418,14 @@ main {
 }
 @media (max-width: 400px) {
   #sec-home-01 .col-left .sec-title {
-    font-size: 36px;
+    font-size: 12vw;
   }
 }
 @media (min-width: 992px) {
   #sec-home-01 .col-left .sec-title {
     margin: 0 auto 20px 0;
     text-align: left;
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -442,7 +442,7 @@ main {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 18px auto;
   text-align: center;
   transition: transform 0.3s ease-out;
 }
@@ -451,9 +451,9 @@ main {
     text-align: left;
     margin: 0 auto 20px 0;
   }
-}
-#sec-home-01 .col-left .job-box:hover {
-  transform: translateX(10px);
+  #sec-home-01 .col-left .job-box:hover {
+    transform: translateX(10px);
+  }
 }
 #sec-home-01 .col-left .job-box:hover #job-1-txt1 {
   color: #91D372;
@@ -491,7 +491,7 @@ main {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 40px;
   text-decoration: none;
   display: block;
   opacity: 1;
@@ -503,7 +503,7 @@ main {
 }
 @media (max-width: 400px) {
   #sec-home-01 .col-left #job-1, #sec-home-01 .col-left #job-2, #sec-home-01 .col-left #job-3 {
-    font-size: 28px;
+    font-size: 10vw;
   }
 }
 @media (min-width: 1600px) {
@@ -519,7 +519,7 @@ main {
 }
 #sec-home-01 .col-left #p-code-left, #sec-home-01 .col-left #p-code-right {
   font-family: "Alegreya", sans-serif;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   color: #544953;
   position: absolute;
@@ -554,14 +554,14 @@ main {
 #sec-home-01 .col-left #job-2 p:nth-child(1) {
   color: #ffffff;
   -webkit-text-stroke: 2px transparent;
-  transition: all 0.2s;
+  transition: color 0.2s ease, -webkit-text-stroke 0.2s ease;
 }
 #sec-home-01 .col-left #job-2 p:nth-child(2) {
   position: absolute;
   color: #FF6666;
   animation: wave-effect 1.5s ease-in-out infinite;
   opacity: 0;
-  transition: all 0.2s;
+  transition: opacity 0.2s ease;
 }
 #sec-home-01 .col-left #job-3 {
   animation: fade-in-job-3 2.4s ease-out;

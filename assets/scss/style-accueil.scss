@@ -6,15 +6,15 @@
 // section 01
 #sec-home-01 {
     background: color.$ambiance-100;
-    padding: 80px 20px;
+    padding: 110px 20px 40px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0 130px;
+    gap: 50px 100px;
 
     // media query #sec-home-01
     @include mquery.laptop { 
-        padding: 125px 20px;
+        padding: 125px 20px 40px 20px;
         
     }
 
@@ -25,7 +25,7 @@
 
     // media query #sec-home-01
     @include mquery.desktop-xl { 
-        padding: 160px 20px;
+        padding: 160px 20px 60px 20px;
         gap: 40px 110px;
     }
 
@@ -70,14 +70,14 @@
             
                 // media query
                 @include mquery.phone {    
-                    font-size: 36px;
+                    font-size: 12vw;
                 }
 
                 // media query
                 @include mquery.laptop {    
                     margin: 0 auto 20px 0;
                     text-align: left;
-                    font-size: 50px;
+                    font-size: 60px;
                 }
 
                 @include mquery.desktop {
@@ -94,7 +94,7 @@
             position: relative;
             width: -moz-fit-content;
             width: fit-content;
-            margin: 0 auto 15px auto;
+            margin: 0 auto 18px auto;
             text-align: center;
             transition: transform 0.3s ease-out;
 
@@ -102,10 +102,13 @@
             @include mquery.laptop {    
                 text-align: left;
                 margin: 0 auto 20px 0;
+
+                &:hover {
+                    transform: translateX(10px);
+                }
             }
 
             &:hover {
-                transform: translateX(10px);
 
                 #job-1-txt1 {
                     color:#91D372;
@@ -125,7 +128,6 @@
                     p:nth-child(1) {
                         color: transparent;
                         -webkit-text-stroke:2px color.$primary-100;
-                        //-webkit-text-stroke:2px color.$secondary-100;
                     }
         
                     p:nth-child(2) {
@@ -155,14 +157,14 @@
         // liens métiers
         #job-1, #job-2, #job-3 {
             @include typo.title($color:#ffffff);
-            font-size: 32px;
+            font-size: 40px;
             text-decoration: none;
             display: block;
             opacity: 1;
 
                 // media query
                 @include mquery.phone {    
-                    font-size: 28px;
+                    font-size: 10vw;
                 }
 
                 // media query
@@ -183,7 +185,7 @@
         // fausses balises premier lien job
         #p-code-left, #p-code-right {
             font-family: 'Alegreya', sans-serif;
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 700;
             color: color.$ambiance-80;
             position: absolute;
@@ -221,16 +223,15 @@
             p:nth-child(1) {
                 color: #ffffff;
                 -webkit-text-stroke:2px transparent;
-                transition: all 0.2s;
+                transition: color 0.2s ease, -webkit-text-stroke 0.2s ease;
             }
 
             p:nth-child(2) {
                 position: absolute;
                 color: color.$primary-100;
-                //color: color.$secondary-100;
                 animation: wave-effect 1.5s ease-in-out infinite;
                 opacity: 0;
-                transition: all 0.2s;
+                transition: opacity 0.2s ease;
             }
         }
 
