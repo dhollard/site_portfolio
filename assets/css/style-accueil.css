@@ -342,6 +342,12 @@ main {
   }
 }
 
+.font-preloader {
+  opacity: 0;
+  position: absolute;
+  z-index: -1000;
+}
+
 #sec-home-01 {
   background: #342B33;
   padding: 110px 20px 40px 20px;
@@ -419,6 +425,17 @@ main {
 @media (max-width: 400px) {
   #sec-home-01 .col-left .sec-title {
     font-size: 12vw;
+  }
+}
+@media (min-width: 500px) {
+  #sec-home-01 .col-left .sec-title {
+    font-size: 66px;
+  }
+}
+@media (min-width: 768px) {
+  #sec-home-01 .col-left .sec-title {
+    font-size: 78px;
+    margin: 0 auto 30px auto;
   }
 }
 @media (min-width: 992px) {

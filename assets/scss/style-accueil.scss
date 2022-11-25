@@ -74,6 +74,17 @@
                 }
 
                 // media query
+                @include mquery.tablet {    
+                    font-size: 66px;
+                }
+
+                // media query
+                @include mquery.landscape {    
+                    font-size: 78px;
+                    margin: 0 auto 30px auto;
+                }
+
+                // media query
                 @include mquery.laptop {    
                     margin: 0 auto 20px 0;
                     text-align: left;

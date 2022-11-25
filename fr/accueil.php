@@ -78,6 +78,14 @@
 
         </main>
 
+        <!-- A DEPLACER DANS MODULE END PAGE COMMUN -->
+
+        <!-- Font preloader -->
+        <div class="font-preloader" style="opacity:0">
+            <span style="font-family:Alegreya; font-weight: 900;">texte</span>
+            <span style="font-family:Alegreya; font-style:italic; font-size: 72px; font-weight: 700; color: #FF6666;">Designer</span>
+        </div>
+
         <!-- Script interactions navbar -->
         <script defer src="/assets/script/navbar-interactions.js"></script>
 
