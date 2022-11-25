@@ -75,7 +75,7 @@
 
                 // media query
                 @include mquery.tablet {    
-                    font-size: 66px;
+                    font-size: 64px;
                 }
 
                 // media query
@@ -566,6 +566,92 @@
 // section 02
 #sec-home-02 {
     background: color.$ambiance-100;
+    padding: 110px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .mid-container {
+        margin: auto;
+        max-width: 1000px;
+
+        // titre
+        .sec-title {
+            @include typo.title($color:#ffffff);
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0 auto 20px auto;
+            text-align: center;
+            width: -moz-fit-content;
+            width: fit-content;
+
+            // media query sec-title
+            @include mquery.laptop { 
+                font-size: 58px;
+        
+            }
+
+            // media query sec-title
+            @include mquery.desktop-xl { 
+                font-size: 72px;
+        
+            }
+
+            span {
+                color: color.$primary-100;
+            }
+        }
+
+        .transition-title {
+            @include typo.title($color:#ffffff);
+            text-align: center;
+            display: none;
+
+            // media query transition-title
+            @include mquery.laptop { 
+                display: block;
+        
+            }
+        }
+
+        //conteneur boutons
+        .btn-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+            //boutons
+            .welcome-btn {
+                display: flex;
+                padding: 15px 20px;
+                background: color.$secondary-100;
+                border-radius: 5px;
+                text-decoration: none;
+
+                &:hover {
+                    background: color.$secondary-120;
+                }
+
+                p {
+                    @include typo.text($color:#ffffff);
+                    font-size: 20px!important;
+                    font-weight: 700;
+                    margin: auto;
+                    
+                }
+
+                img {
+                    margin: auto 8px auto 0;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+    }
+    
 }
 
 

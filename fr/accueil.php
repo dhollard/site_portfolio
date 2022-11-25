@@ -15,10 +15,11 @@
 
         <main>
 
+            <!-- Section 01 -->
             <div id="sec-home-01">
 
                 <div class="col-left">
-                    <h2 class="sec-title">Darius Hollard</h2>
+                    <h1 class="sec-title">Darius Hollard</h1>
 
                     <div class="job-box">
                         <div id="p-code-left">&lt;p&gt;</div>
@@ -70,11 +71,54 @@
                 
             </div>
 
-            <div style="height:2000px;"></div>
+            <div id="sec-home-02">
 
-            <div id="sec-home-02"></div>
+                <div class="mid-container">
+
+                    <div>
+                        <h2 class="sec-title">Bienvenue sur mon <span>portfolio.</span></h2>
+                    </div>
+
+                    <div class="transition-title">
+                        <p>Sur ce site vous trouverez :</p>
+                    </div>
+
+                    <div class="btn-box">
+
+                        <a href="#" class="welcome-btn">
+                            <img src="/assets/svg/ico-picture-blanc.svg" alt="icone d'un soleil au dessus de deux collines">
+                            <p>Mes créations passée</p>
+                        </a>
+
+                        <a href="#" class="welcome-btn">
+                            <img src="/assets/svg/ico-sacoche-blanc.svg" alt="icone d'une sacoche de travail">
+                            <p>Mon parcours & CV</p>
+                        </a>
+
+                        <a href="#" class="welcome-btn">
+                            <img src="/assets/svg/ico-enveloppe-blanc.svg" alt="icone d'une enveloppe postale">
+                            <p>Mes infos de contact</p>
+                        </a>
+
+                        <a href="#" class="welcome-btn">
+                            <img src="/assets/svg/ico-pouce-blanc.svg" alt="icone d'une pouce vers le haut">
+                            <p>Là où me suivre</p>
+                        </a>
+
+                        <a href="#" class="welcome-btn">
+                            <img src="/assets/svg/ico-easter-blanc.svg" alt="icone d'un oeuf de pâques">
+                            <p>Un easter egg caché</p>
+                        </a>
+
+                    </div>
+
+                </div>
+                
+            </div>
 
             <div id="sec-home-03"></div>
+
+            <div style="height:1000px;"></div>
 
         </main>
 

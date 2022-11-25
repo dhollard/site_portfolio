@@ -348,6 +348,16 @@ main {
   z-index: -1000;
 }
 
+::-moz-selection {
+  color: #ffffff;
+  background: #FF6666;
+}
+
+::selection {
+  color: #ffffff;
+  background: #FF6666;
+}
+
 #sec-home-01 {
   background: #342B33;
   padding: 110px 20px 40px 20px;
@@ -429,7 +439,7 @@ main {
 }
 @media (min-width: 500px) {
   #sec-home-01 .col-left .sec-title {
-    font-size: 66px;
+    font-size: 64px;
   }
 }
 @media (min-width: 768px) {
@@ -863,6 +873,98 @@ main {
 
 #sec-home-02 {
   background: #342B33;
+  padding: 110px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#sec-home-02 .mid-container {
+  margin: auto;
+  max-width: 1000px;
+}
+#sec-home-02 .mid-container .sec-title {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 1600px) {
+  #sec-home-02 .mid-container .sec-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-02 .mid-container .sec-title {
+    font-size: 58px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-02 .mid-container .sec-title {
+    font-size: 72px;
+  }
+}
+#sec-home-02 .mid-container .sec-title span {
+  color: #FF6666;
+}
+#sec-home-02 .mid-container .transition-title {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  display: none;
+}
+@media (min-width: 1600px) {
+  #sec-home-02 .mid-container .transition-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-02 .mid-container .transition-title {
+    display: block;
+  }
+}
+#sec-home-02 .mid-container .btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#sec-home-02 .mid-container .btn-box .welcome-btn {
+  display: flex;
+  padding: 15px 20px;
+  background: #439A86;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#sec-home-02 .mid-container .btn-box .welcome-btn:hover {
+  background: #238A70;
+}
+#sec-home-02 .mid-container .btn-box .welcome-btn p {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px !important;
+  font-weight: 700;
+  margin: auto;
+}
+@media (min-width: 1600px) {
+  #sec-home-02 .mid-container .btn-box .welcome-btn p {
+    font-size: 18px;
+  }
+}
+#sec-home-02 .mid-container .btn-box .welcome-btn img {
+  margin: auto 8px auto 0;
+  width: 25px;
+  height: 25px;
 }
 
 #sec-home-03 {
