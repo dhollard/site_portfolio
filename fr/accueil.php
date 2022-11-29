@@ -73,21 +73,20 @@
 
             <div id="sec-home-02">
 
+                <div class="blob-shape blob-type-01" id="blob-A"></div>
+                <div class="blob-shape blob-type-02" id="blob-B"></div>
+
                 <div class="mid-container">
 
                     <div>
                         <h2 class="sec-title">Bienvenue sur mon <span>portfolio.</span></h2>
                     </div>
 
-                    <div class="transition-title">
-                        <p>Sur ce site vous trouverez :</p>
-                    </div>
-
                     <div class="btn-box">
 
                         <a href="#" class="welcome-btn">
                             <img src="/assets/svg/ico-picture-blanc.svg" alt="icone d'un soleil au dessus de deux collines">
-                            <p>Mes créations passée</p>
+                            <p>Voir mes projets</p>
                         </a>
 
                         <a href="#" class="welcome-btn">
@@ -97,17 +96,17 @@
 
                         <a href="#" class="welcome-btn">
                             <img src="/assets/svg/ico-enveloppe-blanc.svg" alt="icone d'une enveloppe postale">
-                            <p>Mes infos de contact</p>
+                            <p>Me contacter</p>
                         </a>
 
                         <a href="#" class="welcome-btn">
                             <img src="/assets/svg/ico-pouce-blanc.svg" alt="icone d'une pouce vers le haut">
-                            <p>Là où me suivre</p>
+                            <p>Où me suivre</p>
                         </a>
 
                         <a href="#" class="welcome-btn">
                             <img src="/assets/svg/ico-easter-blanc.svg" alt="icone d'un oeuf de pâques">
-                            <p>Un easter egg caché</p>
+                            <p>Easter egg</p>
                         </a>
 
                     </div>

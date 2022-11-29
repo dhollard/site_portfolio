@@ -358,6 +358,25 @@ main {
   background: #FF6666;
 }
 
+.blob-shape {
+  position: absolute;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background: url("/assets/svg/blob-tile-01.svg");
+  background-size: 30px;
+  background-repeat: repeat;
+}
+
+.blob-type-01 {
+  -webkit-mask: url("/assets/svg/blob-shape-01.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-01.svg") no-repeat 50% 50%;
+}
+
+.blob-type-02 {
+  -webkit-mask: url("/assets/svg/blob-shape-02.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-02.svg") no-repeat 50% 50%;
+}
+
 #sec-home-01 {
   background: #342B33;
   padding: 110px 20px 40px 20px;
@@ -872,6 +891,7 @@ main {
 }
 
 #sec-home-02 {
+  position: relative;
   background: #342B33;
   padding: 110px 20px 40px 20px;
   display: flex;
@@ -881,7 +901,8 @@ main {
 }
 #sec-home-02 .mid-container {
   margin: auto;
-  max-width: 1000px;
+  max-width: 850px;
+  z-index: 2;
 }
 #sec-home-02 .mid-container .sec-title {
   font-family: "Alegreya", sans-serif;
@@ -890,7 +911,7 @@ main {
   color: #ffffff;
   font-size: 36px;
   font-weight: 800;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 40px auto;
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
@@ -903,6 +924,7 @@ main {
 @media (min-width: 992px) {
   #sec-home-02 .mid-container .sec-title {
     font-size: 58px;
+    margin: 0 auto 50px auto;
   }
 }
 @media (min-width: 1600px) {
@@ -913,39 +935,54 @@ main {
 #sec-home-02 .mid-container .sec-title span {
   color: #FF6666;
 }
-#sec-home-02 .mid-container .transition-title {
-  font-family: "Alegreya", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
-  display: none;
-}
-@media (min-width: 1600px) {
-  #sec-home-02 .mid-container .transition-title {
-    font-size: 24px;
-  }
-}
-@media (min-width: 992px) {
-  #sec-home-02 .mid-container .transition-title {
-    display: block;
-  }
-}
 #sec-home-02 .mid-container .btn-box {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+}
+@media (min-width: 500px) {
+  #sec-home-02 .mid-container .btn-box {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  #sec-home-02 .mid-container .btn-box {
+    gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-02 .mid-container .btn-box {
+    gap: 50px 30px;
+  }
 }
 #sec-home-02 .mid-container .btn-box .welcome-btn {
   display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: 230px;
   padding: 15px 20px;
   background: #439A86;
   border-radius: 5px;
   text-decoration: none;
+  justify-content: center;
 }
 #sec-home-02 .mid-container .btn-box .welcome-btn:hover {
   background: #238A70;
+}
+@media (min-width: 500px) {
+  #sec-home-02 .mid-container .btn-box .welcome-btn {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  #sec-home-02 .mid-container .btn-box .welcome-btn {
+    width: auto;
+    max-width: none;
+    margin: 0;
+  }
 }
 #sec-home-02 .mid-container .btn-box .welcome-btn p {
   font-family: "Assistant", sans-serif;
@@ -953,8 +990,8 @@ main {
   font-weight: 400;
   color: #ffffff;
   font-size: 20px !important;
-  font-weight: 700;
-  margin: auto;
+  font-weight: 600;
+  margin: auto 0;
 }
 @media (min-width: 1600px) {
   #sec-home-02 .mid-container .btn-box .welcome-btn p {
@@ -965,6 +1002,38 @@ main {
   margin: auto 8px auto 0;
   width: 25px;
   height: 25px;
+}
+@media (min-width: 992px) {
+  #sec-home-02 #blob-A {
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-140%);
+    top: -70px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-02 #blob-A {
+    width: 650px;
+    height: 650px;
+    transform: translateX(-150%);
+    top: -100px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-02 #blob-B {
+    width: 400px;
+    height: 400px;
+    right: 50%;
+    transform: translateX(155%);
+    top: 160px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-02 #blob-B {
+    transform: translateX(200%);
+    top: -25px;
+  }
 }
 
 #sec-home-03 {

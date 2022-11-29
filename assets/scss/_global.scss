@@ -273,9 +273,29 @@ main {
 ::-moz-selection {
     color: #ffffff;
     background: color.$primary-100;
-  }
+}
   
-  ::selection {
+::selection {
     color: #ffffff;
     background: color.$primary-100;
-  }
+}
+
+//fond des blobs décoratifs
+.blob-shape {
+    position: absolute;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background: url("/assets/svg/blob-tile-01.svg");
+    background-size: 30px;
+    background-repeat: repeat;
+}
+
+.blob-type-01 {
+    -webkit-mask: url("/assets/svg/blob-shape-01.svg") no-repeat 50% 50%;
+    mask: url("/assets/svg/blob-shape-01.svg") no-repeat 50% 50%;
+}
+
+.blob-type-02 {
+    -webkit-mask: url("/assets/svg/blob-shape-02.svg") no-repeat 50% 50%;
+    mask: url("/assets/svg/blob-shape-02.svg") no-repeat 50% 50%;
+}

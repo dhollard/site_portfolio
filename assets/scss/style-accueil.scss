@@ -565,6 +565,7 @@
 
 // section 02
 #sec-home-02 {
+    position: relative;
     background: color.$ambiance-100;
     padding: 110px 20px 40px 20px;
     display: flex;
@@ -574,14 +575,15 @@
 
     .mid-container {
         margin: auto;
-        max-width: 1000px;
+        max-width: 850px;
+        z-index: 2;
 
         // titre
         .sec-title {
             @include typo.title($color:#ffffff);
             font-size: 36px;
             font-weight: 800;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 40px auto;
             text-align: center;
             width: -moz-fit-content;
             width: fit-content;
@@ -589,7 +591,7 @@
             // media query sec-title
             @include mquery.laptop { 
                 font-size: 58px;
-        
+                margin: 0 auto 50px auto;
             }
 
             // media query sec-title
@@ -603,42 +605,63 @@
             }
         }
 
-        .transition-title {
-            @include typo.title($color:#ffffff);
-            text-align: center;
-            display: none;
-
-            // media query transition-title
-            @include mquery.laptop { 
-                display: block;
-        
-            }
-        }
-
         //conteneur boutons
         .btn-box {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
+
+            // media query btn-box
+            @include mquery.tablet { 
+                flex-direction: row;
+            }
+
+            // media query btn-box
+            @include mquery.landscape { 
+                gap: 30px;
+            }
+
+            // media query btn-box
+            @include mquery.laptop { 
+                gap: 50px 30px;
+            }
 
             //boutons
             .welcome-btn {
                 display: flex;
+                margin: auto;
+                width: 100%;
+                max-width: 230px;
                 padding: 15px 20px;
                 background: color.$secondary-100;
                 border-radius: 5px;
                 text-decoration: none;
+                justify-content: center;
 
                 &:hover {
                     background: color.$secondary-120;
                 }
 
+                // media query welcome-btn
+                @include mquery.tablet { 
+                    width: 50%;
+                    margin: 0;
+                }
+
+                // media query welcome-btn
+                @include mquery.landscape { 
+                    width: auto;
+                    max-width: none;
+                    margin: 0;
+                }
+
                 p {
                     @include typo.text($color:#ffffff);
                     font-size: 20px!important;
-                    font-weight: 700;
-                    margin: auto;
+                    font-weight: 600;
+                    margin: auto 0;
                     
                 }
 
@@ -650,6 +673,44 @@
             }
         }
 
+    }
+
+    #blob-A {
+        
+        // media query blob-A
+        @include mquery.laptop { 
+            width: 400px;
+            height: 400px;
+            left: 50%;
+            transform: translateX(-140%);
+            top: -70px;
+        }
+
+        // media query blob-A
+        @include mquery.desktop-xl { 
+            width: 650px;
+            height: 650px;
+            transform: translateX(-150%);
+            top: -100px;
+        }
+    }
+
+    #blob-B {
+        
+        // media query blob-B
+        @include mquery.laptop { 
+            width: 400px;
+            height: 400px;
+            right: 50%;
+            transform: translateX(155%);
+            top: 160px;
+        }
+
+        // media query blob-B
+        @include mquery.desktop-xl { 
+            transform: translateX(200%);
+            top: -25px;
+        }
     }
     
 }
