@@ -718,5 +718,119 @@
 
 // section 03
 #sec-home-03 {
+    position: relative;
     background: color.$ambiance-100;
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+
+    // media query sec-home-03
+    @include mquery.laptop { 
+        padding: 100px 20px 150px 20px;
+    }
+    
+    // media query sec-home-03
+    @include mquery.desktop-xl { 
+        padding: 150px 20px 150px 20px;
+    } 
+
+    .mid-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: color.$ambiance-120;
+        padding: 30px 30px 45px 30px;
+        gap: 30px;
+        width: 100%;
+        max-width: 850px;
+
+        // media query mid-container
+        @include mquery.laptop { 
+            flex-direction: row;
+            gap: 45px 75px;
+        }
+        
+        // media query mid-container
+        @include mquery.desktop { 
+            
+        } 
+
+        .title-box {
+            width: 100%;
+    
+            .sec-title {
+                @include typo.title($color:#ffffff);
+                font-weight: 700;
+                font-size: 20px;
+                width: -moz-fit-content;
+                width: fit-content;
+                margin: 0 auto 0px auto;
+                text-align: center;
+        
+                // media query sec-title
+                @include mquery.laptop { 
+                    font-size: 24px;
+                }
+            }
+    
+        }
+    
+        .process-btn-bloc {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            // media query process-btn-bloc
+            @include mquery.laptop { 
+                width: -moz-fit-content;
+                width: fit-content;
+            }
+    
+            p {
+                @include typo.text($color:#ffffff);
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 auto 15px auto;
+
+                // media query process-btn-bloc p
+                @include mquery.desktop-xl { 
+                    font-size: 18px;
+                }
+            }
+    
+            a {
+                background:color.$primary-100;
+                padding: 13px 20px;
+                @include typo.text($color:#ffffff);
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+                border-radius: 5px;
+                width: 100%;
+                max-width: 200px;
+                margin: auto;
+                
+                &:hover {
+                    background: color.$primary-120;
+                }
+
+                // media query process-btn-bloc bouton
+                @include mquery.laptop {
+                    width: auto;
+                    padding: 15px 30px;
+                }
+
+                // media query process-btn-bloc bouton
+                @include mquery.laptop {
+                    padding: 15px 40px;
+                }
+            }
+        }
+
+
+    }
+
+
 }

@@ -262,11 +262,20 @@ main {
     }
 }
 
+//footer
+footer {
+    height: 200px;
+    width: 100%;
+    background: color.$ambiance-160;
+}
+
 // module pour précharger des fonts pour effet de hover
 .font-preloader {
     opacity: 0;
     position: absolute;
     z-index: -1000;
+    left: 0;
+    top: 0px;
 }
 
 // personnalisation du highlight texte
@@ -289,6 +298,7 @@ main {
     background: url("/assets/svg/blob-tile-01.svg");
     background-size: 30px;
     background-repeat: repeat;
+    z-index: 1;
 }
 
 .blob-type-01 {

@@ -115,11 +115,40 @@
                 
             </div>
 
-            <div id="sec-home-03"></div>
+            <div id="sec-home-03">
+                
+                <div class="mid-container">
 
-            <div style="height:1000px;"></div>
+                    <div class="title-box">
+                        <h2 class="sec-title">Envie d'en savoir plus sur le processus de création de ce portfolio ?</h2>
+                    </div>
+
+                    <div class="process-btn-bloc">
+                        <p>Prototype interactif du site :</p>
+                        <a>Maquette Figma</a>
+                    </div>
+
+                    <div class="process-btn-bloc">
+                        <p>Détail du processus créatif :</p>
+                        <a>Page du projet</a>
+                    </div>
+
+                    <div class="process-btn-bloc">
+                        <p>Documentation du code :</p>
+                        <a>Repository GitHub</a>
+                    </div>
+
+                    <!-- Vous pouvez aussi utiliser les outils développeurs ;) -->
+
+                </div>
+
+            </div>
 
         </main>
+
+        <footer>
+
+        </footer>
 
         <!-- A DEPLACER DANS MODULE END PAGE COMMUN -->
 
