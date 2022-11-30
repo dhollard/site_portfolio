@@ -134,6 +134,7 @@ body {
   margin: 0;
   padding: 0;
   background: #342B33;
+  overflow-x: hidden;
 }
 
 main {
