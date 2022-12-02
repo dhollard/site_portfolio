@@ -104,7 +104,7 @@
                             <p>Où me suivre</p>
                         </a>
 
-                        <a href="#" class="welcome-btn">
+                        <a href="#" class="welcome-btn" id="easter-clue">
                             <img src="/assets/svg/ico-easter-blanc.svg" alt="icone d'un oeuf de pâques">
                             <p>Easter egg</p>
                         </a>
@@ -125,22 +125,24 @@
 
                     <div class="process-btn-bloc">
                         <p>Prototype interactif du site :</p>
-                        <a>Maquette Figma</a>
+                        <a href="#" target="_blank">Maquette Figma</a>
                     </div>
 
                     <div class="process-btn-bloc">
                         <p>Détail du processus créatif :</p>
-                        <a>Page du projet</a>
+                        <a href="#" target="_blank">Page du projet</a>
                     </div>
 
                     <div class="process-btn-bloc">
                         <p>Documentation du code :</p>
-                        <a>Repository GitHub</a>
+                        <a href="https://github.com/dhollard/site_portfolio" target="_blank">Repository GitHub</a>
                     </div>
 
                     <!-- Vous pouvez aussi utiliser les outils développeurs ;) -->
 
                 </div>
+
+                <div class="blob-shape blob-type-03" id="blob-C"></div>
 
             </div>
 

@@ -671,6 +671,17 @@
                     height: 25px;
                 }
             }
+
+            #easter-clue {
+                display: none;
+
+                // media query welcome-btn
+                @include mquery.landscape { 
+                    display: flex;
+                }
+            }
+
+            
         }
 
     }
@@ -743,7 +754,8 @@
         padding: 30px 30px 45px 30px;
         gap: 30px;
         width: 100%;
-        max-width: 850px;
+        max-width: 950px;
+        z-index: 2;
 
         // media query mid-container
         @include mquery.laptop { 
@@ -805,6 +817,7 @@
                 padding: 13px 20px;
                 @include typo.text($color:#ffffff);
                 font-weight: 700;
+                text-decoration: none;
                 font-size: 18px;
                 text-align: center;
                 border-radius: 5px;
@@ -830,6 +843,26 @@
         }
 
 
+    }
+
+    #blob-C {
+        
+        // media query blob-C
+        @include mquery.laptop { 
+            width: 450px;
+            height: 450px;
+            right: 50%;
+            transform: translateX(140%);
+            bottom: -130px;
+        }
+
+        // media query blob-C
+        @include mquery.desktop-xl {
+            width: 580px;
+            height: 580px;
+            transform: translateX(115%);
+            bottom: -20px;
+        }
     }
 
 

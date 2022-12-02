@@ -267,6 +267,8 @@ footer {
     height: 200px;
     width: 100%;
     background: color.$ambiance-160;
+    z-index: 2;
+    position: relative;
 }
 
 // module pour précharger des fonts pour effet de hover
@@ -296,7 +298,7 @@ footer {
     -webkit-mask-size: cover;
     mask-size: cover;
     background: url("/assets/svg/blob-tile-01.svg");
-    background-size: 30px;
+    background-size: 20px;
     background-repeat: repeat;
     z-index: 1;
 }
@@ -309,4 +311,9 @@ footer {
 .blob-type-02 {
     -webkit-mask: url("/assets/svg/blob-shape-02.svg") no-repeat 50% 50%;
     mask: url("/assets/svg/blob-shape-02.svg") no-repeat 50% 50%;
+}
+
+.blob-type-03 {
+    -webkit-mask: url("/assets/svg/blob-shape-03.svg") no-repeat 50% 50%;
+    mask: url("/assets/svg/blob-shape-03.svg") no-repeat 50% 50%;
 }
