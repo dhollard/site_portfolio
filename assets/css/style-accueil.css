@@ -344,11 +344,82 @@ main {
 }
 
 footer {
-  height: 200px;
   width: 100%;
+  padding: 40px 20px;
   background: #190517;
   z-index: 2;
   position: relative;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  footer {
+    flex-direction: row;
+  }
+}
+footer #footer-col-1 #foot-logo-box {
+  display: none;
+}
+footer #footer-col-1 #foot-logo-box img {
+  width: 50px;
+}
+@media (min-width: 992px) {
+  footer #footer-col-1 #foot-logo-box {
+    display: flex;
+  }
+}
+footer #footer-col-1 #foot-hr {
+  display: none;
+  width: 4px;
+  height: 100%;
+  background: #ffffff;
+}
+@media (min-width: 992px) {
+  footer #footer-col-1 #foot-hr {
+    display: block;
+  }
+}
+footer #footer-col-1 #foot-left-content .left-title {
+  width: 100%;
+}
+footer #footer-col-1 #foot-left-content .left-title p {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 34px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto auto 6px auto;
+}
+@media (min-width: 1600px) {
+  footer #footer-col-1 #foot-left-content .left-title p {
+    font-size: 24px;
+  }
+}
+footer #footer-col-1 #foot-left-content .contact-mail {
+  display: flex;
+  justify-content: center;
+}
+footer #footer-col-1 #foot-left-content .contact-mail p {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+@media (min-width: 1600px) {
+  footer #footer-col-1 #foot-left-content .contact-mail p {
+    font-size: 18px;
+  }
+}
+footer #footer-col-1 #foot-left-content .contact-mail img {
+  width: 20px;
+  margin-left: 5px;
 }
 
 .font-preloader {
