@@ -353,50 +353,55 @@ footer {
   background: #190517;
   z-index: 2;
   position: relative;
+}
+footer .footer-container {
+  width: 100%;
+  max-width: 2600px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 @media (min-width: 992px) {
-  footer {
+  footer .footer-container {
     flex-direction: row;
   }
 }
-footer #footer-col-1 {
+footer .footer-container #footer-col-1 {
   display: flex;
   justify-content: center;
 }
 @media (min-width: 992px) {
-  footer #footer-col-1 {
+  footer .footer-container #footer-col-1 {
     justify-content: start;
   }
 }
-footer #footer-col-1 #foot-logo-box {
+footer .footer-container #footer-col-1 #foot-logo-box {
   display: none;
 }
-footer #footer-col-1 #foot-logo-box img {
+footer .footer-container #footer-col-1 #foot-logo-box img {
   width: 50px;
 }
 @media (min-width: 992px) {
-  footer #footer-col-1 #foot-logo-box {
+  footer .footer-container #footer-col-1 #foot-logo-box {
     display: flex;
   }
 }
-footer #footer-col-1 #foot-hr {
+footer .footer-container #footer-col-1 #foot-hr {
   display: none;
   width: 4px;
   height: 100%;
   background: #ffffff;
 }
 @media (min-width: 992px) {
-  footer #footer-col-1 #foot-hr {
+  footer .footer-container #footer-col-1 #foot-hr {
     display: block;
   }
 }
-footer #footer-col-1 #foot-left-content .left-title {
+footer .footer-container #footer-col-1 #foot-left-content .left-title {
   width: 100%;
 }
-footer #footer-col-1 #foot-left-content .left-title p {
+footer .footer-container #footer-col-1 #foot-left-content .left-title p {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -408,15 +413,15 @@ footer #footer-col-1 #foot-left-content .left-title p {
   margin: auto auto 6px auto;
 }
 @media (min-width: 1600px) {
-  footer #footer-col-1 #foot-left-content .left-title p {
+  footer .footer-container #footer-col-1 #foot-left-content .left-title p {
     font-size: 24px;
   }
 }
-footer #footer-col-1 #foot-left-content .contact-mail {
+footer .footer-container #footer-col-1 #foot-left-content .contact-mail {
   display: flex;
   justify-content: center;
 }
-footer #footer-col-1 #foot-left-content .contact-mail p {
+footer .footer-container #footer-col-1 #foot-left-content .contact-mail p {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -426,11 +431,11 @@ footer #footer-col-1 #foot-left-content .contact-mail p {
   margin: 0;
 }
 @media (min-width: 1600px) {
-  footer #footer-col-1 #foot-left-content .contact-mail p {
+  footer .footer-container #footer-col-1 #foot-left-content .contact-mail p {
     font-size: 18px;
   }
 }
-footer #footer-col-1 #foot-left-content .contact-mail img {
+footer .footer-container #footer-col-1 #foot-left-content .contact-mail img {
   width: 20px;
   margin-left: 5px;
 }

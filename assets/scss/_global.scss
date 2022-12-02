@@ -273,90 +273,101 @@ footer {
     padding: 40px 20px;
     background: color.$ambiance-160;
     z-index: 2;
-    position: relative;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
+    position: relative;   
 
-    // media query footer
-    @include mquery.laptop {  
-        flex-direction: row;
-    }
-
-    // première colonne du footer
-    #footer-col-1 {
+    //container du footer
+    .footer-container {
+        width: 100%;
+        max-width: 2600px;
+        color: #ffffff;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        margin: auto;
 
-        // media query footer-col-1
+        // media query footer-container
         @include mquery.laptop {  
-            justify-content: start;
+            flex-direction: row;
         }
 
-        // logo du footer (+ easter egg)
-        #foot-logo-box {
-            display: none;
 
-            img {
-                width: 50px;
-            }
+        // première colonne du footer
+        #footer-col-1 {
+            display: flex;
+            justify-content: center;
 
-            // media query foot-logo-box
+            // media query footer-col-1
             @include mquery.laptop {  
-                display: flex;
-            }
-        }
-
-        // séparateur vertical footer
-        #foot-hr {
-            display: none;
-            width: 4px;
-            height: 100%;
-            background: #ffffff;
-
-            // media query foot-hr
-            @include mquery.laptop {  
-                display: block;
-            }
-        }
-
-        // infos de contact et réseaux sociaux
-        #foot-left-content {
-
-            // titre "contact"
-            .left-title {
-                width: 100%;
-
-                p {
-                    @include typo.title($color:#ffffff);
-                    font-size: 34px;
-                    text-align: center;
-                    width: -moz-fit-content;
-                    width: fit-content;
-                    margin: auto auto 6px auto;
-                }
+                justify-content: start;
             }
 
-            // email + bouton copier
-            .contact-mail {
-                display: flex;
-                justify-content: center;
-
-                p {
-                    @include typo.text($color:#ffffff);
-                    font-size: 20px;
-                    font-weight: 500;
-                    margin: 0;
-                }
+            // logo du footer (+ easter egg)
+            #foot-logo-box {
+                display: none;
 
                 img {
-                    width: 20px;
-                    margin-left: 5px;
+                    width: 50px;
+                }
+
+                // media query foot-logo-box
+                @include mquery.laptop {  
+                    display: flex;
                 }
             }
 
+            // séparateur vertical footer
+            #foot-hr {
+                display: none;
+                width: 4px;
+                height: 100%;
+                background: #ffffff;
+
+                // media query foot-hr
+                @include mquery.laptop {  
+                    display: block;
+                }
+            }
+
+            // infos de contact et réseaux sociaux
+            #foot-left-content {
+
+                // titre "contact"
+                .left-title {
+                    width: 100%;
+
+                    p {
+                        @include typo.title($color:#ffffff);
+                        font-size: 34px;
+                        text-align: center;
+                        width: -moz-fit-content;
+                        width: fit-content;
+                        margin: auto auto 6px auto;
+                    }
+                }
+
+                // email + bouton copier
+                .contact-mail {
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        @include typo.text($color:#ffffff);
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 20px;
+                        margin-left: 5px;
+                    }
+                }
+
+            }
         }
+
     }
+
+    
 }
 
 // module pour précharger des fonts pour effet de hover

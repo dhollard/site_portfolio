@@ -149,40 +149,43 @@
         </main>
 
         <footer>
+            <div class="footer-container">
 
-            <div id="footer-col-1">
+                <div id="footer-col-1">
 
-                <div id="foot-logo-box">
-                    <!-- Easter Egg trouvé ! Bravo 🐇🥚 -->
-                    <img src="/assets/svg/ico-pouce-blanc.svg" alt="logo DH">
+                    <div id="foot-logo-box">
+                        <!-- Easter Egg trouvé ! Bravo 🐇🥚 -->
+                        <img src="/assets/svg/ico-pouce-blanc.svg" alt="logo DH">
+                    </div>
+
+                    <div id="foot-hr"></div>
+
+                    <div id="foot-left-content">
+
+                        <div class="left-title">
+                            <p>Contact</p>
+                        </div>
+
+                        <div class="contact-mail">
+                            <p>d.hollard.design@gmail.com</p>
+                            <img src="/assets/svg/ico-pouce-blanc.svg" alt="copier vers presse-papier">
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Instagram</a>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div id="foot-hr"></div>
-
-                <div id="foot-left-content">
-
-                    <div class="left-title">
-                        <p>Contact</p>
-                    </div>
-
-                    <div class="contact-mail">
-                        <p>d.hollard.design@gmail.com</p>
-                        <img src="/assets/svg/ico-pouce-blanc.svg" alt="copier vers presse-papier">
-                    </div>
-
-                    <div class="social-icons">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Instagram</a>
-                    </div>
-
+                <div id="footer-col-2">
+                    <a href="#">> Mentions légales</a>
+                    <p>Copyright © 2022</p>
+                    <p>Tous droits réservés à <span>Darius Hollard</span></p>
                 </div>
 
-            </div>
-
-            <div id="footer-col-2">
-                <a href="#">> Mentions légales</a>
-                <p>Copyright © 2022</p>
-                <p>Tous droits réservés à <span>Darius Hollard</span></p>
             </div>
 
         </footer>
