@@ -633,7 +633,7 @@
                 display: flex;
                 margin: auto;
                 width: 100%;
-                max-width: 230px;
+                max-width: 270px;
                 padding: 15px 20px;
                 background: color.$secondary-100;
                 border-radius: 5px;
@@ -646,7 +646,7 @@
 
                 // media query welcome-btn
                 @include mquery.tablet { 
-                    width: 50%;
+                    width: 52%;
                     margin: 0;
                 }
 
@@ -822,7 +822,7 @@
                 text-align: center;
                 border-radius: 5px;
                 width: 100%;
-                max-width: 200px;
+                max-width: 235px;
                 margin: auto;
                 
                 &:hover {
