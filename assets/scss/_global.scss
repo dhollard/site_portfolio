@@ -285,8 +285,9 @@ footer {
         margin: auto;
 
         // media query footer-container
-        @include mquery.laptop {  
+        @include mquery.landscape {  
             flex-direction: row;
+            justify-content: space-between;
         }
 
 
@@ -294,6 +295,7 @@ footer {
         #footer-col-1 {
             display: flex;
             justify-content: center;
+            margin-bottom: 40px;
 
             // media query footer-col-1
             @include mquery.laptop {  
@@ -348,6 +350,7 @@ footer {
                 .contact-mail {
                     display: flex;
                     justify-content: center;
+                    margin-bottom: 25px;
 
                     p {
                         @include typo.text($color:#ffffff);
@@ -362,10 +365,150 @@ footer {
                     }
                 }
 
+                //icones réseaux sociaux
+                .social-icons {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 30px;
+
+                    a {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    #social-ico-1 {
+                        background: url("/assets/svg/ico-linkedin-blanc.svg");
+
+                        &:hover {
+                            background: url("/assets/svg/ico-linkedin-primary.svg");
+                        }
+                    }
+
+                    #social-ico-2 {
+                        background: url("/assets/svg/ico-instagram-blanc.svg");
+
+                        &:hover {
+                            background: url("/assets/svg/ico-instagram-primary.svg");
+                        }
+                    }
+
+                    #social-ico-3 {
+                        background: url("/assets/svg/ico-github-blanc.svg");
+
+                        &:hover {
+                            background: url("/assets/svg/ico-github-primary.svg");
+                        }
+                    }
+                }
+
             }
         }
 
+        // deuxième colonne du footer
+        #footer-col-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            //lien des mentions légales
+            #legal-link {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                width: -moz-fit-content;
+                width: fit-content;
+                margin: 0 auto 40px auto;
+                position: relative;
+                text-decoration: none;
+
+                // chevron gauche lien mentions légales
+                .left-chevron {
+                    display: flex;
+                    transform: translateX(0px);
+                    transition: all 0.5s ease;
+
+                    span {
+                        display: flex;
+                        transform: rotate(45deg);
+                        border-right: 2px solid white;
+                        border-top: 2px solid white;
+                        margin: auto;
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                &:hover .left-chevron {
+                    transform: translateX(-3px);
+                }
+
+                &:hover .left-chevron span {
+                    border-color: color.$primary-100;
+                }
+
+                // chevron droite lien mentions légales (mobile uniquement)
+                .right-chevron {
+                    display: flex;
+                    transition: all 0.5s ease;
+
+                    // media query span crochet mentions légales
+                    @include mquery.laptop {  
+                        display: none;
+                    }
+
+                    span {
+                        display: flex;
+                        transform: rotate(45deg);
+                        border-left: 2px solid white;
+                        border-bottom: 2px solid white;
+                        margin: auto;
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+
+                &:hover .right-chevron {
+                    transform: translateX(3px);
+                }
+
+                &:hover .right-chevron span {
+                    border-color: color.$primary-100;
+                }
+
+                .legal-txt {
+                    @include typo.text($color:#ffffff);
+                    font-size: 22px;
+                    font-weight: 500;
+                    margin: 0px auto 2px auto;
+                }
+
+                &:hover .legal-txt {
+                    color: color.$primary-100;
+                }
+
+            }
+
+            //textes copyright et droits réservés
+            p {
+                @include typo.text($color:#ffffff);
+                font-size: 18px;
+                font-weight: 500;
+                width: -moz-fit-content;
+                width: fit-content;
+                margin: 0 auto 5px auto;
+
+                // texte en gras
+                span {
+                    font-weight: 700;
+                }
+            }
+        
+        }
+
     }
+
+    
 
     
 }

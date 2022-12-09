@@ -172,8 +172,9 @@
                         </div>
 
                         <div class="social-icons">
-                            <a href="#">LinkedIn</a>
-                            <a href="#">Instagram</a>
+                            <a id="social-ico-1" href="https://www.linkedin.com/in/darius-hollard/" target="_blank" aria-label="Voir mon profil LinkedIn"></a>
+                            <a id="social-ico-2" href="https://www.instagram.com/darius_hollard/" target="_blank" aria-label="Voir mon compte Instagram"></a>
+                            <a id="social-ico-3" href="https://github.com/dhollard" target="_blank" aria-label="Voir mes projets GitHub"></a>
                         </div>
 
                     </div>
@@ -181,8 +182,16 @@
                 </div>
 
                 <div id="footer-col-2">
-                    <a href="#">> Mentions légales</a>
-                    <p>Copyright © 2022</p>
+                    <a href="#" id="legal-link">
+                        <div class="left-chevron">
+                            <span></span>
+                        </div>
+                        <div class="legal-txt">Mentions légales</div>
+                        <div class="right-chevron">
+                            <span></span>
+                        </div>
+                    </a>
+                    <p>Copyright © <?php echo date("Y"); ?></p>
                     <p>Tous droits réservés à <span>Darius Hollard</span></p>
                 </div>
 
@@ -191,6 +200,18 @@
         </footer>
 
         <!-- A DEPLACER DANS MODULE END PAGE COMMUN -->
+
+        <!-- CSS Preload :hover icons -->
+        <style type="text/css">
+            body::after {
+            position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+            content:
+            /* footer */
+            url('/assets/svg/ico-linkedin-primary.svg')
+            url('/assets/svg/ico-instagram-primary.svg')
+            url('/assets/svg/ico-github-primary.svg')
+            }
+        </style>
 
         <!-- Font preloader -->
         <div class="font-preloader" style="opacity:0">
