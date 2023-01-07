@@ -359,9 +359,37 @@ footer {
                         margin: 0;
                     }
 
-                    img {
-                        width: 20px;
-                        margin-left: 5px;
+                    .copy-button {
+                        position: relative;
+                        width: 23px;
+                        height: 23px;
+                        margin-top: 2px;
+                        margin-left: 8px;
+                        background-image: url('/assets/svg/ico-copyto-blanc.svg');
+                        cursor: pointer;
+
+                        &:hover {
+                            background-image: url('/assets/svg/ico-copyto-primary.svg');
+                        }
+                    }
+
+                    .copy-message {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -50px;
+                        @include typo.text($color:color.$primary-100);
+                        font-size: 16px!important;
+                        font-weight: 600;
+                        display: none;
+                    }
+
+                    .copied-msg {
+                        display: block;
+                    }
+
+                    .copied-img {
+                        background-image: url('/assets/svg/ico-copyto-primary.svg');
                     }
                 }
 

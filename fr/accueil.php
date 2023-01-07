@@ -167,8 +167,10 @@
                         </div>
 
                         <div class="contact-mail">
-                            <p>d.hollard.design@gmail.com</p>
-                            <img src="/assets/svg/ico-pouce-blanc.svg" alt="copier vers presse-papier">
+                            <p id="text-to-copy">contact@darius-hollard.com</p>
+                            <span class="copy-button" src="/assets/svg/ico-copyto-blanc.svg" alt="copier vers presse-papier">
+                                <span class="copy-message">Copié!</span>
+                            </span>
                         </div>
 
                         <div class="social-icons">
@@ -210,6 +212,7 @@
             url('/assets/svg/ico-linkedin-primary.svg')
             url('/assets/svg/ico-instagram-primary.svg')
             url('/assets/svg/ico-github-primary.svg')
+            url('/assets/svg/ico-copyto-primary.svg')
             }
         </style>
 
@@ -221,6 +224,29 @@
 
         <!-- Script interactions navbar -->
         <script defer src="/assets/script/navbar-interactions.js"></script>
+
+        <!-- Script pour bouton copy to clipboard -->
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                var copyButton = document.querySelector('.copy-button');
+                var copyMsg = document.querySelector('.copy-message');
+                var textToCopy = document.querySelector('#text-to-copy').textContent;
+                copyButton.addEventListener('click', function() {
+                    var tempInput = document.createElement('input');
+                    document.body.appendChild(tempInput);
+                    tempInput.value = textToCopy;
+                    tempInput.select();
+                    document.execCommand('copy');
+                    tempInput.remove();
+                    copyMsg.classList.add('copied-msg');
+                    copyButton.classList.add('copied-img');
+                    setTimeout(function() {
+                    copyMsg.classList.remove('copied-msg');
+                    copyButton.classList.remove('copied-img');
+                    }, 1000);
+                });
+                });
+        </script>
 
     </body>
 </html>
