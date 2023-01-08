@@ -10,7 +10,7 @@
 
     <body>
 
-        <!-- navbar -->
+        <!-- Navbar -->
         <?php include_once ('../assets/module/navbar.php'); ?>
 
         <main>
@@ -23,21 +23,21 @@
 
                     <div class="job-box">
                         <div id="p-code-left">&lt;p&gt;</div>
-                        <a href="#" id="job-1">
+                        <a href="/fr/projets.php" id="job-1">
                             <p><span id="job-1-txt1">Web</span> <span id="job-1-txt2">Designer</span></p>
                         </a>
                         <div id="p-code-right">&lt;/p&gt;</div>
                     </div>
                     
                     <div class="job-box">
-                        <a href="#" id="job-2">
+                        <a href="/fr/projets.php" id="job-2">
                             <p>Motion designer</p>
                             <p>Motion designer</p>
                         </a>
                     </div>
                 
                     <div class="job-box">
-                        <a href="#" id="job-3">
+                        <a href="/fr/projets.php" id="job-3">
                             <p><span id="job-3-txt1">Graphic</span> <span id="job-3-txt2">Designer</span></p>
                         </a>
                     </div>
@@ -46,7 +46,7 @@
 
                 <div class="col-right">
                     
-                    <a class="portrait-content" href="#">
+                    <a class="portrait-content" href="/fr/parcours.php">
                         <div id="square-1"></div>
                         <div id="square-2"></div>
                         <img class="portrait" src="/assets/img/portrait-dh.jpg">
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="bottom-tab">
-                    <a href="#" class="scroll-down">
+                    <a href="#sec-home-02" class="scroll-down">
                         <span id="ch-1"></span>
                         <span id="ch-2"></span>
                         <span id="ch-3"></span>
@@ -84,29 +84,33 @@
 
                     <div class="btn-box">
 
-                        <a href="#" class="welcome-btn">
+                        <a href="/fr/projets.php" class="welcome-btn">
                             <img src="/assets/svg/ico-picture-blanc.svg" alt="icone d'un soleil au dessus de deux collines">
                             <p>Voir mes projets</p>
                         </a>
 
-                        <a href="#" class="welcome-btn">
+                        <a href="/fr/parcours.php" class="welcome-btn">
                             <img src="/assets/svg/ico-sacoche-blanc.svg" alt="icone d'une sacoche de travail">
                             <p>Mon parcours & CV</p>
                         </a>
 
-                        <a href="#" class="welcome-btn">
+                        <a href="/fr/contact.php" class="welcome-btn">
                             <img src="/assets/svg/ico-enveloppe-blanc.svg" alt="icone d'une enveloppe postale">
                             <p>Me contacter</p>
                         </a>
 
-                        <a href="#" class="welcome-btn">
+                        <a href="https://www.instagram.com/darius_hollard/" target="_blank" class="welcome-btn">
                             <img src="/assets/svg/ico-pouce-blanc.svg" alt="icone d'une pouce vers le haut">
                             <p>Où me suivre</p>
                         </a>
 
-                        <a href="#" class="welcome-btn" id="easter-clue">
+                        <a class="welcome-btn" id="easter-clue">
                             <img src="/assets/svg/ico-easter-blanc.svg" alt="icone d'un oeuf de pâques">
                             <p>Easter egg</p>
+
+                            <div class="popover-easter">
+                                <p id="clue-message">🔎 Inspectez en bas</p>
+                            </div>
                         </a>
 
                     </div>
@@ -125,7 +129,7 @@
 
                     <div class="process-btn-bloc">
                         <p>Prototype interactif du site :</p>
-                        <a href="#" target="_blank">Maquette Figma</a>
+                        <a href="https://www.figma.com/file/MteIU7aD4xXnPuOax6YnlT/Porfolio-perso-V1?node-id=0%3A1&t=MthQvsCoa1aIF2xx-1" target="_blank">Maquette Figma</a>
                     </div>
 
                     <div class="process-btn-bloc">
@@ -148,105 +152,30 @@
 
         </main>
 
-        <footer>
-            <div class="footer-container">
+        <!-- Footer -->
+        <?php include_once ('../assets/module/footer.php'); ?>
 
-                <div id="footer-col-1">
-
-                    <div id="foot-logo-box">
-                        <!-- Easter Egg trouvé ! Bravo 🐇🥚 -->
-                        <img src="/assets/svg/logo-dh-blanc.svg" alt="logo DH">
-                    </div>
-
-                    <div id="foot-hr"></div>
-
-                    <div id="foot-left-content">
-
-                        <div class="left-title">
-                            <p>Contact</p>
-                        </div>
-
-                        <div class="contact-mail">
-                            <p id="text-to-copy">contact@darius-hollard.com</p>
-                            <span class="copy-button" src="/assets/svg/ico-copyto-blanc.svg" alt="copier vers presse-papier">
-                                <span class="copy-message">Copié !</span>
-                            </span>
-                        </div>
-
-                        <div class="social-icons">
-                            <a id="social-ico-1" href="https://www.linkedin.com/in/darius-hollard/" target="_blank" aria-label="Voir mon profil LinkedIn"></a>
-                            <a id="social-ico-2" href="https://www.instagram.com/darius_hollard/" target="_blank" aria-label="Voir mon compte Instagram"></a>
-                            <a id="social-ico-3" href="https://github.com/dhollard" target="_blank" aria-label="Voir mes projets GitHub"></a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="footer-col-2">
-                    <a href="#" id="legal-link">
-                        <div class="left-chevron">
-                            <span></span>
-                        </div>
-                        <div class="legal-txt">Mentions légales</div>
-                        <div class="right-chevron">
-                            <span></span>
-                        </div>
-                    </a>
-                    <p>Copyright © <?php echo date("Y"); ?></p>
-                    <p>Tous droits réservés à <span>Darius Hollard</span></p>
-                </div>
-
-            </div>
-
-        </footer>
-
-        <!-- A DEPLACER DANS MODULE END PAGE COMMUN -->
-
-        <!-- CSS Preload :hover icons -->
-        <style type="text/css">
-            body::after {
-            position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-            content:
-            /* footer */
-            url('/assets/svg/ico-linkedin-primary.svg')
-            url('/assets/svg/ico-instagram-primary.svg')
-            url('/assets/svg/ico-github-primary.svg')
-            url('/assets/svg/ico-copyto-primary.svg')
-            }
-        </style>
-
-        <!-- Font preloader -->
-        <div class="font-preloader" style="opacity:0">
-            <span style="font-family:Alegreya; font-weight: 900;">texte</span>
-            <span style="font-family:Alegreya; font-style:italic; font-size: 72px; font-weight: 700; color: #FF6666;">Designer</span>
-        </div>
-
-        <!-- Script interactions navbar -->
-        <script defer src="/assets/script/navbar-interactions.js"></script>
-
-        <!-- Script pour bouton copy to clipboard -->
+        <!-- Script pop-over indice easter egg-->
         <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                var copyButton = document.querySelector('.copy-button');
-                var copyMsg = document.querySelector('.copy-message');
-                var textToCopy = document.querySelector('#text-to-copy').textContent;
-                copyButton.addEventListener('click', function() {
-                    var tempInput = document.createElement('input');
-                    document.body.appendChild(tempInput);
-                    tempInput.value = textToCopy;
-                    tempInput.select();
-                    document.execCommand('copy');
-                    tempInput.remove();
-                    copyMsg.classList.add('copied-msg');
-                    copyButton.classList.add('copied-img');
+            var button = document.querySelector('#easter-clue');
+            var popover = document.querySelector('.popover-easter');
+            var message = document.querySelector('#clue-message');
+
+            button.addEventListener('click', function() {
+                popover.classList.add('show');
+                if (message.textContent === '🔎 Inspectez en bas') {
+                    message.textContent = '👀 Lire entre les lignes';
+                    } else {
+                        message.textContent = '🔎 Inspectez en bas';
+                    }
                     setTimeout(function() {
-                    copyMsg.classList.remove('copied-msg');
-                    copyButton.classList.remove('copied-img');
-                    }, 1000);
-                });
+                    popover.classList.remove('show');
+                    }, 2000);
                 });
         </script>
+
+        <!-- Appels et scripts de fin de page -->
+        <?php include_once ('../assets/module/end-page-module.php'); ?>   
 
     </body>
 </html>

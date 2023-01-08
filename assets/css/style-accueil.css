@@ -132,6 +132,7 @@ html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -729,7 +730,7 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 1600px) {
   #sec-home-01 {
     padding: 160px 20px 60px 20px;
-    gap: 40px 110px;
+    gap: 40px 170px;
   }
 }
 @media (min-width: 1900px) {
@@ -812,7 +813,7 @@ footer .footer-container #footer-col-2 p span {
 }
 @media (min-width: 1600px) {
   #sec-home-01 .col-left .sec-title {
-    font-size: 120px;
+    font-size: 110px;
   }
 }
 #sec-home-01 .col-left .job-box {
@@ -1335,12 +1336,47 @@ footer .footer-container #footer-col-2 p span {
   height: 25px;
 }
 #sec-home-02 .mid-container .btn-box #easter-clue {
+  position: relative;
   display: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #sec-home-02 .mid-container .btn-box #easter-clue {
     display: flex;
   }
+}
+#sec-home-02 .mid-container .btn-box .popover-easter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -90px;
+  min-width: 135px;
+  background: rgba(25, 5, 23, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: none;
+  text-align: center;
+  border-radius: 5px;
+}
+#sec-home-02 .mid-container .btn-box .popover-easter::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 10px 14px;
+  border-color: rgba(25, 5, 23, 0.6) transparent;
+  display: block;
+}
+#sec-home-02 .mid-container .btn-box .popover-easter.show {
+  display: block;
+}
+#sec-home-02 .mid-container .btn-box .popover-easter #clue-message {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 17px !important;
 }
 @media (min-width: 992px) {
   #sec-home-02 #blob-A {

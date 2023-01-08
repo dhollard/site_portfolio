@@ -17,15 +17,15 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">Mes projets</a>
+                <a href="/fr/projets.php" class="nav-link">Mes projets</a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">Mon parcours</a>
+                <a href="/fr/parcours.php" class="nav-link">Mon parcours</a>
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">Me contacter</a>
+                <a href="/fr/contact.php" class="nav-link">Me contacter</a>
             </li>
 
         </ul>

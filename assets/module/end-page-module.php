@@ -1,0 +1,45 @@
+<!-- CSS Preload :hover icons -->
+<style type="text/css">
+    body::after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        z-index: -1;
+        content:
+            /* footer */
+            url('/assets/svg/ico-linkedin-primary.svg') url('/assets/svg/ico-instagram-primary.svg') url('/assets/svg/ico-github-primary.svg') url('/assets/svg/ico-copyto-primary.svg')
+    }
+</style>
+
+<!-- Font preloader -->
+<div class="font-preloader" style="opacity:0">
+    <span style="font-family:Alegreya; font-weight: 900;">texte</span>
+    <span style="font-family:Alegreya; font-style:italic; font-size: 72px; font-weight: 700; color: #FF6666;">Designer</span>
+</div>
+
+<!-- Script interactions navbar -->
+<script defer src="/assets/script/navbar-interactions.js"></script>
+
+<!-- Script pour bouton copy to clipboard -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var copyButton = document.querySelector('.copy-button');
+        var copyMsg = document.querySelector('.copy-message');
+        var textToCopy = document.querySelector('#text-to-copy').textContent;
+        copyButton.addEventListener('click', function() {
+            var tempInput = document.createElement('input');
+            document.body.appendChild(tempInput);
+            tempInput.value = textToCopy;
+            tempInput.select();
+            document.execCommand('copy');
+            tempInput.remove();
+            copyMsg.classList.add('copied-msg');
+            copyButton.classList.add('copied-img');
+            setTimeout(function() {
+                copyMsg.classList.remove('copied-msg');
+                copyButton.classList.remove('copied-img');
+            }, 1000);
+        });
+    });
+</script>

@@ -26,7 +26,7 @@
     // media query #sec-home-01
     @include mquery.desktop-xl { 
         padding: 160px 20px 60px 20px;
-        gap: 40px 110px;
+        gap: 40px 170px;
     }
 
     // media query #sec-home-01
@@ -96,7 +96,7 @@
                 }
 
                 @include mquery.desktop-xl {
-                    font-size: 120px;
+                    font-size: 110px;
                 }
         }
 
@@ -673,13 +673,56 @@
             }
 
             #easter-clue {
+                position: relative;
                 display: none;
+                cursor: pointer;
 
                 // media query welcome-btn
                 @include mquery.landscape { 
                     display: flex;
                 }
             }
+
+            //pop-over d'indice easter egg
+            .popover-easter {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -90px;
+                min-width: 135px;
+                background: rgba(25, 5, 23, 0.6);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                padding: 10px;
+                display: none;
+                text-align: center;
+                border-radius: 5px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -14px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-style: solid;
+                    border-width: 0 10px 14px;
+                    border-color: rgba(25, 5, 23, 0.6) transparent;
+                    display: block;
+                }
+
+                //état visible
+                &.show {
+                    display: block;
+                }
+
+
+                //texte du pop-over easter egg
+                #clue-message {
+                    margin: auto;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    font-size: 17px!important;
+                }
+              }
 
             
         }
