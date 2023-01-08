@@ -354,6 +354,16 @@ footer {
   z-index: 2;
   position: relative;
 }
+@media (min-width: 768px) {
+  footer {
+    padding: 40px 40px;
+  }
+}
+@media (min-width: 1600px) {
+  footer {
+    padding: 40px 100px;
+  }
+}
 footer .footer-container {
   width: 100%;
   max-width: 2600px;
@@ -372,17 +382,19 @@ footer .footer-container #footer-col-1 {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  gap: 40px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   footer .footer-container #footer-col-1 {
     justify-content: start;
+    margin-bottom: 0;
   }
 }
 footer .footer-container #footer-col-1 #foot-logo-box {
   display: none;
 }
 footer .footer-container #footer-col-1 #foot-logo-box img {
-  width: 50px;
+  width: 135px;
 }
 @media (min-width: 992px) {
   footer .footer-container #footer-col-1 #foot-logo-box {
@@ -393,7 +405,8 @@ footer .footer-container #footer-col-1 #foot-hr {
   display: none;
   width: 4px;
   height: 100%;
-  background: #ffffff;
+  background-color: #ffffff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 80%, rgba(0, 0, 0, 0) 100%);
 }
 @media (min-width: 992px) {
   footer .footer-container #footer-col-1 #foot-hr {
@@ -419,6 +432,18 @@ footer .footer-container #footer-col-1 #foot-left-content .left-title p {
     font-size: 24px;
   }
 }
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-1 #foot-left-content .left-title p {
+    text-align: left;
+    margin: auto 0 6px 0;
+    font-weight: 500;
+  }
+}
+@media (min-width: 992px) {
+  footer .footer-container #footer-col-1 #foot-left-content .left-title p {
+    font-size: 26px;
+  }
+}
 footer .footer-container #footer-col-1 #foot-left-content .contact-mail {
   display: flex;
   justify-content: center;
@@ -438,12 +463,16 @@ footer .footer-container #footer-col-1 #foot-left-content .contact-mail p {
     font-size: 18px;
   }
 }
+@media (max-width: 400px) {
+  footer .footer-container #footer-col-1 #foot-left-content .contact-mail p {
+    font-size: 18px;
+  }
+}
 footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copy-button {
   position: relative;
-  width: 23px;
-  height: 23px;
-  margin-top: 2px;
-  margin-left: 8px;
+  width: 21px;
+  height: 21px;
+  margin: auto 0 auto 8px;
   background-image: url("/assets/svg/ico-copyto-blanc.svg");
   cursor: pointer;
 }
@@ -452,9 +481,10 @@ footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copy-bu
 }
 footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copy-message {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -50px;
+  width: 49px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: -28px;
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -466,6 +496,14 @@ footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copy-me
 @media (min-width: 1600px) {
   footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copy-message {
     font-size: 18px;
+  }
+}
+@media (min-width: 500px) {
+  footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copy-message {
+    top: 50%;
+    left: auto;
+    transform: translate(0%, -50%);
+    right: -55px;
   }
 }
 footer .footer-container #footer-col-1 #foot-left-content .contact-mail .copied-msg {
@@ -480,9 +518,25 @@ footer .footer-container #footer-col-1 #foot-left-content .social-icons {
   justify-content: center;
   gap: 30px;
 }
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-1 #foot-left-content .social-icons {
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-1 #foot-left-content .social-icons {
+    justify-content: left;
+  }
+}
 footer .footer-container #footer-col-1 #foot-left-content .social-icons a {
   width: 50px;
   height: 50px;
+}
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-1 #foot-left-content .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
 }
 footer .footer-container #footer-col-1 #foot-left-content .social-icons #social-ico-1 {
   background: url("/assets/svg/ico-linkedin-blanc.svg");
@@ -507,15 +561,25 @@ footer .footer-container #footer-col-2 {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-2 {
+    justify-content: end;
+  }
+}
 footer .footer-container #footer-col-2 #legal-link {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 40px auto;
   position: relative;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-2 #legal-link {
+    margin: 0 0 20px auto;
+  }
 }
 footer .footer-container #footer-col-2 #legal-link .left-chevron {
   display: flex;
@@ -528,8 +592,8 @@ footer .footer-container #footer-col-2 #legal-link .left-chevron span {
   border-right: 2px solid white;
   border-top: 2px solid white;
   margin: auto;
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
 }
 footer .footer-container #footer-col-2 #legal-link:hover .left-chevron {
   transform: translateX(-3px);
@@ -541,7 +605,7 @@ footer .footer-container #footer-col-2 #legal-link .right-chevron {
   display: flex;
   transition: all 0.5s ease;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   footer .footer-container #footer-col-2 #legal-link .right-chevron {
     display: none;
   }
@@ -552,8 +616,8 @@ footer .footer-container #footer-col-2 #legal-link .right-chevron span {
   border-left: 2px solid white;
   border-bottom: 2px solid white;
   margin: auto;
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
 }
 footer .footer-container #footer-col-2 #legal-link:hover .right-chevron {
   transform: translateX(3px);
@@ -566,8 +630,7 @@ footer .footer-container #footer-col-2 #legal-link .legal-txt {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 20px;
   margin: 0px auto 2px auto;
 }
 @media (min-width: 1600px) {
@@ -584,7 +647,6 @@ footer .footer-container #footer-col-2 p {
   font-weight: 400;
   color: #ffffff;
   font-size: 18px;
-  font-weight: 500;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 5px auto;
@@ -592,6 +654,11 @@ footer .footer-container #footer-col-2 p {
 @media (min-width: 1600px) {
   footer .footer-container #footer-col-2 p {
     font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer-container #footer-col-2 p {
+    margin: 0 0 5px auto;
   }
 }
 footer .footer-container #footer-col-2 p span {

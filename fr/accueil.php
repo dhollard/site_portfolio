@@ -155,7 +155,7 @@
 
                     <div id="foot-logo-box">
                         <!-- Easter Egg trouvé ! Bravo 🐇🥚 -->
-                        <img src="/assets/svg/ico-pouce-blanc.svg" alt="logo DH">
+                        <img src="/assets/svg/logo-dh-blanc.svg" alt="logo DH">
                     </div>
 
                     <div id="foot-hr"></div>
@@ -169,7 +169,7 @@
                         <div class="contact-mail">
                             <p id="text-to-copy">contact@darius-hollard.com</p>
                             <span class="copy-button" src="/assets/svg/ico-copyto-blanc.svg" alt="copier vers presse-papier">
-                                <span class="copy-message">Copié!</span>
+                                <span class="copy-message">Copié !</span>
                             </span>
                         </div>
 

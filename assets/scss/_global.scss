@@ -273,7 +273,17 @@ footer {
     padding: 40px 20px;
     background: color.$ambiance-160;
     z-index: 2;
-    position: relative;   
+    position: relative; 
+    
+    // media query footer
+    @include mquery.landscape {  
+        padding: 40px 40px;
+    }
+
+    // media query footer
+    @include mquery.desktop-xl {  
+        padding: 40px 100px;
+    }
 
     //container du footer
     .footer-container {
@@ -296,10 +306,12 @@ footer {
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
+            gap: 40px;
 
             // media query footer-col-1
-            @include mquery.laptop {  
+            @include mquery.landscape {  
                 justify-content: start;
+                margin-bottom: 0;
             }
 
             // logo du footer (+ easter egg)
@@ -307,7 +319,7 @@ footer {
                 display: none;
 
                 img {
-                    width: 50px;
+                    width: 135px;
                 }
 
                 // media query foot-logo-box
@@ -321,7 +333,8 @@ footer {
                 display: none;
                 width: 4px;
                 height: 100%;
-                background: #ffffff;
+                background-color: #ffffff;
+                background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(0,0,0,0) 100%);
 
                 // media query foot-hr
                 @include mquery.laptop {  
@@ -343,6 +356,18 @@ footer {
                         width: -moz-fit-content;
                         width: fit-content;
                         margin: auto auto 6px auto;
+
+                        // media query texte left-title
+                        @include mquery.landscape {  
+                            text-align: left;
+                            margin: auto 0 6px 0;
+                            font-weight: 500;
+                        }
+
+                        // media query texte left-title
+                        @include mquery.laptop {  
+                            font-size: 26px;
+                        }
                     }
                 }
 
@@ -357,14 +382,18 @@ footer {
                         font-size: 20px;
                         font-weight: 500;
                         margin: 0;
+
+                        // media query
+                        @include mquery.phone {
+                            font-size: 18px;
+                        }
                     }
 
                     .copy-button {
                         position: relative;
-                        width: 23px;
-                        height: 23px;
-                        margin-top: 2px;
-                        margin-left: 8px;
+                        width: 21px;
+                        height: 21px;
+                        margin: auto 0 auto 8px;
                         background-image: url('/assets/svg/ico-copyto-blanc.svg');
                         cursor: pointer;
 
@@ -375,13 +404,22 @@ footer {
 
                     .copy-message {
                         position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: -50px;
+                        width: 49px;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        top: -28px;
                         @include typo.text($color:color.$primary-100);
                         font-size: 16px!important;
                         font-weight: 600;
                         display: none;
+
+                        // media query
+                        @include mquery.tablet {  
+                            top: 50%;
+                            left: auto;
+                            transform: translate(0%, -50%);
+                            right: -55px;
+                        }
                     }
 
                     .copied-msg {
@@ -400,9 +438,25 @@ footer {
                     justify-content: center;
                     gap: 30px;
 
+                    // media query social icons
+                    @include mquery.landscape {  
+                        gap: 15px;
+                    }
+
+                    // media query foot-hr
+                    @include mquery.landscape {  
+                        justify-content: left;
+                    }
+
                     a {
                         width: 50px;
                         height: 50px;
+
+                        // media query icones reseau footer
+                        @include mquery.landscape {  
+                            width: 40px;
+                            height: 40px;
+                        }
                     }
 
                     #social-ico-1 {
@@ -439,16 +493,26 @@ footer {
             flex-direction: column;
             justify-content: center;
 
+            // media query footer-col-2
+            @include mquery.landscape {  
+                justify-content: end;
+            }
+
             //lien des mentions légales
             #legal-link {
                 display: flex;
                 flex-direction: row;
-                gap: 15px;
+                gap: 10px;
                 width: -moz-fit-content;
                 width: fit-content;
                 margin: 0 auto 40px auto;
                 position: relative;
                 text-decoration: none;
+
+                // media query #legal-link
+                @include mquery.landscape {  
+                    margin: 0 0 20px auto;
+                }
 
                 // chevron gauche lien mentions légales
                 .left-chevron {
@@ -462,8 +526,8 @@ footer {
                         border-right: 2px solid white;
                         border-top: 2px solid white;
                         margin: auto;
-                        width: 14px;
-                        height: 14px;
+                        width: 11px;
+                        height: 11px;
                     }
                 }
 
@@ -481,7 +545,7 @@ footer {
                     transition: all 0.5s ease;
 
                     // media query span crochet mentions légales
-                    @include mquery.laptop {  
+                    @include mquery.landscape {  
                         display: none;
                     }
 
@@ -491,8 +555,8 @@ footer {
                         border-left: 2px solid white;
                         border-bottom: 2px solid white;
                         margin: auto;
-                        width: 14px;
-                        height: 14px;
+                        width: 11px;
+                        height: 11px;
                     }
                 }
 
@@ -506,8 +570,7 @@ footer {
 
                 .legal-txt {
                     @include typo.text($color:#ffffff);
-                    font-size: 22px;
-                    font-weight: 500;
+                    font-size: 20px;
                     margin: 0px auto 2px auto;
                 }
 
@@ -521,10 +584,14 @@ footer {
             p {
                 @include typo.text($color:#ffffff);
                 font-size: 18px;
-                font-weight: 500;
                 width: -moz-fit-content;
                 width: fit-content;
                 margin: 0 auto 5px auto;
+
+                // media query texte footer col-2
+                @include mquery.landscape {  
+                    margin: 0 0 5px auto;
+                }
 
                 // texte en gras
                 span {
