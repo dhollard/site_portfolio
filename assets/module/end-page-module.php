@@ -18,6 +18,17 @@
     <span style="font-family:Alegreya; font-style:italic; font-size: 72px; font-weight: 700; color: #FF6666;">Designer</span>
 </div>
 
+<!-- Retire la classe qui délaie les transitions au chargement après un délai -->
+<script>document.addEventListener("DOMContentLoaded", function () {
+    var elements = document.querySelectorAll(".wait-for-load");
+        elements.forEach(function (element) {
+            setTimeout(function () {
+                element.classList.remove("wait-for-load");
+            }, 10);
+        });
+    });
+</script>
+
 <!-- Script interactions navbar -->
 <script defer src="/assets/script/navbar-interactions.js"></script>
 

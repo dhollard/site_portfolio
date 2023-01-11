@@ -147,6 +147,14 @@ main {
   margin: auto;
 }
 
+.wait-for-load, .wait-for-load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 .navbar {
   background: rgba(38, 22, 36, 0.8);
   backdrop-filter: blur(4px);

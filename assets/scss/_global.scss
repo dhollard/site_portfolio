@@ -25,6 +25,15 @@ main {
     margin: auto;
 }
 
+//classe pour retarder les effets de transitions qui se déclenchent au chargement
+.wait-for-load, .wait-for-load * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+
 // navbar
 .navbar {
     background: rgba(38, 22, 36, 0.8);

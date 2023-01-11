@@ -22,11 +22,11 @@
                     <h1 class="sec-title">Darius Hollard</h1>
 
                     <div class="job-box">
-                        <div id="p-code-left">&lt;p&gt;</div>
+                        <div id="p-code-left" class="wait-for-load">&lt;p&gt;</div>
                         <a href="/fr/projets.php" id="job-1">
                             <p><span id="job-1-txt1">Web</span> <span id="job-1-txt2">Designer</span></p>
                         </a>
-                        <div id="p-code-right">&lt;/p&gt;</div>
+                        <div id="p-code-right" class="wait-for-load">&lt;/p&gt;</div>
                     </div>
                     
                     <div class="job-box">
@@ -46,7 +46,7 @@
 
                 <div class="col-right">
                     
-                    <a class="portrait-content" href="/fr/parcours.php">
+                    <a class="portrait-content wait-for-load" href="/fr/parcours.php">
                         <div id="square-1"></div>
                         <div id="square-2"></div>
                         <img class="portrait" src="/assets/img/portrait-dh.jpg">
@@ -61,7 +61,7 @@
                     
                 </div>
 
-                <div class="bottom-tab">
+                <div class="bottom-tab wait-for-load">
                     <a href="#sec-home-02" class="scroll-down">
                         <span id="ch-1"></span>
                         <span id="ch-2"></span>

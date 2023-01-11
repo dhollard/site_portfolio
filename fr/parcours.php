@@ -1,4 +1,14 @@
-<!-- navbar -->
-<?php include_once ('../assets/module/navbar.php'); ?>
+<!doctype html>
+<html lang="fr">
 
-En construction
+    <head>
+        <link rel="stylesheet" href="/assets/css/style-parcours.css">
+    </head>
+
+    <body>
+
+        <!-- navbar -->
+        <?php include_once ('../assets/module/navbar.php'); ?>
+
+    </body>
+</html>
