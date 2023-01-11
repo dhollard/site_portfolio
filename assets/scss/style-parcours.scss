@@ -4,3 +4,109 @@
 @use 'global';
 
 // section 01
+#sec-parc-01 {
+    padding: 110px 20px 40px 20px;
+
+    //gros titre page
+    .page-title {
+        @include typo.special-title($color:color.$primary-100);
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto 20px 0;
+    }
+
+    //conteneur timeline chronologique
+    .timeline-container {
+
+        //row (ligne) timeline
+        .time-row {
+
+            //date d'un module de temps
+            .time-date {
+                @include typo.special-title($color:#ffffff);
+            }
+
+            //fenetre module timeline
+            .time-module {
+                background: color.$ambiance-120;
+                border-radius: 10px;
+
+                //contenu du module
+                .module-content {
+                    padding: 20px 15px;
+                    
+                    .mod-toggled {
+                        display: none;
+
+                        &.visible {
+                            display: block;
+                        }
+                    }
+
+                    //titre module timeline
+                    .mod-title {
+                        @include typo.title($color:color.$primary-100);
+                    }
+
+                    //paragraphes de texte module timeline
+                    .mod-txt {
+                        @include typo.text($color:#ffffff);
+                    }
+
+                    //liste à puce module timeline
+                    ul {
+                        padding-inline-start: 18px;
+
+                        li {
+                            @include typo.text($color:#ffffff);
+
+                        }
+                    }
+
+                    .mod-separator {
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background: color.$primary-100;
+                    }
+
+                }
+
+                //barre du bas du module pour déplier/replier contenu
+                .mod-bottom-bar {
+                    width: 100%;
+                    height: 55px;
+                    border-radius: 0 0 10px 10px;
+                    background: color.$ambiance-160;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    //icone croix
+                    img {
+                        width: 17px;
+                        height: 17px;
+                        margin: auto 5px auto 0;
+
+                        &.open {
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                    //texte bouton
+                    p {
+                        @include typo.title($color:#ffffff, $weight:500);
+                        font-size: 18px;
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+}
