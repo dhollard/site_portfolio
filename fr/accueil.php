@@ -2,10 +2,16 @@
 <html lang="fr">
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Balises communes -->
+        <?php include_once ('../assets/module/head-module.php'); ?>
+
+        <!-- Appels ressources page -->
         <link rel="stylesheet" href="/assets/css/style-accueil.css">
+
+        <!-- SEO et identité page -->
+        <link rel="canonical" href="https://www.darius-hollard.com/fr/accueil.php"/>
         <title>Darius Hollard - Portfolio</title>
+        <meta name="description" content="Site porfolio de Darius Hollard, designer polyvalent et rigoureux. Consultez mes réalisations de projets, mon parcours, mes infos de contact et d'autres surprises."/>
     </head>
 
     <body>
