@@ -18,7 +18,7 @@
     //début timeline mobile
     .time-flow-header {
         width: 100%;
-        height: 200px;
+        height: 180px;
         position: relative;
 
         .corner-top {
@@ -33,7 +33,7 @@
 
         .corner-center {
             width: 12px;
-            height: 100%;
+            height: 85%;
             position: absolute;
             left: 50%;
             top: 0;
@@ -52,22 +52,37 @@
         //row (ligne) timeline
         .time-row {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-            //date d'un module de temps
-            .time-date {
-                @include typo.special-title($color:#ffffff, $weight:900);
-                font-size: 26px;
-                margin: 0 auto 15px auto;
+
+            .time-anchor {
+                width: 100%;
+                max-width: 500px;
+
+                //date d'un module de temps
+                .time-date {
+                    @include typo.special-title($color:#ffffff, $weight:900);
+                    font-size: 26px;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    margin: 0 auto 15px auto;
+
+                    // media query time-date
+                    @include mquery.laptop {    
+                        font-size: 30px;
+                        margin: 0 auto 15px 0;
+                    }
+                }
             }
-
+            
             //fenetre module timeline
             .time-module {
                 background: color.$ambiance-120;
                 border-radius: 10px;
                 box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
-                max-width: 400px;
+                width: 100%;
+                max-width: 500px;
 
                 //contenu du module
                 .module-content {
@@ -125,12 +140,14 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
 
                     //icone croix
                     img {
                         width: 17px;
                         height: 17px;
                         margin: auto 5px auto 0;
+                        pointer-events: none;
 
                         &.open {
                             transform: rotate(45deg);
@@ -142,6 +159,7 @@
                         @include typo.title($color:#ffffff, $weight:500);
                         font-size: 18px;
                         padding-top: 2px;
+                        pointer-events: none;
                     }
                 }
             }
@@ -151,7 +169,7 @@
         .time-flow-segment {
             position: relative;
             width: 100%;
-            height: 200px;
+            height: 220px;
             padding: 0;
             margin: 0;
 
@@ -160,7 +178,7 @@
                 position: absolute;
                 display: block;
                 width: 12px;
-                height: 80%;
+                height: 70%;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);

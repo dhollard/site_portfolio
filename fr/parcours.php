@@ -38,7 +38,9 @@
 
                 <div class="time-row">
 
-                    <h2 class="time-date">2014 - 2018</h2>
+                    <div class="time-anchor">
+                        <h2 class="time-date">2014 - 2018</h2>
+                    </div>
 
                     <div class="time-module">
                         <div class="module-content">
@@ -69,7 +71,9 @@
 
                 <div class="time-row">
 
-                    <h2 class="time-date">2014 - 2018</h2>
+                    <div class="time-anchor">
+                        <h2 class="time-date">2015 - 2018</h2>
+                    </div>
 
                     <div class="time-module">
                         <div class="module-content">
@@ -113,7 +117,7 @@
     <?php include_once('../assets/module/end-page-module.php'); ?>
 
     <!-- Script de dépliage et de repliage des modules timeline -->
-    <script>
+    <!-- <script>
         document.querySelector('.mod-bottom-bar').addEventListener('click', function() {
             // toggle the class for mod-toggled element
             var toggledContent = document.querySelector('.mod-toggled');
@@ -121,6 +125,23 @@
 
             // toggle the class for the img element
             var img = document.querySelector('.mod-bottom-bar img');
+            img.classList.toggle('open');
+        });
+    </script>-->
+
+    <script>
+        document.addEventListener('click', function(event) {
+            var target = event.target;
+            if (!target.matches('.mod-bottom-bar')) return;
+
+            // select .mod-toggled inside the parent
+            var toggledContent = target.parentNode.querySelector('.mod-toggled');
+            // toggle the class for mod-toggled element
+            toggledContent.classList.toggle('visible');
+
+            // select img inside mod-bottom-bar instance
+            var img = target.querySelector('.mod-bottom-bar img');
+            // toggle the class for the img element
             img.classList.toggle('open');
         });
     </script>
