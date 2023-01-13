@@ -27,11 +27,17 @@
 
             <div class="parc-header">
                 <h1 class="page-title">Mon parcours</h1>
+
+                <div class="time-flow-header">
+                    <span class="corner-top"></span>
+                    <span class="corner-center"></span>
+                </div>
             </div>
 
             <div class="timeline-container">
 
                 <div class="time-row">
+
                     <h2 class="time-date">2014 - 2018</h2>
 
                     <div class="time-module">
@@ -55,8 +61,40 @@
                             <p>En savoir plus</p>
                         </button>
                     </div>
+                </div>
+
+                <div class="time-flow-segment">
+                    <span class="red-line-segment"></span>
+                </div>
+
+                <div class="time-row">
+
+                    <h2 class="time-date">2014 - 2018</h2>
+
+                    <div class="time-module">
+                        <div class="module-content">
+                            <h3 class="mod-title">Titre module</h3>
+                            <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur deserunt ipsum voluptas officia suscipit autem vero ducimus neque ratione!</p>
+                            <div class="mod-toggled">
+                                <span class="mod-separator"></span>
+                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ea?</p>
+                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae possimus alias, ad iusto obcaecati esse nam, officia fuga corporis qui, laudantium eligendi quam voluptatum :</p>
+                                <ul>
+                                    <li>Puce 1</li>
+                                    <li>Puce 2</li>
+                                    <li>Puce 3</li>
+                                    <li>Puce 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="mod-bottom-bar">
+                            <img src="/assets/svg/ico-croix-blanc.svg">
+                            <p>En savoir plus</p>
+                        </button>
+                    </div>
 
                 </div>
+
             </div>
 
 

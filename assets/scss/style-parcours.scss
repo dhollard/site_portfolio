@@ -15,25 +15,63 @@
         margin: 0 auto 20px 0;
     }
 
+    //début timeline mobile
+    .time-flow-header {
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+        .corner-top {
+            display: block;
+            width: calc(50% + 20px);
+            height: 12px;
+            position: absolute;
+            top: 0;
+            left: -20px;
+            background-color: color.$primary-100;
+        }
+
+        .corner-center {
+            width: 12px;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            display: block;
+            background: linear-gradient(180deg, rgb(255, 102, 102) 65%, rgba(0, 0, 0, 0) 100%);
+        }
+
+
+
+    }
+
     //conteneur timeline chronologique
     .timeline-container {
 
         //row (ligne) timeline
         .time-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
             //date d'un module de temps
             .time-date {
-                @include typo.special-title($color:#ffffff);
+                @include typo.special-title($color:#ffffff, $weight:900);
+                font-size: 26px;
+                margin: 0 auto 15px auto;
             }
 
             //fenetre module timeline
             .time-module {
                 background: color.$ambiance-120;
                 border-radius: 10px;
+                box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
+                max-width: 400px;
 
                 //contenu du module
                 .module-content {
-                    padding: 20px 15px;
+                    padding: 20px 15px 5px 15px;
                     
                     .mod-toggled {
                         display: none;
@@ -45,17 +83,21 @@
 
                     //titre module timeline
                     .mod-title {
-                        @include typo.title($color:color.$primary-100);
+                        @include typo.title($color:color.$primary-100, $weight:800);
+                        margin: 0 auto 10px auto;
+                        font-size: 18px;
                     }
 
                     //paragraphes de texte module timeline
                     .mod-txt {
-                        @include typo.text($color:#ffffff);
+                        @include typo.text($color:#ffffff, $weight:500);
+                        margin: 0 auto 20px auto;
                     }
 
                     //liste à puce module timeline
                     ul {
                         padding-inline-start: 18px;
+                        margin: 0 auto 20px auto;
 
                         li {
                             @include typo.text($color:#ffffff);
@@ -68,6 +110,7 @@
                         width: 100%;
                         height: 1px;
                         background: color.$primary-100;
+                        margin-bottom: 20px;
                     }
 
                 }
@@ -101,6 +144,27 @@
                         padding-top: 2px;
                     }
                 }
+            }
+        }
+
+        //zone séparatrice inter-module sur mobile
+        .time-flow-segment {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            padding: 0;
+            margin: 0;
+
+            //ligne rouge mobile
+            .red-line-segment {
+                position: absolute;
+                display: block;
+                width: 12px;
+                height: 80%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(255, 102, 102) 35%, rgb(255, 102, 102) 65%, rgba(0, 0, 0, 0) 100%);
             }
         }
 

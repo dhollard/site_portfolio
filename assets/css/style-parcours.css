@@ -739,11 +739,42 @@ footer .footer-container #footer-col-2 p span {
     font-size: 90px;
   }
 }
+#sec-parc-01 .time-flow-header {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+#sec-parc-01 .time-flow-header .corner-top {
+  display: block;
+  width: calc(50% + 20px);
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background-color: #FF6666;
+}
+#sec-parc-01 .time-flow-header .corner-center {
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: block;
+  background: linear-gradient(180deg, rgb(255, 102, 102) 65%, rgba(0, 0, 0, 0) 100%);
+}
+#sec-parc-01 .timeline-container .time-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 #sec-parc-01 .timeline-container .time-row .time-date {
   font-family: "Playfair", serif;
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
+  font-size: 26px;
+  margin: 0 auto 15px auto;
 }
 @media (min-width: 992px) {
   #sec-parc-01 .timeline-container .time-row .time-date {
@@ -758,9 +789,11 @@ footer .footer-container #footer-col-2 p span {
 #sec-parc-01 .timeline-container .time-row .time-module {
   background: #261624;
   border-radius: 10px;
+  box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
+  max-width: 400px;
 }
 #sec-parc-01 .timeline-container .time-row .time-module .module-content {
-  padding: 20px 15px;
+  padding: 20px 15px 5px 15px;
 }
 #sec-parc-01 .timeline-container .time-row .time-module .module-content .mod-toggled {
   display: none;
@@ -771,8 +804,10 @@ footer .footer-container #footer-col-2 p span {
 #sec-parc-01 .timeline-container .time-row .time-module .module-content .mod-title {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   color: #FF6666;
+  margin: 0 auto 10px auto;
+  font-size: 18px;
 }
 @media (min-width: 1600px) {
   #sec-parc-01 .timeline-container .time-row .time-module .module-content .mod-title {
@@ -782,8 +817,9 @@ footer .footer-container #footer-col-2 p span {
 #sec-parc-01 .timeline-container .time-row .time-module .module-content .mod-txt {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: #ffffff;
+  margin: 0 auto 20px auto;
 }
 @media (min-width: 1600px) {
   #sec-parc-01 .timeline-container .time-row .time-module .module-content .mod-txt {
@@ -792,6 +828,7 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-parc-01 .timeline-container .time-row .time-module .module-content ul {
   padding-inline-start: 18px;
+  margin: 0 auto 20px auto;
 }
 #sec-parc-01 .timeline-container .time-row .time-module .module-content ul li {
   font-family: "Assistant", sans-serif;
@@ -809,6 +846,7 @@ footer .footer-container #footer-col-2 p span {
   width: 100%;
   height: 1px;
   background: #FF6666;
+  margin-bottom: 20px;
 }
 #sec-parc-01 .timeline-container .time-row .time-module .mod-bottom-bar {
   width: 100%;
@@ -840,4 +878,21 @@ footer .footer-container #footer-col-2 p span {
   #sec-parc-01 .timeline-container .time-row .time-module .mod-bottom-bar p {
     font-size: 24px;
   }
+}
+#sec-parc-01 .timeline-container .time-flow-segment {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+}
+#sec-parc-01 .timeline-container .time-flow-segment .red-line-segment {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(255, 102, 102) 35%, rgb(255, 102, 102) 65%, rgba(0, 0, 0, 0) 100%);
 }/*# sourceMappingURL=style-parcours.css.map */
