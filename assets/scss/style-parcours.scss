@@ -7,6 +7,10 @@
 #sec-parc-01 {
     padding: 110px 20px 40px 20px;
 
+    .parc-header {
+        position: relative;
+    }
+
     //gros titre page
     .page-title {
         @include typo.special-title($color:color.$primary-100, $weight:800);
@@ -199,6 +203,7 @@
             
             //fenetre module timeline
             .time-module {
+                position: relative;
                 background: color.$ambiance-120;
                 border-radius: 10px;
                 box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
@@ -396,6 +401,15 @@
 
     //partie finale de la timeline
     .timeline-end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        // media query timeline-end
+        @include mquery.desktop-xl {    
+            padding: 50px 0 0 0;
+        }
 
         //titre module de fin
         .end-big-title {
@@ -404,16 +418,25 @@
             width: -moz-fit-content;
             width: fit-content;
             margin: 0 auto 15px auto;
+
+            // media query end-big-title
+            @include mquery.laptop {    
+                font-size: 38px;
+                margin: 0 auto 25px auto;
+            }
         }
 
         //fenetre module de fin de timeline
         .end-module {
+            display: flex;
+            flex-direction: column;
             background: color.$ambiance-120;
             border-radius: 10px;
             box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
             width: 80%;
             max-width: 500px;
-            padding: 20px 15px 5px 15px;
+            padding: 20px 15px 35px 15px;
+            margin: 0 auto;
 
             // media query end-module
             @include mquery.phone {    
@@ -423,23 +446,137 @@
             // media query end-module
             @include mquery.laptop {    
                 max-width: 750px;
-                padding: 30px 30px 10px 30px;
+                padding: 30px 30px 40px 30px;
             }
 
-            //media query end-module
-            @include mquery.desktop-xl {
-                max-width: 500px;
+            //titre module final
+            .end-title {
+                @include typo.title($color:color.$primary-100, $weight:800);
+                margin: 0 auto 10px 0;
+                font-size: 18px;
+
+                // media query end-title
+                @include mquery.laptop {    
+                    font-size: 22px;
+                }
             }
 
             //paragraphes de texte module final
             .end-txt {
                 @include typo.text($color:#ffffff, $weight:500);
-                margin: 0 auto 15px auto;
+                margin: 0 0 15px 0;
                 font-size: 16px;
+            }
+
+            //liste à puce module timeline
+            ul {
+                padding-inline-start: 17px;
+                margin: 0 0 20px 0;
+
+                li {
+                    @include typo.text($color:#ffffff, $weight:500);
+                    font-size: 16px;
+                    margin-bottom: 5px;
+
+                    &::marker {
+                        color: color.$primary-100;
+                    }
+
+                }
+            }
+
+            //bouton module de fin qui mène vers projets
+            .end-btn {
+                @include typo.text($color:#ffffff, $weight:600);
+                font-size: 18px;
+                padding: 10px 20px;
+                background: color.$primary-100;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 10px auto 0 auto;
+
+                &:hover {
+                    background: color.$primary-120;
+                }
             }
 
         }
 
+    }
+
+    //blob header page
+    #blob-A {
+        z-index: -2;
+
+        // media query blob-A
+        @include mquery.laptop { 
+            width: 400px;
+            height: 400px;
+            right: 50%;
+            transform: translateX(145%);
+            top: -170px;
+        }
+
+        // media query blob-A
+        @include mquery.desktop-xl { 
+            top: -60px;
+            transform: translateX(220%);
+        }
+
+    }
+
+    //blob module temporel #1
+    #blob-B {
+        z-index: -2;
+        width: 350px;
+        height: 350px;
+        right: -130px;
+        top: -100px;
+        
+        // media query blob-B
+        @include mquery.laptop { 
+            width: 650px;
+            height: 650px;
+            right: auto;
+            left: -300px;
+            top: -300px;
+        }
+
+        // media query blob-B
+        @include mquery.desktop-xl { 
+            width: 700px;
+            height: 700px;
+            left: -300px;
+            top: -380px;
+        }
+    }
+
+    //blob module temporel #2
+    #blob-C {
+        z-index: -2;
+        width: 350px;
+        height: 350px;
+        left: -70px;
+        top: -360px;
+        transform: rotate(19deg);
+
+        // media query blob-C
+        @include mquery.laptop { 
+            width: 600px;
+            height: 600px;
+            left: auto;
+            right: -310px;
+            top: -370px;
+        }
+
+        // media query blob-C
+        @include mquery.desktop-xl { 
+            width: 700px;
+            height: 700px;
+            right: auto;
+            left: -350px;
+            top: -260px;
+        }
     }
 
 }

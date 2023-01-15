@@ -692,6 +692,16 @@ footer .footer-container #footer-col-2 p span {
   mask: url("/assets/svg/blob-shape-03.svg") no-repeat 50% 50%;
 }
 
+.blob-type-04 {
+  -webkit-mask: url("/assets/svg/blob-shape-04.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-04.svg") no-repeat 50% 50%;
+}
+
+.blob-type-05 {
+  -webkit-mask: url("/assets/svg/blob-shape-05.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-05.svg") no-repeat 50% 50%;
+}
+
 #sec-home-01 {
   background: #342B33;
   padding: 110px 20px 40px 20px;

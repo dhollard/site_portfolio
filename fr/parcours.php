@@ -26,6 +26,8 @@
         <section id="sec-parc-01">
 
             <div class="parc-header">
+                <div class="blob-shape blob-type-04" id="blob-A"></div>
+
                 <h1 class="page-title">Mon parcours</h1>
 
                 <div class="time-flow-header">
@@ -48,6 +50,8 @@
                     </div>
 
                     <div class="time-module">
+                        <div class="blob-shape blob-type-01" id="blob-B"></div>
+
                         <div class="module-content">
                             <h3 class="mod-title">Études de Communication et de Design</h3>
                             <p class="mod-txt">Mes deux premiers diplômes d’études supérieures m’ont permis d’apprendre les compétences théoriques et pratiques pour devenir un designer graphique professionnel.</p>
@@ -84,6 +88,8 @@
                     </div>
 
                     <div class="time-module">
+                        <div class="blob-shape blob-type-05" id="blob-C"></div>
+
                         <div class="module-content">
                             <h3 class="mod-title">Stages d'études</h3>
                             <p class="mod-txt">En parallèle de mes diplômes, j’ai eu l’occasion de réaliser plusieurs stages en entreprise.</p>
@@ -229,7 +235,11 @@
 
                     <p class="end-txt">Quant à mes projets, je vous invite à les découvrir sur la page qui leur est consacrée :</p>
 
-                    <a class="end-btn">Voir mes projets</a>
+                    <a href="/fr/projets.php" class="end-btn">Voir mes projets</a>
+                </div>
+
+                <div id="cv-container">
+                    <div class="cv-btn-mob"></div>
                 </div>
 
             </div>
