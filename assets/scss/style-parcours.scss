@@ -254,7 +254,7 @@
                     .mod-txt {
                         @include typo.text($color:#ffffff, $weight:500);
                         margin: 0 auto 15px auto;
-                        font-size: 16px!important;
+                        font-size: 16px;
                     }
 
                     //liste à puce module timeline
@@ -264,7 +264,7 @@
 
                         li {
                             @include typo.text($color:#ffffff, $weight:500);
-                            font-size: 16px!important;
+                            font-size: 16px;
                             margin-bottom: 5px;
 
                             &::marker {
@@ -311,7 +311,7 @@
                     //texte bouton
                     p {
                         @include typo.title($color:#ffffff, $weight:500);
-                        font-size: 18px!important;
+                        font-size: 18px;
                         padding-top: 2px;
                         pointer-events: none;
                     }
@@ -413,6 +413,7 @@
             box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
             width: 80%;
             max-width: 500px;
+            padding: 20px 15px 5px 15px;
 
             // media query end-module
             @include mquery.phone {    
@@ -422,11 +423,19 @@
             // media query end-module
             @include mquery.laptop {    
                 max-width: 750px;
+                padding: 30px 30px 10px 30px;
             }
 
             //media query end-module
             @include mquery.desktop-xl {
                 max-width: 500px;
+            }
+
+            //paragraphes de texte module final
+            .end-txt {
+                @include typo.text($color:#ffffff, $weight:500);
+                margin: 0 auto 15px auto;
+                font-size: 16px;
             }
 
         }

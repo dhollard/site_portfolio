@@ -657,7 +657,7 @@
 
                 p {
                     @include typo.text($color:#ffffff);
-                    font-size: 20px!important;
+                    font-size: 20px;
                     font-weight: 600;
                     margin: auto 0;
                     
@@ -718,7 +718,7 @@
                     margin: auto;
                     width: -moz-fit-content;
                     width: fit-content;
-                    font-size: 17px!important;
+                    font-size: 17px;
                 }
               }
 

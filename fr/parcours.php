@@ -85,7 +85,7 @@
 
                     <div class="time-module">
                         <div class="module-content">
-                            <h3 class="mod-title">Stages divers</h3>
+                            <h3 class="mod-title">Stages d'études</h3>
                             <p class="mod-txt">En parallèle de mes diplômes, j’ai eu l’occasion de réaliser plusieurs stages en entreprise.</p>
                             <p class="mod-txt">Lors de ces stages, j’ai pu mettre en pratique mes acquis et notamment faire mes premiers pas en rédaction de contenu et en gestion de site internet.</p>
                             <div class="mod-toggled">
@@ -123,18 +123,13 @@
 
                     <div class="time-module">
                         <div class="module-content">
-                            <h3 class="mod-title">Titre module</h3>
-                            <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur deserunt ipsum voluptas officia suscipit autem vero ducimus neque ratione!</p>
+                            <h3 class="mod-title">Études de Motion Design</h3>
+                            <p class="mod-txt">Pour compléter mes diplômes précédents, j’ai passé une année en Licence Professionnelle de Motion Designer.</p>
+                            <p class="mod-txt">J’ai pu y apprendre l’animation 2D et donner vie aux créations numériques que je maîtrisait déjà.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ea?</p>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae possimus alias, ad iusto obcaecati esse nam, officia fuga corporis qui, laudantium eligendi quam voluptatum :</p>
-                                <ul>
-                                    <li>Puce 1</li>
-                                    <li>Puce 2</li>
-                                    <li>Puce 3</li>
-                                    <li>Puce 4</li>
-                                </ul>
+                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de solidifier mes acquis et amener mon intérêt pour la création numérique à un niveau inédit.</p>
+                                <p class="mod-txt">Le Motion Design m’a tout de suite passionné par sa capacité à insuffler une touche de vie dans tous les aspects du monde numérique et à raconter une histoire.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -160,18 +155,13 @@
 
                     <div class="time-module">
                         <div class="module-content">
-                            <h3 class="mod-title">Titre module</h3>
-                            <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur deserunt ipsum voluptas officia suscipit autem vero ducimus neque ratione!</p>
+                            <h3 class="mod-title">Proxis Développement</h3>
+                            <p class="mod-txt">J’ai travaillé une année en alternance au sein du groupe industriel Proxis Développement dans le cadre de mon diplôme de Motion Design.</p>
+                            <p class="mod-txt">J’ai eu pour mission de refondre ou créer des sites internet du groupe, ainsi que des visuels et animations.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ea?</p>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae possimus alias, ad iusto obcaecati esse nam, officia fuga corporis qui, laudantium eligendi quam voluptatum :</p>
-                                <ul>
-                                    <li>Puce 1</li>
-                                    <li>Puce 2</li>
-                                    <li>Puce 3</li>
-                                    <li>Puce 4</li>
-                                </ul>
+                                <p class="mod-txt">J’ai eu l’occasion de prendre en charge des missions variées au cours de mon année d’alternance.</p>
+                                <p class="mod-txt">Travaillant avec beaucoup d’autonomie, en parallèle de mon apprentissage scolaire, cette année m’a permis de me dépasser et confirmer mes capacités dans un cadre professionnel.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -197,18 +187,13 @@
 
                     <div class="time-module">
                         <div class="module-content">
-                            <h3 class="mod-title">Titre module</h3>
-                            <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur deserunt ipsum voluptas officia suscipit autem vero ducimus neque ratione!</p>
+                            <h3 class="mod-title">DataOptique / Welwot</h3>
+                            <p class="mod-txt">Depuis 2020, je travaille en tant que Designer au sein de l’entreprise DataOptique et sa société jumelle Welwot.</p>
+                            <p class="mod-txt">Recruté initialement pour la partie webdesign, j’ai rapidement apporté mes autres compétences sur la table, prenant aussi en charge toute la partie  de communication visuelle et de branding de l’entreprise.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ea?</p>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae possimus alias, ad iusto obcaecati esse nam, officia fuga corporis qui, laudantium eligendi quam voluptatum :</p>
-                                <ul>
-                                    <li>Puce 1</li>
-                                    <li>Puce 2</li>
-                                    <li>Puce 3</li>
-                                    <li>Puce 4</li>
-                                </ul>
+                                <p class="mod-txt">Les besoins de ces deux entreprises étaient nouveaux pour moi. J’avais déjà réalisé des sites internet vitrines, mais mes missions au sein de DataOptique ont poussé mon approche de l’UI/UX plus loin.</p>
+                                <p class="mod-txt">J’ai dû concevoir des interfaces webs complexes, comme tableaux de bord pouvant rivaliser avec une application mobile dédiée.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -226,14 +211,14 @@
             </div>
 
             <div class="timeline-end">
-                <h2 class="end-big-title">Au fil du temps...</h2>
+                <h2 class="end-big-title">Aujourd'hui</h2>
 
                 <div class="end-module">
                     <h3 class="end-title">Auto-apprentissage et projets personnels</h3>
 
                     <p class="end-txt">Je continue d’explorer les nombreux horizons que propose le domaine de la création numérique, en me formant sur de nouveaux outils et en réalisant des projets.</p>
 
-                    <p class="end-txt">Une liste non-exaustive de compétences ayant piqué mon intérêt :</p>
+                    <p class="end-txt">Une liste non-exaustive de domaines de compétences ayant piqué mon intérêt :</p>
 
                     <ul>
                         <li>Modélisation et animation 3D</li>
