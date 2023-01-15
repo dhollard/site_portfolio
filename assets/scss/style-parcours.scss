@@ -27,6 +27,11 @@
             margin: 0 auto 20px auto;
             font-size: 90px;
         }
+
+        //media query timeline-container
+        @include mquery.desktop-xl {
+            margin: 0 auto 50px auto;
+        }
     }
 
     //début timeline mobile
@@ -79,6 +84,11 @@
     .timeline-container {
         position: relative;
 
+        //media query timeline-container
+        @include mquery.desktop-xl {
+            padding: 150px 0;
+        }
+
         .desktop-timeline {
             display: none;
             z-index: -1;
@@ -88,7 +98,7 @@
             left: 50%;
             top: 0;
             transform: translateX(-50%);
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(255, 102, 102) 35%, rgb(255, 102, 102) 65%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(255, 102, 102) 15%, rgb(255, 102, 102) 85%, rgba(0, 0, 0, 0) 100%);
 
             //media query row timeline
             @include mquery.desktop-xl {
@@ -108,6 +118,8 @@
                 flex-direction: row;
                 align-items: start;
                 margin-left: calc(50% - 25px);
+                margin-top: 50px;
+                margin-bottom: 50px;
             }
 
             .time-anchor {
@@ -123,12 +135,12 @@
                 //media query time-anchor
                 @include mquery.desktop-xl {
                     max-width: 300px;
-                    margin: auto 0 auto 20px;
+                    margin: auto 20px auto 0;
                 }
 
                 //date d'un module de temps
                 .time-date {
-                    @include typo.special-title($color:#ffffff, $weight:900);
+                    @include typo.special-title($color:#ffffff, $weight:700);
                     font-size: 26px;
                     width: -moz-fit-content;
                     width: fit-content;
@@ -138,6 +150,15 @@
                     @include mquery.laptop {    
                         font-size: 30px;
                         margin: 0 auto 15px 0;
+                    }
+
+                    // media query time-date
+                    @include mquery.desktop-xl {    
+                        position: absolute;
+                        left: 60px;
+                        top: -20px;
+                        font-size: 24px;
+                        font-weight: 500;
                     }
                 }
 
@@ -164,9 +185,9 @@
                     height: 8px;
                     position: absolute;
                     top: 50%;
-                    right: 5px;
+                    left: 5px;
                     transform: translateY(-50%);
-                    background-color: color.$primary-100;
+                    background: linear-gradient(90deg, rgb(255, 102, 102) 60%, rgba(0, 0, 0, 0) 100%);
                     z-index: -1;
 
                     // media query time-branch
@@ -225,19 +246,15 @@
 
                         // media query mod-title
                         @include mquery.laptop {    
-                            font-size: 24px;
+                            font-size: 22px;
                         }
                     }
 
                     //paragraphes de texte module timeline
                     .mod-txt {
                         @include typo.text($color:#ffffff, $weight:500);
-                        margin: 0 auto 20px auto;
-
-                        // media query mod-txt
-                        @include mquery.laptop {    
-                            font-size: 18px;
-                        }
+                        margin: 0 auto 15px auto;
+                        font-size: 16px!important;
                     }
 
                     //liste à puce module timeline
@@ -247,17 +264,11 @@
 
                         li {
                             @include typo.text($color:#ffffff, $weight:500);
-                            font-size: 16px;
+                            font-size: 16px!important;
                             margin-bottom: 5px;
 
                             &::marker {
                                 color: color.$primary-100;
-                            }
-
-
-                            // media query mod-txt
-                            @include mquery.laptop {    
-                                font-size: 17px;
                             }
 
                         }
@@ -317,20 +328,35 @@
                     margin-left: 0;
                 }
 
-                //date d'un module ferré à gauche
-                .time-date {
-                    // media query time-date
-                    @include mquery.desktop-xl {    
-                        position: absolute;
-                        right: 65px;
-                        top: -10px;
-                        font-size: 28px;
+                .time-anchor {
+                    //media query time-anchor
+                    @include mquery.desktop-xl {
+                        margin: auto 0 auto 20px;
                     }
-                }
 
-                //ronds rouges sur la timeline desktop ferrés à gauche
-                .time-point {
-                    margin: 0 0 0 auto;
+                    //date d'un module ferré à gauche
+                    .time-date {
+                        // media query time-date
+                        @include mquery.desktop-xl {    
+                            right: 60px;
+                            left: auto;
+                        }
+                    }
+
+                    //ronds rouges sur la timeline desktop ferrés à gauche
+                    .time-point {
+                        margin: 0 0 0 auto;
+                    }
+
+                    //branches timeline ferrés à gauche
+                    .time-branch {
+                        @include mquery.desktop-xl {
+                            right: 5px;
+                            left: auto;    
+                            background: linear-gradient(-90deg, rgb(255, 102, 102) 60%, rgba(0, 0, 0, 0) 100%);
+                        }
+                    }
+                
                 }
 
             }
@@ -364,6 +390,46 @@
 
 
 
+
+    }
+
+
+    //partie finale de la timeline
+    .timeline-end {
+
+        //titre module de fin
+        .end-big-title {
+            @include typo.special-title($color:#ffffff, $weight:700);
+            font-size: 26px;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin: 0 auto 15px auto;
+        }
+
+        //fenetre module de fin de timeline
+        .end-module {
+            background: color.$ambiance-120;
+            border-radius: 10px;
+            box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
+            width: 80%;
+            max-width: 500px;
+
+            // media query end-module
+            @include mquery.phone {    
+                width: 100%;
+            }
+
+            // media query end-module
+            @include mquery.laptop {    
+                max-width: 750px;
+            }
+
+            //media query end-module
+            @include mquery.desktop-xl {
+                max-width: 500px;
+            }
+
+        }
 
     }
 

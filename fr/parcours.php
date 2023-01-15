@@ -85,17 +85,18 @@
 
                     <div class="time-module">
                         <div class="module-content">
-                            <h3 class="mod-title">Titre module</h3>
-                            <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur deserunt ipsum voluptas officia suscipit autem vero ducimus neque ratione!</p>
+                            <h3 class="mod-title">Stages divers</h3>
+                            <p class="mod-txt">En parallèle de mes diplômes, j’ai eu l’occasion de réaliser plusieurs stages en entreprise.</p>
+                            <p class="mod-txt">Lors de ces stages, j’ai pu mettre en pratique mes acquis et notamment faire mes premiers pas en rédaction de contenu et en gestion de site internet.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ea?</p>
-                                <p class="mod-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae possimus alias, ad iusto obcaecati esse nam, officia fuga corporis qui, laudantium eligendi quam voluptatum :</p>
+                                <p class="mod-txt">Pendant mon BTS Communication, j’ai pu rédiger de nombreux articles pour la partie blog du site Meilleur Mobile.</p>
+                                <p class="mod-txt">Cette activité m’a sensibilisé aux problématiques du contenu web (ton, phrases courtes, référencement...)</p>
+                                <p class="mod-txt">Lors de mon diplôme de Designer Graphique, j’ai effectué un stage chez l’entreprise Papier Fleur et réalisé plusieurs missions dont :</p>
                                 <ul>
-                                    <li>Puce 1</li>
-                                    <li>Puce 2</li>
-                                    <li>Puce 3</li>
-                                    <li>Puce 4</li>
+                                    <li>Refonte de l’arborescence du site web</li>
+                                    <li>Mockups et illustrations pour leur e-commerce</li>
+                                    <li>Photographies des produits</li>
                                 </ul>
                             </div>
                         </div>
@@ -116,6 +117,8 @@
 
                     <div class="time-anchor">
                         <h2 class="time-date">2018 - 2019</h2>
+                        <span class="time-point"></span>
+                        <span class="time-branch"></span>
                     </div>
 
                     <div class="time-module">
@@ -151,6 +154,8 @@
 
                     <div class="time-anchor">
                         <h2 class="time-date">2018 - 2019</h2>
+                        <span class="time-point"></span>
+                        <span class="time-branch"></span>
                     </div>
 
                     <div class="time-module">
@@ -186,6 +191,8 @@
 
                     <div class="time-anchor">
                         <h2 class="time-date">2020 - 2023</h2>
+                        <span class="time-point"></span>
+                        <span class="time-branch"></span>
                     </div>
 
                     <div class="time-module">
@@ -218,10 +225,29 @@
 
             </div>
 
+            <div class="timeline-end">
+                <h2 class="end-big-title">Au fil du temps...</h2>
 
+                <div class="end-module">
+                    <h3 class="end-title">Auto-apprentissage et projets personnels</h3>
+
+                    <p class="end-txt">Je continue d’explorer les nombreux horizons que propose le domaine de la création numérique, en me formant sur de nouveaux outils et en réalisant des projets.</p>
+
+                    <p class="end-txt">Une liste non-exaustive de compétences ayant piqué mon intérêt :</p>
+
+                    <ul>
+                        <li>Modélisation et animation 3D</li>
+                        <li>Création de musiques et de bruitages</li>
+                        <li>Sketching rapide pour matérialiser une idée et mieux communiquer en équipe</li>
+                        <li>Outils d'intelligence artificielle appliquée</li>
+                    </ul>
+
+                    <p class="end-txt">Quant à mes projets, je vous invite à les découvrir sur la page qui leur est consacrée :</p>
+
+                    <a class="end-btn">Voir mes projets</a>
+                </div>
 
             </div>
-
 
         </section>
 
