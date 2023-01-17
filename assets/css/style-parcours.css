@@ -1257,8 +1257,8 @@ footer .footer-container #footer-col-2 p span {
   z-index: -2;
   width: 400px;
   height: 400px;
-  left: -100px;
-  top: -80px;
+  left: -150px;
+  top: -150px;
 }
 @media (min-width: 992px) {
   #sec-parc-01 #blob-E {

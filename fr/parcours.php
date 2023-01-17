@@ -264,6 +264,8 @@
     <?php include_once('../assets/module/end-page-module.php'); ?>
 
     <!-- Script de dépliage et de repliage des modules timeline -->
+
+    <!-- script V1 -->
     <!-- <script>
         document.querySelector('.mod-bottom-bar').addEventListener('click', function() {
             // toggle the class for mod-toggled element
@@ -276,6 +278,25 @@
         });
     </script>-->
 
+    <!-- script v2 -->
+    <!-- <script>
+        document.addEventListener('click', function(event) {
+            var target = event.target;
+            if (!target.matches('.mod-bottom-bar')) return;
+
+            // select .mod-toggled inside the parent
+            var toggledContent = target.parentNode.querySelector('.mod-toggled');
+            // toggle the class for mod-toggled element
+            toggledContent.classList.toggle('visible');
+
+            // select img inside mod-bottom-bar instance
+            var img = target.querySelector('.mod-bottom-bar img');
+            // toggle the class for the img element
+            img.classList.toggle('open');
+        });
+    </script> -->
+
+    <!-- script v3 -->
     <script>
         document.addEventListener('click', function(event) {
             var target = event.target;
@@ -290,6 +311,20 @@
             var img = target.querySelector('.mod-bottom-bar img');
             // toggle the class for the img element
             img.classList.toggle('open');
+
+            // select p inside mod-bottom-bar instance
+            var txt = target.querySelector('.mod-bottom-bar p').textContent;
+            //sentence to match
+            var phrase = "En savoir plus";
+            // change text depending on current text
+            if (txt.includes(phrase)) {
+                target.querySelector('.mod-bottom-bar p').textContent="Fermer détail";
+
+            } else {
+                target.querySelector('.mod-bottom-bar p').textContent="En savoir plus";
+                  
+            }
+
         });
     </script>
 
