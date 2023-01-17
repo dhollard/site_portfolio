@@ -226,6 +226,9 @@
                 <h2 class="end-big-title">Aujourd'hui</h2>
 
                 <div class="end-module">
+                    <div class="blob-shape blob-type-03" id="blob-G"></div>
+                    <div class="blob-shape blob-type-02" id="blob-H"></div>
+
                     <h3 class="end-title">Auto-apprentissage et projets personnels</h3>
 
                     <p class="end-txt">Je continue d’explorer les nombreux horizons que propose le domaine de la création numérique, en me formant sur de nouveaux outils et en réalisant des projets.</p>

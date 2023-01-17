@@ -428,6 +428,7 @@
 
         //fenetre module de fin de timeline
         .end-module {
+            position: relative;
             display: flex;
             flex-direction: column;
             background: color.$ambiance-120;
@@ -502,6 +503,12 @@
 
         }
 
+    }
+
+    //bloc bouton CV
+    #cv-container {
+        //code temporaire
+        height: 200px;
     }
 
     //blob header page
@@ -629,19 +636,71 @@
     //blob module temporel #5
     #blob-F {
         z-index: -2;
-        width: 400px;
-        height: 400px;
-        right: -100px;
-        bottom: -80px;
+        width: 350px;
+        height: 350px;
+        right: -70px;
+        bottom: -290px;
 
         // media query blob-F
         @include mquery.laptop { 
-
+            width: 700px;
+            height: 700px;
+            right: auto;
+            bottom: auto;
+            left: -150px;
+            top: -350px;
         }
 
         // media query blob-F
         @include mquery.desktop-xl { 
+            left: auto;
+            top: auto;
+            right: -360px;
+            bottom: -220px;
+        }
+    }
 
+    //blob module final n°1
+    #blob-G {
+        z-index: -2;
+        width: 350px;
+        height: 350px;
+        left: -150px;
+        bottom: -200px;
+
+        // media query blob-G
+        @include mquery.laptop { 
+            width: 550px;
+            height: 550px;
+            left: auto;
+            bottom: auto;
+            right: -150px;
+            top: -320px;
+        }
+
+        // media query blob-G
+        @include mquery.desktop-xl { 
+            right: -250px;
+            top: -200px;
+        }
+    }
+
+    //blob module final n°2
+    #blob-H {
+        z-index: -2;
+
+        // media query blob-H
+        @include mquery.laptop { 
+            width: 750px;
+            height: 750px;
+            left: -300px;
+            bottom: -400px;
+        }
+
+        // media query blob-H
+        @include mquery.desktop-xl { 
+            left: -700px;
+            bottom: -300px;
         }
     }
 
