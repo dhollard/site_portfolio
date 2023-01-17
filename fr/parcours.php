@@ -128,6 +128,8 @@
                     </div>
 
                     <div class="time-module">
+                        <div class="blob-shape blob-type-06" id="blob-D"></div>
+
                         <div class="module-content">
                             <h3 class="mod-title">Études de Motion Design</h3>
                             <p class="mod-txt">Pour compléter mes diplômes précédents, j’ai passé une année en Licence Professionnelle de Motion Designer.</p>
@@ -160,6 +162,8 @@
                     </div>
 
                     <div class="time-module">
+                        <div class="blob-shape blob-type-07" id="blob-E"></div>
+
                         <div class="module-content">
                             <h3 class="mod-title">Proxis Développement</h3>
                             <p class="mod-txt">J’ai travaillé une année en alternance au sein du groupe industriel Proxis Développement dans le cadre de mon diplôme de Motion Design.</p>
@@ -192,6 +196,8 @@
                     </div>
 
                     <div class="time-module">
+                        <div class="blob-shape blob-type-08" id="blob-F"></div>
+
                         <div class="module-content">
                             <h3 class="mod-title">DataOptique / Welwot</h3>
                             <p class="mod-txt">Depuis 2020, je travaille en tant que Designer au sein de l’entreprise DataOptique et sa société jumelle Welwot.</p>

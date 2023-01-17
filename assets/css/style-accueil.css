@@ -702,6 +702,21 @@ footer .footer-container #footer-col-2 p span {
   mask: url("/assets/svg/blob-shape-05.svg") no-repeat 50% 50%;
 }
 
+.blob-type-06 {
+  -webkit-mask: url("/assets/svg/blob-shape-06.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-06.svg") no-repeat 50% 50%;
+}
+
+.blob-type-07 {
+  -webkit-mask: url("/assets/svg/blob-shape-07.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-07.svg") no-repeat 50% 50%;
+}
+
+.blob-type-08 {
+  -webkit-mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
+  mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
+}
+
 #sec-home-01 {
   background: #342B33;
   padding: 110px 20px 40px 20px;
