@@ -447,7 +447,7 @@
             // media query end-module
             @include mquery.laptop {    
                 max-width: 750px;
-                padding: 30px 30px 40px 30px;
+                padding: 30px 30px 35px 30px;
             }
 
             //titre module final
@@ -507,8 +507,43 @@
 
     //bloc bouton CV
     #cv-container {
-        //code temporaire
-        height: 200px;
+        padding: 35px 0px;
+
+        .arrows-grp {
+            
+        }
+
+        .cv-btn {
+            position: relative;
+            padding: 15px 25px;
+            background: color.$primary-100;
+            //border: 10px solid color.$ambiance-100;
+            //outline: 3px solid color.$primary-100;
+            border-radius: 10px;
+            @include typo.text($color:#ffffff, $weight:600);
+            font-size: 20px;
+            text-decoration: none;
+
+            &:hover {
+                background: color.$primary-120;
+            }
+
+            .btn-outline {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 111%;
+                height: 142%;
+                border: 3px solid color.$primary-100;
+                border-radius: 10px;
+            }
+
+            &:hover .btn-outline {
+                border: 3px solid color.$primary-120;
+            }
+            
+        }
     }
 
     //blob header page

@@ -248,7 +248,14 @@
                 </div>
 
                 <div id="cv-container">
-                    <div class="cv-btn-mob"></div>
+                    <div class="arrows-grp">
+
+                    </div>
+
+                    <a href="/assets/misc/cv-darius-hollard.pdf" download="CV Darius Hollard" class="cv-btn">
+                        Télécharger mon CV
+                        <span class="btn-outline"></span>
+                    </a>
                 </div>
 
             </div>

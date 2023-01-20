@@ -1107,7 +1107,7 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 992px) {
   #sec-parc-01 .timeline-end .end-module {
     max-width: 750px;
-    padding: 30px 30px 40px 30px;
+    padding: 30px 30px 35px 30px;
   }
 }
 #sec-parc-01 .timeline-end .end-module .end-title {
@@ -1162,7 +1162,35 @@ footer .footer-container #footer-col-2 p span {
   background: #E93B39;
 }
 #sec-parc-01 #cv-container {
-  height: 200px;
+  padding: 35px 0px;
+}
+#sec-parc-01 #cv-container .cv-btn {
+  position: relative;
+  padding: 15px 25px;
+  background: #FF6666;
+  border-radius: 10px;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+#sec-parc-01 #cv-container .cv-btn:hover {
+  background: #E93B39;
+}
+#sec-parc-01 #cv-container .cv-btn .btn-outline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 111%;
+  height: 142%;
+  border: 3px solid #FF6666;
+  border-radius: 10px;
+}
+#sec-parc-01 #cv-container .cv-btn:hover .btn-outline {
+  border: 3px solid #E93B39;
 }
 #sec-parc-01 #blob-A {
   z-index: -2;
