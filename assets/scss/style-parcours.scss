@@ -510,49 +510,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: end;
+        min-height: 220px;
         width: 100%;
         padding: 35px 0px;
-
-        //fleches blanche au dessus bouton CV
-        .arrows-grp {
-            position: relative;
-            height: 60px;
-            width: 300px;
-            margin-bottom: 40px;
-
-            #fleche-cv-01 {
-                position: absolute;
-                width: 55px;
-                height: 55px;
-                left: 0px;
-                top: 0px;
-            }
-
-            #fleche-cv-02 {
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                left: 50px;
-                top: 0px;
-            }
-
-            #fleche-cv-03 {
-                position: absolute;
-                width: 45px;
-                height: 45px;
-                right: 50px;
-                top: 0px;
-            }
-
-            #fleche-cv-04 {
-                position: absolute;
-                width: 55px;
-                height: 55px;
-                right: 0px;
-                top: 0px;
-            }
-
-        }
 
         //bouton pour accéder au CV
         .cv-btn {
@@ -560,18 +521,45 @@
             width: -moz-fit-content;
             width: fit-content;
             padding: 15px 25px;
-            background: color.$primary-100;
-            //border: 10px solid color.$ambiance-100;
-            //outline: 3px solid color.$primary-100;
-            border-radius: 10px;
+            background: color.$secondary-100;
+            border-radius: 8px;
             @include typo.text($color:#ffffff, $weight:600);
             font-size: 20px;
             text-decoration: none;
 
-            &:hover {
-                background: color.$primary-120;
+            // media query cv-btn - changement de style petit écran
+            @include mquery.laptop {    
+                font-family: "Alegreya", sans-serif;
+                font-size: 36px;
+                text-transform: uppercase;
+                background: none;
             }
 
+            &:hover {
+                background: color.$secondary-120;
+            }
+
+            // texte bouton cv mobile
+            .cv-txt-01 {
+                display: block;
+
+                // media query texte CV mobile
+                @include mquery.laptop {    
+                    display: none;
+                }
+            }
+
+            // texte bouton cv desktop
+            .cv-txt-02 {
+                display: none;
+
+                // media query texte CV desktop
+                @include mquery.laptop {    
+                    display: block;
+                }
+            }
+
+            // contour bouton CV mobile
             .btn-outline {
                 position: absolute;
                 left: 50%;
@@ -579,12 +567,86 @@
                 transform: translate(-50%, -50%);
                 width: 111%;
                 height: 142%;
-                border: 3px solid color.$primary-100;
+                border: 3px solid color.$secondary-100;
                 border-radius: 10px;
+
+                // media query btn-outline
+                @include mquery.laptop {    
+                    display: none;
+                }
             }
 
             &:hover .btn-outline {
-                border: 3px solid color.$primary-120;
+                border: 3px solid color.$secondary-120;
+            }
+
+            //fleches blanche au dessus bouton CV
+            .arrows-grp {
+                position: absolute;
+                top: -90px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 70px;
+                width: 300px;
+                margin-bottom: 25px;
+                pointer-events: none;
+
+                & * {
+                    transition: left 200ms ease-out, right 200ms ease-out, top 200ms ease-out, bottom 200ms ease-out;
+                }
+
+                #fleche-cv-01 {
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    left: -15px;
+                    top: 0px;
+                }
+
+                #fleche-cv-02 {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    left: 27%;
+                    top: 12px;
+                }
+
+                #fleche-cv-03 {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    right: 27%;
+                    top: 5px;
+                }
+
+                #fleche-cv-04 {
+                    position: absolute;
+                    width: 55px;
+                    height: 55px;
+                    right: -15px;
+                    top: 0px;
+                }
+
+            }
+
+            &:hover #fleche-cv-01 {
+                left: -10px;
+                top: 5px;
+            }
+
+            &:hover #fleche-cv-02 {
+                left: 28%;
+                top: 15px;
+            }
+
+            &:hover #fleche-cv-03 {
+                right: 28%;
+                top: 8px;
+            }
+
+            &:hover #fleche-cv-04 {
+                right: -10px;
+                top: 5px;
             }
             
         }
