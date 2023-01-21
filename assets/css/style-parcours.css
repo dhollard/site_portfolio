@@ -1170,6 +1170,12 @@ footer .footer-container #footer-col-2 p span {
   width: 100%;
   padding: 35px 0px;
 }
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container {
+    min-height: 290px;
+    margin-bottom: 60px;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn {
   position: relative;
   width: -moz-fit-content;
@@ -1187,13 +1193,19 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 992px) {
   #sec-parc-01 #cv-container .cv-btn {
     font-family: "Alegreya", sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     text-transform: uppercase;
     background: none;
   }
 }
 #sec-parc-01 #cv-container .cv-btn:hover {
   background: #238A70;
+}
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn:hover {
+    background: none;
+    color: #FF6666;
+  }
 }
 #sec-parc-01 #cv-container .cv-btn .cv-txt-01 {
   display: block;
@@ -1240,7 +1252,12 @@ footer .footer-container #footer-col-2 p span {
   pointer-events: none;
 }
 #sec-parc-01 #cv-container .cv-btn .arrows-grp * {
-  transition: left 200ms ease-out, right 200ms ease-out, top 200ms ease-out, bottom 200ms ease-out;
+  transition: left 300ms ease-out, right 300ms ease-out, top 300ms ease-out, bottom 300ms ease-out;
+}
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn .arrows-grp {
+    top: -140px;
+  }
 }
 #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-01 {
   position: absolute;
@@ -1249,12 +1266,28 @@ footer .footer-container #footer-col-2 p span {
   left: -15px;
   top: 0px;
 }
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-01 {
+    width: 80px;
+    height: 80px;
+    left: -60px;
+    top: 20px;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-02 {
   position: absolute;
   width: 40px;
   height: 40px;
   left: 27%;
   top: 12px;
+}
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-02 {
+    width: 50px;
+    height: 50px;
+    left: 20%;
+    top: 15px;
+  }
 }
 #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-03 {
   position: absolute;
@@ -1263,6 +1296,14 @@ footer .footer-container #footer-col-2 p span {
   right: 27%;
   top: 5px;
 }
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-03 {
+    width: 70px;
+    height: 70px;
+    right: 20%;
+    top: 0px;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-04 {
   position: absolute;
   width: 55px;
@@ -1270,21 +1311,84 @@ footer .footer-container #footer-col-2 p span {
   right: -15px;
   top: 0px;
 }
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-04 {
+    width: 80px;
+    height: 80px;
+    right: -70px;
+    top: 15px;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-01 {
   left: -10px;
   top: 5px;
+}
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-01 {
+    left: -55px;
+    top: 25px;
+  }
 }
 #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-02 {
   left: 28%;
   top: 15px;
 }
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-02 {
+    left: 21%;
+    top: 20px;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-03 {
   right: 28%;
   top: 8px;
 }
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-03 {
+    right: 21%;
+    top: 5px;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-04 {
   right: -10px;
   top: 5px;
+}
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn:hover #fleche-cv-04 {
+    right: -60px;
+    top: 20px;
+  }
+}
+#sec-parc-01 #cv-container .cv-btn #double-cercle-cv {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 51%;
+  transform: translate(-50%, -49%);
+  width: 341px;
+  height: 237px;
+}
+@media (min-width: 992px) {
+  #sec-parc-01 #cv-container .cv-btn #double-cercle-cv {
+    display: block;
+  }
+}
+#sec-parc-01 #cv-container .cv-btn #double-cercle-cv #cercle-cv-01 {
+  stroke: #ffffff;
+}
+#sec-parc-01 #cv-container .cv-btn #double-cercle-cv #cercle-cv-02 {
+  stroke: #ffffff;
+  stroke-dasharray: 709;
+  stroke-dashoffset: 709;
+  transition: stroke-dashoffset 0.3s ease-in;
+}
+#sec-parc-01 #cv-container .cv-btn:hover #double-cercle-cv #cercle-cv-01 {
+  stroke: #FF6666;
+}
+#sec-parc-01 #cv-container .cv-btn:hover #double-cercle-cv #cercle-cv-02 {
+  transition-delay: 50ms;
+  stroke-dashoffset: 1418;
+  stroke: #FF6666;
 }
 #sec-parc-01 #blob-A {
   z-index: -2;

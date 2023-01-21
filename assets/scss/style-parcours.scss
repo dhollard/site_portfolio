@@ -515,6 +515,12 @@
         width: 100%;
         padding: 35px 0px;
 
+        // media query container cv
+        @include mquery.laptop {    
+            min-height: 290px;
+            margin-bottom: 60px;
+        }
+
         //bouton pour accéder au CV
         .cv-btn {
             position: relative;
@@ -530,13 +536,19 @@
             // media query cv-btn - changement de style petit écran
             @include mquery.laptop {    
                 font-family: "Alegreya", sans-serif;
-                font-size: 36px;
+                font-size: 32px;
                 text-transform: uppercase;
                 background: none;
             }
 
             &:hover {
                 background: color.$secondary-120;
+
+                // media query cv-btn
+                @include mquery.laptop {    
+                    background: none;
+                    color: color.$primary-100;
+                }
             }
 
             // texte bouton cv mobile
@@ -592,7 +604,12 @@
                 pointer-events: none;
 
                 & * {
-                    transition: left 200ms ease-out, right 200ms ease-out, top 200ms ease-out, bottom 200ms ease-out;
+                    transition: left 300ms ease-out, right 300ms ease-out, top 300ms ease-out, bottom 300ms ease-out;
+                }
+
+                // media query arrows-grp
+                @include mquery.laptop {    
+                    top: -140px;
                 }
 
                 #fleche-cv-01 {
@@ -601,6 +618,14 @@
                     height: 60px;
                     left: -15px;
                     top: 0px;
+
+                    // media query fleche 01
+                    @include mquery.laptop {    
+                        width: 80px;
+                        height: 80px;
+                        left: -60px;
+                        top: 20px;
+                    }
                 }
 
                 #fleche-cv-02 {
@@ -609,6 +634,14 @@
                     height: 40px;
                     left: 27%;
                     top: 12px;
+
+                    // media query fleche 02
+                    @include mquery.laptop {    
+                        width: 50px;
+                        height: 50px;
+                        left: 20%;
+                        top: 15px;
+                    }
                 }
 
                 #fleche-cv-03 {
@@ -617,6 +650,14 @@
                     height: 50px;
                     right: 27%;
                     top: 5px;
+
+                    // media query fleche 03
+                    @include mquery.laptop {    
+                        width: 70px;
+                        height: 70px;
+                        right: 20%;
+                        top: 0px;
+                    }
                 }
 
                 #fleche-cv-04 {
@@ -625,6 +666,14 @@
                     height: 55px;
                     right: -15px;
                     top: 0px;
+
+                    // media query fleche 04
+                    @include mquery.laptop {    
+                        width: 80px;
+                        height: 80px;
+                        right: -70px;
+                        top: 15px;
+                    }
                 }
 
             }
@@ -632,21 +681,83 @@
             &:hover #fleche-cv-01 {
                 left: -10px;
                 top: 5px;
+
+                // media query fleche 01 animée
+                @include mquery.laptop {    
+                    left: -55px;
+                    top: 25px;
+                }
             }
 
             &:hover #fleche-cv-02 {
                 left: 28%;
                 top: 15px;
+
+                // media query fleche 02 animée
+                @include mquery.laptop {    
+                    left: 21%;
+                    top: 20px;
+                }
             }
 
             &:hover #fleche-cv-03 {
                 right: 28%;
                 top: 8px;
+
+                // media query fleche 03 animée
+                @include mquery.laptop {    
+                    right: 21%;
+                    top: 5px;
+                }
             }
 
             &:hover #fleche-cv-04 {
                 right: -10px;
                 top: 5px;
+
+                // media query fleche 04 animée
+                @include mquery.laptop {    
+                    right: -60px;
+                    top: 20px;
+                }
+            }
+            
+            //décorations bouton CV petit écran
+            #double-cercle-cv {
+                display: none;
+                position: absolute;
+                left: 50%;
+                top: 51%;
+                transform: translate(-50%, -49%);
+                width: 341px;
+                height: 237px;
+
+                // media query double-cercle-cv
+                @include mquery.laptop {    
+                    display: block;
+                }
+
+                #cercle-cv-01 {
+                    stroke: #ffffff;
+                }
+
+                #cercle-cv-02 {
+                    stroke: #ffffff;
+                    stroke-dasharray: 709;
+                    stroke-dashoffset: 709;
+                    transition: stroke-dashoffset 0.3s ease-in;
+                }
+            }
+
+            &:hover #double-cercle-cv #cercle-cv-01 {
+                stroke: color.$primary-100;
+            }
+
+
+            &:hover #double-cercle-cv #cercle-cv-02 {
+                transition-delay: 50ms;
+                stroke-dashoffset: 1418;
+                stroke: color.$primary-100;
             }
             
         }

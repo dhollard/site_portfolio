@@ -250,14 +250,24 @@
                 <div id="cv-container">
 
                     <a href="/assets/misc/cv-darius-hollard.pdf" download="CV Darius Hollard" class="cv-btn">
+
                         <div class="arrows-grp">    
                             <img id="fleche-cv-01" src="/assets/svg/fleche-cv-01.svg">
                             <img id="fleche-cv-02" src="/assets/svg/fleche-cv-02.svg">
                             <img id="fleche-cv-03" src="/assets/svg/fleche-cv-03.svg">
                             <img id="fleche-cv-04" src="/assets/svg/fleche-cv-04.svg">
                         </div>
+                        
+                        <div id="double-cercle-cv">
+                            <svg width="auto" height="auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse id="cercle-cv-01" cx="173.219" cy="113.186" rx="145" ry="75" stroke="white" stroke-width="11"/>
+                                <ellipse id="cercle-cv-02" cx="164" cy="110" rx="145" ry="75" transform="rotate(14 170.429 118.567)" stroke="white" stroke-width="11"/>
+                            </svg>
+                        </div>
+
                         <span class="cv-txt-01">Télécharger mon CV</span>
                         <span class="cv-txt-02">Voir mon CV</span>
+
                         <span class="btn-outline"></span>
                     </a>
 
