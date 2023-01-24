@@ -1446,6 +1446,9 @@ footer .footer-container #footer-col-2 p span {
 #sec-parc-01 #cv-container .cv-btn:hover #speech-bulle-xl {
   stroke: #FF6666;
 }
+#sec-parc-01 #cv-container .cv-btn:hover #semi-bulle-xl {
+  stroke: #FF6666;
+}
 #sec-parc-01 #cv-container .cv-btn:hover #bulle-xl {
   stroke-dashoffset: 0 !important;
 }

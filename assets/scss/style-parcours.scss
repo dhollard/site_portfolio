@@ -811,10 +811,6 @@
                     height: 238px;
                 }
 
-                #semi-bulle-xl {
-
-                }
-
                 #bulle-xl {
                     stroke:color.$primary-100;
                     stroke-dasharray: 675;
@@ -825,6 +821,10 @@
             }
 
             &:hover #speech-bulle-xl {
+                stroke:color.$primary-100;
+            }
+
+            &:hover #semi-bulle-xl {
                 stroke:color.$primary-100;
             }
 

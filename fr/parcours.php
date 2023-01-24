@@ -269,7 +269,8 @@
                             <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="speech-bulle-xl" class="st0" d="M85.5,185.5c-22,34-48.5,43.8-84.5,47" stroke="white" stroke-width="11"/>
                                 <path id="semi-bulle-xl" class="st0" d="M241.4,150.3c-26,14.9-63.4,21.9-103.8,17C65.8,158.7,11.8,116.1,17.1,72" stroke="white" stroke-width="11"/>
-                                <ellipse id="bulle-xl" transform="matrix(0.1187 -0.9929 0.9929 0.1187 42.6939 223.2251)" class="st0" cx="147.1" cy="87.6" rx="80.3" ry="130.9" stroke="white" stroke-width="11"/>
+                                <!-- <ellipse id="bulle-xl" transform="matrix(0.1187 -0.9929 0.9929 0.1187 42.6939 223.2251)" class="st0" cx="147.1" cy="87.6" rx="80.3" ry="130.9" stroke="white" stroke-width="11"/>-->
+                                <path id="bulle-xl" d="M241.4,150.3c-26,14.9-63.4,21.9-103.8,17C65.8,158.7,11.9,116.1,17.2,72S84.9-0.7,156.7,7.8s125.7,51.2,120.4,95.3c-2.3,19.1-15.3,35.3-35.1,46.8L241.4,150.3z" stroke="white" stroke-width="11"/>
                             </svg>
                         </div>
 
