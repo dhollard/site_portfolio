@@ -259,19 +259,57 @@
                         </div>
                         
                         <div id="double-cercle-cv">
-                            <svg width="auto" height="auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <ellipse id="cercle-cv-01" cx="173.219" cy="113.186" rx="145" ry="75" stroke="white" stroke-width="11"/>
                                 <ellipse id="cercle-cv-02" cx="164" cy="110" rx="145" ry="75" transform="rotate(14 170.429 118.567)" stroke="white" stroke-width="11"/>
                             </svg>
                         </div>
 
+                        <div id="bulle-cv-xl">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="speech-bulle-xl" class="st0" d="M85.5,185.5c-22,34-48.5,43.8-84.5,47" stroke="white" stroke-width="11"/>
+                                <path id="semi-bulle-xl" class="st0" d="M241.4,150.3c-26,14.9-63.4,21.9-103.8,17C65.8,158.7,11.8,116.1,17.1,72" stroke="white" stroke-width="11"/>
+                                <ellipse id="bulle-xl" transform="matrix(0.1187 -0.9929 0.9929 0.1187 42.6939 223.2251)" class="st0" cx="147.1" cy="87.6" rx="80.3" ry="130.9" stroke="white" stroke-width="11"/>
+                            </svg>
+                        </div>
+
                         <span class="cv-txt-01">Télécharger mon CV</span>
-                        <span class="cv-txt-02">Voir mon CV</span>
+                        <span class="cv-txt-02">Voir <br>mon CV</span>
 
                         <span class="btn-outline"></span>
                     </a>
 
                 </div>
+
+                <!-- Script pour déplacer le bouton cv sur grand écran -->
+                <script>
+                    // Get the elements
+                    var endModule = document.getElementsByClassName("end-module")[0];
+                    var cvContainer = document.getElementById("cv-container");
+
+                    // Save the original location of the element
+                    var originalParent = cvContainer.parentNode;
+                    var originalNextSibling = cvContainer.nextSibling;
+
+                    // Move the element to the new location
+                    endModule.appendChild(cvContainer);
+
+                    // Media query
+                    var mq = window.matchMedia("(min-width: 1600px)");
+                    mq.addListener(widthChange);
+                    widthChange(mq);
+
+                    // Media query function
+                    function widthChange(mq) {
+                        if (mq.matches) {
+                            // Move the element to the new location
+                            endModule.appendChild(cvContainer);
+                        } else {
+                            // Move the element back to its original location
+                            originalParent.insertBefore(cvContainer, originalNextSibling);
+                        }
+                    }
+                </script>
 
             </div>
 

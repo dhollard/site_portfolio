@@ -408,7 +408,7 @@
 
         // media query timeline-end
         @include mquery.desktop-xl {    
-            padding: 50px 0 0 0;
+            padding: 50px 0 200px 0;
         }
 
         //titre module de fin
@@ -521,6 +521,20 @@
             margin-bottom: 60px;
         }
 
+        // media query container cv
+        @include mquery.desktop-xl {    
+            position: absolute;
+            top: 20%;
+            right: -45%;
+            width: -moz-fit-content;
+            width: fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            min-height: auto;
+            padding: 0;
+            margin: 0;
+        }
+
         //bouton pour accéder au CV
         .cv-btn {
             position: relative;
@@ -564,11 +578,23 @@
             // texte bouton cv desktop
             .cv-txt-02 {
                 display: none;
+                text-align: center;
 
                 // media query texte CV desktop
                 @include mquery.laptop {    
                     display: block;
                 }
+
+                //retour à la ligne sur grand écran
+                br {
+                    display: none;
+
+                    // media query br dans texte cv
+                    @include mquery.desktop-xl {    
+                        display: block;
+                    }
+                }
+
             }
 
             // contour bouton CV mobile
@@ -610,6 +636,11 @@
                 // media query arrows-grp
                 @include mquery.laptop {    
                     top: -140px;
+                }
+
+                // media query arrows-grp
+                @include mquery.desktop-xl {    
+                    display: none;
                 }
 
                 #fleche-cv-01 {
@@ -737,6 +768,11 @@
                     display: block;
                 }
 
+                // media query double-cercle-cv
+                @include mquery.desktop-xl {    
+                    display: none;
+                }
+
                 #cercle-cv-01 {
                     stroke: #ffffff;
                 }
@@ -758,6 +794,42 @@
                 transition-delay: 50ms;
                 stroke-dashoffset: 1418;
                 stroke: color.$primary-100;
+            }
+
+            //décorations bouton CV grand écran
+            #bulle-cv-xl {
+                display: none;
+
+                // media query double-cercle-cv
+                @include mquery.desktop-xl {    
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top: 59%;
+                    transform: translate(-50%, -41%);
+                    width: 283px;
+                    height: 238px;
+                }
+
+                #semi-bulle-xl {
+
+                }
+
+                #bulle-xl {
+                    stroke:color.$primary-100;
+                    stroke-dasharray: 675;
+                    stroke-dashoffset: 675;
+                    transition: stroke-dashoffset 0.3s ease-in;
+                }
+
+            }
+
+            &:hover #speech-bulle-xl {
+                stroke:color.$primary-100;
+            }
+
+            &:hover #bulle-xl {
+                stroke-dashoffset: 0!important;
             }
             
         }

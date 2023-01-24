@@ -1068,7 +1068,7 @@ footer .footer-container #footer-col-2 p span {
 }
 @media (min-width: 1600px) {
   #sec-parc-01 .timeline-end {
-    padding: 50px 0 0 0;
+    padding: 50px 0 200px 0;
   }
 }
 #sec-parc-01 .timeline-end .end-big-title {
@@ -1176,6 +1176,20 @@ footer .footer-container #footer-col-2 p span {
     margin-bottom: 60px;
   }
 }
+@media (min-width: 1600px) {
+  #sec-parc-01 #cv-container {
+    position: absolute;
+    top: 20%;
+    right: -45%;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn {
   position: relative;
   width: -moz-fit-content;
@@ -1217,9 +1231,18 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-parc-01 #cv-container .cv-btn .cv-txt-02 {
   display: none;
+  text-align: center;
 }
 @media (min-width: 992px) {
   #sec-parc-01 #cv-container .cv-btn .cv-txt-02 {
+    display: block;
+  }
+}
+#sec-parc-01 #cv-container .cv-btn .cv-txt-02 br {
+  display: none;
+}
+@media (min-width: 1600px) {
+  #sec-parc-01 #cv-container .cv-btn .cv-txt-02 br {
     display: block;
   }
 }
@@ -1257,6 +1280,11 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 992px) {
   #sec-parc-01 #cv-container .cv-btn .arrows-grp {
     top: -140px;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-parc-01 #cv-container .cv-btn .arrows-grp {
+    display: none;
   }
 }
 #sec-parc-01 #cv-container .cv-btn .arrows-grp #fleche-cv-01 {
@@ -1373,6 +1401,11 @@ footer .footer-container #footer-col-2 p span {
     display: block;
   }
 }
+@media (min-width: 1600px) {
+  #sec-parc-01 #cv-container .cv-btn #double-cercle-cv {
+    display: none;
+  }
+}
 #sec-parc-01 #cv-container .cv-btn #double-cercle-cv #cercle-cv-01 {
   stroke: #ffffff;
 }
@@ -1389,6 +1422,32 @@ footer .footer-container #footer-col-2 p span {
   transition-delay: 50ms;
   stroke-dashoffset: 1418;
   stroke: #FF6666;
+}
+#sec-parc-01 #cv-container .cv-btn #bulle-cv-xl {
+  display: none;
+}
+@media (min-width: 1600px) {
+  #sec-parc-01 #cv-container .cv-btn #bulle-cv-xl {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    transform: translate(-50%, -41%);
+    width: 283px;
+    height: 238px;
+  }
+}
+#sec-parc-01 #cv-container .cv-btn #bulle-cv-xl #bulle-xl {
+  stroke: #FF6666;
+  stroke-dasharray: 675;
+  stroke-dashoffset: 675;
+  transition: stroke-dashoffset 0.3s ease-in;
+}
+#sec-parc-01 #cv-container .cv-btn:hover #speech-bulle-xl {
+  stroke: #FF6666;
+}
+#sec-parc-01 #cv-container .cv-btn:hover #bulle-xl {
+  stroke-dashoffset: 0 !important;
 }
 #sec-parc-01 #blob-A {
   z-index: -2;
