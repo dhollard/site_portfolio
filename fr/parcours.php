@@ -57,13 +57,13 @@
                             <p class="mod-txt">Mes deux premiers diplômes d’études supérieures m’ont permis d’apprendre les compétences théoriques et pratiques pour devenir un designer graphique professionnel.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Mon BTS Communication m’a enseigné le savoir théorique des canaux de communications passés et actuels, et les méthodes employées pour toucher et convaincre une large audience.</p>
-                                <p class="mod-txt">Mon diplôme de Designer m’a apporté les capacités plus techniques nécessaires à la création de contenus visuels comme un site web ou une illustration. Quelques exemples :</p>
+                                <p class="mod-txt">Lors de mon BTS Communication, j'ai appris le savoir théorique des méthodes passées et actuelles pour communiquer auprès d'une audience ciblée.</p>
+                                <p class="mod-txt">Mon diplôme de Designer m’a apporté les capacités techniques complémentaires et nécessaires à la création de contenus visuels comme un site web ou une illustration. Entre autres, les savoir-faire suivants :</p>
                                 <ul>
-                                    <li>Règles de typographique, colorimétrie, espacement et de mise en page</li>
+                                    <li>Règles de typographie, de colorimétrie et de mise en page</li>
                                     <li>Utilisation de la Suite Adobe</li>
                                     <li>Bases de code en HTML / CSS</li>
-                                    <li>Créations d’illustrations et de pictogrammes</li>
+                                    <li>Créations d’illustrations et photomanipulation</li>
                                 </ul>
                             </div>
                         </div>
@@ -133,10 +133,10 @@
                         <div class="module-content">
                             <h3 class="mod-title">Études de Motion Design</h3>
                             <p class="mod-txt">Pour compléter mes diplômes précédents, j’ai passé une année en Licence Professionnelle de Motion Designer.</p>
-                            <p class="mod-txt">J’ai pu y apprendre l’animation 2D et donner vie aux créations numériques que je maîtrisait déjà.</p>
+                            <p class="mod-txt">J’ai pu y apprendre l’animation 2D et donner vie aux créations numériques que je maîtrisais déjà.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de solidifier mes acquis et amener mon intérêt pour la création numérique à un niveau inédit.</p>
+                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de solidifier mes acquis et porter mon intérêt pour la création numérique à un niveau inédit.</p>
                                 <p class="mod-txt">Le Motion Design m’a tout de suite passionné par sa capacité à insuffler une touche de vie dans tous les aspects du monde numérique et à raconter une histoire.</p>
                             </div>
                         </div>
@@ -200,12 +200,12 @@
 
                         <div class="module-content">
                             <h3 class="mod-title">DataOptique / Welwot</h3>
-                            <p class="mod-txt">Depuis 2020, je travaille en tant que Designer au sein de l’entreprise DataOptique et sa société jumelle Welwot.</p>
-                            <p class="mod-txt">Recruté initialement pour la partie webdesign, j’ai rapidement apporté mes autres compétences sur la table, prenant aussi en charge toute la partie  de communication visuelle et de branding de l’entreprise.</p>
+                            <p class="mod-txt">Depuis 2020, je travaille en tant que Chef de projet web designer au sein de l’entreprise DataOptique et sa société jumelle Welwot.</p>
+                            <p class="mod-txt">Recruté initialement pour la partie webdesign, j’ai rapidement apporté mes autres compétences sur la table, prenant aussi en charge toute la partie de communication visuelle et de gestion de certains projets de l’entreprise.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Les besoins de ces deux entreprises étaient nouveaux pour moi. J’avais déjà réalisé des sites internet vitrines, mais mes missions au sein de DataOptique ont poussé mon approche de l’UI/UX plus loin.</p>
-                                <p class="mod-txt">J’ai dû concevoir des interfaces webs complexes, comme tableaux de bord pouvant rivaliser avec une application mobile dédiée.</p>
+                                <p class="mod-txt">Les besoins de ces deux entreprises ont poussé mon approche de l’UI/UX plus loin. J’ai dû concevoir des interfaces webs complexes, comme des tableaux de bord pouvant rivaliser avec une application mobile dédiée.</p>
+                                <p class="mod-txt">J'ai également modernisé la conduite de projets de développements, en y introduisant l'usage de GIT. Ainsi qu'en plaidant pour l'organisation de stand-up meetings hebdomadaires et d'un outil de gestion dédié.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -269,7 +269,6 @@
                             <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="speech-bulle-xl" class="st0" d="M85.5,185.5c-22,34-48.5,43.8-84.5,47" stroke="white" stroke-width="11"/>
                                 <path id="semi-bulle-xl" class="st0" d="M241.4,150.3c-26,14.9-63.4,21.9-103.8,17C65.8,158.7,11.8,116.1,17.1,72" stroke="white" stroke-width="11"/>
-                                <!-- <ellipse id="bulle-xl" transform="matrix(0.1187 -0.9929 0.9929 0.1187 42.6939 223.2251)" class="st0" cx="147.1" cy="87.6" rx="80.3" ry="130.9" stroke="white" stroke-width="11"/>-->
                                 <path id="bulle-xl" d="M241.4,150.3c-26,14.9-63.4,21.9-103.8,17C65.8,158.7,11.9,116.1,17.2,72S84.9-0.7,156.7,7.8s125.7,51.2,120.4,95.3c-2.3,19.1-15.3,35.3-35.1,46.8L241.4,150.3z" stroke="white" stroke-width="11"/>
                             </svg>
                         </div>
@@ -325,39 +324,6 @@
     <?php include_once('../assets/module/end-page-module.php'); ?>
 
     <!-- Script de dépliage et de repliage des modules timeline -->
-
-    <!-- script V1 -->
-    <!-- <script>
-        document.querySelector('.mod-bottom-bar').addEventListener('click', function() {
-            // toggle the class for mod-toggled element
-            var toggledContent = document.querySelector('.mod-toggled');
-            toggledContent.classList.toggle('visible');
-
-            // toggle the class for the img element
-            var img = document.querySelector('.mod-bottom-bar img');
-            img.classList.toggle('open');
-        });
-    </script>-->
-
-    <!-- script v2 -->
-    <!-- <script>
-        document.addEventListener('click', function(event) {
-            var target = event.target;
-            if (!target.matches('.mod-bottom-bar')) return;
-
-            // select .mod-toggled inside the parent
-            var toggledContent = target.parentNode.querySelector('.mod-toggled');
-            // toggle the class for mod-toggled element
-            toggledContent.classList.toggle('visible');
-
-            // select img inside mod-bottom-bar instance
-            var img = target.querySelector('.mod-bottom-bar img');
-            // toggle the class for the img element
-            img.classList.toggle('open');
-        });
-    </script> -->
-
-    <!-- script v3 -->
     <script>
         document.addEventListener('click', function(event) {
             var target = event.target;

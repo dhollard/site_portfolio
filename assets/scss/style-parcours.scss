@@ -207,12 +207,12 @@
                 background: color.$ambiance-120;
                 border-radius: 10px;
                 box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
-                width: 80%;
+                width: 100%;
                 max-width: 500px;
 
                 // media query time-module
-                @include mquery.phone {    
-                    width: 100%;
+                @include mquery.tablet {    
+                    width: 80%;
                 }
 
                 // media query time-module
@@ -434,14 +434,14 @@
             background: color.$ambiance-120;
             border-radius: 10px;
             box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
-            width: 80%;
+            width: 100%;
             max-width: 500px;
             padding: 20px 15px 35px 15px;
             margin: 0 auto;
 
             // media query end-module
-            @include mquery.phone {    
-                width: 100%;
+            @include mquery.tablet {    
+                width: 80%;
             }
 
             // media query end-module

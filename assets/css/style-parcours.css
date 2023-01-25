@@ -905,12 +905,12 @@ footer .footer-container #footer-col-2 p span {
   background: #261624;
   border-radius: 10px;
   box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
-  width: 80%;
+  width: 100%;
   max-width: 500px;
 }
-@media (max-width: 400px) {
+@media (min-width: 500px) {
   #sec-parc-01 .timeline-container .time-row .time-module {
-    width: 100%;
+    width: 80%;
   }
 }
 @media (min-width: 992px) {
@@ -1094,14 +1094,14 @@ footer .footer-container #footer-col-2 p span {
   background: #261624;
   border-radius: 10px;
   box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
-  width: 80%;
+  width: 100%;
   max-width: 500px;
   padding: 20px 15px 35px 15px;
   margin: 0 auto;
 }
-@media (max-width: 400px) {
+@media (min-width: 500px) {
   #sec-parc-01 .timeline-end .end-module {
-    width: 100%;
+    width: 80%;
   }
 }
 @media (min-width: 992px) {
