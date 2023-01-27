@@ -136,7 +136,7 @@
                             <p class="mod-txt">J'y ai appris l’animation 2D par interpolation, ou comment donner vie aux créations numériques et les mettre au service d'un story telling.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de solidifier mes compétences et de découvrir un domaine passionant.</p>
+                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de solidifier mes compétences et de découvrir un domaine passionnant.</p>
                                 <p class="mod-txt">Le Motion Design était pour moi la pièce manquante du puzzle entre le design graphique et l'univers du développement web.</p>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                             <p class="mod-txt">J’étais chargé de refondre ou créer de zéro les sites internet du groupe, ainsi que des visuels et animations.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Mes missions furent variées et nombreuses lors de cette année, ce qui m'a permis d'apprendre et progresser.</p>
+                                <p class="mod-txt">Mes missions furent variées et nombreuses lors de cette année, ce qui m'a permis d'apprendre et de progresser.</p>
                                 <p class="mod-txt">Travaillant avec beaucoup d’autonomie, en parallèle de mon apprentissage scolaire, cette expérience m’a permis de me dépasser et confirmer mes capacités dans un cadre professionnel.</p>
                             </div>
                         </div>
@@ -204,9 +204,9 @@
                             <p class="mod-txt">Recruté initialement pour la création de sites web, j’ai rapidement pu exercer mes autres compétences, en prenant en charge la communication visuelle et la gestion de projets.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">L'ampleur des missions qui m'ont été confiés ont nécessité une approche de l’UI/UX plus poussée que mes travaux passées.</p>
+                                <p class="mod-txt">L'ampleur des missions qui m'ont été confiées a nécessité une approche de l’UI/UX plus poussée que mes travaux passées.</p>
                                 <p class="mod-txt">Lors de ces missions, j'ai conçu des architectures web complexes, comme des tableaux de bord et des interfaces utilisateur accessibles et modernes.</p>
-                                <p class="mod-txt">J'ai également amélioré la conduite de projets de développements, en y introduisant l'usage de GIT. Ainsi qu'en instorant des "stand-up meetings" hebdomadaires et l'usage d'outils de gestion dédiés.</p>
+                                <p class="mod-txt">J'ai également amélioré la conduite de projets de développements, en y introduisant l'usage de GIT. Ainsi qu'en instaurant des "stand-up meetings" hebdomadaires et l'usage d'outils de gestion dédiés.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -232,11 +232,11 @@
 
                     <h3 class="end-title">Auto-formation et projets personnels</h3>
 
-                    <p class="end-txt">En parallèle de mes activités professionelles, je me tiens informé sur les nouveautés du domaine de la création numérique. Je suis toujours à la recherche de nouveaux outils me permettant de créer plus efficacement et avec plus de liberté.</p>
+                    <p class="end-txt">En parallèle de mes activités professionnelles, je me tiens informé sur les nouveautés du domaine de la création numérique. Je suis toujours à la recherche de nouveaux outils me permettant de créer plus efficacement et avec plus de liberté.</p>
 
-                    <p class="end-txt">Travaillant dans un domaine en constante évolution, je prend part régulièrement à des formations en ligne pour acquérir de nouvelles compétences.</p>
+                    <p class="end-txt">Travaillant dans un domaine en constante évolution, je prends part régulièrement à des formations en ligne pour acquérir de nouvelles compétences.</p>
 
-                    <p class="end-txt">Quelques exemples de savoir-faires que je souhaite apprendre :</p>
+                    <p class="end-txt">Quelques exemples de savoir-faire que je souhaite apprendre :</p>
 
                     <ul>
                         <li>Modélisation et animation 3D</li>
