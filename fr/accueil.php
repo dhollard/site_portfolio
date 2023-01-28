@@ -52,12 +52,12 @@
 
                 <div class="col-right">
                     
-                    <a class="portrait-content wait-for-load" href="/fr/parcours.php">
+                    <a class="portrait-content wait-for-load" href="/fr/parcours.php" aria-label="Voir mon parcours">
                         <div id="square-1"></div>
                         <div id="square-2"></div>
-                        <img class="portrait" src="/assets/img/portrait-dh.jpg">
+                        <img class="portrait" src="/assets/img/portrait-dh.jpg" alt="photo portrait de Darius Hollard">
                         <div id="parcours-box">
-                            <svg width="auto" height="auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <text id="bulle-txt" x="0" y="30" fill="white">Mon parcours</text>
                                 <path id="path-parc-2" d="M154.5 71.5C160.333 84.1667 181 110.3 217 113.5" stroke="white" fill="none" stroke-width="11"/>
                                 <path id="path-parc-1"d="M2 33.5C41.1667 46.1667 135.7 58.2 200.5 5" stroke="white" fill="none" stroke-width="11"/>
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="bottom-tab wait-for-load">
-                    <a href="#sec-home-02" class="scroll-down">
+                    <a href="#sec-home-02" class="scroll-down" aria-label="Défiler vers le bas la page">
                         <span id="ch-1"></span>
                         <span id="ch-2"></span>
                         <span id="ch-3"></span>

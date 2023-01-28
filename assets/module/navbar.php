@@ -3,7 +3,7 @@
     <div class="nav-container">
 
         <a href="/fr/accueil.php" class="nav-logo">
-            <img src="/assets/svg/logo-dh-blanc.svg">
+            <img src="/assets/svg/logo-dh-blanc.svg" alt="logo">
             <div class="logo-txt">
                 <p>DARIUS</p>
                 <p>HOLLARD</p>

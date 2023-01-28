@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
-                            <img src="/assets/svg/ico-croix-blanc.svg">
+                            <img src="/assets/svg/ico-croix-blanc.svg" alt="">
                             <p>En savoir plus</p>
                         </button>
                     </div>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
-                            <img src="/assets/svg/ico-croix-blanc.svg">
+                            <img src="/assets/svg/ico-croix-blanc.svg" alt="">
                             <p>En savoir plus</p>
                         </button>
                     </div>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
-                            <img src="/assets/svg/ico-croix-blanc.svg">
+                            <img src="/assets/svg/ico-croix-blanc.svg" alt="">
                             <p>En savoir plus</p>
                         </button>
                     </div>
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
-                            <img src="/assets/svg/ico-croix-blanc.svg">
+                            <img src="/assets/svg/ico-croix-blanc.svg" alt="">
                             <p>En savoir plus</p>
                         </button>
                     </div>
@@ -210,7 +210,7 @@
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
-                            <img src="/assets/svg/ico-croix-blanc.svg">
+                            <img src="/assets/svg/ico-croix-blanc.svg" alt="">
                             <p>En savoir plus</p>
                         </button>
                     </div>
@@ -253,10 +253,10 @@
                     <a href="/assets/misc/cv-darius-hollard.pdf" download="CV Darius Hollard" class="cv-btn">
 
                         <div class="arrows-grp">    
-                            <img id="fleche-cv-01" src="/assets/svg/fleche-cv-01.svg">
-                            <img id="fleche-cv-02" src="/assets/svg/fleche-cv-02.svg">
-                            <img id="fleche-cv-03" src="/assets/svg/fleche-cv-03.svg">
-                            <img id="fleche-cv-04" src="/assets/svg/fleche-cv-04.svg">
+                            <img id="fleche-cv-01" src="/assets/svg/fleche-cv-01.svg" alt="">
+                            <img id="fleche-cv-02" src="/assets/svg/fleche-cv-02.svg" alt="">
+                            <img id="fleche-cv-03" src="/assets/svg/fleche-cv-03.svg" alt="">
+                            <img id="fleche-cv-04" src="/assets/svg/fleche-cv-04.svg" alt="">
                         </div>
                         
                         <div id="double-cercle-cv">
