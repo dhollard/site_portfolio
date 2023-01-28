@@ -689,3 +689,33 @@ footer {
     -webkit-mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
     mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
 }
+
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution:.001dpcm) { 
+
+    /* problèmes liés à la propriété gap */
+    @media (min-width:1px) and (max-width:991px) {
+
+        //icones réseaux
+        .social-icons {
+            gap: 0!important;
+        }
+
+        .social-icons a {
+            margin: 0 15px!important;
+        }
+
+        //chevrons autour de lien mentions légales
+        #legal-link {
+            gap: 0!important;
+        }
+
+        #legal-link .legal-txt {
+            margin: 0px 10px 2px 10px!important;
+        }
+
+
+    }
+
+
+}

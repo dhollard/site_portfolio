@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Playfair";
   src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
@@ -717,6 +718,24 @@ footer .footer-container #footer-col-2 p span {
   mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
 }
 
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution: 0.001dpcm) {
+  /* problèmes liés à la propriété gap */
+  @media (min-width: 1px) and (max-width: 991px) {
+    .social-icons {
+      gap: 0 !important;
+    }
+    .social-icons a {
+      margin: 0 15px !important;
+    }
+    #legal-link {
+      gap: 0 !important;
+    }
+    #legal-link .legal-txt {
+      margin: 0px 10px 2px 10px !important;
+    }
+  }
+}
 #sec-parc-01 {
   padding: 110px 20px 40px 20px;
 }
@@ -1165,15 +1184,15 @@ footer .footer-container #footer-col-2 p span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
   min-height: 220px;
   width: 100%;
-  padding: 35px 0px;
+  padding: 130px 0px 35px 0px;
 }
 @media (min-width: 992px) {
   #sec-parc-01 #cv-container {
     min-height: 290px;
     margin-bottom: 60px;
+    padding: 185px 0px 35px 0px;
   }
 }
 @media (min-width: 1600px) {
@@ -1627,4 +1646,9 @@ footer .footer-container #footer-col-2 p span {
     left: -700px;
     bottom: -300px;
   }
+}
+
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution: 0.001dpcm) {
+  /* problèmes liés à la propriété gap */
 }/*# sourceMappingURL=style-parcours.css.map */

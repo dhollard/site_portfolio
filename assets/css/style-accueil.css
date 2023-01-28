@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Playfair";
   src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
@@ -717,6 +718,24 @@ footer .footer-container #footer-col-2 p span {
   mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
 }
 
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution: 0.001dpcm) {
+  /* problèmes liés à la propriété gap */
+  @media (min-width: 1px) and (max-width: 991px) {
+    .social-icons {
+      gap: 0 !important;
+    }
+    .social-icons a {
+      margin: 0 15px !important;
+    }
+    #legal-link {
+      gap: 0 !important;
+    }
+    #legal-link .legal-txt {
+      margin: 0px 10px 2px 10px !important;
+    }
+  }
+}
 #sec-home-01 {
   background: #342B33;
   padding: 110px 20px 40px 20px;
@@ -1520,5 +1539,40 @@ footer .footer-container #footer-col-2 p span {
     height: 580px;
     transform: translateX(115%);
     bottom: -20px;
+  }
+}
+
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution: 0.001dpcm) {
+  /* problèmes liés à la propriété gap */
+  @media (min-width: 1px) and (max-width: 768px) {
+    .btn-box {
+      gap: 0px !important;
+    }
+    .btn-box a {
+      margin: 0 auto 25px auto !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .btn-box {
+      gap: 0px !important;
+    }
+    .btn-box a {
+      margin: 0 15px 30px 15px !important;
+    }
+  }
+  @media (min-width: 1px) and (max-width: 991px) {
+    #sec-home-01 {
+      gap: 0 !important;
+    }
+    #sec-home-01 .bottom-tab {
+      margin-top: 50px !important;
+    }
+    .mid-container {
+      gap: 0 !important;
+    }
+    .mid-container > * {
+      margin: 15px auto !important;
+    }
   }
 }/*# sourceMappingURL=style-accueil.css.map */
