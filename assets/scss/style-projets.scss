@@ -1,0 +1,77 @@
+@use 'color';
+@use 'mquery';
+@use 'typo';
+@use 'global';
+
+// section 01
+#sec-proj-01 {
+    height: 90vh;
+
+    .page-header {
+        background: color.$secondary-120;
+        padding: 90px 20px 20px 20px;
+
+        // media query page-header
+        @include mquery.landscape {   
+            padding: 100px 20px 30px 20px;
+        }
+
+        // media query page-header
+        @include mquery.laptop {   
+            padding: 100px 20px 40px 20px;
+        }
+
+        h1 {
+            @include typo.special-title($color:#ffffff, $weight:800);
+            font-size: 42px;
+            letter-spacing: 1px;
+            text-align: center;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin: auto;
+
+            // media query gros titre page
+            @include mquery.laptop {   
+                font-size: 72px;
+            }
+
+            // media query gros titre page
+            @include mquery.desktop-xl {   
+                font-size: 90px;
+            }
+        }
+    }
+
+    .projet-select {
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+
+        .projet-bar {
+            display: flex;
+            background: color.$ambiance-80;
+            padding: 25px 20px;
+            margin: auto;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+
+            & * {
+              margin: 0;  
+            }
+    
+            h2 {
+                @include typo.title($color:#ffffff, $weight:500);
+                font-size: 24px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+    
+        }
+    }
+    
+
+}
