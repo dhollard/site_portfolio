@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/style-parcours.css">
 
     <!-- SEO et identité page -->
-    <link rel="canonical" href="https://www.darius-hollard.com/fr/parcours.php" />
+    <link rel="canonical" href="https://darius-hollard.com/fr/parcours" />
     <title>Mon parcours</title>
     <meta name="description" content="Je m'appelle Darius Hollard et je suis designer polyvalent. Découvrez mon parcours et mes qualifications en consultant cette page." />
 

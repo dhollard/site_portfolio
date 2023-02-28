@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/assets/css/style-accueil.css">
 
         <!-- SEO et identité page -->
-        <link rel="canonical" href="https://www.darius-hollard.com/fr/accueil.php"/>
+        <link rel="canonical" href="https://darius-hollard.com/fr/accueil"/>
         <title>Darius Hollard - Portfolio</title>
         <meta name="description" content="Site porfolio de Darius Hollard, designer polyvalent et rigoureux. Consultez mes réalisations de projets, mon parcours, mes infos de contact et d'autres surprises."/>
     </head>

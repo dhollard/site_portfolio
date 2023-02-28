@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/style-projets.css">
 
     <!-- SEO et identité page -->
-    <link rel="canonical" href="https://www.darius-hollard.com/fr/projets.php" />
+    <link rel="canonical" href="https://darius-hollard.com/fr/projets" />
     <title>Mes projets</title>
     <meta name="description" content="" />
 
