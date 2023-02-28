@@ -736,70 +736,84 @@ footer .footer-container #footer-col-2 p span {
     }
   }
 }
-#sec-proj-01 {
+#sec-contact-01 {
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
 }
-#sec-proj-01 .page-header {
-  background: #238A70;
-  padding: 90px 20px 20px 20px;
-}
-@media (min-width: 768px) {
-  #sec-proj-01 .page-header {
-    padding: 100px 20px 30px 20px;
-  }
-}
-@media (min-width: 992px) {
-  #sec-proj-01 .page-header {
-    padding: 100px 20px 40px 20px;
-  }
-}
-#sec-proj-01 .page-header h1 {
-  font-family: "Playfair", serif;
-  font-size: 42px;
-  font-weight: 800;
-  color: #ffffff;
-  font-size: 42px;
-  letter-spacing: 1px;
-  text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
+#sec-contact-01 .form-zone {
+  display: flex;
+  margin: 200px auto 200px auto;
+  flex-direction: row;
+  width: 90%;
+  max-width: 800px;
+  justify-content: center;
+  gap: 50px;
 }
 @media (min-width: 992px) {
-  #sec-proj-01 .page-header h1 {
-    font-size: 72px;
+  #sec-contact-01 .form-zone {
+    flex-direction: row-reverse;
   }
 }
-@media (min-width: 1600px) {
-  #sec-proj-01 .page-header h1 {
-    font-size: 90px;
-  }
-}
-#sec-proj-01 .projet-select {
+#sec-contact-01 .form-zone .social-col {
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
+  gap: 20px;
+  padding-top: 15px;
 }
-#sec-proj-01 .projet-select .projet-bar {
-  display: flex;
+#sec-contact-01 .form-zone .social-col .social-square {
+  width: 180px;
+  height: 180px;
   background: #544953;
-  padding: 25px 20px;
-  margin: auto;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
 }
-#sec-proj-01 .projet-select .projet-bar * {
-  margin: 0;
+#sec-contact-01 .form-zone .social-col .social-square img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
-#sec-proj-01 .projet-select .projet-bar h2 {
+#sec-contact-01 .form-zone .social-col .social-square .social-title {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
+  margin: 0;
   font-size: 24px;
 }
-#sec-proj-01 .projet-select .projet-bar img {
-  width: 150px;
-  height: 150px;
-}/*# sourceMappingURL=style-projets.css.map */
+#sec-contact-01 .form-zone .form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sec-contact-01 .form-zone .form-col #page-title {
+  font-family: "Playfair", serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 auto 25px auto;
+}
+#sec-contact-01 .form-zone .form-col form .form-bloc {
+  margin-bottom: 15px;
+}
+#sec-contact-01 .form-zone .form-col form label {
+  display: block;
+  color: #ffffff;
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 auto 5px auto;
+}
+#sec-contact-01 .form-zone .form-col form input {
+  display: block;
+}
+#sec-contact-01 .form-zone .form-col #alt-form {
+  background: #544953;
+  padding: 20px 25px;
+}/*# sourceMappingURL=style-contact.css.map */

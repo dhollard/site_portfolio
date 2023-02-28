@@ -1,0 +1,97 @@
+@use 'color';
+@use 'mquery';
+@use 'typo';
+@use 'global';
+
+// section 01
+#sec-contact-01 {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+
+    .form-zone {
+        display: flex;
+        margin: 200px auto 200px auto;
+        flex-direction: row;
+        width: 90%;
+        max-width: 800px;
+        justify-content: center;
+        gap: 50px;
+
+        // media query form-zone
+        @include mquery.laptop {   
+            flex-direction: row-reverse;
+        }
+
+        // Colonne qui contient les liens des réseaux sociaux
+        .social-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 15px;
+
+            .social-square {
+                width: 180px;
+                height: 180px;
+                background: color.$ambiance-80;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-decoration: none;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 10px;
+                }
+
+                .social-title {
+                    @include typo.title($color:#ffffff, $weight:500);
+                    margin: 0;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        // Colonne contenant le formulaire et l'adresse mail de contact
+        .form-col {    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            #page-title {
+                @include typo.special-title($color:#ffffff, $weight:800);
+                margin: 0 auto 25px auto;
+            }
+
+            form {
+
+                .form-bloc {
+                    margin-bottom: 15px;
+                }
+
+                label {
+                    display: block;
+                    color: #ffffff;
+                    @include typo.title($color:#ffffff, $weight:500);
+                    font-size: 18px;
+                    margin:0 auto 5px auto;
+                }
+
+                input {
+                    display: block;
+                }
+                
+            }
+
+            #alt-form {
+                background: color.$ambiance-80;
+                padding: 20px 25px;
+            }
+        }
+
+    }
+    
+}
