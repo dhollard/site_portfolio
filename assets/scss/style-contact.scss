@@ -27,10 +27,11 @@
         .social-col {
             display: flex;
             flex-direction: column;
+            justify-content: start;
             gap: 20px;
-            padding-top: 15px;
 
             .social-square {
+                position: sticky;
                 width: 180px;
                 height: 180px;
                 background: color.$ambiance-80;
@@ -66,10 +67,15 @@
                 margin: 0 auto 25px auto;
             }
 
+            .form-box {
+                background: color.$ambiance-120;
+                padding: 20px;
+            }
+
             form {
 
                 .form-bloc {
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
                 }
 
                 label {
@@ -82,6 +88,22 @@
 
                 input {
                     display: block;
+                    height: 35px;
+                    width: 400px;
+                    padding: 10px 8px;
+                    border-radius: 3px;
+                    border: none;
+                    @include typo.text($color:#242424, $weight:400);
+                }
+
+                textarea {
+                    min-height: 100px;
+                    width: 400px;
+                    padding: 10px 8px;
+                    border-radius: 3px;
+                    border: none;
+                    resize: vertical;
+                    @include typo.text($color:#242424, $weight:400);
                 }
                 
             }
@@ -89,7 +111,32 @@
             #alt-form {
                 background: color.$ambiance-80;
                 padding: 20px 25px;
+                border-radius: 15px;
+
+                p {
+                    @include typo.text($color:#ffffff, $weight:500);
+                }
             }
+
+            .send-btn {
+                background: color.$primary-100;
+                border: none;
+                padding: 13px 20px;
+                @include typo.title($color:#ffffff, $weight:700);
+                text-decoration: none;
+                font-size: 18px;
+                text-align: center;
+                border-radius: 5px;
+                width: -moz-fit-content;
+                width: fit-content;
+                margin: 0 auto 0 auto;
+            }
+        }
+
+        .validation-bloc {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
     }

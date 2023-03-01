@@ -29,27 +29,30 @@
 
                 <div class="form-col">
 
-                    <div>
+                    <div class="form-box">
                         <h1 id="page-title">Me contacter</h1>
 
                         <form action="contact-mail.php" method="POST">
                             <div class="form-bloc">
                                 <label for="sender_nom">Votre nom</label>
-                                <input type="text" name="sender_nom" placeholder="">
+                                <input type="text" required name="sender_nom" placeholder="Pour mieux vous connaître">
                             </div>
                             
                             <div class="form-bloc">
                                 <label for="sender_mail">Votre e-mail</label>
-                                <input type="email" name="sender_mail" placeholder="Un e-mail pour vous répondre">
+                                <input type="email" required name="sender_mail" placeholder="Pour pouvoir vous répondre">
                             </div>
                             
                             <div class="form-bloc">
-                                <label for="sender_message">De quoi souhaitez-vous parler ?</label>
-                                <textarea name="sender_message" placeholder="Votre message"></textarea>
+                                <label for="sender_message">Votre message</label>
+                                <textarea required name="sender_message" maxlength="5000" placeholder="De quoi souhaitez-vous parler ?"></textarea>
                             </div>
                         </form>
 
-                        <button>Envoyer</button>
+                        <div class="validation-bloc">
+                            <button class="send-btn">Envoyer</button>
+                        </div>
+                        
                     </div>
 
                     <div id="alt-form">

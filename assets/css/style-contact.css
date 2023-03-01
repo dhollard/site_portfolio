@@ -758,10 +758,11 @@ footer .footer-container #footer-col-2 p span {
 #sec-contact-01 .form-zone .social-col {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 20px;
-  padding-top: 15px;
 }
 #sec-contact-01 .form-zone .social-col .social-square {
+  position: sticky;
   width: 180px;
   height: 180px;
   background: #544953;
@@ -797,8 +798,12 @@ footer .footer-container #footer-col-2 p span {
   color: #ffffff;
   margin: 0 auto 25px auto;
 }
+#sec-contact-01 .form-zone .form-col .form-box {
+  background: #261624;
+  padding: 20px;
+}
 #sec-contact-01 .form-zone .form-col form .form-bloc {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 #sec-contact-01 .form-zone .form-col form label {
   display: block;
@@ -812,8 +817,57 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-contact-01 .form-zone .form-col form input {
   display: block;
+  height: 35px;
+  width: 400px;
+  padding: 10px 8px;
+  border-radius: 3px;
+  border: none;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #242424;
+}
+#sec-contact-01 .form-zone .form-col form textarea {
+  min-height: 100px;
+  width: 400px;
+  padding: 10px 8px;
+  border-radius: 3px;
+  border: none;
+  resize: vertical;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #242424;
 }
 #sec-contact-01 .form-zone .form-col #alt-form {
   background: #544953;
   padding: 20px 25px;
+  border-radius: 15px;
+}
+#sec-contact-01 .form-zone .form-col #alt-form p {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+#sec-contact-01 .form-zone .form-col .send-btn {
+  background: #FF6666;
+  border: none;
+  padding: 13px 20px;
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+}
+#sec-contact-01 .form-zone .validation-bloc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=style-contact.css.map */
