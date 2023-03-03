@@ -3,6 +3,11 @@
 @use 'typo';
 @use 'global';
 
+// correction pour sticky
+html, body {
+    overflow-x: visible;
+}
+
 // section 01
 #sec-contact-01 {
     min-height: 90vh;
@@ -11,7 +16,7 @@
 
     .form-zone {
         display: flex;
-        margin: 200px auto 200px auto;
+        margin: 100px auto 200px auto;
         flex-direction: row;
         width: 90%;
         max-width: 800px;
@@ -28,13 +33,21 @@
             display: flex;
             flex-direction: column;
             justify-content: start;
-            gap: 20px;
+            
 
-            .social-square {
+            .sticky-group {
                 position: sticky;
+                top: 0px;
+                gap: 30px;
+                padding-top: 120px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .social-square { 
                 width: 180px;
                 height: 180px;
-                background: color.$ambiance-80;
+                background: color.$ambiance-120;
                 border-radius: 15px;
                 display: flex;
                 justify-content: center;
@@ -61,15 +74,18 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-top: 120px;
 
             #page-title {
-                @include typo.special-title($color:#ffffff, $weight:800);
+                @include typo.special-title($color:color.$primary-100, $weight:800);
+                text-align: center;
                 margin: 0 auto 25px auto;
             }
 
             .form-box {
-                background: color.$ambiance-120;
-                padding: 20px;
+                background: color.$ambiance-80;
+                border-radius: 15px;
+                padding: 50px 80px;
             }
 
             form {
@@ -80,28 +96,27 @@
 
                 label {
                     display: block;
-                    color: #ffffff;
-                    @include typo.title($color:#ffffff, $weight:500);
+                    @include typo.title($color:#ffffff, $weight:600);
                     font-size: 18px;
                     margin:0 auto 5px auto;
                 }
 
                 input {
                     display: block;
-                    height: 35px;
+                    height: 40px;
                     width: 400px;
                     padding: 10px 8px;
+                    border: 2px solid color.$ambiance-40;
                     border-radius: 3px;
-                    border: none;
                     @include typo.text($color:#242424, $weight:400);
                 }
 
                 textarea {
-                    min-height: 100px;
+                    min-height: 150px;
                     width: 400px;
                     padding: 10px 8px;
                     border-radius: 3px;
-                    border: none;
+                    border: 2px solid color.$ambiance-40;
                     resize: vertical;
                     @include typo.text($color:#242424, $weight:400);
                 }
@@ -109,12 +124,23 @@
             }
 
             #alt-form {
-                background: color.$ambiance-80;
-                padding: 20px 25px;
+                background: color.$ambiance-120;
+                padding: 20px 30px;
                 border-radius: 15px;
+                margin-top: 40px;
+
+                h3 {
+                    @include typo.title($color:#ffffff, $weight:500);
+                    font-size: 20px;
+                }
 
                 p {
                     @include typo.text($color:#ffffff, $weight:500);
+                    font-size: 17px;
+                }
+
+                .mail-focus {
+                    color: color.$primary-100;
                 }
             }
 

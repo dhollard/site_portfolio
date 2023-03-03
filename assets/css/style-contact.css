@@ -736,6 +736,10 @@ footer .footer-container #footer-col-2 p span {
     }
   }
 }
+html, body {
+  overflow-x: visible;
+}
+
 #sec-contact-01 {
   min-height: 90vh;
   display: flex;
@@ -743,7 +747,7 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-contact-01 .form-zone {
   display: flex;
-  margin: 200px auto 200px auto;
+  margin: 100px auto 200px auto;
   flex-direction: row;
   width: 90%;
   max-width: 800px;
@@ -759,13 +763,19 @@ footer .footer-container #footer-col-2 p span {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 20px;
+}
+#sec-contact-01 .form-zone .social-col .sticky-group {
+  position: sticky;
+  top: 0px;
+  gap: 30px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
 }
 #sec-contact-01 .form-zone .social-col .social-square {
-  position: sticky;
   width: 180px;
   height: 180px;
-  background: #544953;
+  background: #261624;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -790,49 +800,51 @@ footer .footer-container #footer-col-2 p span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 120px;
 }
 #sec-contact-01 .form-zone .form-col #page-title {
   font-family: "Playfair", serif;
   font-size: 42px;
   font-weight: 800;
-  color: #ffffff;
+  color: #FF6666;
+  text-align: center;
   margin: 0 auto 25px auto;
 }
 #sec-contact-01 .form-zone .form-col .form-box {
-  background: #261624;
-  padding: 20px;
+  background: #544953;
+  border-radius: 15px;
+  padding: 50px 80px;
 }
 #sec-contact-01 .form-zone .form-col form .form-bloc {
   margin-bottom: 20px;
 }
 #sec-contact-01 .form-zone .form-col form label {
   display: block;
-  color: #ffffff;
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
   font-size: 18px;
   margin: 0 auto 5px auto;
 }
 #sec-contact-01 .form-zone .form-col form input {
   display: block;
-  height: 35px;
+  height: 40px;
   width: 400px;
   padding: 10px 8px;
+  border: 2px solid #A69CA4;
   border-radius: 3px;
-  border: none;
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #242424;
 }
 #sec-contact-01 .form-zone .form-col form textarea {
-  min-height: 100px;
+  min-height: 150px;
   width: 400px;
   padding: 10px 8px;
   border-radius: 3px;
-  border: none;
+  border: 2px solid #A69CA4;
   resize: vertical;
   font-family: "Assistant", sans-serif;
   font-size: 16px;
@@ -840,15 +852,27 @@ footer .footer-container #footer-col-2 p span {
   color: #242424;
 }
 #sec-contact-01 .form-zone .form-col #alt-form {
-  background: #544953;
-  padding: 20px 25px;
+  background: #261624;
+  padding: 20px 30px;
   border-radius: 15px;
+  margin-top: 40px;
+}
+#sec-contact-01 .form-zone .form-col #alt-form h3 {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
 }
 #sec-contact-01 .form-zone .form-col #alt-form p {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
+  font-size: 17px;
+}
+#sec-contact-01 .form-zone .form-col #alt-form .mail-focus {
+  color: #FF6666;
 }
 #sec-contact-01 .form-zone .form-col .send-btn {
   background: #FF6666;

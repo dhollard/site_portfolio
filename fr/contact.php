@@ -56,27 +56,31 @@
                     </div>
 
                     <div id="alt-form">
-                        <p>Vous préférez me contacter directement par mail ?</p>
-                        <p>Envoyez votre message à contact@darius-hollard.com</p>
+                        <h3>Vous préférez me contacter directement par mail ?</h3>
+                        <p>Envoyez votre message à <span class="mail-focus">contact@darius-hollard.com</span></p>
                     </div>
                 </div>
 
                 <div class="social-col">
 
-                    <a class="social-square" href="https://www.linkedin.com/in/darius-hollard/" target="_blank">
-                        <img src="/assets/svg/ico-linkedin-blanc.svg" alt="logo de LinkedIn">
-                        <h2 class="social-title">LinkedIn</h2>
-                    </a>
+                    <div class="sticky-group">
 
-                    <a class="social-square" href="https://www.instagram.com/darius_hollard/" target="_blank">
-                        <img src="/assets/svg/ico-instagram-blanc.svg" alt="logo de Instagram">
-                        <h2 class="social-title">Instagram</h2>
-                    </a>
+                        <a class="social-square" href="https://www.linkedin.com/in/darius-hollard/" target="_blank">
+                            <img src="/assets/svg/ico-linkedin-blanc.svg" alt="logo de LinkedIn">
+                            <h2 class="social-title">LinkedIn</h2>
+                        </a>
 
-                    <a class="social-square" href="https://github.com/dhollard" target="_blank">
-                        <img src="/assets/svg/ico-github-blanc.svg" alt="logo de GitHub">
-                        <h2 class="social-title">GitHub</h2>
-                    </a>
+                        <a class="social-square" href="https://www.instagram.com/darius_hollard/" target="_blank">
+                            <img src="/assets/svg/ico-instagram-blanc.svg" alt="logo de Instagram">
+                            <h2 class="social-title">Instagram</h2>
+                        </a>
+
+                        <a class="social-square" href="https://github.com/dhollard" target="_blank">
+                            <img src="/assets/svg/ico-github-blanc.svg" alt="logo de GitHub">
+                            <h2 class="social-title">GitHub</h2>
+                        </a>
+
+                    </div>
 
                 </div>
 
