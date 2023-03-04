@@ -66,16 +66,19 @@
                     <div class="sticky-group">
 
                         <a class="social-square" href="https://www.linkedin.com/in/darius-hollard/" target="_blank">
+                            <div class="social-back" id="linkedin-background"></div>
                             <img src="/assets/svg/ico-linkedin-blanc.svg" alt="logo de LinkedIn">
                             <h2 class="social-title">LinkedIn</h2>
                         </a>
 
                         <a class="social-square" href="https://www.instagram.com/darius_hollard/" target="_blank">
+                            <div class="social-back" id="insta-background"></div>
                             <img src="/assets/svg/ico-instagram-blanc.svg" alt="logo de Instagram">
                             <h2 class="social-title">Instagram</h2>
                         </a>
 
                         <a class="social-square" href="https://github.com/dhollard" target="_blank">
+                            <div class="social-back" id="github-background"></div>
                             <img src="/assets/svg/ico-github-blanc.svg" alt="logo de GitHub">
                             <h2 class="social-title">GitHub</h2>
                         </a>

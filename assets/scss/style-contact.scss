@@ -16,16 +16,17 @@ html, body {
 
     .form-zone {
         display: flex;
-        margin: 100px auto 200px auto;
-        flex-direction: row;
+        margin: 100px auto 100px auto;
+        flex-direction: column;
         width: 90%;
         max-width: 800px;
         justify-content: center;
-        gap: 50px;
+        gap: 60px;
 
         // media query form-zone
         @include mquery.laptop {   
             flex-direction: row-reverse;
+            margin: 100px auto 200px auto;
         }
 
         // Colonne qui contient les liens des réseaux sociaux
@@ -38,15 +39,25 @@ html, body {
             .sticky-group {
                 position: sticky;
                 top: 0px;
-                gap: 30px;
-                padding-top: 120px;
+                gap: 30px 40px;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                // media query sticky-group
+                @include mquery.laptop {   
+                    padding-top: 120px;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    gap: 30px;
+                }
             }
 
             .social-square { 
-                width: 180px;
-                height: 180px;
+                position: relative;
+                width: 150px;
+                height: 150px;
                 background: color.$ambiance-120;
                 border-radius: 15px;
                 display: flex;
@@ -54,17 +65,59 @@ html, body {
                 align-items: center;
                 flex-direction: column;
                 text-decoration: none;
+                transition: transform 0.3s ease-in-out;
+
+                // media query social-square
+                @include mquery.laptop {   
+                    width: 180px;
+                    height: 180px;
+                }
 
                 img {
                     width: 60px;
                     height: 60px;
                     margin-bottom: 10px;
+                    z-index: 0;
                 }
 
                 .social-title {
                     @include typo.title($color:#ffffff, $weight:500);
                     margin: 0;
                     font-size: 24px;
+                    z-index: 0;
+                }
+
+                .social-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                }
+
+                #linkedin-background {
+                    transition: opacity 0.3s ease-in-out;
+                    opacity: 0;
+                    background: radial-gradient(circle at 20% 107%, rgb(46, 183, 232) 0%, rgb(21, 148, 206) 20%, rgb(0, 119, 181) 60%, rgb(0, 92, 153) 80%, rgb(0, 70, 128) 100%);
+                }
+
+                #insta-background {
+                    transition: opacity 0.3s ease-in-out;
+                    opacity: 0;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                }
+
+                #github-background {
+                    transition: opacity 0.3s ease-in-out;
+                    opacity: 0;
+                    background: radial-gradient(circle at 20% 107%, rgba(143,224,99,1) 0%, rgba(108,198,68,1) 20%, rgba(77,176,44,1) 60%, rgba(49,156,22,1) 80%, rgba(24,133,5,1) 100%);
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+
+                &:hover #insta-background, &:hover #linkedin-background, &:hover #github-background {
+                    opacity: 1;
                 }
             }
         }
@@ -73,19 +126,45 @@ html, body {
         .form-col {    
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            margin-top: 120px;
+            align-items: center;
+            margin-top: 40px;
+            width: 100%;
+
+            // media query form-col
+            @include mquery.laptop {   
+                margin-top: 120px;
+            }
 
             #page-title {
-                @include typo.special-title($color:color.$primary-100, $weight:800);
+                @include typo.special-title($color:#ffffff, $weight:800);
                 text-align: center;
                 margin: 0 auto 25px auto;
+                font-size: 38px;
+
+                // media query form-box
+                @include mquery.laptop {   
+                    font-size: 42px;
+                }
             }
 
             .form-box {
                 background: color.$ambiance-80;
+                border: 6px solid #FF6666;
                 border-radius: 15px;
-                padding: 50px 80px;
+                padding: 25px 15px;
+                box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
+                width: 100%;
+                max-width: 560px;
+
+                // media query form-box
+                @include mquery.tablet {   
+                    padding: 30px 35px;
+                }
+
+                // media query form-box
+                @include mquery.laptop {   
+                    padding: 50px 80px;
+                }
             }
 
             form {
@@ -104,21 +183,32 @@ html, body {
                 input {
                     display: block;
                     height: 40px;
-                    width: 400px;
+                    width: 100%;
                     padding: 10px 8px;
                     border: 2px solid color.$ambiance-40;
                     border-radius: 3px;
                     @include typo.text($color:#242424, $weight:400);
+
+                    
                 }
 
                 textarea {
                     min-height: 150px;
-                    width: 400px;
+                    width: 100%;
                     padding: 10px 8px;
                     border-radius: 3px;
                     border: 2px solid color.$ambiance-40;
                     resize: vertical;
                     @include typo.text($color:#242424, $weight:400);
+                }
+
+                input:hover, textarea:hover {
+                    border: 2px solid color.$primary-80;
+                }
+
+                input:focus, textarea:focus {
+                    border: 2px solid color.$primary-100;
+                    outline: none;
                 }
                 
             }
@@ -128,6 +218,14 @@ html, body {
                 padding: 20px 30px;
                 border-radius: 15px;
                 margin-top: 40px;
+                text-align: center;
+                width: 100%;
+                max-width: 560px;
+
+                // media query alt-form
+                @include mquery.tablet {   
+                    padding: 15px 20px;
+                }
 
                 h3 {
                     @include typo.title($color:#ffffff, $weight:500);
@@ -141,6 +239,7 @@ html, body {
 
                 .mail-focus {
                     color: color.$primary-100;
+                    white-space: nowrap;
                 }
             }
 
