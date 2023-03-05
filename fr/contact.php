@@ -32,15 +32,15 @@
                     <div class="form-box">
                         <h1 id="page-title">Me contacter</h1>
 
-                        <form action="contact-mail.php" method="POST">
+                        <form id="formulaire-contact" action="/assets/script/contact-mail.php" method="POST">
                             <div class="form-bloc">
                                 <label for="sender_nom">Votre nom</label>
-                                <input type="text" required name="sender_nom" placeholder="Pour mieux vous connaître">
+                                <input type="text" required name="sender_nom" maxlength="150" placeholder="Pour mieux vous connaître">
                             </div>
                             
                             <div class="form-bloc">
                                 <label for="sender_mail">Votre e-mail</label>
-                                <input type="email" required name="sender_mail" placeholder="Pour pouvoir vous répondre">
+                                <input type="email" required name="sender_mail" maxlength="150" placeholder="Pour pouvoir vous répondre">
                             </div>
                             
                             <div class="form-bloc">
@@ -50,7 +50,7 @@
                         </form>
 
                         <div class="validation-bloc">
-                            <button class="send-btn">Envoyer</button>
+                            <button class="send-btn" type="submit" form="formulaire-contact" name="bouton-envoi">Envoyer</button>
                         </div>
                         
                     </div>

@@ -1,0 +1,86 @@
+@use 'color';
+@use 'mquery';
+@use 'typo';
+@use 'global';
+
+// correction pour sticky
+html, body {
+    overflow-x: visible;
+}
+
+#center-zone {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contenu-czone {
+        background: color.$ambiance-80;
+        padding: 45px 20px 50px 20px;
+        margin-top: 50px;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px -10px 40px rgba(166, 156, 164, 0.12);
+
+        // media query contenu-czone
+        @include mquery.landscape{   
+            padding: 45px 40px 50px 40px;
+        }
+
+        .titre {
+            @include typo.title($color:color.$primary-100, $weight:600);
+            font-size: 20px;
+            margin: 0 auto 10px auto;
+            text-align: center;
+
+            // media query titre
+            @include mquery.landscape{   
+                font-size: 32px;
+            }
+        }
+
+        .corps-txt {
+            @include typo.text($color:#ffffff, $weight:400);
+            font-size: 16px;
+            margin: 0 auto 10px auto;
+            text-align: center;
+
+            // media query corps-txt
+            @include mquery.landscape{   
+                font-size: 18px;
+            }
+        }
+
+        .mail-focus {
+            color: color.$primary-100;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+
+        .linkback {
+            @include typo.text($color:#ffffff, $weight:600);
+            margin: 15px auto 0 auto;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 17px;
+            text-align: center;
+            background: color.$ambiance-100;
+
+            // media query linkback
+            @include mquery.landscape{   
+                font-size: 18px;
+                margin: 30px auto 0 auto;
+            }
+
+            &:hover {
+                background: color.$ambiance-120;
+            }
+            
+
+        }
+    }
+}
