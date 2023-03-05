@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="social-col">
+                <div class="social-col wait-for-load">
 
                     <div class="sticky-group">
 
