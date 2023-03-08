@@ -1,0 +1,41 @@
+@use 'color';
+@use 'mquery';
+@use 'typo';
+@use 'global';
+
+// section 01
+#sec-legal-01 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 {
+        @include typo.special-title($color:#ffffff, $weight:500);
+    }
+
+    .legal-bloc {
+        background: color.$ambiance-120;
+        padding: 20px;
+
+        .bloc-title {
+            @include typo.title($color:color.$primary-100, $weight:700);
+        }
+
+        p {
+            @include typo.text($color:#ffffff, $weight:500);
+        }
+
+        .bloc-list {
+
+            li {
+
+            }
+        }
+
+        .bloc-link {
+            text-decoration: none;
+        }
+    }
+}

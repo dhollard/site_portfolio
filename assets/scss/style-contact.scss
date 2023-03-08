@@ -243,7 +243,7 @@ html, body {
                 }
             }
 
-            .send-btn {
+            #send-btn {
                 background: color.$primary-100;
                 border: none;
                 padding: 13px 20px;
@@ -256,13 +256,43 @@ html, body {
                 width: fit-content;
                 margin: 0 auto 0 auto;
                 cursor: pointer;
+
+                &:hover {
+                    background: color.$primary-120;
+                }
+
+                &:disabled {
+                    background: rgb(106, 106, 106);
+                    cursor:not-allowed;
+                }
+            }
+
+            #captcha-msg {
+                display: none;
+                background: color.$secondary-100;
+                padding: 20px;
+                border-radius: 5px;
+                @include typo.text($color:#ffffff, $weight:500);
             }
         }
 
         .validation-bloc {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            gap: 20px;
             align-items: center;
+        }
+
+        .show-element {
+            display: block!important;
+        }
+
+        .g-recaptcha {
+
+            // media query captcha
+            @include mquery.phone {   
+                transform:scale(0.77);
+            }
         }
 
     }

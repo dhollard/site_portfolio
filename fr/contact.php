@@ -8,6 +8,9 @@
     <!-- Appels ressources page -->
     <link rel="stylesheet" href="/assets/css/style-contact.css">
 
+    <!-- Script ReCaptcha V2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- SEO et identité page -->
     <link rel="canonical" href="https://darius-hollard.com/fr/contact" />
     <title>Me contacter</title>
@@ -32,7 +35,7 @@
                     <div class="form-box">
                         <h1 id="page-title">Me contacter</h1>
 
-                        <form id="formulaire-contact" action="/assets/script/contact-mail.php" method="POST">
+                        <form id="formulaire-contact" action="/assets/script/contact-mail.php" method="POST" >
                             <div class="form-bloc">
                                 <label for="sender_nom">Votre nom</label>
                                 <input type="text" required name="sender_nom" maxlength="150" placeholder="Pour mieux vous connaître">
@@ -47,12 +50,15 @@
                                 <label for="sender_message">Votre message</label>
                                 <textarea required name="sender_message" maxlength="5000" placeholder="De quoi souhaitez-vous parler ?"></textarea>
                             </div>
+
+                            <p id="captcha-msg">Merci de cocher la case reCAPTCHA pour vérifier que vous n'êtes pas un robot.</p>
+
+                            <div class="validation-bloc">
+                                <div class="g-recaptcha" data-sitekey="6LfvO-IkAAAAAIJy279J0YK9jj_fkMXBalKgreMH"></div>
+                                <button id="send-btn" type="submit" form="formulaire-contact" name="bouton-envoi">Envoyer</button>
+                            </div>
                         </form>
 
-                        <div class="validation-bloc">
-                            <button class="send-btn" type="submit" form="formulaire-contact" name="bouton-envoi">Envoyer</button>
-                        </div>
-                        
                     </div>
 
                     <div id="alt-form">
@@ -101,6 +107,24 @@
 
     <!-- Appels et scripts de fin de page -->
     <?php include_once('../assets/module/end-page-module.php'); ?>
+
+    <!-- Check si Captcha est coché avant de pouvoir valider -->
+    <script>
+        function isCaptchaChecked() {
+        return grecaptcha && grecaptcha.getResponse().length !== 0;
+        }
+
+        document.querySelector("#formulaire-contact").addEventListener("submit", function(e){
+            if(isCaptchaChecked()){
+                //catpcha est coché, laisser passer envoi
+                document.getElementById("captcha-msg").classList.remove("show-element");
+            }else{
+                e.preventDefault();    //stop form from submitting
+                document.getElementById("captcha-msg").classList.add("show-element");
+                //alert("Non-coché");
+            }
+        });
+    </script>
 
 </body>
 
