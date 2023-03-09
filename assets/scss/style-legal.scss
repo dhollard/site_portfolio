@@ -10,32 +10,82 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
+    margin: 100px auto;
+
+    // media query section 01
+    @include mquery.tablet {   
+        margin: 150px auto;
+    }
     
     h1 {
         @include typo.special-title($color:#ffffff, $weight:500);
+        margin: 0 auto 0px auto;
+        font-size: 40px;
+        text-align: center;
+
+        // media query titre page
+        @include mquery.tablet {   
+            font-size: 56px;
+        }
     }
 
     .legal-bloc {
         background: color.$ambiance-120;
-        padding: 20px;
+        padding: 30px 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 900px;
+
+        // media query legal-bloc
+        @include mquery.tablet {   
+            padding: 45px 40px;
+        }
 
         .bloc-title {
             @include typo.title($color:color.$primary-100, $weight:700);
+            font-size: 24px;
+            margin:0 auto 15px auto;
         }
 
         p {
-            @include typo.text($color:#ffffff, $weight:500);
+            @include typo.text($color:#ffffff, $weight:400);
+            font-size: 17px;
+            margin: 0 auto 0 auto;
+
+            &:not(:last-child) {
+                margin: 0 auto 12px auto; 
+            }
         }
 
         .bloc-list {
+            margin-bottom: 25px;
+            padding-inline-start: 20px;
+
+            // media query bloc-list
+            @include mquery.tablet {   
+                padding-inline-start: 40px;
+            }
 
             li {
+                @include typo.text($color:#ffffff, $weight:400);
+                font-size: 17px;
+                margin-bottom: 8px;
 
+                &::marker {
+                    color: color.$primary-100;
+                }
             }
         }
 
         .bloc-link {
             text-decoration: none;
+            @include typo.title($color:#ffffff, $weight:500);
+            font-size: 18px;
+
+            &:hover {
+                color:color.$primary-100;
+            }
         }
     }
 }

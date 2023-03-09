@@ -742,29 +742,87 @@ footer .footer-container #footer-col-2 p span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 35px;
+  margin: 100px auto;
+}
+@media (min-width: 500px) {
+  #sec-legal-01 {
+    margin: 150px auto;
+  }
 }
 #sec-legal-01 h1 {
   font-family: "Playfair", serif;
   font-size: 42px;
   font-weight: 500;
   color: #ffffff;
+  margin: 0 auto 0px auto;
+  font-size: 40px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  #sec-legal-01 h1 {
+    font-size: 56px;
+  }
 }
 #sec-legal-01 .legal-bloc {
   background: #261624;
-  padding: 20px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+}
+@media (min-width: 500px) {
+  #sec-legal-01 .legal-bloc {
+    padding: 45px 40px;
+  }
 }
 #sec-legal-01 .legal-bloc .bloc-title {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #FF6666;
+  font-size: 24px;
+  margin: 0 auto 15px auto;
 }
 #sec-legal-01 .legal-bloc p {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
+  font-size: 17px;
+  margin: 0 auto 0 auto;
+}
+#sec-legal-01 .legal-bloc p:not(:last-child) {
+  margin: 0 auto 12px auto;
+}
+#sec-legal-01 .legal-bloc .bloc-list {
+  margin-bottom: 25px;
+  padding-inline-start: 20px;
+}
+@media (min-width: 500px) {
+  #sec-legal-01 .legal-bloc .bloc-list {
+    padding-inline-start: 40px;
+  }
+}
+#sec-legal-01 .legal-bloc .bloc-list li {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+#sec-legal-01 .legal-bloc .bloc-list li::marker {
+  color: #FF6666;
 }
 #sec-legal-01 .legal-bloc .bloc-link {
   text-decoration: none;
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+}
+#sec-legal-01 .legal-bloc .bloc-link:hover {
+  color: #FF6666;
 }/*# sourceMappingURL=style-legal.css.map */
