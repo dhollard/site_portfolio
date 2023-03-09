@@ -996,6 +996,7 @@ html, body {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
+  margin: 0 auto 20px auto;
 }
 #sec-contact-01 .form-zone .validation-bloc {
   display: flex;
