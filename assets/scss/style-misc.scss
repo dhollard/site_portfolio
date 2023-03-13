@@ -42,7 +42,7 @@ html, body {
             }
         }
 
-        .corps-txt {
+        .corps-txt, .mail-focus {
             @include typo.text($color:#ffffff, $weight:400);
             font-size: 16px;
             margin: 0 auto 10px auto;
@@ -56,8 +56,13 @@ html, body {
 
         .mail-focus {
             color: color.$primary-100;
-            white-space: nowrap;
+            font-size: 18px;
             font-weight: 600;
+
+            // media query mail-focus
+            @include mquery.landscape{   
+                font-size: 20px;
+            }
         }
 
         .linkback {
@@ -73,7 +78,7 @@ html, body {
             // media query linkback
             @include mquery.landscape{   
                 font-size: 18px;
-                margin: 30px auto 0 auto;
+                margin: 25px auto 0 auto;
             }
 
             &:hover {

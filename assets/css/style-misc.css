@@ -640,10 +640,12 @@ footer .footer-container #footer-col-2 p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 5px auto;
+  text-align: center;
 }
 @media (min-width: 768px) {
   footer .footer-container #footer-col-2 p {
     margin: 0 0 5px auto;
+    text-align: right;
   }
 }
 footer .footer-container #footer-col-2 p span {
@@ -776,7 +778,7 @@ html, body {
     font-size: 32px;
   }
 }
-#center-zone .contenu-czone .corps-txt {
+#center-zone .contenu-czone .corps-txt, #center-zone .contenu-czone .mail-focus {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -786,14 +788,19 @@ html, body {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #center-zone .contenu-czone .corps-txt {
+  #center-zone .contenu-czone .corps-txt, #center-zone .contenu-czone .mail-focus {
     font-size: 18px;
   }
 }
 #center-zone .contenu-czone .mail-focus {
   color: #FF6666;
-  white-space: nowrap;
+  font-size: 18px;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  #center-zone .contenu-czone .mail-focus {
+    font-size: 20px;
+  }
 }
 #center-zone .contenu-czone .linkback {
   font-family: "Assistant", sans-serif;
@@ -811,7 +818,7 @@ html, body {
 @media (min-width: 768px) {
   #center-zone .contenu-czone .linkback {
     font-size: 18px;
-    margin: 30px auto 0 auto;
+    margin: 25px auto 0 auto;
   }
 }
 #center-zone .contenu-czone .linkback:hover {

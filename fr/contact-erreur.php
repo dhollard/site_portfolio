@@ -26,7 +26,8 @@
             <div class="contenu-czone">
                 <p class="titre">Une erreur s'est produite...</p>
                 <p class="corps-txt">Votre message n'a pas pu être envoyé.</p>
-                <p class="corps-txt">Merci de vérifier votre connexion internet et de me contacter directement à <span class="mail-focus">contact@darius-hollard.com</span> si le problème se répète.</p>
+                <p class="corps-txt">Merci de vérifier votre connexion internet et de me contacter directement à l'adresse suivante si le problème persiste :</p>
+                <p class="mail-focus">contact@darius-hollard.com</p>
                 <a class="linkback" href="/fr/contact.php">Retour au formulaire</a>
             </div>
         </div>

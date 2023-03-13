@@ -89,3 +89,19 @@
         }
     }
 }
+
+
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution:.001dpcm) { 
+
+    //section qui contient les blocs de texte légaux
+    #sec-legal-01 {
+        gap: 0px !important;
+    }
+
+    #sec-legal-01 *:not(:last-child) {
+        margin: 0 auto 35px auto !important;
+    }
+
+
+}

@@ -640,10 +640,12 @@ footer .footer-container #footer-col-2 p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 5px auto;
+  text-align: center;
 }
 @media (min-width: 768px) {
   footer .footer-container #footer-col-2 p {
     margin: 0 0 5px auto;
+    text-align: right;
   }
 }
 footer .footer-container #footer-col-2 p span {
@@ -825,4 +827,14 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-legal-01 .legal-bloc .bloc-link:hover {
   color: #FF6666;
+}
+
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution: 0.001dpcm) {
+  #sec-legal-01 {
+    gap: 0px !important;
+  }
+  #sec-legal-01 *:not(:last-child) {
+    margin: 0 auto 35px auto !important;
+  }
 }/*# sourceMappingURL=style-legal.css.map */

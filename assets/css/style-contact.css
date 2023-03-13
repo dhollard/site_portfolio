@@ -640,10 +640,12 @@ footer .footer-container #footer-col-2 p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 5px auto;
+  text-align: center;
 }
 @media (min-width: 768px) {
   footer .footer-container #footer-col-2 p {
     margin: 0 0 5px auto;
+    text-align: right;
   }
 }
 footer .footer-container #footer-col-2 p span {
@@ -1010,5 +1012,54 @@ html, body {
 @media (max-width: 400px) {
   #sec-contact-01 .form-zone .g-recaptcha {
     transform: scale(0.77);
+  }
+}
+
+/* CODE DE BUG FIX DEDIE A SAFARI */
+@media not all and (min-resolution: 0.001dpcm) {
+  /* problèmes liés à la propriété gap */
+  .validation-bloc {
+    gap: 0px !important;
+  }
+  #send-btn {
+    margin-top: 20px !important;
+  }
+  @media (min-width: 1px) and (max-width: 377px) {
+    .sticky-group {
+      gap: 0px !important;
+    }
+    .social-square:not(:last-child) {
+      margin: 0 auto 30px auto !important;
+    }
+  }
+  @media (min-width: 378px) and (max-width: 991px) {
+    .sticky-group {
+      gap: 0px !important;
+    }
+    .social-square {
+      margin: 0 20px 30px 20px !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .sticky-group {
+      gap: 0 !important;
+    }
+    .social-square:not(:last-child) {
+      margin: 0 auto 30px auto !important;
+    }
+    .form-zone {
+      gap: 0 !important;
+    }
+    .form-col {
+      margin-left: 60px !important;
+    }
+  }
+  @media (min-width: 1px) and (max-width: 991px) {
+    .form-zone {
+      gap: 0 !important;
+    }
+    .form-col {
+      margin-bottom: 60px !important;
+    }
   }
 }/*# sourceMappingURL=style-contact.css.map */

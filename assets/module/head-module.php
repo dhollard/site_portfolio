@@ -3,3 +3,6 @@
 
 <!-- Appels ressources commun -->
 <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+<!-- Retirer style bleu numéros de téléphone Safari -->
+<meta name="format-detection" content="telephone=no">
