@@ -140,7 +140,7 @@
 
                     <div class="process-btn-bloc">
                         <p>Détail du processus créatif :</p>
-                        <a href="#" target="_blank">Page du projet</a>
+                        <a href="/fr/projets.php" target="_blank">Page du projet</a>
                     </div>
 
                     <div class="process-btn-bloc">
