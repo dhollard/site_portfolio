@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>http://darius-hollard.com/accueil</loc>
+    <loc>http://darius-hollard.com/fr/accueil</loc>
 
     <lastmod>2023-03-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -11,7 +11,7 @@
 </url>
 
 <url>
-    <loc>http://darius-hollard.com/parcours</loc>
+    <loc>http://darius-hollard.com/fr/parcours</loc>
 
     <lastmod>2023-03-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -19,7 +19,7 @@
 </url>
 
 <url>
-    <loc>http://darius-hollard.com/projets</loc>
+    <loc>http://darius-hollard.com/fr/projets</loc>
 
     <lastmod>2023-03-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -27,7 +27,7 @@
 </url>
 
 <url>
-    <loc>http://darius-hollard.com/contact</loc>
+    <loc>http://darius-hollard.com/fr/contact</loc>
 
     <lastmod>2023-03-13</lastmod>
     <changefreq>monthly</changefreq>

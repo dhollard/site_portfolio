@@ -29,21 +29,21 @@
 
                     <div class="job-box">
                         <div id="p-code-left" class="wait-for-load">&lt;p&gt;</div>
-                        <a href="/fr/projets.php" id="job-1">
+                        <a href="/fr/projets" id="job-1">
                             <p><span id="job-1-txt1">Web</span> <span id="job-1-txt2">Designer</span></p>
                         </a>
                         <div id="p-code-right" class="wait-for-load">&lt;/p&gt;</div>
                     </div>
                     
                     <div class="job-box">
-                        <a href="/fr/projets.php" id="job-2">
+                        <a href="/fr/projets" id="job-2">
                             <p>Motion designer</p>
                             <p>Motion designer</p>
                         </a>
                     </div>
                 
                     <div class="job-box">
-                        <a href="/fr/projets.php" id="job-3">
+                        <a href="/fr/projets" id="job-3">
                             <p><span id="job-3-txt1">Graphic</span> <span id="job-3-txt2">Designer</span></p>
                         </a>
                     </div>
@@ -52,7 +52,7 @@
 
                 <div class="col-right">
                     
-                    <a class="portrait-content wait-for-load" href="/fr/parcours.php" aria-label="Voir mon parcours">
+                    <a class="portrait-content wait-for-load" href="/fr/parcours" aria-label="Voir mon parcours">
                         <div id="square-1"></div>
                         <div id="square-2"></div>
                         <img class="portrait" src="/assets/img/portrait-dh.jpg" alt="photo portrait de Darius Hollard">
@@ -90,17 +90,17 @@
 
                     <div class="btn-box">
 
-                        <a href="/fr/projets.php" class="welcome-btn">
+                        <a href="/fr/projets" class="welcome-btn">
                             <img src="/assets/svg/ico-picture-blanc.svg" alt="icone d'un soleil au dessus de deux collines">
                             <p>Voir mes projets</p>
                         </a>
 
-                        <a href="/fr/parcours.php" class="welcome-btn">
+                        <a href="/fr/parcours" class="welcome-btn">
                             <img src="/assets/svg/ico-sacoche-blanc.svg" alt="icone d'une sacoche de travail">
                             <p>Mon parcours & CV</p>
                         </a>
 
-                        <a href="/fr/contact.php" class="welcome-btn">
+                        <a href="/fr/contact" class="welcome-btn">
                             <img src="/assets/svg/ico-enveloppe-blanc.svg" alt="icone d'une enveloppe postale">
                             <p>Me contacter</p>
                         </a>
@@ -140,7 +140,7 @@
 
                     <div class="process-btn-bloc">
                         <p>Détail du processus créatif :</p>
-                        <a href="/fr/projets.php" target="_blank">Page du projet</a>
+                        <a href="/fr/projets" target="_blank">Page du projet</a>
                     </div>
 
                     <div class="process-btn-bloc">

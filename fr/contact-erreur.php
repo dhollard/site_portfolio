@@ -30,7 +30,7 @@
                 <p class="corps-txt">Votre message n'a pas pu être envoyé.</p>
                 <p class="corps-txt">Merci de vérifier votre connexion internet et de me contacter directement à l'adresse suivante si le problème persiste :</p>
                 <p class="mail-focus">contact@darius-hollard.com</p>
-                <a class="linkback" href="/fr/contact.php">Retour au formulaire</a>
+                <a class="linkback" href="/fr/contact">Retour au formulaire</a>
             </div>
         </div>
 

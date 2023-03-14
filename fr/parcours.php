@@ -245,7 +245,7 @@
                         <li>Outils d'intelligence artificielle appliquée</li>
                     </ul>
 
-                    <a href="/fr/projets.php" class="end-btn">Voir mes projets</a>
+                    <a href="/fr/projets" class="end-btn">Voir mes projets</a>
                 </div>
 
                 <div id="cv-container">

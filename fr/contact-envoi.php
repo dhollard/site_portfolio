@@ -28,7 +28,7 @@
             <div class="contenu-czone">
                 <p class="titre">Votre message a bien été transmis !</p>
                 <p class="corps-txt">Je reviendrai vers vous dès que possible.</p>
-                <a class="linkback" href="/fr/accueil.php">Retourner à l'accueil</a>
+                <a class="linkback" href="/fr/accueil">Retourner à l'accueil</a>
             </div>
         </div>
 

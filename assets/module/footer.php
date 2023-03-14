@@ -34,7 +34,7 @@
         </div>
 
         <div id="footer-col-2">
-            <a href="/fr/legal.php" id="legal-link">
+            <a href="/fr/legal" id="legal-link">
                 <div class="left-chevron">
                     <span></span>
                 </div>
