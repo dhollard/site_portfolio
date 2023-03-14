@@ -1,0 +1,6 @@
+#Bloquer le dossier assets et les pages sans intérêts SEO
+User-agent: *
+Disallow: /assets/
+
+Sitemap: https://darius-hollard.com/sitemap.xml
+Sitemap: https://www.darius-hollard.com/sitemap.xml

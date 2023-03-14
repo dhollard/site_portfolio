@@ -12,6 +12,8 @@
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
     <title>Envoi réussi</title>
+    <!-- Balise noindex-->
+    <meta name="robots" content="noindex">
 
 </head>
 

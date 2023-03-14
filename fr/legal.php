@@ -12,6 +12,8 @@
     <link rel="canonical" href="https://darius-hollard.com/fr/legal" />
     <title>Mentions légales</title>
     <meta name="description" content="Besoin d'une information juridique concernant ce site ? Toutes les informations nécessaires sont sur cette page." />
+    <!-- Balise noindex-->
+    <meta name="robots" content="noindex">
 
 </head>
 
