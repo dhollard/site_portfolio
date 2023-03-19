@@ -12,7 +12,7 @@
 
 <!-- Google tag (gtag.js) -->
 <script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-53XGD1RHLF"></script>
-<script>
+<script type="text/plain" data-cookiecategory="analytics">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

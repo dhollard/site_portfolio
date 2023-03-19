@@ -71,15 +71,4 @@
         // Insertion de l'image
         boite.insertAdjacentHTML('afterbegin', string);
     });
-
-    //vérifier si le cookie a besoin d'être masqué au chargement
-    /*document.addEventListener('DOMContentLoaded', function() {
-        var modal = document.getElementById("cm");
-        var cookie = document.getElementById("cookie-img");
-        if (modal != null) {
-            cookie.style.display = "block";
-        } else {
-            cookie.style.display = "none";
-        }
-    });*/
 </script>
