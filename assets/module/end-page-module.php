@@ -32,6 +32,10 @@
 <!-- Script interactions navbar -->
 <script defer src="/assets/script/navbar-interactions.js"></script>
 
+<!-- Script Cookie Consent -->
+<script defer src="/assets/libraries/CookieConsent/cookieconsent.js"></script>
+<script defer src="/assets/libraries/CookieConsent/cookieconsent-init.js"></script>
+
 <!-- Script pour bouton copy to clipboard -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -53,4 +57,29 @@
             }, 1000);
         });
     });
+</script>
+
+<!-- Script d'ajout du visuel cookie pour Cookie Consent-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ciblage du conteneur cookie
+        var boite = document.getElementById('cc_div');
+
+        // Création du contenu à insérer
+        var string = `<img id="cookie-img" src="/assets/img/cookie.png" alt="photo d'un cookie" width="200px">`;
+
+        // Insertion de l'image
+        boite.insertAdjacentHTML('afterbegin', string);
+    });
+
+    //vérifier si le cookie a besoin d'être masqué au chargement
+    /*document.addEventListener('DOMContentLoaded', function() {
+        var modal = document.getElementById("cm");
+        var cookie = document.getElementById("cookie-img");
+        if (modal != null) {
+            cookie.style.display = "block";
+        } else {
+            cookie.style.display = "none";
+        }
+    });*/
 </script>

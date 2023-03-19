@@ -48,6 +48,14 @@
             </div>
 
             <div class="legal-bloc">
+                <h2 class="bloc-title">Politique de cookies</h2>
+                <p>Ce site utilise des cookies informatiques dans l'unique but de collecter des données d'utilisation (nombre de visiteurs, pages les plus visitées, boutons les plus cliqués, etc...) afin d'améliorer l'expérience des utilisateurs.</p>
+                <p>Ces données sont anonymes et ne peuvent pas être tracées jusqu'à une personne en particulier. Aucun traceur ne suit l'utilisateur une fois qu'il quitte le présent site internet.</p>
+                <p>Votre acceptation ou refus de cette collecte de données sera mémorisé pendant 6 mois.</p>
+                <p>Si vous souhaitez le modifier manuellement, il vous suffit de supprimer les cookies par le biais de votre navigateur afin de faire réapparaître le pop-up dédié.</p>
+            </div>
+
+            <div class="legal-bloc">
                 <h2 class="bloc-title">Propriété intellectuelle</h2>
                 <p>M. Darius Hollard est le propriétaire du présent site internet et de tout le contenu qu'il contient.</p>
                 <p>Lorsqu'un projet mis en avant sur ce site inclu la participation d'autres personnes ou entreprise au sein desquelles M. Darius Hollard a travaillé, leur nom et rôle dans le projet est mentionné de manière la plus précise possible.</p>

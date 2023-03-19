@@ -6,3 +6,16 @@
 
 <!-- Retirer style bleu numéros de téléphone Safari -->
 <meta name="format-detection" content="telephone=no">
+
+<!-- Style Cookie Consent -->
+<link rel="stylesheet" href="/assets/libraries/CookieConsent/cookieconsent.css" media="print" onload="this.media='all'">
+
+<!-- Google tag (gtag.js) -->
+<script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-53XGD1RHLF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-53XGD1RHLF');
+</script>

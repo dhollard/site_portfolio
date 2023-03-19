@@ -692,6 +692,136 @@ footer {
     mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
 }
 
+
+// Style complémentaire Cookie Consent
+#cc--main {
+
+    //conteneur global
+    #cc_div {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 80%;
+
+        // media query #cc_div
+        @include mquery.tablet {  
+            max-width: 342px;
+        }
+
+        &:hover #cookie-img {
+            transform: translate(-50%, -10px);
+        }
+    }
+
+    //modal
+    #cm {
+        position: relative;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: auto;
+        background: color.$ambiance-120;
+        max-width: 342px;
+        box-shadow: 0 5px 20px rgba(198, 148, 62, 0.2)
+    }
+
+    //image cookie
+    #cookie-img {
+        display: none;
+        position: absolute;
+        top:-120px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        width: 250px;
+        animation: 0.8s ease-out 0s 1 CookieSlide;
+        transition: transform 0.3s ease-in-out;
+
+        // media query #cookie-img
+        @include mquery.tablet {  
+            top:-120px;
+        }
+
+        &:hover {
+            transform: translate(-50%, -10px);
+        }
+    }
+
+    //animation du cookie
+    @keyframes CookieSlide {
+        0% {
+            top:-85px;
+            opacity: 0;
+        }
+
+        15% {
+            opacity: 0;
+        }
+
+        100% {
+            top:-120px;
+            opacity: 1;
+        }
+      }
+
+    //texte explicatif
+    .cookie-desc {
+        @include typo.text($color:#ffffff);
+    }
+
+    //conteneur boutons
+    #c-bns {
+
+        // media query #c-bns
+        @include mquery.tablet {  
+            flex-direction: row;
+        }
+    }
+
+    //bouton accepter
+    #c-p-bn {
+        background: color.$primary-100;
+        @include typo.text($color:#ffffff);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 12px 10px;
+
+        // media query #c-p-bn
+        @include mquery.tablet {  
+            float: right;
+            margin-left: 1em;
+            margin-top: 0;
+        }
+
+        &:hover {
+            background: color.$primary-120;
+        }
+    }
+
+    //bouton refuser
+    #c-s-bn {
+        background: color.$ambiance-30;
+        @include typo.text($color:#242424);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 12px 10px;
+
+        &:hover {
+            background: color.$ambiance-40;
+        }
+    }
+
+
+}
+
+//element qui masque Cookie Consent ou non
+.show--consent {
+    #cookie-img {
+        display: block!important;
+    }
+}
+
 /* CODE DE BUG FIX DEDIE A SAFARI */
 @media not all and (min-resolution:.001dpcm) { 
 

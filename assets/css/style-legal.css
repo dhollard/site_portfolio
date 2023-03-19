@@ -720,6 +720,112 @@ footer .footer-container #footer-col-2 p span {
   mask: url("/assets/svg/blob-shape-08.svg") no-repeat 50% 50%;
 }
 
+#cc--main #cc_div {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 80%;
+}
+@media (min-width: 500px) {
+  #cc--main #cc_div {
+    max-width: 342px;
+  }
+}
+#cc--main #cc_div:hover #cookie-img {
+  transform: translate(-50%, -10px);
+}
+#cc--main #cm {
+  position: relative;
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: auto;
+  background: #261624;
+  max-width: 342px;
+  box-shadow: 0 5px 20px rgba(198, 148, 62, 0.2);
+}
+#cc--main #cookie-img {
+  display: none;
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  width: 250px;
+  animation: 0.8s ease-out 0s 1 CookieSlide;
+  transition: transform 0.3s ease-in-out;
+}
+@media (min-width: 500px) {
+  #cc--main #cookie-img {
+    top: -120px;
+  }
+}
+#cc--main #cookie-img:hover {
+  transform: translate(-50%, -10px);
+}
+@keyframes CookieSlide {
+  0% {
+    top: -85px;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    top: -120px;
+    opacity: 1;
+  }
+}
+#cc--main .cookie-desc {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+@media (min-width: 500px) {
+  #cc--main #c-bns {
+    flex-direction: row;
+  }
+}
+#cc--main #c-p-bn {
+  background: #FF6666;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 12px 10px;
+}
+@media (min-width: 500px) {
+  #cc--main #c-p-bn {
+    float: right;
+    margin-left: 1em;
+    margin-top: 0;
+  }
+}
+#cc--main #c-p-bn:hover {
+  background: #E93B39;
+}
+#cc--main #c-s-bn {
+  background: #D8D6D8;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #242424;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 12px 10px;
+}
+#cc--main #c-s-bn:hover {
+  background: #A69CA4;
+}
+
+.show--consent #cookie-img {
+  display: block !important;
+}
+
 /* CODE DE BUG FIX DEDIE A SAFARI */
 @media not all and (min-resolution: 0.001dpcm) {
   /* problèmes liés à la propriété gap */
