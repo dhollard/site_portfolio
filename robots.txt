@@ -1,5 +1,6 @@
 #Bloquer le dossier assets et les pages sans intérêts SEO
 User-agent: *
+Allow: /assets/img/favicon.png
 Disallow: /assets/
 Disallow: /logs/
 
