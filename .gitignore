@@ -1,0 +1,2 @@
+#ignorer fichier backend de gestion d'envoi mail
+**/script/contact-mail.php
