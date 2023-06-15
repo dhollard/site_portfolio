@@ -30,22 +30,49 @@
                 <h1>Mes projets</h1>
             </div>
 
-            <div class="projet-select">
+            <div class="grid-wrapper">
+                <div class="projet-grid">
 
-                <!--<div class="projet-bar">
-                    <div class="content-left">
-                        <h2>Titre du projet</h2>
-                        <p>Texte du paragraphe</p>
-                        <a href="#">Voir ce projet</a>
-                    </div>
+                    <div class="projet-bloc">
+                        <h2 class="projet-titre">Site portfolio</h2>
+
+                        <p class="projet-date">2023</p>
+                        <span class="sepa-info">-</span>
+                        <p class="projet-marque">DH</p>
                         
-                    <img src="/assets/img/portrait-dh.jpg">
-                </div>-->
+                        <div class="projet-visuel">
+                            <div class="projet-miniature"></div>
+                            <div class="projet-overlay"></div>
+                        </div>
+                    </div>
 
-                <div class="projet-bar">
-                    <h2 style="text-align:center; width:fit-content; margin:auto; padding:20px; font-size:38px;">En construction</h2>
+                    <div class="projet-bloc">
+                        <h2 class="projet-titre">Site portfolio</h2>
+
+                        <p class="projet-date">2023</p>
+                        <span class="sepa-info">-</span>
+                        <p class="projet-marque">DH</p>
+                        
+                        <div class="projet-visuel">
+                            <div class="projet-miniature"></div>
+                            <div class="projet-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="projet-bloc">
+                        <h2 class="projet-titre">Site portfolio</h2>
+
+                        <p class="projet-date">2023</p>
+                        <span class="sepa-info">-</span>
+                        <p class="projet-marque">DH</p>
+                        
+                        <div class="projet-visuel">
+                            <div class="projet-miniature"></div>
+                            <div class="projet-overlay"></div>
+                        </div>
+                    </div>
+
                 </div>
-
             </div>
 
         </section>

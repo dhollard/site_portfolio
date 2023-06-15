@@ -42,34 +42,144 @@
         }
     }
 
-    .projet-select {
+    .grid-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    // grille contenant les projets
+    .projet-grid {
+        max-width: 1280px;
         display: flex;
         flex-direction: column;
-        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px 100px 20px;
 
-        .projet-bar {
+
+        // carré page projet
+        .projet-bloc {
+            position: relative;
+            background: color.$ambiance-120;
+            padding: 15px 20px 20px 20px;
             display: flex;
-            background: color.$ambiance-80;
-            padding: 25px 20px;
-            margin: auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
             width: 100%;
-            max-width: 500px;
-            border-radius: 10px;
+            max-width: 400px;
 
-            & * {
-              margin: 0;  
-            }
-    
-            h2 {
-                @include typo.title($color:#ffffff, $weight:500);
-                font-size: 24px;
+            // media query bloc projet
+            @include mquery.laptop {   
+                padding: 0;
+                flex-direction: column;
+                min-height: 225px;
+                min-width: 225px;
             }
 
-            img {
-                width: 150px;
-                height: 150px;
+            .projet-titre {
+                @include typo.title($color:#ffffff, $weight:700);
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                z-index: 3;
+                order: 1;
+
+                // media query titre projet
+                @include mquery.laptop {   
+                    order: 2;
+                }
             }
-    
+
+            // texte listant l'année du projet
+            .projet-date {
+                @include typo.title($color:#ffffff, $weight:700);
+                margin: 0;
+                z-index: 3;
+                order: 2;
+
+                // media query titre projet
+                @include mquery.laptop {   
+                    order: 1;
+                }
+            }
+
+            // tiret de séparation
+            .sepa-info {
+                @include typo.text($color:#ffffff, $weight:700);
+                margin: 0 8px;
+                z-index: 3;
+                order: 3;
+
+                // media query titre projet
+                @include mquery.laptop {   
+                    display: none;
+                }
+            }
+
+            // texte listant le commanditaire du projet
+            .projet-marque {
+                @include typo.title($color:#ffffff, $weight:700);
+                margin: 0;
+                z-index: 3;
+                order: 4;
+
+                // media query titre projet
+                @include mquery.laptop {   
+                    order: 3;
+                }
+            }
+
+            // conteneur visuel projet
+            .projet-visuel {
+                width: 100%;
+                z-index: 1;
+                order: 5;
+
+                // media query conteneur visuel
+                @include mquery.laptop {   
+                    position: absolute;
+                    height: 100%;
+                }
+
+                // image de miniature d'un projet
+                .projet-miniature {
+                    background: url("/assets-projets/2023-site-portfolio-dh/projet-thumbnail.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 140%;
+                    min-width: 220px;
+                    min-height: 220px;
+                    aspect-ratio: 1 / 1;
+                    margin: auto;
+
+                    // media query miniature projet
+                    @include mquery.laptop {   
+                    }
+                }
+
+                // image de miniature d'un projet
+                .projet-overlay {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+
+                    // media query overlay miniature
+                    @include mquery.laptop {   
+                        display: block;
+                    }
+                }
+            }
+
+
+
         }
     }
     
