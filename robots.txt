@@ -3,6 +3,10 @@ User-agent: *
 Allow: /assets/img/favicon.png
 Disallow: /assets/
 Disallow: /logs/
+Disallow: /fr/projet/*/img/
+Disallow: /fr/projet/*/svg/
+Disallow: /fr/projet/*/video/
+Disallow: /fr/projet/*/projet-thumbnail.jpg
 
 Sitemap: https://darius-hollard.com/sitemap.xml
 Sitemap: https://www.darius-hollard.com/sitemap.xml

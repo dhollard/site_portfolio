@@ -33,7 +33,7 @@
             <div class="grid-wrapper">
                 <div class="projet-grid">
 
-                    <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="#">
+                    <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="/fr/projet/2023-portfolio-dh/">
                         <h2 class="projet-titre">Site portfolio</h2>
 
                         <p class="projet-date">2023</p>
