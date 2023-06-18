@@ -11,7 +11,7 @@
     <!-- SEO et identité page -->
     <link rel="canonical" href="https://darius-hollard.com/fr/projets" />
     <title>Mes projets</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Découvrez mes projets au travers de pages dédiées qui détaillent le processus de création."/>
 
 </head>
 
@@ -33,7 +33,7 @@
             <div class="grid-wrapper">
                 <div class="projet-grid">
 
-                    <div class="projet-bloc">
+                    <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="#">
                         <h2 class="projet-titre">Site portfolio</h2>
 
                         <p class="projet-date">2023</p>
@@ -44,33 +44,7 @@
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
-                    </div>
-
-                    <div class="projet-bloc">
-                        <h2 class="projet-titre">Site portfolio</h2>
-
-                        <p class="projet-date">2023</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">DH</p>
-                        
-                        <div class="projet-visuel">
-                            <div class="projet-miniature"></div>
-                            <div class="projet-overlay"></div>
-                        </div>
-                    </div>
-
-                    <div class="projet-bloc">
-                        <h2 class="projet-titre">Site portfolio</h2>
-
-                        <p class="projet-date">2023</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">DH</p>
-                        
-                        <div class="projet-visuel">
-                            <div class="projet-miniature"></div>
-                            <div class="projet-overlay"></div>
-                        </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>

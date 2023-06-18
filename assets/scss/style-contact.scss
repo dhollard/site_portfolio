@@ -303,8 +303,8 @@ html, body {
 
 
 
-/* CODE DE BUG FIX DEDIE A SAFARI */
-@media not all and (min-resolution:.001dpcm) {
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
 
     /* problèmes liés à la propriété gap */
 

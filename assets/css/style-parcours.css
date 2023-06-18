@@ -826,8 +826,9 @@ footer .footer-container #footer-col-2 p span {
   display: block !important;
 }
 
-/* CODE DE BUG FIX DEDIE A SAFARI */
-@media not all and (min-resolution: 0.001dpcm) {
+/* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
   /* problèmes liés à la propriété gap */
   @media (min-width: 1px) and (max-width: 991px) {
     .social-icons {
@@ -1754,9 +1755,4 @@ footer .footer-container #footer-col-2 p span {
     left: -700px;
     bottom: -300px;
   }
-}
-
-/* CODE DE BUG FIX DEDIE A SAFARI */
-@media not all and (min-resolution: 0.001dpcm) {
-  /* problèmes liés à la propriété gap */
 }/*# sourceMappingURL=style-parcours.css.map */

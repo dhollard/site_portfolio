@@ -32,7 +32,7 @@ main {
     -ms-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
-  }
+}
 
 // navbar
 .navbar {
@@ -822,8 +822,13 @@ footer {
     }
 }
 
-/* CODE DE BUG FIX DEDIE A SAFARI */
-@media not all and (min-resolution:.001dpcm) { 
+/* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
+@media not all and (min-resolution:.001dpcm) {
+
+}
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
 
     /* problèmes liés à la propriété gap */
     @media (min-width:1px) and (max-width:991px) {

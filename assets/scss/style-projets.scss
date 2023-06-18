@@ -44,19 +44,70 @@
 
     .grid-wrapper {
         width: 100%;
+        min-height: 90vh;
         display: flex;
         justify-content: center;
+        padding: 40px 20px 100px 20px;
+        align-items: start;
+
+        // media query wrapper grille des projets
+        @include mquery.laptop {   
+            background: url("/assets/svg/grid-pattern-projets-01.svg");
+            background-repeat: repeat;
+            background-size: 150px;
+            padding: 70px 60px 120px 60px;
+        }
+
+        // media query wrapper grille des projets
+        @include mquery.widescreen {   
+            background-size: 200px;
+        }
     }
 
     // grille contenant les projets
     .projet-grid {
-        max-width: 1280px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 40px;
-        padding: 40px 20px 100px 20px;
+
+        // media query bloc projet
+        @include mquery.landscape {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 60px;
+            align-items: stretch;
+        }
+
+        // media query grille projet
+        @include mquery.laptop {  
+            background-repeat: repeat;
+            width: 856px;
+            flex-direction: row;
+            gap: 70px 90px;
+            justify-content: start;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        // media query grille projet
+        @include mquery.desktop-xl {  
+            width: 1170px;
+            
+        }
+
+        // media query grille projet
+        @include mquery.widescreen {  
+            width: 1600px;
+            gap: 100px;
+        }
+
+        // media query grille projet
+        @include mquery.tv {  
+            width: 2025px;
+        }
 
 
         // carré page projet
@@ -69,27 +120,72 @@
             flex-wrap: wrap;
             flex-direction: row;
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
+            text-decoration: none;
+            box-shadow: 0px 0px 20px 0px rgba(255,255,255,0.08);
+            transition: box-shadow 300ms ease-out;
+
+            &:hover {
+                box-shadow: 0px 4px 30px 0px rgba(255,255,255,0.15);
+            }
+
+            // media query bloc projet
+            @include mquery.landscape {
+                max-width: 300px;
+                align-content: space-between;
+            }
 
             // media query bloc projet
             @include mquery.laptop {   
-                padding: 0;
                 flex-direction: column;
-                min-height: 225px;
-                min-width: 225px;
+                justify-content: space-between;
+                align-content: center;
+                height: 225px;
+                width: 225px;
+                background: none;
+                aspect-ratio: 1/1;
+                max-width: 325px;
+                padding: 20px 0 30px 0;
+                box-shadow: none;
+                transition: none;
+
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+
+            // media query bloc projet
+            @include mquery.widescreen {   
+                height: 325px;
+                width: 325px;
             }
 
             .projet-titre {
                 @include typo.title($color:#ffffff, $weight:700);
+                font-size: 26px;
                 width: 100%;
                 margin: 0 auto;
                 text-align: center;
                 z-index: 3;
                 order: 1;
+                line-height: 1;
+                margin-bottom: 5px;
+
+                // media query titre projet
+                @include mquery.landscape {   
+                    font-size: 22px;
+                }
 
                 // media query titre projet
                 @include mquery.laptop {   
                     order: 2;
+                    font-size: 30px;
+                    margin-bottom: 0;
+                }
+
+                // media query titre projet
+                @include mquery.widescreen {
+                    font-size: 42px;
                 }
             }
 
@@ -99,10 +195,43 @@
                 margin: 0;
                 z-index: 3;
                 order: 2;
+                font-size: 20px;
 
-                // media query titre projet
-                @include mquery.laptop {   
+                // media query date projet
+                @include mquery.landscape {   
+                    font-size: 18px;
+                }
+
+                // media query date projet
+                @include mquery.laptop {
+                    position: relative;  
+                    width: fit-content;
+                    margin: 0 auto;
+                    text-align: center; 
                     order: 1;
+                    font-size: 24px;
+                    padding-bottom: 6px;
+
+                    &::after {
+                        position: absolute;
+                        width: 100px;
+                        height: 2px;
+                        background: #ffffff;
+                        content: "";
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+
+                    }
+                }
+
+                // media query date projet
+                @include mquery.widescreen {
+                    font-size: 36px;
+
+                    &::after {
+                        width: 160px;
+                    }
                 }
             }
 
@@ -112,6 +241,7 @@
                 margin: 0 8px;
                 z-index: 3;
                 order: 3;
+                font-size: 17px;
 
                 // media query titre projet
                 @include mquery.laptop {   
@@ -125,10 +255,45 @@
                 margin: 0;
                 z-index: 3;
                 order: 4;
+                font-size: 18px;
+                line-height: 1.5;
 
-                // media query titre projet
-                @include mquery.laptop {   
+                // media query commanditaire projet
+                @include mquery.landscape {   
+                    font-size: 16px;
+                }
+
+                // media query commanditaire projet
+                @include mquery.laptop { 
+                    position: relative;
+                    text-align: center; 
+                    width: 70%;
+                    margin: 0 auto;
                     order: 3;
+                    font-size: 17px;
+                    padding-top: 6px;
+                    line-height: 1.2;
+
+                    &::after {
+                        position: absolute;
+                        width: 100px;
+                        height: 2px;
+                        background: #ffffff;
+                        content: "";
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-50%);
+
+                    }
+                }
+
+                // media query commanditaire projet
+                @include mquery.widescreen {
+                    font-size: 24px;
+
+                    &::after {
+                        width: 160px;
+                    }
                 }
             }
 
@@ -137,26 +302,33 @@
                 width: 100%;
                 z-index: 1;
                 order: 5;
+                margin-top: 8px;
 
                 // media query conteneur visuel
                 @include mquery.laptop {   
                     position: absolute;
                     height: 100%;
+                    overflow: hidden;
+                    left: 0;
+                    top: 0;
+                    transition: transform 350ms linear;
+                    box-shadow: 0px 0px 20px 0px rgba(255,255,255,0.08);
+                    margin-top: 0px;
                 }
 
                 // image de miniature d'un projet
                 .projet-miniature {
-                    background: url("/assets-projets/2023-site-portfolio-dh/projet-thumbnail.jpg");
+                    background-image: url("/assets-projets/thumb-placeholder.jpg");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 140%;
-                    min-width: 220px;
-                    min-height: 220px;
                     aspect-ratio: 1 / 1;
                     margin: auto;
+                    
 
                     // media query miniature projet
                     @include mquery.laptop {   
+                        transition: transform 350ms linear, background-size 350ms linear;
                     }
                 }
 
@@ -166,15 +338,50 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: rgba(0, 0, 0, 0.5);
+                    background: rgba(0, 0, 0, 0.6);
                     width: 100%;
                     height: 100%;
                     z-index: 2;
+                    
 
                     // media query overlay miniature
                     @include mquery.laptop {   
                         display: block;
+                        transition: transform 350ms linear;
                     }
+                }
+            }
+
+            // animation miniature au survol
+            &:hover .projet-visuel {
+                
+                @include mquery.laptop {   
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &:hover .projet-miniature {
+    
+                @include mquery.laptop {   
+                    transform: scale(1.65) rotate(45deg);
+                    background-size: 100%;
+                }
+            }
+
+            // elements visibles en hover
+            .projet-date, .projet-titre, .projet-marque, .projet-overlay {
+
+                // media query elements de hover projet
+                @include mquery.laptop {   
+                    opacity: 0;
+                }
+            }
+
+            &:hover .projet-date, &:hover .projet-titre, &:hover .projet-marque, &:hover .projet-overlay {
+                
+
+                @include mquery.laptop {   
+                    opacity: 1;
                 }
             }
 
@@ -185,3 +392,74 @@
     
 
 }
+
+// liste des ids de projets
+
+
+// projet site portfolio
+#Proj_web_site_portfolio_DH_2023 {
+
+    .projet-miniature {
+        background-image: url("/assets-projets/2023-site-portfolio-dh/projet-thumbnail.jpg")!important;
+    }
+
+}
+
+
+//test 01
+#Proj_com_visuelle_wotbus_2023 {
+
+    .projet-miniature {
+        background-image: url("/assets-projets/test01.jpg")!important;
+    }
+
+}
+
+//test 02
+#Proj_motion_jojo_2019 {
+
+    .projet-miniature {
+        background-image: url("/assets-projets/test02.jpg")!important;
+    }
+}
+
+/* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
+@media not all and (min-resolution:.001dpcm) { 
+    
+
+}
+
+//fixer le support de aspect-ratio sur iOS 14 et moins
+@supports (not(aspect-ratio: auto)) {
+    .projet-miniature {
+        width: 100%;
+        height: 72vw;
+        max-height: 300px;
+    }
+}
+
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
+
+    /* problèmes liés à la propriété gap */
+    .projet-bloc:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+    .projet-bloc {
+        // media query
+        @include mquery.landscape {   
+            margin-bottom: 60px!important;
+    
+            &:nth-child(odd) {
+                margin-right: 60px;
+            }
+        }
+    
+    }
+    
+}
+
+
+

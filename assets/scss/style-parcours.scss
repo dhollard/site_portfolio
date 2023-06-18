@@ -1029,16 +1029,3 @@
     }
 
 }
-
-
-/* CODE DE BUG FIX DEDIE A SAFARI */
-@media not all and (min-resolution:.001dpcm) { 
-
-    /* problèmes liés à la propriété gap */
-    @media (min-width:1px) and (max-width:991px) {
-
-
-    }
-
-
-}
