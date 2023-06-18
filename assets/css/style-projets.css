@@ -903,6 +903,7 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 1900px) {
   #sec-proj-01 .grid-wrapper {
     background-size: 200px;
+    padding: 90px 60px 120px 60px;
   }
 }
 #sec-proj-01 .projet-grid {

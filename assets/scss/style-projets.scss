@@ -61,6 +61,7 @@
         // media query wrapper grille des projets
         @include mquery.widescreen {   
             background-size: 200px;
+            padding: 90px 60px 120px 60px;
         }
     }
 
