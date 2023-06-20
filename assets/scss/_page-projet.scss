@@ -6,3 +6,83 @@
 body {
 
 }
+
+main {
+    min-height: 90vh;
+}
+
+.section-projet {
+    margin-bottom: 200px;
+}
+
+// --------------- Section de l'image d'en-tête et du titre du projet ---------------
+#Header_projet {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    padding: 130px 35px 20px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../svg/pattern-proj-header-placeholder-01.svg");
+    background-repeat: repeat;
+    background-size: 145px;
+    background-position: center;
+    box-shadow: 0 8px 25px 0 rgba(216, 214, 216, 0.2);
+    transition: height 400ms ease;
+
+    // Titre du projet
+    #Titre_page {
+        @include typo.special-title($color:#ffffff, $weight:800);
+        font-size: 58px;
+        text-align: center;
+        line-height: 1.3;
+        margin: auto;
+        padding: 18px 30px 24px 30px;
+        background: color.$secondary-100;
+        transition: font-size 400ms ease;
+    }
+}
+
+.resume-projet {
+    position: relative;
+    z-index: 1;
+    background: rgba(25, 5, 23, 0.8);
+    padding: 60px 30px 40px 30px;
+}
+
+// Titres au début de chaque section
+.titre-section {
+    @include typo.title($color:#ffffff, $weight:800);
+    font-size: 34px;
+    margin: 0;
+}
+
+// Paragraphes de texte de base
+.bloc-texte {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    // media query conteneur paragraphes
+    @include mquery.desktop-xl {   
+        gap: 18px;
+    }
+}
+
+.bloc-texte *{
+    @include typo.text($color:#ffffff, $weight:400);
+    font-size: 18px;
+    margin: 0;
+
+    // media query paragraphes de texte
+    @include mquery.laptop {   
+        font-size: 20px;
+    }
+
+    // media query paragraphes de texte
+    @include mquery.desktop-xl {   
+        font-size: 22px;
+    }
+}

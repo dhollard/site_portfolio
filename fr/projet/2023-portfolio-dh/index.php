@@ -22,13 +22,67 @@
 
     <main>
 
-        <!-- Section 01 -->
-        <section id="intro">
+            <!-- ********** Section en-tête page projet ********** -->
+            <section id="Header_projet">
+                <h1 id="Titre_page">Site portfolio DH</h1>
+            </section>
 
-            <p>texte</p>
+            <!-- ********** Section "résumé du projet" ********** -->
+            <section class="section-projet resume-projet">
+                <h2 class="titre-section">01 - Résumé du projet</h2>
 
-        </section>
+                <div class="bloc-texte">
+                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets auprès de collaborateurs, d’amis ou de futurs recruteurs.</p>
 
+                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre afin de réaliser ce site.</p>
+
+                    <p>Cette page retrace les différentes étapes du processus de création sous la forme d’une étude de cas.</p>
+                </div>
+
+                <div class="infos-projet">
+                    <span class="bloc-infos-projet">
+                        <p class="titre-infos-projet">Type de projet</p>
+                        <p>Design graphique</p>
+                        <p>Dev front end</p>
+                        <p>UX design</p>
+                    </span>
+
+                    <span class="bloc-infos-projet">
+                        <p class="titre-infos-projet">Rôle effectué</p>
+                        <p>Gestion du projet de A à Z</p>
+                    </span>
+
+                    <span class="bloc-infos-projet">
+                        <p class="titre-infos-projet">Durée du projet</p>
+                        <p>250h de travail (2022 - 2023)</p>
+                    </span>
+
+                    <span class="bloc-infos-projet">
+                        <p class="titre-infos-projet">Commanditaire</p>
+                        <p>Darius Hollard (moi-même)</p>
+                    </span>
+                </div>
+            </section>
+
+            <!-- ********** Section "objectifs" ********** -->
+            <section class="section-projet objectifs-projet">
+                <div class="demi-col">
+                    <h2 class="titre-section">02 - Objectifs</h2>
+
+                    <div class="bloc-texte">
+                    <p>J’ai débuté la création de ce site pour me permettre d’afficher mes projets et mon parcours sur internet.</p>
+
+                    <p>Son rôle principal est de me permettre de partager ce contenu rapidement avec n’importe qui.</p>
+
+                    <p>Le site portfolio terminé devra remplir le rôle d’un support de présentation esthétique et soigné.</p>
+
+                    <p>Il servira aussi d’exemple concret de mon savoir-faire mis en application.</p>
+                </div>
+                </div>
+                
+
+
+            </section>
 
     </main>
 
@@ -37,6 +91,9 @@
 
     <!-- Appels et scripts de fin de page -->
     <?php include_once('../../../assets/module/end-page-module.php'); ?>
+
+    <!-- Appel scripts spéciaux pages projets -->
+    <?php include_once('../../../assets/module/page-projet-module.php'); ?>
 
 </body>
 

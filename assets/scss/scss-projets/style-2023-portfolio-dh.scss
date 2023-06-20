@@ -5,8 +5,9 @@
 @use '../page-projet';
 
 
-#intro {
-    min-height: 90vh;
-
+#Header_projet {
+    background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
