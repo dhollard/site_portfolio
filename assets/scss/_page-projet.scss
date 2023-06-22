@@ -3,6 +3,31 @@
 @use 'typo';
 @use 'global';
 
+:root {
+    //couleur de fond de la page
+    --fond-page-projet: #{color.$ambiance-100};
+
+    // fond et couleur de texte des encarts gros titres du header et des sections du projet
+    --fond-titre-projet: #{color.$secondary-100};
+    --couleur-titre-projet: #ffffff;
+
+    // couleur des paragraphes de texte
+    --couleur-texte-projet: #ffffff;
+
+    // couleur distinctive du projet, utilisée sur les boutons, bullet points, petits titres...
+    --couleur-focus-projet: #{color.$primary-100};
+
+    // couleur des éléments en opposition avec le fond (bloc blanc sur fond sombre par ex)
+    --couleur-contraste-projet: #ffffff;
+
+    // couleur lignes de séparation entre des éléments
+    --couleur-ligne-projet: #{color.$ambiance-80};
+}
+
+body {
+    background: var(--fond-page-projet);
+}
+
 main {
     min-height: 90vh;
 }
@@ -42,13 +67,13 @@ main {
 
     // Titre du projet
     #Titre_page {
-        @include typo.special-title($color:#ffffff, $weight:800);
+        @include typo.special-title($color:var(--couleur-titre-projet), $weight:800);
         font-size: 42px;
         text-align: center;
         line-height: 1.3;
         margin: auto;
         padding: 18px 30px 24px 30px;
-        background: color.$secondary-100;
+        background: var(--fond-titre-projet);
         transition: font-size 800ms ease, transform 800ms ease;
 
         // media query conteneur paragraphes
@@ -145,7 +170,7 @@ main {
 
 // Titres au début de chaque section
 .titre-section {
-    @include typo.title($color:#ffffff, $weight:800);
+    @include typo.title($color:var(--couleur-titre-projet), $weight:800);
     font-size: 34px;
     margin: 0;
 }
@@ -163,7 +188,7 @@ main {
 }
 
 .bloc-texte *{
-    @include typo.text($color:#ffffff, $weight:400);
+    @include typo.text($color:var(--couleur-texte-projet), $weight:400);
     font-size: 18px;
     margin: 0;
 

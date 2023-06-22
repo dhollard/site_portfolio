@@ -845,6 +845,20 @@ footer .footer-container #footer-col-2 p span {
     }
   }
 }
+:root {
+  --fond-page-projet: #342B33;
+  --fond-titre-projet: #439A86;
+  --couleur-titre-projet: #ffffff;
+  --couleur-texte-projet: #ffffff;
+  --couleur-focus-projet: #FF6666;
+  --couleur-contraste-projet: #ffffff;
+  --couleur-ligne-projet: #544953;
+}
+
+body {
+  background: var(--fond-page-projet);
+}
+
 main {
   min-height: 90vh;
 }
@@ -884,13 +898,13 @@ main {
   font-family: "Playfair", serif;
   font-size: 42px;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--couleur-titre-projet);
   font-size: 42px;
   text-align: center;
   line-height: 1.3;
   margin: auto;
   padding: 18px 30px 24px 30px;
-  background: #439A86;
+  background: var(--fond-titre-projet);
   transition: font-size 800ms ease, transform 800ms ease;
 }
 @media (min-width: 992px) {
@@ -976,7 +990,7 @@ main {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--couleur-titre-projet);
   font-size: 34px;
   margin: 0;
 }
@@ -996,7 +1010,7 @@ main {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--couleur-texte-projet);
   font-size: 18px;
   margin: 0;
 }
