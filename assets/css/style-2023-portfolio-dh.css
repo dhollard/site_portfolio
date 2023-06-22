@@ -856,10 +856,12 @@ main {
 #Header_projet {
   position: relative;
   z-index: 2;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
-  padding: 130px 35px 20px 35px;
+  padding: 100px 35px 20px 35px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("../svg/pattern-proj-header-placeholder-01.svg");
@@ -867,20 +869,100 @@ main {
   background-size: 145px;
   background-position: center;
   box-shadow: 0 8px 25px 0 rgba(216, 214, 216, 0.2);
-  transition: height 400ms ease;
+  transition: height 800ms ease;
+}
+@media (min-width: 992px) {
+  #Header_projet {
+    padding: 130px 35px 20px 35px;
+    transition: height 500ms ease;
+  }
+}
+#Header_projet.header-scrolled {
+  height: 400px;
 }
 #Header_projet #Titre_page {
   font-family: "Playfair", serif;
   font-size: 42px;
   font-weight: 800;
   color: #ffffff;
-  font-size: 58px;
+  font-size: 42px;
   text-align: center;
   line-height: 1.3;
   margin: auto;
   padding: 18px 30px 24px 30px;
   background: #439A86;
-  transition: font-size 400ms ease;
+  transition: font-size 800ms ease, transform 800ms ease;
+}
+@media (min-width: 992px) {
+  #Header_projet #Titre_page {
+    font-size: 58px;
+    transition: font-size 500ms ease, transform 500ms ease;
+  }
+}
+#Header_projet #Titre_page.header-titre-scrolled {
+  transform: translateY(110px);
+}
+@media (min-width: 992px) {
+  #Header_projet #Titre_page.header-titre-scrolled {
+    transform: translateY(80px);
+    font-size: 42px;
+  }
+}
+#Header_projet #Scroll_btn_header {
+  position: relative;
+  display: flex;
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  min-height: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-bottom: 100px;
+  transition: transform 800ms ease, box-shadow 200ms linear;
+  box-shadow: 0px 0px 18px 0 rgba(255, 255, 255, 0.15);
+}
+@media (min-width: 992px) {
+  #Header_projet #Scroll_btn_header {
+    transition: transform 500ms ease, box-shadow 200ms linear;
+    margin-bottom: 50px;
+  }
+}
+#Header_projet #Scroll_btn_header:hover {
+  box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.3);
+}
+#Header_projet #Scroll_btn_header.header-btn-scrolled {
+  transform: translateY(250px);
+}
+#Header_projet #Scroll_btn_header .scroll-btn-header-icon {
+  display: block;
+  content: "";
+  background-image: url("../svg/ico-fleche-scroll-amb100.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  transition: transform 200ms ease;
+  animation: 1s linear infinite anim-scroll-header-btn;
+}
+@keyframes anim-scroll-header-btn {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-1px);
+  }
+  80% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#Header_projet #Scroll_btn_header:hover .scroll-btn-header-icon {
+  animation: 0;
+  transform: translateY(2px);
 }
 
 .resume-projet {

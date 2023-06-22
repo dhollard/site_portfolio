@@ -25,10 +25,13 @@
             <!-- ********** Section en-tête page projet ********** -->
             <section id="Header_projet">
                 <h1 id="Titre_page">Site portfolio DH</h1>
+                <div id="Scroll_btn_header" onclick="headerScrollButton()">
+                    <span class="scroll-btn-header-icon"></span>
+                </div>
             </section>
 
             <!-- ********** Section "résumé du projet" ********** -->
-            <section class="section-projet resume-projet">
+            <section id="Resume_projet" class="section-projet">
                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                 <div class="bloc-texte">
