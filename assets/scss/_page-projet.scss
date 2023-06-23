@@ -16,6 +16,7 @@
 
     // couleur distinctive du projet, utilisée sur les boutons, bullet points, petits titres...
     --couleur-focus-projet: #{color.$primary-100};
+    --couleur-focus-bis-projet: #{color.$primary-120};
 
     // couleur des éléments en opposition avec le fond (bloc blanc sur fond sombre par ex)
     --couleur-contraste-projet: #ffffff;
@@ -158,28 +159,68 @@ main {
     }
 }
 
-.resume-projet {
-    position: relative;
-    z-index: 1;
-    background: rgba(25, 5, 23, 0.8);
-    padding: 60px 30px 40px 30px;
-}
-
 // --------------- Styles partagés des sections ---------------
+// espacement inter-colonnes section
 
 // Bloc section
 .section-projet {
+    display: flex;
+    flex-direction: column;
     padding: 0px 30px;
-    margin: 0 auto 150px auto;
+    margin: 0 auto 200px auto;
+    gap: 50px;
 
     // media query bloc section
-    @include mquery.laptop {   
+    @include mquery.laptop {
+        flex-direction: row;
+        flex-wrap: wrap;   
         max-width: 912px;
+        margin: 0 auto 280px auto;
+        padding: 0px;
+        gap: 180px;
     }
 
     // media query bloc section
-    @include mquery.desktop-xl {   
+    @include mquery.desktop-xl { 
         max-width: 1160px;
+    }
+}
+
+.section-ligne {
+    --gap-section: 30px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-section);
+
+    // media query .section-ligne
+    @include mquery.laptop {
+        --gap-section: 60px;
+
+        flex-direction: row;
+        flex-wrap: wrap;   
+    }
+
+    // media query bloc section
+    @include mquery.desktop-xl { 
+        --gap-section: 100px;
+
+    }
+}
+
+// colonne 100% section
+.full-col {
+    width: 100%;
+}
+
+// demi-colonne section
+.demi-col {
+    width: 100%;
+
+    // media query demi-colonne
+    @include mquery.laptop {   
+        width: calc(50% - var(--gap-section)/2);
     }
 }
 
@@ -222,8 +263,64 @@ main {
     }
 }
 
+// --------------- Blocs cadres ---------------
+
+.bloc-cadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 30px;
+
+    // media query .bloc-cadre
+    @include mquery.laptop {   
+        //gap: 40px;
+    }
+}
+
+.cadre-mobile {
+    display: flex;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 9 / 16;
+    outline: 4px solid color.$ambiance-120;
+    border-radius: 20px;
+    box-shadow: 0px -10px 40px 0px rgba(166, 156, 164, 0.25);
+    overflow: hidden;
+    background: color.$ambiance-120;
+
+    .bloc-video {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.legende-cadre {
+    @include typo.title($color:#ffffff, $weight:400);
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+
+    // media query .legende-cadre
+    @include mquery.laptop {   
+        font-size: 22px;
+    }
+
+    a {
+        color: var(--couleur-focus-projet);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--couleur-focus-bis-projet);
+        }
+    }
+}
+
 // --------------- Section "résumé du projet" ---------------
 #Resume_projet {
+    z-index: 1;
     padding: 60px 30px;
     background: rgba(color.$ambiance-160, 0.8);
     backdrop-filter: blur(4px);

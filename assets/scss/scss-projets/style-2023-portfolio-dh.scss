@@ -12,3 +12,23 @@
 
 }
 
+#Showreel_projet {
+
+    .cadre-mobile {
+        display: flex;
+
+        // media query .cadre-mobile
+        @include mquery.laptop {   
+            display: none;
+        }
+    }
+
+    .cadre-desktop {
+        display: none;
+
+        // media query .cadre-desktop
+        @include mquery.laptop {   
+            display: flex;
+        }
+    }
+}
