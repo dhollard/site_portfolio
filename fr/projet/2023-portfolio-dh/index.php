@@ -32,39 +32,44 @@
 
             <!-- ********** Section "résumé du projet" ********** -->
             <section id="Resume_projet" class="section-projet">
-                <h2 class="titre-section">01 - Résumé du projet</h2>
 
-                <div class="bloc-texte">
-                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets auprès de collaborateurs, d’amis ou de futurs recruteurs.</p>
+                <div class="txt-resume-projet">
+                    <h2 class="titre-section">01 - Résumé du projet</h2>
 
-                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre afin de réaliser ce site.</p>
+                    <div class="bloc-texte">
+                        <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets auprès de collaborateurs, d’amis ou de futurs recruteurs.</p>
 
-                    <p>Cette page retrace les différentes étapes du processus de création sous la forme d’une étude de cas.</p>
+                        <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre afin de réaliser ce site.</p>
+
+                        <p>Cette page retrace les différentes étapes du processus de création sous la forme d’une étude de cas.</p>
+                    </div>
                 </div>
+                
 
                 <div class="infos-projet">
                     <span class="bloc-infos-projet">
-                        <p class="titre-infos-projet">Type de projet</p>
+                        <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
                         <p>Design graphique</p>
                         <p>Dev front end</p>
                         <p>UX design</p>
                     </span>
 
                     <span class="bloc-infos-projet">
-                        <p class="titre-infos-projet">Rôle effectué</p>
+                        <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
                         <p>Gestion du projet de A à Z</p>
                     </span>
 
                     <span class="bloc-infos-projet">
-                        <p class="titre-infos-projet">Durée du projet</p>
+                        <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
                         <p>250h de travail (2022 - 2023)</p>
                     </span>
 
                     <span class="bloc-infos-projet">
-                        <p class="titre-infos-projet">Commanditaire</p>
+                        <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
                         <p>Darius Hollard (moi-même)</p>
                     </span>
                 </div>
+
             </section>
 
             <!-- ********** Section "objectifs" ********** -->
@@ -96,7 +101,7 @@
     <?php include_once('../../../assets/module/end-page-module.php'); ?>
 
     <!-- Appel scripts spéciaux pages projets -->
-    <?php include_once('../../../assets/module/page-projet-module.php'); ?>
+    <?php include_once('../../../assets/module/modules-projets/page-projet-module.php'); ?>
 
 </body>
 
