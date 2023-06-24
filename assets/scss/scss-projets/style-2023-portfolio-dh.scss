@@ -32,3 +32,22 @@
         }
     }
 }
+
+#Objectifs_projet {
+
+
+    .schema-objectifs {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 0 auto;
+
+        // media query .schema-objectifs
+        @include mquery.laptop {
+           max-width: 100%;   
+            
+        }
+
+    }
+
+}

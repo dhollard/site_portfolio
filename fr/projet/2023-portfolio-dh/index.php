@@ -76,7 +76,7 @@
             <section id="Showreel_projet" class="section-projet">
                 <div class="section-ligne">
 
-                    <div class="full-col">
+                    <div class="section-colonne full-col">
 
                         <figure class="bloc-cadre">
                             <div class="cadre-mobile cadre-video">
@@ -126,8 +126,8 @@
 
                     </div>
                     
-                    <div class="demi-col">
-                        <img src="img/schema-objectifs.png" width="100%">
+                    <div class="section-colonne demi-col">
+                        <img class="schema-objectifs" src="img/schema-objectifs.png" width="100%">
                     </div>
 
                 </div>

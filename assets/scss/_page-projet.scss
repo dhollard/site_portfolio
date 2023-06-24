@@ -160,7 +160,6 @@ main {
 }
 
 // --------------- Styles partagés des sections ---------------
-// espacement inter-colonnes section
 
 // Bloc section
 .section-projet {
@@ -187,7 +186,7 @@ main {
 }
 
 .section-ligne {
-    --gap-section: 30px;
+    --gap-section: 40px;
 
     width: 100%;
     display: flex;
@@ -195,18 +194,30 @@ main {
     gap: var(--gap-section);
 
     // media query .section-ligne
-    @include mquery.laptop {
-        --gap-section: 60px;
-
+    @include mquery.landscape {
         flex-direction: row;
-        flex-wrap: wrap;   
+        flex-wrap: wrap;  
+        
     }
 
-    // media query bloc section
+    // media query .section-ligne
+    @include mquery.laptop {
+        --gap-section: 60px; 
+
+    }
+
+    // media query .section-ligne
     @include mquery.desktop-xl { 
         --gap-section: 100px;
 
     }
+}
+
+.section-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
 }
 
 // colonne 100% section
@@ -219,7 +230,7 @@ main {
     width: 100%;
 
     // media query demi-colonne
-    @include mquery.laptop {   
+    @include mquery.landscape {   
         width: calc(50% - var(--gap-section)/2);
     }
 }
