@@ -97,7 +97,7 @@
                                 </video>
                                 </div>
 
-                                <figcaption class="legende-cadre">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, scrollez pour voir son processus de création</figcaption>
+                                <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, scrollez pour voir son processus de création</figcaption>
 
                             </figure>
 
@@ -181,7 +181,7 @@
                                 <img class="compare-icon" src="svg/ico-compare-negatif-blanc.svg" width="32px">
                                 <p class="compare-titre">Réseaux sociaux<br class="retour-ligne"> uniquement</p>
                             </div>
-                            <ul class="liste-puce compare-list">
+                            <ul class="liste-puce-projet compare-list">
                                 <li>Formats et règles imposés par la plateforme tierce (Behance, Instagram...)</li>
                                 <li>Fiabilité incertaine dans le temps</li>
                                 <li>Portée aléatoire, accès pas toujours garanti sans compte ou application</li>
@@ -193,7 +193,7 @@
                                 <img class="compare-icon" src="svg/ico-compare-positif-blanc.svg" width="32px">
                                 <p class="compare-titre">Site portfolio<br class="retour-ligne"> original</p>
                             </div>
-                            <ul class="liste-puce compare-list">
+                            <ul class="liste-puce-projet compare-list">
                                 <li>Design totalement libre et donc plus créatif et unique</li>
                                 <li>Permet de construire son image de marque à travers l’identité visuelle</li>
                                 <li>Une expérience utilisateur sur-mesure</li>
@@ -205,7 +205,7 @@
                                 <img class="compare-icon" src="svg/ico-compare-negatif-blanc.svg" width="32px">
                                 <p class="compare-titre">Template basique<br class="retour-ligne"> modifié</p>
                             </div>
-                            <ul class="liste-puce compare-list">
+                            <ul class="liste-puce-projet compare-list">
                                 <li>Ne met pas en avant mes capacités de développement web</li>
                                 <li>Rapidement contre-productif pour créer des mises en page originales</li>
                                 <li>Similaire à tant d’autres sites et donc oubliable</li>
@@ -224,6 +224,164 @@
                         </div>
 
                     </div>
+                </div>
+
+            </section>
+
+            <!-- ********** Section "Structure du site" ********** -->
+            <section id="Structure_site" class="section-projet">
+
+                <!-- Bloc titre + texte + schema -->
+                <div class="section-bloc">
+
+                    <div class="section-ligne">
+                        <div class="section-colonne demi-col">
+                            <h2 class="titre-section">I. Structure du site</h2>
+                        </div>
+                    </div>
+
+                    <div class="section-ligne">
+                        <div class="section-colonne demi-col">
+                            <p class="phrase-forte">Aller à l’essentiel dans l’arborescence du site en définissant le rôle de chaque page.</p>
+                        </div>
+
+                        <div class="section-colonne demi-col">
+
+                            <div class="bloc-texte">
+                                <p>Pour la première version de mon site, j’ai imaginé une architecture simple qui répond aux besoins suivants :</p>
+
+                                <ul class="liste-puce-projet">
+                                    <li>En savoir plus sur moi rapidement et parcourir mon CV</li>
+
+                                    <li>Voir mes projets passés et la mise en pratique de mes compétences</li>
+
+                                    <li>Pouvoir me contacter facilement</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="section-ligne">
+                        <div class="section-colonne full-col">
+
+                            <figure class="bloc-visuel schema-arborescence">
+
+                                <img src="img/schema-arborescence-structure-site.png" width="100%">
+
+                                <figcaption class="legende-visuel">Arborescence planifiée du site après analyse des besoins</figcaption>
+
+                            </figure>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bloc texte + post-it -->
+                <div class="section-bloc">
+
+                    <div class="section-ligne">
+                        <div class="section-colonne demi-col">
+                            <p class="phrase-forte">Il faut parfois savoir laisser certaines idées de côté pour plus tard.</p>
+                        </div>
+
+                        <div class="section-colonne demi-col">
+                            <div class="bloc-texte">
+                                <p>Sachant que ce projet allait avancer à un rythme variable sur mon temps libre, j’ai dû mettre de côté certaines idées.</p>
+
+                                <p>Il s’agit d’une situation très fréquente dans le cadre professionnel : savoir prioriser et identifier les tâches nécessaires à la réussite d’un projet.</p>
+
+                                <p>Je souhaite cependant intégrer ces idées dans une future version du site.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="section-ligne">
+                        <div class="section-colonne full-col">
+                            
+                            <figure class="bloc-visuel">
+
+                                <div class="post-it-wrapper">
+
+                                    <div class="post-it-bloc">
+                                        <div class="post-it-header"></div>
+                                        <p class="post-it-text">Créer une section pédagogique qui explique mon métier au travers d’exemples visuels</p>
+                                    </div>
+
+                                    <div class="post-it-bloc">
+                                        <div class="post-it-header"></div>
+                                        <p class="post-it-text">Mettre en place une chasse au trésor dans le site pour les plus curieux</p>
+                                    </div>
+
+                                    <div class="post-it-bloc">
+                                        <div class="post-it-header"></div>
+                                        <p class="post-it-text">Personnaliser la page 404 et autres erreurs</p>
+                                    </div>
+
+                                    <div class="post-it-bloc">
+                                        <div class="post-it-header"></div>
+                                        <p class="post-it-text">Inclure plus d’illustrations et d’animations sur le site</p>
+                                    </div>
+
+                                    <div class="post-it-bloc">
+                                        <div class="post-it-header"></div>
+                                        <p class="post-it-text">Ajouter la totalité de mes projets passés et un système de tri avancé</p>
+                                    </div>
+
+                                </div>
+
+                                <figcaption class="legende-visuel">Sélection d’une partie des idées remises à plus tard car trop chronophages ou non essentielles pour la version 1 du site</figcaption>
+
+                            </figure>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ********** Section "Identité visuelle" ********** -->
+            <section id="Identite_visuelle" class="section-projet">
+
+                <!-- Bloc titre et outils utilisés + texte -->
+                <div class="section-bloc">
+
+                    <div class="section-ligne">
+                        <div class="section-colonne demi-col">
+                            <h2 class="titre-section">II. Identité visuelle</h2>
+                        </div>
+
+                        <div class="section-colonne demi-col">
+                            outils utilisés
+                        </div>
+                    </div>
+
+                    <div class="section-ligne">
+                        <div class="section-colonne demi-col">
+                            <p class="phrase-forte">J’ai choisi d’évoquer une ambiance moderne et raffinée au travers de la direction artistique.</p>
+                        </div>
+
+                        <div class="section-colonne demi-col">
+
+                            <div class="bloc-texte">
+                                <p>Pour les couleurs, j’ai choisi un duo rouge clair et vert turquoise, associés à un gris anthracite qui recouvre l’ensemble des pages.</p>
+
+                                <p>Pour les textes, j’ai testé plusieurs combinaisons avant d’opter pour deux typographies sans-serif rondes et élégantes.</p>
+
+                                <p>Afin d’apporter une touche de caractère, j’ai aussi inclus une typo plus traditionnelle, réservée aux gros titres.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bloc typographies et couleurs utilisées -->
+                <div class="section-bloc">
+
                 </div>
 
             </section>

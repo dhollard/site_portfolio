@@ -328,7 +328,7 @@ main {
 
 
 // Listes à puces
-.liste-puce {
+.liste-puce-projet {
     margin: 0;
     padding-inline-start: 20px;
     list-style: none;
@@ -371,10 +371,6 @@ main {
     margin: 0;
     gap: 30px;
 
-    // media query .bloc-cadre
-    @include mquery.laptop {   
-        //gap: 40px;
-    }
 }
 
 .cadre-mobile {
@@ -395,13 +391,22 @@ main {
 
 }
 
-.legende-cadre {
+.bloc-visuel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 30px;
+}
+
+.legende-visuel {
     @include typo.title($color:#ffffff, $weight:400);
     font-size: 18px;
     font-style: italic;
     text-align: center;
 
-    // media query .legende-cadre
+    // media query .legende-visuel
     @include mquery.laptop {   
         font-size: 22px;
     }
@@ -414,6 +419,102 @@ main {
             color: var(--couleur-focus-bis-projet);
         }
     }
+}
+
+// --------------- Style des éléments post-it ---------------
+
+// Conteneur post-it
+.post-it-wrapper {
+    --post-it-size:130px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: calc(var(--post-it-size)*2 + 30px);
+    justify-content: start;
+    gap: 30px;
+
+    // media query .post-it-wrapper
+    @include mquery.tablet {
+        --post-it-size:166px;
+    }
+
+    // media query .post-it-wrapper
+    @include mquery.landscape {
+        max-width: calc(var(--post-it-size)*3 + 60px);
+    }
+
+    // media query .post-it-wrapper
+    @include mquery.laptop {   
+        max-width: 100%;
+        gap: calc((912px - var(--post-it-size) * 5) / 4);
+    }
+
+    // media query .post-it-wrapper
+    @include mquery.desktop-xl {   
+        --post-it-size:200px;
+
+        gap: calc((1160px - var(--post-it-size) * 5) / 4);
+    }
+
+    // Élement parent post-it
+    .post-it-bloc {
+        width: var(--post-it-size);
+        height: var(--post-it-size);
+        background: #FFD966;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+// Bande décorative colle post-it
+.post-it-header {
+    display: none;
+    background: #FFDF7E;
+    height: 28px;
+    width: 100%;
+
+    // media query .post-it-header
+    @include mquery.tablet {   
+        display: block;
+    }
+    
+}
+
+// Contenu texte du post-it
+.post-it-text {
+    @include typo.title($color:#242424, $weight:700);
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+
+    // media query .post-it-text
+    @include mquery.tablet {   
+        font-size: 18px;
+    }
+
+    // media query .post-it-text
+    @include mquery.desktop-xl {   
+        font-size: 22px;
+    }
+}
+
+// Media query special pour post-it sur petit mobile
+@media (max-width: 350px) {
+
+    .post-it-bloc {
+        width: 100%!important;
+    }
+
+    .post-it-header {
+        display: block!important;
+    }
+
+    .post-it-text {
+        font-size: 18px!important;
+    }
+
 }
 
 // --------------- Section "résumé du projet" ---------------

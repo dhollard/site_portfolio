@@ -208,3 +208,31 @@
         }
     }
 }
+
+#Structure_site {
+
+    // schéma illustrant l'arborescence du site
+    .schema-arborescence {
+        padding: 25px 0 0 0;
+
+        // media query .schema-arborescence
+        @include mquery.landscape {   
+            padding: 65px 30px 0 30px;
+        }
+
+        // media query .schema-arborescence
+        @include mquery.desktop-xl {   
+            padding: 65px 50px 0 50px;
+        }
+    }
+
+    // Conteneur idées post-it
+    .bloc-visuel {
+        padding: 25px 0 0 0;
+
+        // media query .bloc-visuel
+        @include mquery.landscape {   
+            padding: 65px 0 0 0;
+        }
+    }
+}
