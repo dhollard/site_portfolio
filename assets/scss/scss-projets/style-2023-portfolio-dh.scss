@@ -51,3 +51,160 @@
     }
 
 }
+
+#Processus_projet {
+
+    #Bloc_compare_options_site {
+
+        .section-ligne {
+            --gap-section: 50px;
+
+            // media query #Ligne_compare_options_site
+            @include mquery.landscape {   
+                --gap-section: 30px;
+            }
+    
+            // media query #Ligne_compare_options_site
+            @include mquery.laptop {   
+                --gap-section: 45px;
+            }
+        }
+
+        // Colonnes comparatives
+        .compare-col {
+            gap: 15px;
+
+            // media query .compare-col
+            @include mquery.landscape {   
+                gap: 20px;
+            }
+        }
+        
+    }
+
+    // bloc d'en-tête de la colonne comparative
+    .compare-header {
+        padding: 12px 15px;
+        background: color.$ambiance-80;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+
+        // media query .compare-header
+        @include mquery.phone {   
+            padding: 12px 12px;
+        }
+
+        // media query .compare-header
+        @include mquery.tablet {   
+            justify-content: center;
+            padding: 15px 15px;
+        }
+
+        // media query .compare-header
+        @include mquery.landscape {   
+            border-radius: 20px;
+            flex-direction: column;
+            gap: 4px;
+            padding: 15px 5px;
+        }
+
+        .compare-icon {
+            width: 32px;
+            height: 32px;
+
+            // media query .compare-icon
+            @include mquery.landscape {   
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        .compare-titre {
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 28px;
+            margin: 0;
+            line-height: 1.1;
+            padding-top: 2px;
+
+            // media query .compare-titre
+            @include mquery.phone {   
+                font-size: 24px;
+            }
+
+            // media query .compare-titre
+            @include mquery.landscape {   
+                text-align: center;
+                padding-top: 0px;
+            }
+
+            .retour-ligne {
+                display: none;
+                
+                // media query .retour-ligne
+                @include mquery.landscape {   
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // bloc liste à puce comparatif
+    .compare-list {
+        
+        li {
+            // media query .compare-list li
+            @include mquery.desktop-xl {   
+                font-size: 22px;
+            }
+
+            &::before {
+                background: color.$ambiance-40;
+            }
+        }
+    }
+
+    // colonne mise en valeur
+    .compare-focus {
+        order: 3;
+
+        // media query .compare-focus
+        @include mquery.landscape {   
+            order: unset;
+        }
+        
+        .compare-header {
+            background: var(--couleur-focus-projet);
+
+        }
+
+        li::before {
+            background: var(--couleur-focus-projet);
+        }
+    }
+
+    #Conclusion_sec_processus {
+        @include typo.title($color:#ffffff, $weight:700);
+        font-size: 28px;
+        text-align: left;
+
+        // media query #Conclusion_sec_processus
+        @include mquery.phone {   
+            font-size: 22px;
+        }
+
+        // media query #Conclusion_sec_processus
+        @include mquery.tablet {   
+            text-align: center;
+        }
+
+        // media query #Conclusion_sec_processus
+        @include mquery.laptop {   
+            font-size: 36px;
+        }
+    }
+}
