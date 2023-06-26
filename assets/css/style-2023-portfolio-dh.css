@@ -1303,6 +1303,151 @@ main {
     font-size: 18px !important;
   }
 }
+.outil-languette {
+  width: 100%;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 0 0 50px 50px;
+  box-shadow: inset 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding: 18px 20px 20px 20px;
+  gap: 20px;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .outil-languette {
+    padding: 18px 25px 20px 25px;
+  }
+}
+@media (min-width: 768px) {
+  .outil-languette {
+    border-radius: 50px;
+    padding: 18px 20px 17px 20px;
+    box-shadow: none;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width: 992px) {
+  .outil-languette {
+    padding: 14px 25px 13px 25px;
+  }
+}
+.outil-languette .outil-blob-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.outil-languette .outil-txt {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #242424;
+  font-size: 20px;
+  margin: 0;
+}
+@media (max-width: 400px) {
+  .outil-languette .outil-txt {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .outil-languette .outil-txt {
+    font-size: 23px;
+  }
+}
+.outil-languette .outil-blob {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/outil-logo-placeholder.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  transition: outline 150ms ease;
+  outline: 0px solid var(--couleur-focus-projet);
+  cursor: help;
+}
+.outil-languette .outil-blob:hover {
+  outline: 5px solid var(--couleur-focus-projet);
+}
+.outil-languette .outil-blob::before {
+  content: "Nom outil";
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 6px 10px;
+  background: #261624;
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  outline: 2px solid var(--couleur-focus-projet);
+  opacity: 0;
+}
+.outil-languette .outil-blob::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 16px;
+  height: 16px;
+  background: #261624;
+  border-top: 0px solid var(--couleur-focus-projet);
+  border-right: 3px solid var(--couleur-focus-projet);
+  border-bottom: 3px solid var(--couleur-focus-projet);
+  border-left: 0px solid var(--couleur-focus-projet);
+  -webkit-mask-image: url("/assets/mask/mask-triangle-etiquette.svg");
+  mask-image: url("/assets/mask/mask-triangle-etiquette.svg");
+  opacity: 0;
+}
+.outil-languette .outil-blob:hover::before, .outil-languette .outil-blob:hover::after {
+  opacity: 1;
+}
+@media (min-width: 992px) {
+  .outil-languette .outil-blob {
+    width: 50px;
+    height: 50px;
+  }
+}
+.outil-languette .outil-blob.outil-illustrator {
+  background-image: url("../img/outil-logo-illustrator.png");
+}
+.outil-languette .outil-blob.outil-illustrator::before {
+  content: "Adobe Illustrator";
+}
+.outil-languette .outil-blob.outil-photoshop {
+  background-image: url("../img/outil-logo-photoshop.png");
+}
+.outil-languette .outil-blob.outil-photoshop::before {
+  content: "Adobe Photoshop";
+}
+.outil-languette .outil-blob.outil-figma {
+  background-image: url("../img/outil-logo-figma.png");
+}
+.outil-languette .outil-blob.outil-figma::before {
+  content: "Figma";
+}
+.outil-languette .outil-blob.outil-git {
+  background-image: url("../img/outil-logo-git.png");
+}
+.outil-languette .outil-blob.outil-git::before {
+  content: "Git";
+}
+.outil-languette .outil-blob.outil-vscode {
+  background-image: url("../img/outil-logo-vscode.png");
+}
+.outil-languette .outil-blob.outil-vscode::before {
+  content: "Visual Studio Code";
+}
+
 #Resume_projet {
   z-index: 1;
   padding: 60px 30px;

@@ -349,13 +349,19 @@
                 <!-- Bloc titre et outils utilisés + texte -->
                 <div class="section-bloc">
 
-                    <div class="section-ligne">
+                    <div class="section-ligne no-gap">
                         <div class="section-colonne demi-col">
                             <h2 class="titre-section">II. Identité visuelle</h2>
                         </div>
 
                         <div class="section-colonne demi-col">
-                            outils utilisés
+                            <div class="outil-languette">
+                                <p class="outil-txt">Outils<br>utilisés</p>
+                                <div class="outil-blob-wrapper">
+                                    <div class="outil-blob outil-illustrator"></div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
 

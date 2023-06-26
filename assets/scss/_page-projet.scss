@@ -517,6 +517,179 @@ main {
 
 }
 
+// Languette blanche qui contient les outils utilisés pour une section
+.outil-languette {
+    width: 100%;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 0 0 50px 50px;
+    box-shadow: inset 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 18px 20px 20px 20px;
+    gap: 20px;
+    align-items: center;
+
+    // media query .outil-languette
+    @include mquery.tablet {   
+        padding: 18px 25px 20px 25px;
+    }
+
+    // media query .outil-languette
+    @include mquery.landscape {   
+        border-radius: 50px;
+        padding: 18px 20px 17px 20px;
+        box-shadow: none;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    // media query .outil-languette
+    @include mquery.laptop {   
+        padding: 14px 25px 13px 25px;
+    }
+
+
+
+    // Conteneur des ronds d'outils
+    .outil-blob-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    // Texte languette outil
+    .outil-txt {
+        @include typo.title($color:#242424, $weight:700);
+        font-size: 20px;
+        margin: 0;
+
+        // media query .outil-txt
+        @include mquery.phone {   
+            font-size: 18px;
+        }
+
+        // media query .outil-txt
+        @include mquery.laptop {   
+            font-size: 23px;
+        }
+    }
+
+    // Cercle représentant un outil
+    .outil-blob {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/outil-logo-placeholder.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        transition: outline 150ms ease;
+        outline: 0px solid var(--couleur-focus-projet);
+        cursor: help;
+
+        &:hover {
+            outline: 5px solid var(--couleur-focus-projet);
+        }
+
+        &::before {
+            content: 'Nom outil';
+            position: absolute;
+            top: -58px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            padding: 6px 10px;
+            background: color.$ambiance-120;
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 20px;
+            outline: 2px solid var(--couleur-focus-projet);
+            opacity: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            width: 16px;
+            height: 16px;
+            background: color.$ambiance-120;
+            border-top: 0px solid var(--couleur-focus-projet);
+            border-right: 3px solid var(--couleur-focus-projet);
+            border-bottom: 3px solid var(--couleur-focus-projet);
+            border-left: 0px solid var(--couleur-focus-projet);
+            -webkit-mask-image: url("/assets/mask/mask-triangle-etiquette.svg");
+            mask-image: url("/assets/mask/mask-triangle-etiquette.svg");
+            opacity: 0;
+        }
+
+        &:hover::before, &:hover::after {
+            opacity: 1;
+        }
+
+        // media query .outil-blob
+        @include mquery.laptop {   
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    // Adobe Illustrator
+    .outil-blob.outil-illustrator {
+        background-image: url("../img/outil-logo-illustrator.png");
+
+        &::before {
+            content: 'Adobe Illustrator';
+        }
+
+    }
+
+    // Adobe Photoshop
+    .outil-blob.outil-photoshop {
+        background-image: url("../img/outil-logo-photoshop.png");
+
+        &::before {
+            content: 'Adobe Photoshop';
+        }
+
+    }
+
+    // Figma
+    .outil-blob.outil-figma {
+        background-image: url("../img/outil-logo-figma.png");
+
+        &::before {
+            content: 'Figma';
+        }
+
+    }
+
+    // Git
+    .outil-blob.outil-git {
+        background-image: url("../img/outil-logo-git.png");
+
+        &::before {
+            content: 'Git';
+        }
+
+    }
+
+    // Visual Studio Code
+    .outil-blob.outil-vscode {
+        background-image: url("../img/outil-logo-vscode.png");
+
+        &::before {
+            content: 'Visual Studio Code';
+        }
+
+    }
+}
+
 // --------------- Section "résumé du projet" ---------------
 #Resume_projet {
     z-index: 1;
