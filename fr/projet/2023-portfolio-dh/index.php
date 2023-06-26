@@ -386,8 +386,88 @@
                 </div>
 
                 <!-- Bloc typographies et couleurs utilisées -->
-                <div class="section-bloc">
+                <div id="Bloc_typo_couleur_projet" class="section-bloc">
+                    <div class="section-ligne">
 
+                        <div class="section-colonne demi-col">
+                            <div class="bloc-typographie-projet">
+
+                                <p class="titre-typo">Typographies</p>
+
+                                <div id="Typo_projet_01" class="typo-projet">
+                                    <p class="typo-showcase">Playfair Display</p>
+                                    <p class="typo-contexte">Pour les titres importants</p>
+                                </div>
+
+                                <div id="Typo_projet_02" class="typo-projet">
+                                    <p class="typo-showcase">Alegreya Sans</p>
+                                    <p class="typo-contexte">Pour les titres plus simples</p>
+                                </div>
+
+                                <div id="Typo_projet_03" class="typo-projet">
+                                    <p class="typo-showcase">Assistant</p>
+                                    <p class="typo-contexte">Pour les paragraphes de texte</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="section-colonne demi-col">
+
+                            <div class="bloc-palette-couleurs-projet">
+
+                                <p class="titre-couleurs">Couleurs</p>
+
+                                <div id="Palette_projet_01" class="palette-couleurs-projet">
+                                    <div class="palette-majeure">
+                                        <p class="nom-teinte-majeure">Couleur principale</p>
+                                        <p class="code-teinte-majeure">#FF6666</p>
+                                    </div>
+                                    <div class="palette-mineure">
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                    </div>
+                                </div>
+
+                                <div id="Palette_projet_02" class="palette-couleurs-projet">
+                                    <div class="palette-majeure">
+                                        <p class="nom-teinte-majeure">Couleur complémentaire</p>
+                                        <p class="code-teinte-majeure">#439A86</p>
+                                    </div>
+                                    <div class="palette-mineure">
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                    </div>
+                                </div>
+
+                                <div id="Palette_projet_03" class="palette-couleurs-projet">
+                                    <div class="palette-majeure">
+                                        <p class="nom-teinte-majeure">Couleur d’habillage globale</p>
+                                        <p class="code-teinte-majeure">#342B33</p>
+                                    </div>
+                                    <div class="palette-mineure">
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                        <div class="carre-palette"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </section>
