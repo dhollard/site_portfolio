@@ -19,3 +19,6 @@
 
   gtag('config', 'G-53XGD1RHLF');
 </script>
+
+<!-- Appel JQuery -->
+<script src="/assets/libraries/JQuery/jquery-3.7.0.min.js"></script>

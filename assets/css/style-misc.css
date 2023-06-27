@@ -156,6 +156,10 @@ main {
   transition: none !important;
 }
 
+.d-none {
+  display: none;
+}
+
 .navbar {
   background: rgba(38, 22, 36, 0.8);
   backdrop-filter: blur(4px);

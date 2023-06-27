@@ -34,6 +34,11 @@ main {
     transition: none !important;
 }
 
+// Classe générique pour masquer un élément dynamiquement
+.d-none {
+    display: none;
+}
+
 // navbar
 .navbar {
     background: rgba(38, 22, 36, 0.8);
