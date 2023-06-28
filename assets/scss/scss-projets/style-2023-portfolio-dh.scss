@@ -785,3 +785,48 @@
     }
 
 }
+
+#Developpement_web {
+
+    .schema-code-lang video {
+        max-width: 450px;
+
+        // media query .schema-code-lang video
+        @include mquery.landscape {   
+            max-width: 100%;
+        }
+    }
+
+    .github-btn-link {
+        background: color.$primary-100;
+        border-radius: 10px;
+        padding: 18px 25px;
+        margin: 15px auto 0 auto;
+        max-width: 350px;
+        width: 100%;
+
+        @include typo.title($color:#ffffff, $weight:700);
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            background: color.$primary-120;
+        }
+
+        // media query .conclusion-maquette-btn
+        @include mquery.landscape {   
+            font-size: 24px;
+            max-width: 100%;
+        }
+    }
+
+    .anim-dev-showcase video {
+        max-width: 450px;
+
+        // media query .anim-dev-showcase video
+        @include mquery.landscape {   
+            max-width: 100%;
+        }
+    }
+}

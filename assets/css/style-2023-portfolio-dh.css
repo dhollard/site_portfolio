@@ -2706,4 +2706,45 @@ main {
   #Maquette_site .bloc-conclusion-maquette .conclusion-maquette-btn {
     font-size: 24px;
   }
+}
+
+#Developpement_web .schema-code-lang video {
+  max-width: 450px;
+}
+@media (min-width: 768px) {
+  #Developpement_web .schema-code-lang video {
+    max-width: 100%;
+  }
+}
+#Developpement_web .github-btn-link {
+  background: #FF6666;
+  border-radius: 10px;
+  padding: 18px 25px;
+  margin: 15px auto 0 auto;
+  max-width: 350px;
+  width: 100%;
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+#Developpement_web .github-btn-link:hover {
+  background: #E93B39;
+}
+@media (min-width: 768px) {
+  #Developpement_web .github-btn-link {
+    font-size: 24px;
+    max-width: 100%;
+  }
+}
+#Developpement_web .anim-dev-showcase video {
+  max-width: 450px;
+}
+@media (min-width: 768px) {
+  #Developpement_web .anim-dev-showcase video {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */

@@ -757,6 +757,368 @@
 
         </section>
 
+        <!-- ********** Section "Développement web" ********** -->
+        <section id="Developpement_web" class="section-projet">
+
+            <!-- Bloc titre et outils utilisés + texte -->
+            <div class="section-bloc">
+
+                <div class="section-ligne no-gap">
+                    <div class="section-colonne demi-col">
+                        <h2 class="titre-section">IV. Développement web</h2>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="outil-languette">
+                            <p class="outil-txt">Outils<br>utilisés</p>
+                            <div class="outil-blob-wrapper">
+                                <div class="outil-blob outil-vscode"></div>
+                                <div class="outil-blob outil-git"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte">Transformer le design en une expérience utilisateur interactive et agréable.</p>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Une fois la maquette du site finalisée, j’ai commencé à rédiger le code source de mon portfolio.</p>
+
+                            <p>N’ayant pas eu recours à un CMS ou à un template et à peu de bibliothèques, j’ai principalement codé de zéro sur VS Code.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Bloc texte + schema langages utilisés -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>J’ai préféré le SCSS plutôt que du CSS basique pour garder mon code organisé et facile à entretenir. Cela m’a permis également d’optimiser le nombre de requêtes envoyées au serveur.</p>
+
+                            <p>J’ai utilisé JavaScript, JQuery et PHP pour importer mon code de façon modulable et réagir aux interactions de l’utilisateur (notamment sur des animations et pour le formulaire de contact).</p>
+
+                            <p>Les besoins de la V1 du site étant simples, j’ai choisi des langages simples que je maîtrise. Faire appel à des frameworks lourds pour utiliser 5% de leurs capacités m’a paru contre-productif.</p>
+                        </div>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <figure class="bloc-visuel schema-code-lang">
+
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                    <source src="video/schema-code-lang.webm" type="video/webm">
+                                    <source src="video/schema-code-lang.mp4" type="video/mp4">
+                                    Votre navigateur ne peut pas lire cette vidéo.
+                                </video>
+
+                            <figcaption class="legende-visuel">Schématisation du rôle de chaque langage employé.</figcaption>
+
+                        </figure>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Bloc visualisation git + texte -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+
+                    <div class="section-colonne demi-col">
+
+                        <p class="phrase-forte">Utiliser un outil de contrôle de versions est essentiel pour visualiser et gérer l’évolution d’un projet.</p>
+
+                        <figure class="bloc-visuel">
+
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/video-chronologie-git.webm" type="video/webm">
+                                <source src="video/video-chronologie-git.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Je souhaite pouvoir entretenir et améliorer mon site portfolio sur le long terme.</p>
+
+                            <p>J’ai donc utilisé Git pour garder en mémoire un historique détaillé de mes avancées sur ce projet et créer du code durable.</p>
+
+                            <p>Cette démarche me permet aussi de rendre mon code public sur GitHub, pour valoriser davantage mes capacités de développeur front-end.</p>
+                        </div>
+
+                        <a class="github-btn-link" href="https://github.com/dhollard/site_portfolio" target="_blank">Voir le projet sur GitHub</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bloc showcase dev "intitulés métiers" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <h3 class="titre-secondaire-section">Sélection d’interactions UI/UX présentes sur le site</h3>
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col no-gap">
+                        <p class="phrase-forte">Représenter chaque facette de mes compétences.</p>
+
+                        <figure class="bloc-visuel anim-dev-showcase">
+                            
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/anim-showcase-titres-accueil.webm" type="video/webm">
+                                <source src="video/anim-showcase-titres-accueil.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Au chargement de la page d’accueil, l’utilisateur voit apparaitre trois lignes de textes.</p>
+
+                            <p>Elles mettent chacune en avant l’un de mes domaines d’expertise à l’aide d’une petite animation.</p>
+
+                            <ul class="liste-puce-projet">
+                                <li>Le web design est représenté par des balises de codes HTML et des couleurs de formatage typiquement utilisées dans un éditeur de code.</li>
+                                <li>Le motion design est évoqué par la notion de mouvement perpétuel.</li>
+                                <li>L’animation du design graphique puise dans les racines typographiques propres à ce métier.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc showcase dev "portrait" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte">Apporter un côté plus humain à l’identité graphique.</p>
+
+                        <figure class="bloc-visuel anim-dev-showcase">
+                            
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/anim-showcase-portrait.webm" type="video/webm">
+                                <source src="video/anim-showcase-portrait.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>J’ai ajouté mon portrait à la page d’accueil du site pour le rendre plus convivial.</p>
+
+                            <p>Le fait d’en apprendre plus sur l’auteur d’un portfolio rend l’expérience plus personnelle et mémorable selon moi.</p>
+
+                            <p>L’animation appliquée sur cet élément le rend plus dynamique et invite à visiter la page “mon parcours”.</p>
+
+                            <p>Elle simule la locution d’une parole dans une bulle de texte minimaliste.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc showcase dev "module parcours" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte">Savoir s’adapter aux différents utilisateurs du site.</p>
+
+                        <figure class="bloc-visuel anim-dev-showcase">
+                            
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/anim-showcase-module-parcours.webm" type="video/webm">
+                                <source src="video/anim-showcase-module-parcours.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Un recruteur ou un proche ne liront pas mon site de la même manière, notamment en ce qui concerne mon parcours.</p>
+
+                            <p>Pour m’adapter aux besoins du lecteur, j’ai imaginé des modules dépliables, qui permettent d’aller à l’essentiel ou d’obtenir plus de détails.</p>
+
+                            <p>La frise chronologique centrale s’adapte automatiquement aux changements de tailles des modules pour préserver l’harmonie de la page.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc showcase dev "bouton CV" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte">Capter l’attention en direction de mon CV.</p>
+
+                        <figure class="bloc-visuel anim-dev-showcase">
+                            
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/anim-showcase-bouton-cv.webm" type="video/webm">
+                                <source src="video/anim-showcase-bouton-cv.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>J’ai créé un style unique pour le bouton permettant de télécharger mon CV, afin qu’il se démarque du reste de la page.</p>
+
+                            <p>Ce bouton existe en trois déclinaisons pour pouvoir proposer une expérience responsive adaptée et mobile friendly.</p>
+
+                            <p>Puisque les animations de survol sont peu compatibles avec l’usage mobile, j’ai opté pour un design plus classique sur ce support.</p>
+
+                            <p>Pour des supports plus grands, le bouton devient plus abstrait mais plus dépendant de l’animation d’interaction.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc showcase dev "miniature projet" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte">Mettre en valeur chaque projet pour donner envie d’en savoir plus.</p>
+
+                        <figure class="bloc-visuel anim-dev-showcase">
+                            
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/anim-showcase-miniature-projet.webm" type="video/webm">
+                                <source src="video/anim-showcase-miniature-projet.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Pour mettre en page les aperçus de mes projets, j’ai opté pour un système de grille adaptable au nombre croissant d’éléments.</p>
+
+                            <p>Le visuel représentant chaque projet résume son identité graphique au travers d’une composition minimaliste.</p>
+
+                            <p>L’animation de survol complète l’aperçu avec les informations clés du projet.</p>
+
+                            <p>Sur mobile, j’ai dû compenser l’usage inadapté de l’interaction de survol. Les informations viennent alors se greffer sous la forme d’un cadre rappelant le format d’une photo polaroid.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc showcase dev "formulaire cookie" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte">Respecter les droits de l’utilisateur, tout en lui offrant une expérience agréable.</p>
+
+                        <figure class="bloc-visuel anim-dev-showcase">
+                            
+                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                                <source src="video/anim-showcase-modal-cookie.webm" type="video/webm">
+                                <source src="video/anim-showcase-modal-cookie.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
+
+                        </figure>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Le formulaire de préférences des cookies prend la forme d’un élément visuellement plaisant, qui ne perturbe pas la navigation.</p>
+
+                            <p>Trop de pages web sont devenues pénibles à visiter, à cause des demandes de consentement envahissantes et volontairement rendues trompeuses.</p>
+
+                            <p>Je compte maintenir à jour cet élément pour respecter les changements des normes RGPD, mais toujours en veillant au confort des utilisateurs.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
     <!-- Footer -->
