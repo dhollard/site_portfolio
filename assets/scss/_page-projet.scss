@@ -417,6 +417,17 @@ main {
         }
 
     }
+
+    // Instructions complémentaires .cadre-instruction-tag mobile
+    .cadre-instruction-tag {
+        // media query .cadre-instruction-tag
+        @include mquery.laptop {   
+            top: 50%;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+
+        }
+    }
 }
 
 // Cadre desktop contenant une vidéo ou une maquette
@@ -444,7 +455,7 @@ main {
         display: flex;
     }
 
-    // Instructions complémentaires .cadre-instruction-tag
+    // Instructions complémentaires .cadre-instruction-tag desktop
     .cadre-instruction-tag {
         // media query .cadre-instruction-tag
         @include mquery.laptop {   
@@ -586,6 +597,22 @@ main {
     align-items: center;
     opacity: 1;
     transition: opacity 400ms ease-out;
+    animation: pulse-tag-background 4s linear infinite;
+
+    //animation de la couleur de fond de .cadre-instruction-tag
+    @keyframes pulse-tag-background {
+        0% {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        50% {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        100% {
+            background: rgba(255, 255, 255, 0.6);
+        } 
+    }
 
     &.fade-out-tag {
         opacity: 0;
@@ -667,7 +694,7 @@ main {
 .prevent-scrolling .cadre-instruction-tag {
 
     // Ne pas prendre en compte sur ordi
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
         opacity: 1!important;
 
 
@@ -846,7 +873,7 @@ main {
 .prevent-scrolling .cadre-content-wrapper {
 
     // Ne pas prendre en compte sur ordi
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
         overflow-y: hidden;
     }
     

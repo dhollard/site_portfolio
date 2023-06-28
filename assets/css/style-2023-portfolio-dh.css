@@ -1216,6 +1216,13 @@ main {
     display: none;
   }
 }
+@media (min-width: 992px) {
+  .cadre-mobile .cadre-instruction-tag {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}
 
 .cadre-desktop {
   position: relative;
@@ -1356,6 +1363,18 @@ main {
   align-items: center;
   opacity: 1;
   transition: opacity 400ms ease-out;
+  animation: pulse-tag-background 4s linear infinite;
+}
+@keyframes pulse-tag-background {
+  0% {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    background: rgb(255, 255, 255);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.6);
+  }
 }
 .cadre-instruction-tag.fade-out-tag {
   opacity: 0;
@@ -1417,7 +1436,7 @@ main {
   content: "Scrollez pour découvrir";
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .prevent-scrolling .cadre-instruction-tag {
     opacity: 1 !important;
   }
@@ -1425,12 +1444,12 @@ main {
     animation: double-tap-gesture-mobile 2s linear infinite;
   }
 }
-@media (max-width: 992px) and (min-width: 992px) {
+@media (max-width: 768px) and (min-width: 992px) {
   .prevent-scrolling .cadre-instruction-tag .inst-tag-ico {
     animation: double-tap-gesture-desk 2s linear infinite;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   @keyframes double-tap-gesture-mobile {
     0%, 20% {
       transform: scale(1) rotate(0deg);
@@ -1452,7 +1471,7 @@ main {
     }
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   @keyframes double-tap-gesture-desk {
     0%, 20% {
       transform: scale(1);
@@ -1474,7 +1493,7 @@ main {
     }
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .prevent-scrolling .cadre-instruction-tag .inst-tag-txt {
     font-size: 22px;
   }
@@ -1482,7 +1501,7 @@ main {
     content: "Appuyez deux fois";
   }
 }
-@media (max-width: 992px) and (min-width: 992px) {
+@media (max-width: 768px) and (min-width: 992px) {
   .prevent-scrolling .cadre-instruction-tag .inst-tag-txt::before {
     content: "Double cliquez";
   }
@@ -1553,7 +1572,7 @@ main {
   pointer-events: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .prevent-scrolling .cadre-content-wrapper {
     overflow-y: hidden;
   }

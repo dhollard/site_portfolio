@@ -35,18 +35,10 @@
 <script>
     $(".cadre-content-wrapper").scroll(function () {
 
-        /*setTimeout(function() {
-            $(this).siblings(".cadre-instruction-tag").addClass("fade-out-tag");
-            console.log("Le trigger marche");
-        }, 800);*/
-
-        /*$(this).siblings(".cadre-instruction-tag").delay(2000).addClass("fade-out-tag");*/
-
         $(this).delay(600).queue(function(){
             $(this).siblings(".cadre-instruction-tag").addClass("fade-out-tag").dequeue();
         });
 
-        
     });
 </script>
 
@@ -54,25 +46,19 @@
 <script>
     $(".switch-cadre").click(function () {
 
-    //$(this).siblings(".cadre-mobile").removeClass("switch-off-cadre");
-    //$(this).siblings(".cadre-desktop").addClass("switch-off-cadre");
-    //console.log("Confirmation détection condition");
-
     // Vérifie si le cadre mobile voisin est masqué
     if ($(this).siblings(".cadre-mobile").hasClass("switch-off-cadre")) {
         $(this).siblings(".cadre-mobile").removeClass("switch-off-cadre");
         $(this).siblings(".cadre-desktop").addClass("switch-off-cadre");
         $(this).addClass("switch-to-desktop");
-        //console.log("If working");
 
     // Vérifie le cas échéant, si le cadre desktop voisin est masqué
     } else if ($(this).siblings(".cadre-desktop").hasClass("switch-off-cadre")) {
         $(this).siblings(".cadre-desktop").removeClass("switch-off-cadre");
         $(this).siblings(".cadre-mobile").addClass("switch-off-cadre");
         $(this).removeClass("switch-to-desktop");
-        //console.log("Else If working");
     } else {
-        //console.log("Else triggered");
+
     }
 
     });
@@ -91,21 +77,26 @@
 
 <!-- Script pour re-vérouiller un cadre maquette quand on clique en dehors -->
 <script>
-    /*$('html').on("click", function(e) {
-        if(!$(e.target).hasClass('cadre-mobile') ) {
-            console.log("Lock it");
-        } else {
-            console.log("Failed if");
-        }
-    });​*/
 
+    // Vérouiller si on clique sur autre chose qu'un contenu mobile
     $(document).click(function(e) {
         if (!$(e.target).hasClass("cadre-content-wrapper")) {
             //console.log($(e.target));
             $(".cadre-mobile").addClass("prevent-scrolling");
 
         } else {
-            console.log("Else triggered");
+            //console.log("Else triggered");
+        }
+
+    });
+
+    $(document).scroll(function(e) {
+        if (!$(e.target).hasClass("cadre-content-wrapper")) {
+            
+            $(".cadre-mobile").addClass("prevent-scrolling");
+
+        } else {
+            //console.log("Else triggered");
         }
 
     });
