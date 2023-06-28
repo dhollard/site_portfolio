@@ -654,9 +654,101 @@
                                 <p class="switch-cadre-txt"></p>
                             </div>
 
-                            <figcaption class="legende-visuel">Maquette de la page d’accueil</figcaption>
+                            <figcaption class="legende-visuel">Maquette de la page “mes projets”</figcaption>
 
                         </figure>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc maquette "Mon parcours" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte focus-color">Page “Mon parcours” :</p>
+                        <p class="phrase-forte">Une vue d’ensemble de mon expérience scolaire et professionnelle.</p>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Cette page liste mes expériences par ordre chronologique, sous la forme de blocs dépliables permettant deux niveaux de lecture :</p>
+
+                            <ul class="liste-puce-projet">
+                                <li>Une lecture rapide sans ouvrir le module, qui résume les points clés de la période en question.</li>
+
+                                <li>Une lecture plus détaillée en appuyant sur “+ en savoir plus”, grâce au texte complémentaire placé à l’intérieur du module.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+
+                        <figure id="Bloc_cadre_accueil" class="bloc-cadre">
+                            <div class="cadre-mobile switch-off-cadre prevent-scrolling">
+                                <div class="cadre-content-wrapper">
+                                    <img class="cadre-img-content" src="img/maquette-site-parcours-mobile.png" width="100%" height="auto">
+                                </div>
+
+                                <div class="cadre-instruction-tag">
+                                    <div class="inst-tag-ico"></div>
+                                    <div class="inst-tag-txt"></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="cadre-desktop">
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+
+                                <div class="cadre-content-wrapper">
+                                    <img class="cadre-img-content" src="img/maquette-site-parcours-desktop.png" width="100%" height="auto">
+                                </div>
+
+                                <div class="cadre-instruction-tag">
+                                    <div class="inst-tag-ico"></div>
+                                    <div class="inst-tag-txt"></div>
+                                </div>
+                            </div>
+
+                            <div class="switch-cadre">
+                                <div class="switch-cadre-ico"></div>
+                                <p class="switch-cadre-txt"></p>
+                            </div>
+
+                            <figcaption class="legende-visuel">Maquette de la page “mon parcours”</figcaption>
+
+                        </figure>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc conclusion maquette -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        
+                        <div class="bloc-conclusion-maquette">
+                            <p class="conclusion-maquette-txt">Envie de voir le reste de la maquette ?</p>
+                            <p class="conclusion-maquette-txt">Ses déclinaisons responsive et interactions ?</p>
+
+                            <a class="conclusion-maquette-btn" href="https://www.figma.com/file/MteIU7aD4xXnPuOax6YnlT/Porfolio-perso-V1?node-id=0%3A1&t=MthQvsCoa1aIF2xx-1" target="_blank">Découvrez-la sur Figma</a>
+                        </div>
 
                     </div>
                 </div>
@@ -675,17 +767,6 @@
 
     <!-- Appel scripts spéciaux pages projets -->
     <?php include_once('../../../assets/module/modules-projets/page-projet-module.php'); ?>
-
-    <!-- Test 
-    <script>
-        const button = document.getElementById("Tap_test")
-
-        button.addEventListener("dblclick", event => {
-        console.log("Double-click detected")
-        // Double-click detected
-        document.getElementById("Tapped_element").classList.add("scrollable");
-        })
-    </script>-->
 
 </body>
 

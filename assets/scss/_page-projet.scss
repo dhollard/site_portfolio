@@ -167,7 +167,6 @@ main {
     flex-direction: column;
     padding: 0px 30px;
     margin: 0 auto 200px auto;
-    //gap: 150px;
 
     // media query bloc section
     @include mquery.laptop {
@@ -891,7 +890,6 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0;
-    //gap: 30px;
 }
 
 .legende-visuel {

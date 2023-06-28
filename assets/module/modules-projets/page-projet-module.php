@@ -81,11 +81,11 @@
     // Vérouiller si on clique sur autre chose qu'un contenu mobile
     $(document).click(function(e) {
         if (!$(e.target).hasClass("cadre-content-wrapper")) {
-            //console.log($(e.target));
+            
             $(".cadre-mobile").addClass("prevent-scrolling");
 
         } else {
-            //console.log("Else triggered");
+
         }
 
     });
@@ -96,7 +96,7 @@
             $(".cadre-mobile").addClass("prevent-scrolling");
 
         } else {
-            //console.log("Else triggered");
+
         }
 
     });

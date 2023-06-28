@@ -731,6 +731,57 @@
     // Bloc contenant les cadres maquette page d'accueil
     #Bloc_cadre_accueil {
         margin-top: 55px;
+    }
+
+    // Bloc à la fin de la section, qui renvoie vers le lien figma de la maquette
+    .bloc-conclusion-maquette {
+        background: color.$ambiance-120;
+        padding: 30px 15px 40px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .conclusion-maquette-txt {
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 24px;
+            text-align: center;
+            margin: 0 0 12px 0;
+
+            // media query .conclusion-maquette-txt
+            @include mquery.phone {   
+                font-size: 22px;
+            }
+
+            // media query .conclusion-maquette-txt
+            @include mquery.landscape {   
+                font-size: 28px;
+            }
+        }
+
+        .conclusion-maquette-btn {
+            background: color.$primary-100;
+            border-radius: 10px;
+            padding: 18px 25px;
+            margin: 15px 0 0 0;
+
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+
+            &:hover {
+                background: color.$primary-120;
+            }
+
+            // media query .conclusion-maquette-btn
+            @include mquery.landscape {   
+                font-size: 24px;
+            }
+        }
+
 
     }
+
 }

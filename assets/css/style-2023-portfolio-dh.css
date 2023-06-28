@@ -2657,4 +2657,53 @@ main {
 
 #Maquette_site #Bloc_cadre_accueil {
   margin-top: 55px;
+}
+#Maquette_site .bloc-conclusion-maquette {
+  background: #261624;
+  padding: 30px 15px 40px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#Maquette_site .bloc-conclusion-maquette .conclusion-maquette-txt {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+@media (max-width: 400px) {
+  #Maquette_site .bloc-conclusion-maquette .conclusion-maquette-txt {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  #Maquette_site .bloc-conclusion-maquette .conclusion-maquette-txt {
+    font-size: 28px;
+  }
+}
+#Maquette_site .bloc-conclusion-maquette .conclusion-maquette-btn {
+  background: #FF6666;
+  border-radius: 10px;
+  padding: 18px 25px;
+  margin: 15px 0 0 0;
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+#Maquette_site .bloc-conclusion-maquette .conclusion-maquette-btn:hover {
+  background: #E93B39;
+}
+@media (min-width: 768px) {
+  #Maquette_site .bloc-conclusion-maquette .conclusion-maquette-btn {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */
