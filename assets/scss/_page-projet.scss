@@ -663,6 +663,99 @@ main {
     }
 }
 
+// Variante de .cadre-instruction-tag quand scroll est bloqué
+.prevent-scrolling .cadre-instruction-tag {
+
+    // Ne pas prendre en compte sur ordi
+    @media (max-width: 992px) {
+        opacity: 1!important;
+
+
+        // Icone
+        .inst-tag-ico { 
+            animation: double-tap-gesture-mobile 2s linear infinite;
+    
+            // media query icone
+            @include mquery.laptop {   
+                animation: double-tap-gesture-desk 2s linear infinite;
+            }
+        }
+    
+        //animation dévérouillage sur mobile pour .inst-tag-ico
+        @keyframes double-tap-gesture-mobile {
+            0%, 20% {
+                transform: scale(1) rotate(0deg);
+            }
+    
+            30% {
+                transform: scale(1) rotate(0deg);
+            }
+    
+            40%, 45% {
+                transform: scale(0.9) rotate(5deg);
+            }
+    
+            50%, 55% {
+                transform: scale(1) rotate(0deg);
+            }
+    
+            60%, 65% {
+                transform: scale(0.9) rotate(5deg);
+            }
+    
+            80%, 100% {
+                transform: scale(1) rotate(0deg);
+            } 
+        }
+    
+        //animation dévérouillage pour .inst-tag-ico
+        @keyframes double-tap-gesture-desk {
+            0%, 20% {
+                transform: scale(1);
+            }
+    
+            30% {
+                transform: scale(1);
+            }
+    
+            40%, 45% {
+                transform: scale(0.9);
+            }
+    
+            50%, 55% {
+                transform: scale(1);
+            }
+    
+            60%, 65% {
+                transform: scale(0.9);
+            }
+    
+            80%, 100% {
+                transform: scale(1);
+            } 
+        }
+    
+        // conteneur du texte de l'étiquette
+        .inst-tag-txt {
+            font-size: 22px;
+    
+            // caractères de texte
+            &::before {
+                content: 'Appuyez deux fois';
+    
+                // media query
+                @include mquery.laptop {   
+                    content: 'Double cliquez';
+                }
+            }
+    
+        }
+
+    }
+
+
+}
+
 // Bouton pour permutter entre les versions mobiles et desktop d'un cadre
 .switch-cadre {
     width: 100%;
@@ -741,9 +834,22 @@ main {
     // Fixe la petite marge fantôme en bas quand le scroll est actif
     margin-bottom: -5px;
 
-    &.scrollable {
-        overflow-y: auto;
+    // Contenu image du wrapper
+    .cadre-img-content {
+        //nécessaire pour le vérouillage mobile
+        pointer-events: none;
     }
+
+}
+
+// Variante de .cadre-content-wrapper quand scroll est bloqué
+.prevent-scrolling .cadre-content-wrapper {
+
+    // Ne pas prendre en compte sur ordi
+    @media (max-width: 992px) {
+        overflow-y: hidden;
+    }
+    
 }
 
 // Video dans un cadre

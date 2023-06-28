@@ -552,7 +552,7 @@
                     <div class="section-colonne full-col">
 
                         <figure id="Bloc_cadre_accueil" class="bloc-cadre">
-                            <div class="cadre-mobile switch-off-cadre">
+                            <div class="cadre-mobile switch-off-cadre prevent-scrolling">
                                 <div class="cadre-content-wrapper">
                                     <img class="cadre-img-content" src="img/maquette-site-accueil-mobile.png" width="100%" height="auto">
                                 </div>
@@ -565,10 +565,82 @@
                             </div>
 
                             <div class="cadre-desktop">
-                                <?php include_once('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
                                 <div class="cadre-content-wrapper">
                                     <img class="cadre-img-content" src="img/maquette-site-accueil-desktop.png" width="100%" height="auto">
+                                </div>
+
+                                <div class="cadre-instruction-tag">
+                                    <div class="inst-tag-ico"></div>
+                                    <div class="inst-tag-txt"></div>
+                                </div>
+                            </div>
+
+                            <div class="switch-cadre">
+                                <div class="switch-cadre-ico"></div>
+                                <p class="switch-cadre-txt"></p>
+                            </div>
+
+                            <figcaption class="legende-visuel">Maquette de la page d’accueil</figcaption>
+
+                        </figure>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc maquette "Mes projets" -->
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <span class="sep-ligne"></span>
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <p class="phrase-forte focus-color">Page “Mes projets” :</p>
+                        <p class="phrase-forte">Une vitrine ergonomique et valorisante pour mes créations.</p>
+                    </div>
+
+                    <div class="section-colonne demi-col">
+
+                        <div class="bloc-texte">
+                            <p>Les projets les plus pertinents d’un portfolio sont généralement les derniers en date.</p>
+
+                            <p>Je souhaite toutefois utiliser cette page en tant qu’archive numérique de mon parcours sur le long terme.</p>
+
+                            <p>Pour réconcilier ces deux réalités, l’utilisateur peut filtrer les projets sur plusieurs critères. Par défaut, la page affichera les dernières années uniquement.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+
+                        <figure id="Bloc_cadre_accueil" class="bloc-cadre">
+                            <div class="cadre-mobile switch-off-cadre prevent-scrolling">
+                                <div class="cadre-content-wrapper">
+                                    <img class="cadre-img-content" src="img/maquette-site-projets-mobile.png" width="100%" height="auto">
+                                </div>
+
+                                <div class="cadre-instruction-tag">
+                                    <div class="inst-tag-ico"></div>
+                                    <div class="inst-tag-txt"></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="cadre-desktop">
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+
+                                <div class="cadre-content-wrapper">
+                                    <img class="cadre-img-content" src="img/maquette-site-projets-desktop.png" width="100%" height="auto">
                                 </div>
 
                                 <div class="cadre-instruction-tag">

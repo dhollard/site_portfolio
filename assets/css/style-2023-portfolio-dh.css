@@ -1417,6 +1417,77 @@ main {
   content: "Scrollez pour découvrir";
 }
 
+@media (max-width: 992px) {
+  .prevent-scrolling .cadre-instruction-tag {
+    opacity: 1 !important;
+  }
+  .prevent-scrolling .cadre-instruction-tag .inst-tag-ico {
+    animation: double-tap-gesture-mobile 2s linear infinite;
+  }
+}
+@media (max-width: 992px) and (min-width: 992px) {
+  .prevent-scrolling .cadre-instruction-tag .inst-tag-ico {
+    animation: double-tap-gesture-desk 2s linear infinite;
+  }
+}
+@media (max-width: 992px) {
+  @keyframes double-tap-gesture-mobile {
+    0%, 20% {
+      transform: scale(1) rotate(0deg);
+    }
+    30% {
+      transform: scale(1) rotate(0deg);
+    }
+    40%, 45% {
+      transform: scale(0.9) rotate(5deg);
+    }
+    50%, 55% {
+      transform: scale(1) rotate(0deg);
+    }
+    60%, 65% {
+      transform: scale(0.9) rotate(5deg);
+    }
+    80%, 100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+}
+@media (max-width: 992px) {
+  @keyframes double-tap-gesture-desk {
+    0%, 20% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1);
+    }
+    40%, 45% {
+      transform: scale(0.9);
+    }
+    50%, 55% {
+      transform: scale(1);
+    }
+    60%, 65% {
+      transform: scale(0.9);
+    }
+    80%, 100% {
+      transform: scale(1);
+    }
+  }
+}
+@media (max-width: 992px) {
+  .prevent-scrolling .cadre-instruction-tag .inst-tag-txt {
+    font-size: 22px;
+  }
+  .prevent-scrolling .cadre-instruction-tag .inst-tag-txt::before {
+    content: "Appuyez deux fois";
+  }
+}
+@media (max-width: 992px) and (min-width: 992px) {
+  .prevent-scrolling .cadre-instruction-tag .inst-tag-txt::before {
+    content: "Double cliquez";
+  }
+}
+
 .switch-cadre {
   width: 100%;
   max-width: 340px;
@@ -1478,8 +1549,14 @@ main {
   overscroll-behavior: contain;
   margin-bottom: -5px;
 }
-.cadre-content-wrapper.scrollable {
-  overflow-y: auto;
+.cadre-content-wrapper .cadre-img-content {
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  .prevent-scrolling .cadre-content-wrapper {
+    overflow-y: hidden;
+  }
 }
 
 .bloc-video {

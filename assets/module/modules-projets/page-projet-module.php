@@ -77,3 +77,37 @@
 
     });
 </script>
+
+<!-- Script pour déverouiller un cadre maquette afin de pouvoir le scroller -->
+<script>
+    
+    $(".cadre-mobile.prevent-scrolling").on("dblclick", function () {
+        
+        $(this).removeClass("prevent-scrolling");
+
+    });
+
+</script>
+
+<!-- Script pour re-vérouiller un cadre maquette quand on clique en dehors -->
+<script>
+    /*$('html').on("click", function(e) {
+        if(!$(e.target).hasClass('cadre-mobile') ) {
+            console.log("Lock it");
+        } else {
+            console.log("Failed if");
+        }
+    });​*/
+
+    $(document).click(function(e) {
+        if (!$(e.target).hasClass("cadre-content-wrapper")) {
+            //console.log($(e.target));
+            $(".cadre-mobile").addClass("prevent-scrolling");
+
+        } else {
+            console.log("Else triggered");
+        }
+
+    });
+
+</script>
