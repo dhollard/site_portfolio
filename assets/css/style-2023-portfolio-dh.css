@@ -1905,6 +1905,20 @@ main {
   }
 }
 
+.phrase-conclusion-page {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--couleur-texte-projet);
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .phrase-conclusion-page {
+    font-size: 40px;
+  }
+}
+
 #Resume_projet {
   z-index: 1;
   padding: 60px 30px;
@@ -2822,5 +2836,17 @@ main {
   }
 }
 #Resultat_obtenu .bloc-emoji-special-gap .section-ligne:nth-child(1), #Resultat_obtenu .bloc-emoji-special-gap .section-ligne:nth-child(2) {
+  margin-top: 0px;
+}
+
+#Enseignements_appris .bloc-emoji-special-gap .section-ligne {
+  margin-top: 25px;
+}
+@media (min-width: 500px) {
+  #Enseignements_appris .bloc-emoji-special-gap .section-ligne {
+    margin-top: 55px;
+  }
+}
+#Enseignements_appris .bloc-emoji-special-gap .section-ligne:nth-child(1), #Enseignements_appris .bloc-emoji-special-gap .section-ligne:nth-child(2) {
   margin-top: 0px;
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */

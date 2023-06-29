@@ -1195,6 +1195,93 @@
 
         </section>
 
+        <!-- ********** Section "Ce que j'ai appris" ********** -->
+        <section id="Enseignements_appris" class="section-projet">
+
+            <!-- Bloc titre et contenu -->
+            <div class="section-bloc bloc-emoji-special-gap">
+
+                <!-- Titre -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <h2 class="titre-section">I. Ce que j’ai appris</h2>
+                    </div>
+                </div>
+
+                <!-- Enseignement n°1 -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-emoji-phrase">
+                            <p class="emoji">🧠</p>
+                            <p class="phrase-illustrative">J’ai aiguisé mon sens de l’organisation et de la <span class="focus-color">gestion de projet.</span></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Conscient que ce projet allait avancer de façon variable sur mon temps libre, j’ai décidé de m’organiser efficacement dès le départ.</p>
+
+                            <p>J’ai donc compté les heures passées sur chaque étape. Je me suis fixé des deadlines en visualisant l’avancement du projet avec un diagramme de Gantt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enseignement n°2 -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-emoji-phrase">
+                            <p class="emoji">🏆</p>
+                            <p class="phrase-illustrative"><span class="focus-color">Profiter</span> de la liberté totale de créer, mais <span class="focus-color">sans perdre de vue</span> la ligne d'arrivée.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Mon site portfolio est un outil professionnel précieux qui me faisait défaut. Le fait de le finaliser était donc assez urgent.</p>
+
+                            <p>Étant à la fois le chef de projet et l’exécutant, j’ai veillé à ne négliger aucun détail, tout en visant une mise en ligne du site la plus rapide possible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enseignement n°3 -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-emoji-phrase">
+                            <p class="emoji">🤓</p>
+                            <p class="phrase-illustrative"><span class="focus-color">Ma polyvalence</span> fait déjà ma force, mais il y a toujours davantage à apprendre.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Grâce à toute ma palette de compétences, j’ai pû gérer ce projet de A à Z. J’ai réalisé moi-même les textes, les visuels, le code et les supports de suivi du projet.</p>
+
+                            <p>Cependant, j’ai aussi dû apprendre de nouvelles connaissances et surmonter des obstacles pour concrétiser ma vision du site.</p>
+
+                            <p>J’ai dû remettre à plus tard des idées trop ambitieuses. Certaines compétences me faisait défaut et les acquérir m’aurait coûté trop de temps.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloc phrase de conclusion -->
+            <div class="section-bloc">
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+
+                        <p class="phrase-conclusion-page">Au final, créer ce site fut pour moi un <span class="focus-color">défi exigeant</span> sur la durée, mais <span class="focus-color">grandement enrichissant.</span></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <!-- Footer -->
