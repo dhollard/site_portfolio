@@ -1284,6 +1284,9 @@
 
     </main>
 
+    <!-- Pre-footer pages projets -->
+    <?php include_once('../../../assets/module/modules-projets/end-bloc-projet.php'); ?>
+
     <!-- Footer -->
     <?php include_once('../../../assets/module/footer.php'); ?>
 
@@ -1291,7 +1294,7 @@
     <?php include_once('../../../assets/module/end-page-module.php'); ?>
 
     <!-- Appel scripts spéciaux pages projets -->
-    <?php include_once('../../../assets/module/modules-projets/page-projet-module.php'); ?>
+    <?php include_once('../../../assets/module/modules-projets/page-projet-module-script.php'); ?>
 
 </body>
 

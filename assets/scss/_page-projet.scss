@@ -1532,3 +1532,119 @@ main {
 
 
 }
+
+// Bloc de fin de page qui mène vers d'autres projets
+.bloc-page-end-projet {
+    width: 100%;
+    padding: 70px 30px 90px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: color.$secondary-120;
+
+    // media query .bloc-page-end-projet
+    @include mquery.laptop {  
+        padding: 130px 30px 200px 30px;
+    }
+
+    // Conteneur interne
+    .bloc-end-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        // media query .bloc-end-wrapper
+        @include mquery.laptop {  
+            max-width: -moz-max-content;
+            max-width: max-content;
+            align-items: start;
+        }
+
+        // Titre bloc de fin
+        .bloc-end-title {
+            @include typo.special-title($color:#ffffff, $weight:800);
+            font-size: 30px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+
+            // media query .bloc-end-title
+            @include mquery.tablet {  
+                font-size: 40px;
+            }
+
+            // media query .bloc-end-title
+            @include mquery.landscape {  
+                font-size: 50px;
+                margin: 0 auto 30px auto;
+            }
+
+            // media query .bloc-end-title
+            @include mquery.laptop {  
+                font-size: 60px;
+                margin: 0 0 40px 0;
+            }
+        }
+
+        // Lien bloc de fin
+        .bloc-end-btn {
+            display: flex;
+            align-items: center;
+            background: color.$secondary-200;
+            @include typo.title($color:#ffffff, $weight:500);
+            font-size: 18px;
+            text-align: center;
+            padding: 18px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            max-width: 450px;
+            transition: transform 300ms ease-out;
+
+            &:hover {
+                background: color.$secondary-140;
+            }
+
+            // media query .bloc-end-btn
+            @include mquery.tablet {  
+                font-size: 22px;
+            }
+
+            // media query .bloc-end-btn
+            @include mquery.laptop {  
+                background: none;
+                text-align: left;
+                font-size: 34px;
+                max-width: 100%;
+                padding: 0;
+
+                &:hover {
+                    background: none;
+                    transform: translateX(10px);
+                    color: color.$secondary-20;
+                }
+
+                &:hover .bloc-end-ico {
+                    background-image: url("/assets/svg/ico-endbloc-projet-amb20.svg");
+                }
+            }
+        }
+
+        // Icone du lien
+        .bloc-end-ico {
+            display: none;
+            background-image: url("/assets/svg/ico-endbloc-projet-blanc.svg");
+            width: 30px;
+            height: 30px;
+            margin: 0 12px 2px 0;
+
+            // media query icone
+            @include mquery.laptop {  
+                display: block;
+            }
+
+            
+        }
+
+    }
+}
