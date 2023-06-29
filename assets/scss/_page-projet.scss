@@ -349,9 +349,9 @@ main {
 
     li {
         position: relative;
-        @include typo.text($color:var(--couleur-texte-projet), $weight:500);
+        @include typo.text($color:var(--couleur-texte-projet), $weight:400);
         font-size: 18px;
-        margin: 0 0 10px 0;
+        margin: 0 0 14px 0;
 
         &::before {
             content: "";
@@ -1181,6 +1181,69 @@ main {
         }
 
     }
+}
+
+// Phrase illustrée par un emoji
+.bloc-emoji-phrase {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    // media query .bloc-emoji-phrase
+    @include mquery.tablet {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    // media query .bloc-emoji-phrase
+    @include mquery.landscape {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    // media query .bloc-emoji-phrase
+    @include mquery.laptop {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    .emoji {
+        font-family: "Noto-Emoji";
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+        //filter: drop-shadow(0px 1px 4px rgba(255, 255, 255, 0.15));
+        
+
+        // media query .emoji
+        @include mquery.tablet {
+            padding-bottom: 10px;
+        }
+    }
+
+    .phrase-illustrative {
+        @include typo.title($color:var(--couleur-texte-projet), $weight:700);
+        font-size: 20px;
+        margin: 0;
+
+        // media query .phrase-illustrative
+        @include mquery.tablet {
+            font-size: 24px;
+        }
+
+        // media query .phrase-illustrative
+        @include mquery.desktop-xl {
+            font-size: 28px;
+        }
+
+    }
+
 }
 
 // --------------- Section "résumé du projet" ---------------

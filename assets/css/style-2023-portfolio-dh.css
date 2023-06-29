@@ -125,6 +125,11 @@
     font-weight: 700;
   }
 }
+@font-face {
+  font-family: "Noto-Emoji";
+  src: url("/assets/font/NotoColorEmoji-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -1162,10 +1167,10 @@ main {
   position: relative;
   font-family: "Assistant", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--couleur-texte-projet);
   font-size: 18px;
-  margin: 0 0 10px 0;
+  margin: 0 0 14px 0;
 }
 .liste-puce-projet li::before {
   content: "";
@@ -1839,6 +1844,65 @@ main {
 }
 .outil-languette .outil-blob.outil-vscode::before {
   content: "Visual Studio Code";
+}
+
+.bloc-emoji-phrase {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media (min-width: 500px) {
+  .bloc-emoji-phrase {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+}
+@media (min-width: 768px) {
+  .bloc-emoji-phrase {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-emoji-phrase {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+}
+.bloc-emoji-phrase .emoji {
+  font-family: "Noto-Emoji";
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 500px) {
+  .bloc-emoji-phrase .emoji {
+    padding-bottom: 10px;
+  }
+}
+.bloc-emoji-phrase .phrase-illustrative {
+  font-family: "Alegreya", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--couleur-texte-projet);
+  font-size: 20px;
+  margin: 0;
+}
+@media (min-width: 500px) {
+  .bloc-emoji-phrase .phrase-illustrative {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1600px) {
+  .bloc-emoji-phrase .phrase-illustrative {
+    font-size: 28px;
+  }
 }
 
 #Resume_projet {
@@ -2747,4 +2811,16 @@ main {
   #Developpement_web .anim-dev-showcase video {
     max-width: 100%;
   }
+}
+
+#Resultat_obtenu .bloc-emoji-special-gap .section-ligne {
+  margin-top: 25px;
+}
+@media (min-width: 500px) {
+  #Resultat_obtenu .bloc-emoji-special-gap .section-ligne {
+    margin-top: 55px;
+  }
+}
+#Resultat_obtenu .bloc-emoji-special-gap .section-ligne:nth-child(1), #Resultat_obtenu .bloc-emoji-special-gap .section-ligne:nth-child(2) {
+  margin-top: 0px;
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */

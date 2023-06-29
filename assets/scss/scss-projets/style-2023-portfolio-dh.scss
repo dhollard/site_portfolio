@@ -830,3 +830,19 @@
         }
     }
 }
+
+#Resultat_obtenu {
+
+    .bloc-emoji-special-gap .section-ligne {
+        margin-top: 25px;
+
+        // media query marge spéciale
+        @include mquery.tablet {   
+            margin-top: 55px;
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+            margin-top: 0px;
+        }
+    }
+}

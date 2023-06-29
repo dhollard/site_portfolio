@@ -125,6 +125,11 @@
     font-weight: 700;
   }
 }
+@font-face {
+  font-family: "Noto-Emoji";
+  src: url("/assets/font/NotoColorEmoji-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 *, ::before, ::after {
   box-sizing: border-box;
 }

@@ -181,6 +181,13 @@
 
 }
 
+//Noto Color Emoji (emoji 15.0)
+@font-face {
+  font-family: "Noto-Emoji";
+  src: url("/assets/font/NotoColorEmoji-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 
 // --- MIXINGS DE TYPOGRAPHIE ---
 @mixin special-title($color: #ffffff, $weight:700) {

@@ -561,7 +561,7 @@
                                     <div class="inst-tag-ico"></div>
                                     <div class="inst-tag-txt"></div>
                                 </div>
-                                
+
                             </div>
 
                             <div class="cadre-desktop">
@@ -633,7 +633,7 @@
                                     <div class="inst-tag-ico"></div>
                                     <div class="inst-tag-txt"></div>
                                 </div>
-                                
+
                             </div>
 
                             <div class="cadre-desktop">
@@ -707,7 +707,7 @@
                                     <div class="inst-tag-ico"></div>
                                     <div class="inst-tag-txt"></div>
                                 </div>
-                                
+
                             </div>
 
                             <div class="cadre-desktop">
@@ -742,7 +742,7 @@
 
                 <div class="section-ligne">
                     <div class="section-colonne full-col">
-                        
+
                         <div class="bloc-conclusion-maquette">
                             <p class="conclusion-maquette-txt">Envie de voir le reste de la maquette ?</p>
                             <p class="conclusion-maquette-txt">Ses déclinaisons responsive et interactions ?</p>
@@ -818,10 +818,10 @@
                         <figure class="bloc-visuel schema-code-lang">
 
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
-                                    <source src="video/schema-code-lang.webm" type="video/webm">
-                                    <source src="video/schema-code-lang.mp4" type="video/mp4">
-                                    Votre navigateur ne peut pas lire cette vidéo.
-                                </video>
+                                <source src="video/schema-code-lang.webm" type="video/webm">
+                                <source src="video/schema-code-lang.mp4" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                            </video>
 
                             <figcaption class="legende-visuel">Schématisation du rôle de chaque langage employé.</figcaption>
 
@@ -885,7 +885,7 @@
                         <p class="phrase-forte">Représenter chaque facette de mes compétences.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
-                            
+
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
                                 <source src="video/anim-showcase-titres-accueil.webm" type="video/webm">
                                 <source src="video/anim-showcase-titres-accueil.mp4" type="video/mp4">
@@ -929,7 +929,7 @@
                         <p class="phrase-forte">Apporter un côté plus humain à l’identité graphique.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
-                            
+
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
                                 <source src="video/anim-showcase-portrait.webm" type="video/webm">
                                 <source src="video/anim-showcase-portrait.mp4" type="video/mp4">
@@ -970,7 +970,7 @@
                         <p class="phrase-forte">Savoir s’adapter aux différents utilisateurs du site.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
-                            
+
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
                                 <source src="video/anim-showcase-module-parcours.webm" type="video/webm">
                                 <source src="video/anim-showcase-module-parcours.mp4" type="video/mp4">
@@ -1010,7 +1010,7 @@
                         <p class="phrase-forte">Capter l’attention en direction de mon CV.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
-                            
+
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
                                 <source src="video/anim-showcase-bouton-cv.webm" type="video/webm">
                                 <source src="video/anim-showcase-bouton-cv.mp4" type="video/mp4">
@@ -1051,7 +1051,7 @@
                         <p class="phrase-forte">Mettre en valeur chaque projet pour donner envie d’en savoir plus.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
-                            
+
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
                                 <source src="video/anim-showcase-miniature-projet.webm" type="video/webm">
                                 <source src="video/anim-showcase-miniature-projet.mp4" type="video/mp4">
@@ -1092,7 +1092,7 @@
                         <p class="phrase-forte">Respecter les droits de l’utilisateur, tout en lui offrant une expérience agréable.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
-                            
+
                             <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
                                 <source src="video/anim-showcase-modal-cookie.webm" type="video/webm">
                                 <source src="video/anim-showcase-modal-cookie.mp4" type="video/mp4">
@@ -1112,6 +1112,82 @@
                             <p>Je compte maintenir à jour cet élément pour respecter les changements des normes RGPD, mais toujours en veillant au confort des utilisateurs.</p>
                         </div>
 
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ********** Section "Résultats obtenus" ********** -->
+        <section id="Resultat_obtenu" class="section-projet">
+
+        <!-- Bloc titre et contenu -->
+            <div class="section-bloc bloc-emoji-special-gap">
+
+                <!-- Titre -->
+                <div class="section-ligne">
+                    <div class="section-colonne full-col">
+                        <h2 class="titre-section">04 - Résultats obtenus</h2>
+                    </div>
+                </div>
+
+                <!-- Resultat n°1 -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-emoji-phrase">
+                            <p class="emoji">💼</p>
+                            <p class="phrase-illustrative">Avec la finalisation de mon site, j’ai gagné une vitrine <span class="focus-color">professionnelle et qualitative.</span></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Ce site sera un outil essentiel, aussi bien pour démarcher des entreprises que pour partager mes expériences avec des contacts.</p>
+
+                            <p>J’ai longtemps souhaité pouvoir créer un site portfolio à la hauteur de mes attentes. Terminer ce projet a donc été un vrai accomplissement personnel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultat n°2 -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-emoji-phrase">
+                            <p class="emoji">👀</p>
+                            <p class="phrase-illustrative">Mes projets sont <span class="focus-color">devenus plus accessibles.</span></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Pouvoir partager mes travaux simplement était l’objectif principal de mon site. En proposant des pages projets soignées, mon travail est mis en valeur et facile d’accès.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultat n°3 -->
+                <div class="section-ligne">
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-emoji-phrase">
+                            <p class="emoji">🚀</p>
+                            <p class="phrase-illustrative">Il reste encore <span class="focus-color">du chemin</span> à parcourir...</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="section-colonne demi-col">
+                        <div class="bloc-texte">
+                            <p>Malgré cette première version finalisée, il me reste encore beaucoup à accomplir sur ce site portfolio :</p>
+
+                            <ul class="liste-puce-projet">
+                                <li>Recueillir des retours d’utilisateurs pour identifier des pistes d’amélioration.</li>
+                                <li>Revenir sur mes idées non essentielles à la V1 laissées de côté.</li>
+                                <li>Continuer à peupler la page “mes projets” avec toutes mes créations passées et tenter de les ajouter au fur et à mesure à l’avenir.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
