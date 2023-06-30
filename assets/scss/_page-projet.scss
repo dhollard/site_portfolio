@@ -159,6 +159,204 @@ main {
     }
 }
 
+// --------------- Module sommaire ---------------
+#Sommaire {
+    display: none;
+    height: fit-content;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(25, 5, 23, 0.9);
+    backdrop-filter: blur(4px);
+    z-index: 99;
+    border-radius: 20px 20px 0px 0px;
+
+    // media query #Sommaire
+    @include mquery.laptop { 
+        bottom: auto;
+        top: 140px;
+        left: 20px;
+        transform: translate(0, 0);
+        width: 330px;
+        border-radius: 20px;
+        background: rgba(25, 5, 23, 0.8);
+    }
+
+    &.show-sommaire {
+        display: block;
+    }
+
+    // Barre en haut du sommaire sur mobile
+    #Sommaire_top_bar_mobile {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0 0 0;
+
+        // media query #Sommaire_top_bar_mobile
+        @include mquery.laptop { 
+            display: none;
+        }
+
+        // Petite poignée blanche en haut
+        .top-mob-handle {
+            width: 30px;
+            height: 4px;
+            border-radius: 50px;
+            background: #ffffff;
+        }
+
+        // Texte indicatif
+        .top-mob-txt {
+            margin: 8px auto 10px auto;
+
+            // Placé dans un before pour pouvoir le changer en CSS directement
+            &::before {
+                content: 'Masquer le sommaire';
+                @include typo.title($color:#ffffff, $weight:700);
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        // Trait de séparation
+        .top-mob-sep {
+            width: 100%;
+            height: 2px;
+            background: color.$primary-100;
+        }
+
+    }
+
+    // Barre en haut du sommaire sur desktop
+    #Sommaire_top_bar_desktop {
+        position: relative;
+        display: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 15px 20px 10px 20px;
+
+        // media query #Sommaire_top_bar_desktop
+        @include mquery.laptop { 
+            display: flex;
+        }
+
+        // Bouton icone qui masque ou affiche le sommaire sur desktop
+        #Sommaire_switch_desktop {
+            position: absolute;
+            left: 20px;
+            top: 16px;
+            width: 30px;
+            height: 30px;
+            background: none;
+            background-image: url(../svg/ico-fleche-blanc.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+            // Code pour contrer style auto bouton
+            padding: 0;
+            display: block;
+            border: none;
+
+            &:hover {
+                background-image: url(../svg/ico-fleche-primary100.svg);
+            }
+        }
+
+        // Icone qui accompagne le titre
+        .top-desk-titre-ico {
+            width: 30px;
+            height: 30px;
+            background-image: url("../svg/ico-sommaire-full-blanc.svg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        // Titre sommaire
+        .top-desk-titre {
+            @include typo.title($color:#ffffff, $weight:800);
+            font-size: 28px;
+            margin: 0;
+        }
+
+
+        
+    }
+
+    // Conteneur des liens du sommaire
+    #Sommaire_link_wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: start;
+        padding: 12px 20px 40px 20px;
+        gap: 6px;
+
+        // Lien sommaire
+        .som-link {
+            @include typo.title($color:#ffffff, $weight:500);
+            font-size: 22px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            text-decoration: none;
+
+            &:hover {
+                color: color.$primary-100;
+            }
+
+            // media query .som-link
+            @include mquery.laptop { 
+                padding-top: 1px;
+                padding-bottom: 1px;
+            }
+        }
+
+        // Lien de sous-partie
+        .som-sub-link {
+            @include typo.title($color:#ffffff, $weight:400);
+            font-size: 20px;
+            padding-left: 25px;
+        }
+    }
+
+}
+
+// Overlay sommaire pour version mobile
+.overlay-sommaire {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: rgb(0, 0, 0, 0.5);
+
+    &.show-overlay {
+        display: block;
+
+        // media query overlay sommaire
+        @include mquery.laptop {
+            display: none;
+        }
+    }
+
+}
+
+// Bloquer le scroll
+.no-scroll {
+    overflow: hidden;
+}
+
 // --------------- Styles partagés des sections ---------------
 
 // Bloc section
@@ -167,6 +365,7 @@ main {
     flex-direction: column;
     padding: 0px 30px;
     margin: 0 auto 200px auto;
+    scroll-margin-top: 140px;
 
     // media query bloc section
     @include mquery.laptop {
@@ -175,7 +374,6 @@ main {
         max-width: 912px;
         margin: 0 auto 280px auto;
         padding: 0px;
-        //gap: 180px;
     }
 
     // media query bloc section

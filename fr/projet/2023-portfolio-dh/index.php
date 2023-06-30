@@ -1284,6 +1284,38 @@
 
     </main>
 
+    <div class="overlay-sommaire show-overlay">
+
+    </div>
+
+    <div id="Sommaire" class="show-sommaire">
+
+        <div id="Sommaire_top_bar_mobile">
+            <div class="top-mob-handle"></div>
+            <p class="top-mob-txt"></p>
+            <div class="top-mob-sep"></div>
+        </div>
+
+        <div id="Sommaire_top_bar_desktop">
+            <button id="Sommaire_switch_desktop"></button>
+            <div class="top-desk-titre-ico"></div>
+            <p class="top-desk-titre">Sommaire</p>
+        </div>
+
+        <div id="Sommaire_link_wrapper">
+            <a class="som-link" href="#Resume_projet">01 - Résumé du projet</a>
+            <a class="som-link" href="#Objectifs_projet">02 - Objectifs</a>
+            <a class="som-link" href="#Processus_projet">03 - Processus de création</a>
+                <a class="som-link som-sub-link" href="#Structure_site">I. Structure du site</a>
+                <a class="som-link som-sub-link" href="#Identite_visuelle">II. Identité visuelle</a>
+                <a class="som-link som-sub-link" href="#Maquette_site">III. Maquette du site</a>
+                <a class="som-link som-sub-link" href="#Developpement_web">IV. Développement web</a>
+            <a class="som-link" href="#Resultat_obtenu">04 - Résultats obtenus</a>
+                <a class="som-link som-sub-link" href="#Enseignements_appris">I. Ce que j’ai appris</a>
+        </div>
+
+    </div>
+
     <!-- Pre-footer pages projets -->
     <?php include_once('../../../assets/module/modules-projets/end-bloc-projet.php'); ?>
 
