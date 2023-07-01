@@ -1284,11 +1284,11 @@
 
     </main>
 
-    <div class="overlay-sommaire show-overlay">
+    <div id="Overlay_sommaire" class="">
 
     </div>
 
-    <div id="Sommaire" class="show-sommaire">
+    <div id="Sommaire" class="">
 
         <div id="Sommaire_top_bar_mobile">
             <div class="top-mob-handle"></div>
@@ -1298,8 +1298,11 @@
 
         <div id="Sommaire_top_bar_desktop">
             <button id="Sommaire_switch_desktop"></button>
-            <div class="top-desk-titre-ico"></div>
-            <p class="top-desk-titre">Sommaire</p>
+            <div class="top-desk-wrapper">
+                <div class="top-desk-titre-ico"></div>
+                <p class="top-desk-titre">Sommaire</p>
+            </div>
+            
         </div>
 
         <div id="Sommaire_link_wrapper">

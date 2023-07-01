@@ -1,9 +1,11 @@
 <!-- Script réduction image en-tête au scroll -->
 <script>
     //fonction qui déclenche les classes d'animation du header projet au scroll
-    window.onscroll = function() {
+    /*window.onscroll = function() {
         scrollFunction()
-    };
+    };*/
+    window.addEventListener('scroll', scrollFunction);
+
 
     function scrollFunction() {
 
@@ -100,5 +102,134 @@
         }
 
     });
+
+</script>
+
+<!-- Script pour afficher/masquer le sommaire sur desktop -->
+<script>
+    var root = document.getElementsByTagName( 'html' )[0];
+
+    $("#Sommaire_switch_desktop").click(function() {
+        if ($("#Sommaire").hasClass("show-sommaire")) {
+            
+            $("#Sommaire").removeClass("show-sommaire");
+            $("#Overlay_sommaire").removeClass("show-overlay");
+            $(root).removeClass("no-scroll");
+
+        } else {
+
+            $("#Sommaire").addClass("show-sommaire");
+            $("#Overlay_sommaire").addClass("show-overlay");
+            $(root).addClass("no-scroll");
+
+        }
+
+    });
+</script>
+
+<!-- Script pour afficher/masquer le sommaire sur mobile -->
+<script>
+    var root = document.getElementsByTagName( 'html' )[0];
+
+    $("#Sommaire_top_bar_mobile").click(function() {
+        if ($("#Sommaire").hasClass("show-sommaire")) {
+            
+            $("#Sommaire").removeClass("show-sommaire");
+            $("#Overlay_sommaire").removeClass("show-overlay");
+            $(root).removeClass("no-scroll");
+
+        } else {
+
+            $("#Sommaire").addClass("show-sommaire");
+            $("#Overlay_sommaire").addClass("show-overlay");
+            $(root).addClass("no-scroll");
+
+        }
+
+    });
+</script>
+
+<!-- Script pour masquer le sommaire quand on clic sur un lien mobile -->
+<script>
+
+    var root = document.getElementsByTagName( 'html' )[0];
+
+    $(".som-link").click(function() {
+        if ($(window).width() < 992) {
+            
+            $("#Sommaire").removeClass("show-sommaire");
+            $("#Overlay_sommaire").removeClass("show-overlay");
+            $(root).removeClass("no-scroll");
+
+        } else {
+
+        }
+
+    });
+    
+</script>
+
+<!-- Script pour masquer quand on clique sur l'overlay mobile -->
+<script>
+
+    var root = document.getElementsByTagName( 'html' )[0];
+
+    $("#Overlay_sommaire").click(function() {
+        if ($(window).width() < 992) {
+            
+            $("#Sommaire").removeClass("show-sommaire");
+            $("#Overlay_sommaire").removeClass("show-overlay");
+            $(root).removeClass("no-scroll");
+
+        } else {
+
+        }
+
+    });
+    
+</script>
+
+<!-- Script pour animer le sommaire une fois, pour attirer l'attention -->
+<script>
+    let animOnce = 0;
+
+    window.addEventListener('DOMContentLoaded', loadSom(eyeCatchSommaire));
+
+    // Si au chargement le scroll est déjà bien entamé dans la page, ne pas jouer d'animation
+    function loadSom(callback) {
+        // Vérifie le niveau de scroll au chargement
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            animOnce = 1;
+            callback();
+        }
+        else {
+            // Ne rien faire
+        }
+    };
+
+    window.addEventListener('scroll', eyeCatchSommaire);
+
+    function eyeCatchSommaire() {
+
+        // Vérifie le niveau de scroll suffisant pour agir
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            // Vérifie si l'animation a déjà été jouée une fois
+            if (animOnce == 0) {
+
+            $("#Sommaire").addClass("eyecatch-anim").delay(2000).queue(function(){
+                $("#Sommaire").removeClass("eyecatch-anim").dequeue();
+            });
+            animOnce = 1;
+
+            } else if (animOnce == 1) {
+                // Ne rien faire
+            }
+        }
+        else {
+            // Ne rien faire
+        }
+        
+
+    }
 
 </script>
