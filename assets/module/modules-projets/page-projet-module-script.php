@@ -105,6 +105,28 @@
 
 </script>
 
+<!-- ********************* Scripts liés au module sommaire ********************* -->
+
+<!-- Script qui masque le sommaire en début de page -->
+<script>
+    window.addEventListener('DOMContentLoaded', hideSom);
+    window.addEventListener('scroll', hideSom);
+
+    function hideSom() {
+        // Vérifie le niveau de scroll
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+
+            $("#Sommaire").removeClass("mask-sommaire");
+
+        }
+        else {
+            $("#Sommaire").addClass("mask-sommaire").removeClass("show-sommaire");
+            $("#Overlay_sommaire").removeClass("show-overlay");
+            $(root).removeClass("no-scroll");
+        }
+    };
+</script>
+
 <!-- Script pour afficher/masquer le sommaire sur desktop -->
 <script>
     var root = document.getElementsByTagName( 'html' )[0];
@@ -230,6 +252,38 @@
         }
         
 
+    }
+
+</script>
+
+<!-- Script pour colorier le lien du sommaire correspondant à la partie en cours de consultation -->
+<script>
+    window.addEventListener('resize', progresSom);
+    window.addEventListener('scroll', progresSom);
+
+    function progresSom() {
+
+        var scrollPosition = $(window).scrollTop();
+
+        // Déclencher fonction sur chaque élément .section-projet
+        $('.section-projet').each(function() {
+            var sectionTop = $(this).offset().top - 400;
+            var sectionId = $(this).attr('id');
+            var $somLink = $('.som-link[href="#' + sectionId + '"]');
+
+            // Vérifie si .section-projet est visible
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + $(this).outerHeight()) {
+            // Ajoute la classe 'current-link' au .som-link correspondant si il ne l'a pas déjà
+            if (!$somLink.hasClass('current-link')) {
+                $somLink.addClass('current-link');
+            }
+            } else {
+            // Retire la classe 'current-link' au .som-link si il l'a déjà
+            if ($somLink.hasClass('current-link')) {
+                $somLink.removeClass('current-link');
+            }
+            }
+        });
     }
 
 </script>

@@ -331,6 +331,10 @@ main {
                 color: color.$primary-100;
             }
 
+            &.current-link {
+                color: color.$primary-100!important;
+            }
+
             // media query .som-link
             @include mquery.laptop { 
                 padding-top: 1px;
@@ -512,14 +516,22 @@ main {
     }
 }
 
+// Classe pour masquer le sommaire entièrement en début de page
+#Sommaire.mask-sommaire {
+    display: none!important;
+    
+}
+
 // --------------- Styles partagés des sections ---------------
 
 // Bloc section
 .section-projet {
     display: flex;
     flex-direction: column;
-    padding: 0px 30px;
-    margin: 0 auto 200px auto;
+    //padding: 0px 30px;
+    //margin: 0 auto 200px auto;
+    margin: 0 auto;
+    padding: 0 30px 200px 30px;
     scroll-margin-top: 140px;
 
     // media query bloc section
@@ -527,8 +539,9 @@ main {
         flex-direction: row;
         flex-wrap: wrap;   
         max-width: 912px;
-        margin: 0 auto 280px auto;
-        padding: 0px;
+        //margin: 0 auto 280px auto;
+        //padding: 0px;
+        padding: 0 0 280px 0;
     }
 
     // media query bloc section

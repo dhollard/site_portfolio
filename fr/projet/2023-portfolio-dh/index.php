@@ -1288,7 +1288,7 @@
 
     </div>
 
-    <div id="Sommaire" class="">
+    <div id="Sommaire" class="mask-sommaire">
 
         <div id="Sommaire_top_bar_mobile">
             <div class="top-mob-handle"></div>

@@ -1136,6 +1136,9 @@ main {
 #Sommaire #Sommaire_link_wrapper .som-link:hover {
   color: #FF6666;
 }
+#Sommaire #Sommaire_link_wrapper .som-link.current-link {
+  color: #FF6666 !important;
+}
 @media (min-width: 992px) {
   #Sommaire #Sommaire_link_wrapper .som-link {
     padding-top: 1px;
@@ -1256,11 +1259,15 @@ main {
   }
 }
 
+#Sommaire.mask-sommaire {
+  display: none !important;
+}
+
 .section-projet {
   display: flex;
   flex-direction: column;
-  padding: 0px 30px;
-  margin: 0 auto 200px auto;
+  margin: 0 auto;
+  padding: 0 30px 200px 30px;
   scroll-margin-top: 140px;
 }
 @media (min-width: 992px) {
@@ -1268,8 +1275,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 912px;
-    margin: 0 auto 280px auto;
-    padding: 0px;
+    padding: 0 0 280px 0;
   }
 }
 @media (min-width: 1600px) {
