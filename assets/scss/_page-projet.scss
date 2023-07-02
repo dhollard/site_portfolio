@@ -1623,127 +1623,131 @@ main {
 
 // --------------- Section "résumé du projet" ---------------
 #Resume_projet {
-    z-index: 1;
-    padding: 60px 30px;
-    margin: 0 auto 150px auto;
-    background: rgba(color.$ambiance-160, 0.8);
-    backdrop-filter: blur(4px);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    padding: 0 0px 200px 0px;
 
-    // media query section résumé
-    @include mquery.laptop {   
-        flex-direction: row;
-        flex-wrap: nowrap;
-        border-radius: 20px;
-        gap: 60px;
-        padding: 40px 30px;
-        margin: 0 auto 180px auto;
-    }
-
-    // media query section résumé
-    @include mquery.desktop-xl {   
-        gap: 100px;
-        padding: 40px 40px;
-    }
-
-    // Conteneur du texte du résumé projet
-    .txt-resume-projet {
-        width: 100%;
-
-        // media query .txt-resume-projet
-        @include mquery.laptop {  
-            width: 72%;
-        }
-
-        // media query .txt-resume-projet
-        @include mquery.desktop-xl {  
-            width: 78%;
-        }
-
-        // Titre section "résumé du projet"
-        .titre-section {
-            background: none;
-            width: 100%;
-            margin: 0 0 15px 0;
-            padding: 0px;
-
-            // media query .titre-section
-            @include mquery.laptop {  
-                text-align: left;
-            }
-        }
-
-    }
-    
-
-    // Conteneur des infos clés du projet
-    .infos-projet {
-        width: 100%;
+    .module-resume {
+        z-index: 1;
+        padding: 60px 30px;
+        //margin: 0 auto 150px auto;
+        background: rgba(color.$ambiance-160, 0.8);
+        backdrop-filter: blur(4px);
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: start;
-        gap: 30px;
-        container-name: infos-projet;
-        container-type: inline-size;
+        flex-direction: column;
+        gap: 40px;
 
-        // media query .infos-projet
-        @include mquery.landscape {  
-            justify-content: space-between;
+        // media query section résumé
+        @include mquery.laptop {   
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border-radius: 20px;
+            gap: 60px;
+            padding: 40px 30px;
+            //margin: 0 auto 180px auto;
         }
 
-        // media query .infos-projet
-        @include mquery.laptop {  
-             width: 28%;
-             gap: 20px;
-             justify-content: start;
+        // media query section résumé
+        @include mquery.desktop-xl {   
+            gap: 100px;
+            padding: 40px 40px;
         }
 
-        // media query .infos-projet
-        @include mquery.desktop-xl {  
-            width: 22%;
-       }
+        // Conteneur du texte du résumé projet
+        .txt-resume-projet {
+            width: 100%;
 
-        // Bloc info clés
-        .bloc-infos-projet {
-            width: calc(50% - 15px);
-            display: flex;
-            flex-direction: column;
-
-            // media query .bloc-infos-projet
-            @include mquery.landscape {  
-                width: calc(25% - 30px);
-            }
-
-            // media query .bloc-infos-projet
+            // media query .txt-resume-projet
             @include mquery.laptop {  
+                width: 72%;
+            }
+
+            // media query .txt-resume-projet
+            @include mquery.desktop-xl {  
+                width: 78%;
+            }
+
+            // Titre section "résumé du projet"
+            .titre-section {
+                background: none;
                 width: 100%;
+                margin: 0 0 15px 0;
+                padding: 0px;
+
+                // media query .titre-section
+                @include mquery.laptop {  
+                    text-align: left;
+                }
             }
 
-            & * {
-                @include typo.text($color:#ffffff, $weight:500);
-                font-size: 18px;
-                margin: 0;
+        }
+        
+
+        // Conteneur des infos clés du projet
+        .infos-projet {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 30px;
+            container-name: infos-projet;
+            container-type: inline-size;
+
+            // media query .infos-projet
+            @include mquery.landscape {  
+                justify-content: space-between;
             }
 
-            & .titre-infos-projet {
-                @include typo.title($color:#ffffff, $weight:700);
-                font-size: 22px;
-                margin: 0 0 5px 0;
+            // media query .infos-projet
+            @include mquery.laptop {  
+                width: 28%;
+                gap: 20px;
+                justify-content: start;
+            }
+
+            // media query .infos-projet
+            @include mquery.desktop-xl {  
+                width: 22%;
+        }
+
+            // Bloc info clés
+            .bloc-infos-projet {
+                width: calc(50% - 15px);
+                display: flex;
+                flex-direction: column;
+
+                // media query .bloc-infos-projet
+                @include mquery.landscape {  
+                    width: calc(25% - 30px);
+                }
+
+                // media query .bloc-infos-projet
+                @include mquery.laptop {  
+                    width: 100%;
+                }
+
+                & * {
+                    @include typo.text($color:#ffffff, $weight:500);
+                    font-size: 18px;
+                    margin: 0;
+                }
+
+                & .titre-infos-projet {
+                    @include typo.title($color:#ffffff, $weight:700);
+                    font-size: 22px;
+                    margin: 0 0 5px 0;
+                }
             }
         }
-    }
 
-    @container infos-projet (max-width: 300px) {
+        @container infos-projet (max-width: 300px) {
 
-        .bloc-infos-projet {
-            width: 100%!important;
+            .bloc-infos-projet {
+                width: 100%!important;
+            }
+            
         }
         
     }
-    
 }
 
 // --------------- Section "identité visuelle" (si présente) ---------------
@@ -2013,4 +2017,10 @@ main {
         }
 
     }
+}
+
+// Bloque les animations de transition lors d'un window resize pour les éléments où c'est impossible à éviter
+.resize-animation-stopper #Sommaire {
+    animation: none !important;
+    transition: none !important;
 }

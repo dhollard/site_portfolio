@@ -2197,9 +2197,11 @@ main {
 }
 
 #Resume_projet {
+  padding: 0 0px 200px 0px;
+}
+#Resume_projet .module-resume {
   z-index: 1;
   padding: 60px 30px;
-  margin: 0 auto 150px auto;
   background: rgba(25, 5, 23, 0.8);
   backdrop-filter: blur(4px);
   display: flex;
@@ -2207,46 +2209,45 @@ main {
   gap: 40px;
 }
 @media (min-width: 992px) {
-  #Resume_projet {
+  #Resume_projet .module-resume {
     flex-direction: row;
     flex-wrap: nowrap;
     border-radius: 20px;
     gap: 60px;
     padding: 40px 30px;
-    margin: 0 auto 180px auto;
   }
 }
 @media (min-width: 1600px) {
-  #Resume_projet {
+  #Resume_projet .module-resume {
     gap: 100px;
     padding: 40px 40px;
   }
 }
-#Resume_projet .txt-resume-projet {
+#Resume_projet .module-resume .txt-resume-projet {
   width: 100%;
 }
 @media (min-width: 992px) {
-  #Resume_projet .txt-resume-projet {
+  #Resume_projet .module-resume .txt-resume-projet {
     width: 72%;
   }
 }
 @media (min-width: 1600px) {
-  #Resume_projet .txt-resume-projet {
+  #Resume_projet .module-resume .txt-resume-projet {
     width: 78%;
   }
 }
-#Resume_projet .txt-resume-projet .titre-section {
+#Resume_projet .module-resume .txt-resume-projet .titre-section {
   background: none;
   width: 100%;
   margin: 0 0 15px 0;
   padding: 0px;
 }
 @media (min-width: 992px) {
-  #Resume_projet .txt-resume-projet .titre-section {
+  #Resume_projet .module-resume .txt-resume-projet .titre-section {
     text-align: left;
   }
 }
-#Resume_projet .infos-projet {
+#Resume_projet .module-resume .infos-projet {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -2257,38 +2258,38 @@ main {
   container-type: inline-size;
 }
 @media (min-width: 768px) {
-  #Resume_projet .infos-projet {
+  #Resume_projet .module-resume .infos-projet {
     justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
-  #Resume_projet .infos-projet {
+  #Resume_projet .module-resume .infos-projet {
     width: 28%;
     gap: 20px;
     justify-content: start;
   }
 }
 @media (min-width: 1600px) {
-  #Resume_projet .infos-projet {
+  #Resume_projet .module-resume .infos-projet {
     width: 22%;
   }
 }
-#Resume_projet .infos-projet .bloc-infos-projet {
+#Resume_projet .module-resume .infos-projet .bloc-infos-projet {
   width: calc(50% - 15px);
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  #Resume_projet .infos-projet .bloc-infos-projet {
+  #Resume_projet .module-resume .infos-projet .bloc-infos-projet {
     width: calc(25% - 30px);
   }
 }
 @media (min-width: 992px) {
-  #Resume_projet .infos-projet .bloc-infos-projet {
+  #Resume_projet .module-resume .infos-projet .bloc-infos-projet {
     width: 100%;
   }
 }
-#Resume_projet .infos-projet .bloc-infos-projet * {
+#Resume_projet .module-resume .infos-projet .bloc-infos-projet * {
   font-family: "Assistant", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -2296,7 +2297,7 @@ main {
   font-size: 18px;
   margin: 0;
 }
-#Resume_projet .infos-projet .bloc-infos-projet .titre-infos-projet {
+#Resume_projet .module-resume .infos-projet .bloc-infos-projet .titre-infos-projet {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -2305,7 +2306,7 @@ main {
   margin: 0 0 5px 0;
 }
 @container infos-projet (max-width: 300px) {
-  #Resume_projet .bloc-infos-projet {
+  #Resume_projet .module-resume .bloc-infos-projet {
     width: 100% !important;
   }
 }
@@ -2558,6 +2559,11 @@ main {
   }
 }
 
+.resize-animation-stopper #Sommaire {
+  animation: none !important;
+  transition: none !important;
+}
+
 @font-face {
   font-family: "Playfair-showcase";
   src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
@@ -2690,19 +2696,27 @@ main {
   background-size: cover;
 }
 
-#Showreel_projet .cadre-mobile {
+#Resume_projet .bloc-cadre {
+  padding: 0 30px;
+}
+@media (min-width: 992px) {
+  #Resume_projet .bloc-cadre {
+    padding: 0;
+  }
+}
+#Resume_projet .cadre-mobile {
   display: flex;
 }
 @media (min-width: 992px) {
-  #Showreel_projet .cadre-mobile {
+  #Resume_projet .cadre-mobile {
     display: none;
   }
 }
-#Showreel_projet .cadre-desktop {
+#Resume_projet .cadre-desktop {
   display: none;
 }
 @media (min-width: 992px) {
-  #Showreel_projet .cadre-desktop {
+  #Resume_projet .cadre-desktop {
     display: flex;
   }
 }

@@ -33,47 +33,57 @@
         <!-- ********** Section "résumé du projet" ********** -->
         <section id="Resume_projet" class="section-projet">
 
-            <div class="txt-resume-projet">
-                <h2 class="titre-section">01 - Résumé du projet</h2>
+            <div class="section-bloc">
+                <div class="section-ligne">
 
-                <div class="bloc-texte">
-                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets auprès de collaborateurs, d’amis ou de futurs recruteurs.</p>
+                    <div class="section-colonne full-col">
 
-                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre afin de réaliser ce site.</p>
+                        <div class="module-resume">
 
-                    <p>Cette page retrace les différentes étapes du processus de création sous la forme d’une étude de cas.</p>
+                            <div class="txt-resume-projet">
+                                <h2 class="titre-section">01 - Résumé du projet</h2>
+
+                                <div class="bloc-texte">
+                                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets auprès de collaborateurs, d’amis ou de futurs recruteurs.</p>
+
+                                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre afin de réaliser ce site.</p>
+
+                                    <p>Cette page retrace les différentes étapes du processus de création sous la forme d’une étude de cas.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="infos-projet">
+                                <span class="bloc-infos-projet">
+                                    <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
+                                    <p>Design graphique</p>
+                                    <p>Dev front end</p>
+                                    <p>UX design</p>
+                                </span>
+
+                                <span class="bloc-infos-projet">
+                                    <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
+                                    <p>Gestion du projet de A à Z</p>
+                                </span>
+
+                                <span class="bloc-infos-projet">
+                                    <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
+                                    <p>250h de travail (2022 - 2023)</p>
+                                </span>
+
+                                <span class="bloc-infos-projet">
+                                    <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
+                                    <p>Darius Hollard (moi-même)</p>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
-
-            <div class="infos-projet">
-                <span class="bloc-infos-projet">
-                    <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
-                    <p>Design graphique</p>
-                    <p>Dev front end</p>
-                    <p>UX design</p>
-                </span>
-
-                <span class="bloc-infos-projet">
-                    <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
-                    <p>Gestion du projet de A à Z</p>
-                </span>
-
-                <span class="bloc-infos-projet">
-                    <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
-                    <p>250h de travail (2022 - 2023)</p>
-                </span>
-
-                <span class="bloc-infos-projet">
-                    <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
-                    <p>Darius Hollard (moi-même)</p>
-                </span>
-            </div>
-
-        </section>
-
-        <!-- ********** Section "showreel" ********** -->
-        <section id="Showreel_projet" class="section-projet">
             <div class="section-bloc">
 
                 <div class="section-ligne">
@@ -106,7 +116,44 @@
                 </div>
 
             </div>
+
         </section>
+
+        <!-- ********** Section "showreel" ********** -->
+        <!--<section id="Showreel_projet" class="section-projet">
+            <div class="section-bloc">
+
+                <div class="section-ligne">
+
+                    <div class="section-colonne full-col">
+
+                        <figure class="bloc-cadre">
+                            <div class="cadre-mobile cadre-video">
+                                <video class="bloc-video" width="100%" height="auto" autoplay loop muted>
+                                    <source src="video/showreel-mobile.webm" type="video/webm">
+                                    <source src="video/showreel-mobile.mp4" type="video/mp4">
+                                    Votre navigateur ne peut pas lire cette vidéo.
+                                </video>
+                            </div>
+
+                            <div class="cadre-desktop cadre-video">
+                                <video class="bloc-video" width="100%" height="auto" autoplay loop muted>
+                                    <source src="video/showreel-desktop.webm" type="video/webm">
+                                    <source src="video/showreel-desktop.mp4" type="video/mp4">
+                                    Votre navigateur ne peut pas lire cette vidéo.
+                                </video>
+                            </div>
+
+                            <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, scrollez pour voir son processus de création</figcaption>
+
+                        </figure>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>-->
 
         <!-- ********** Section "objectifs" ********** -->
         <section id="Objectifs_projet" class="section-projet">
@@ -1122,7 +1169,7 @@
         <!-- ********** Section "Résultats obtenus" ********** -->
         <section id="Resultat_obtenu" class="section-projet">
 
-        <!-- Bloc titre et contenu -->
+            <!-- Bloc titre et contenu -->
             <div class="section-bloc bloc-emoji-special-gap">
 
                 <!-- Titre -->
@@ -1139,7 +1186,7 @@
                             <p class="emoji">💼</p>
                             <p class="phrase-illustrative">Avec la finalisation de mon site, j’ai gagné une vitrine <span class="focus-color">professionnelle et qualitative.</span></p>
                         </div>
-                        
+
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -1158,7 +1205,7 @@
                             <p class="emoji">👀</p>
                             <p class="phrase-illustrative">Mes projets sont <span class="focus-color">devenus plus accessibles.</span></p>
                         </div>
-                        
+
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -1175,7 +1222,7 @@
                             <p class="emoji">🚀</p>
                             <p class="phrase-illustrative">Il reste encore <span class="focus-color">du chemin</span> à parcourir...</p>
                         </div>
-                        
+
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -1215,7 +1262,7 @@
                             <p class="emoji">🧠</p>
                             <p class="phrase-illustrative">J’ai aiguisé mon sens de l’organisation et de la <span class="focus-color">gestion de projet.</span></p>
                         </div>
-                        
+
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -1234,7 +1281,7 @@
                             <p class="emoji">🏆</p>
                             <p class="phrase-illustrative"><span class="focus-color">Profiter</span> de la liberté totale de créer, mais <span class="focus-color">sans perdre de vue</span> la ligne d'arrivée.</p>
                         </div>
-                        
+
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -1253,7 +1300,7 @@
                             <p class="emoji">🤓</p>
                             <p class="phrase-illustrative"><span class="focus-color">Ma polyvalence</span> fait déjà ma force, mais il y a toujours davantage à apprendre.</p>
                         </div>
-                        
+
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -1302,19 +1349,19 @@
                 <div class="top-desk-titre-ico"></div>
                 <p class="top-desk-titre">Sommaire</p>
             </div>
-            
+
         </div>
 
         <div id="Sommaire_link_wrapper">
             <a class="som-link" href="#Resume_projet">01 - Résumé du projet</a>
             <a class="som-link" href="#Objectifs_projet">02 - Objectifs</a>
             <a class="som-link" href="#Processus_projet">03 - Processus de création</a>
-                <a class="som-link som-sub-link" href="#Structure_site">I. Structure du site</a>
-                <a class="som-link som-sub-link" href="#Identite_visuelle">II. Identité visuelle</a>
-                <a class="som-link som-sub-link" href="#Maquette_site">III. Maquette du site</a>
-                <a class="som-link som-sub-link" href="#Developpement_web">IV. Développement web</a>
+            <a class="som-link som-sub-link" href="#Structure_site">I. Structure du site</a>
+            <a class="som-link som-sub-link" href="#Identite_visuelle">II. Identité visuelle</a>
+            <a class="som-link som-sub-link" href="#Maquette_site">III. Maquette du site</a>
+            <a class="som-link som-sub-link" href="#Developpement_web">IV. Développement web</a>
             <a class="som-link" href="#Resultat_obtenu">04 - Résultats obtenus</a>
-                <a class="som-link som-sub-link" href="#Enseignements_appris">I. Ce que j’ai appris</a>
+            <a class="som-link som-sub-link" href="#Enseignements_appris">I. Ce que j’ai appris</a>
         </div>
 
     </div>

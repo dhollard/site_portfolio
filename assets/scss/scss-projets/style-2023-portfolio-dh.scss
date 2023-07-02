@@ -193,7 +193,16 @@
 
 }
 
-#Showreel_projet {
+#Resume_projet {
+
+    .bloc-cadre {
+        padding: 0 30px;
+
+        // media query .bloc-cadre
+        @include mquery.laptop {   
+            padding: 0;
+        }
+    }
 
     .cadre-mobile {
         display: flex;
