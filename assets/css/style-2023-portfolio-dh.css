@@ -1491,13 +1491,23 @@ main {
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 340px;
+  max-width: 280px;
   aspect-ratio: 9/16;
   outline: 4px solid #261624;
   border-radius: 20px;
   box-shadow: 0px -10px 40px 0px rgba(166, 156, 164, 0.25);
   overflow: hidden;
   background: #261624;
+}
+@media (min-width: 768px) {
+  .cadre-mobile {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .cadre-mobile {
+    max-width: 340px;
+  }
 }
 @media (min-width: 992px) {
   .cadre-mobile.switch-off-cadre {
@@ -1638,8 +1648,8 @@ main {
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
-  width: 80%;
-  max-width: 285px;
+  width: max-content;
+  max-width: 270px;
   min-height: 60px;
   padding: 14px 10px;
   border-radius: 10px;
@@ -1654,6 +1664,16 @@ main {
   opacity: 1;
   transition: opacity 400ms ease-out;
   animation: pulse-tag-background 4s linear infinite;
+}
+@media (min-width: 768px) {
+  .cadre-instruction-tag {
+    max-width: 290px;
+  }
+}
+@media (min-width: 1200px) {
+  .cadre-instruction-tag {
+    max-width: 320px;
+  }
 }
 @keyframes pulse-tag-background {
   0% {
@@ -1676,7 +1696,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-right: 2px;
+  margin-right: 5px;
   transform: translate(0, 0);
   animation: scroll-gesture-mob 1.5s linear infinite;
 }
@@ -2576,6 +2596,14 @@ main {
 
 /* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
 @supports (-webkit-hyphens: none) {
+  .cadre-mobile {
+    outline: 0px solid #261624;
+    box-shadow: 0 0 0 4px #261624;
+  }
+  .cadre-desktop {
+    outline: 0px solid #261624;
+    box-shadow: 0 0 0 4px #261624;
+  }
   .outil-blob {
     transition: box-shadow 150ms ease;
   }
@@ -2588,6 +2616,13 @@ main {
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   /* problèmes liés à la propriété gap */
+  .outil-languette .outil-blob::before {
+    white-space: nowrap;
+    width: auto;
+  }
+  .emoji {
+    font-family: sans-serif !important;
+  }
 }
 @font-face {
   font-family: "Playfair-showcase";

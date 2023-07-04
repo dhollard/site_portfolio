@@ -771,13 +771,23 @@ main {
     position: relative;
     display: flex;
     width: 100%;
-    max-width: 340px;
+    max-width: 280px;
     aspect-ratio: 9 / 16;
     outline: 4px solid color.$ambiance-120;
     border-radius: 20px;
     box-shadow: 0px -10px 40px 0px rgba(166, 156, 164, 0.25);
     overflow: hidden;
     background: color.$ambiance-120;
+
+    // media query .cadre-mobile
+    @include mquery.landscape {   
+        max-width: 300px;
+    }
+
+    // media query .cadre-mobile
+    @include mquery.desktop {   
+        max-width: 340px;
+    }
 
     // Affichage .cadre-mobile
     &.switch-off-cadre { 
@@ -955,8 +965,8 @@ main {
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
-    width: 80%;
-    max-width: 285px;
+    width: max-content;
+    max-width: 270px;
     min-height: 60px;
     padding: 14px 10px;
     border-radius: 10px;
@@ -971,6 +981,18 @@ main {
     opacity: 1;
     transition: opacity 400ms ease-out;
     animation: pulse-tag-background 4s linear infinite;
+
+    // media query .cadre-instruction-tag
+    @include mquery.landscape {   
+        max-width: 290px;
+    }
+
+    // media query .cadre-instruction-tag
+    @include mquery.desktop {   
+        max-width: 320px;
+    }
+
+
 
     //animation de la couleur de fond de .cadre-instruction-tag
     @keyframes pulse-tag-background {
@@ -999,7 +1021,7 @@ main {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        margin-right: 2px;
+        margin-right: 5px;
         transform: translate(0, 0);
         animation: scroll-gesture-mob 1.5s linear infinite;
 
@@ -2039,6 +2061,20 @@ main {
 
 /* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
 @supports (-webkit-hyphens:none){
+
+    // Cadre mobile vidéo ou maquette (fixe le mauvais rendu des outlines arrondies)
+    .cadre-mobile {
+        outline: 0px solid color.$ambiance-120;
+        box-shadow: 0 0 0 4px color.$ambiance-120;
+    }
+
+    // Cadre desktop vidéo ou maquette (fixe le mauvais rendu des outlines arrondies)
+    .cadre-desktop {
+        outline: 0px solid color.$ambiance-120;
+        box-shadow: 0 0 0 4px color.$ambiance-120;
+    }
+
+
     // Bulle des outils utilisés (fixe le mauvais rendu des outlines arrondies)
     .outil-blob {
         transition: box-shadow 150ms ease;
@@ -2065,6 +2101,21 @@ main {
 
 
 
+    }
+
+    // Problème de mise en forme étiquette "outil utilisé" à cause d'un non support de max-content
+    .outil-languette {
+        .outil-blob {
+            &::before {
+                white-space: nowrap;
+                width: auto;
+            }
+        }
+    }
+
+    // Désactive la typo emoji Noto pour éviter des émojis manquants
+    .emoji {
+        font-family: sans-serif!important;
     }
 
 
