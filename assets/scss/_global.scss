@@ -703,6 +703,7 @@ footer {
 
     //conteneur global
     #cc_div {
+        display: none;
         position: fixed;
         bottom: 1.5rem;
         left: 50%;
@@ -734,7 +735,6 @@ footer {
 
     //image cookie
     #cookie-img {
-        display: none;
         position: absolute;
         top:-120px;
         left: 50%;
@@ -822,7 +822,7 @@ footer {
 
 //element qui masque Cookie Consent ou non
 .show--consent {
-    #cookie-img {
+    #cc_div {
         display: block!important;
     }
 }

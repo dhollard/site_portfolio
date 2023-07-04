@@ -9,6 +9,9 @@
         content:
             /* footer */
             url('/assets/svg/ico-linkedin-primary.svg') url('/assets/svg/ico-instagram-primary.svg') url('/assets/svg/ico-github-primary.svg') url('/assets/svg/ico-copyto-primary.svg')
+            /* pages projets */
+            url('/assets/svg/ico-sommaire-full-blanc.svg') url('/assets/svg/ico-fleche-primary100.svg') url('/assets/svg/ico-fleche-rotative-primary.svg') url('/assets/svg/ico-main-gesture-amb120.svg') url('/assets/svg/ico-souris-gesture-amb120.svg') url('/assets/svg/ico-endbloc-projet-amb20.svg')
+            ;
     }
 </style>
 

@@ -189,6 +189,12 @@ main {
         box-shadow: none;
     }
 
+
+    // media query #Sommaire
+    @include mquery.tv {
+        left: 12vw;
+    }
+
     // Barre en haut du sommaire sur mobile
     #Sommaire_top_bar_mobile {
         display: flex;

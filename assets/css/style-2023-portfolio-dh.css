@@ -730,6 +730,7 @@ footer .footer-container #footer-col-2 p span {
 }
 
 #cc--main #cc_div {
+  display: none;
   position: fixed;
   bottom: 1.5rem;
   left: 50%;
@@ -756,7 +757,6 @@ footer .footer-container #footer-col-2 p span {
   box-shadow: 0 5px 20px rgba(198, 148, 62, 0.2);
 }
 #cc--main #cookie-img {
-  display: none;
   position: absolute;
   top: -120px;
   left: 50%;
@@ -831,7 +831,7 @@ footer .footer-container #footer-col-2 p span {
   background: #A69CA4;
 }
 
-.show--consent #cookie-img {
+.show--consent #cc_div {
   display: block !important;
 }
 
@@ -1012,6 +1012,11 @@ main {
     border-radius: 20px;
     background: rgba(25, 5, 23, 0.8);
     box-shadow: none;
+  }
+}
+@media (min-width: 2400px) {
+  #Sommaire {
+    left: 12vw;
   }
 }
 #Sommaire #Sommaire_top_bar_mobile {
