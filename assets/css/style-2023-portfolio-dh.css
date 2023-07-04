@@ -2613,6 +2613,23 @@ main {
   }
 }
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
+@media not all and (min-resolution: 0.001dpcm) {
+  .cadre-mobile {
+    height: 144vw;
+    max-height: 497px;
+  }
+  @media (min-width: 768px) {
+    .cadre-mobile {
+      height: auto;
+      max-height: 533px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .cadre-mobile {
+      max-height: 604px;
+    }
+  }
+}
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   /* problèmes liés à la propriété gap */

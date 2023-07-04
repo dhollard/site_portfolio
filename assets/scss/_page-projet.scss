@@ -2090,6 +2090,22 @@ main {
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
 @media not all and (min-resolution:.001dpcm) {
 
+    // Fixe le non-support d'aspect ratio qui cause une hauteur trop grande
+    .cadre-mobile {
+        height: 144vw;
+        max-height: 497px;
+
+            // media query .cadre-mobile
+            @include mquery.landscape {  
+                height: auto;
+                max-height: 533px;
+            }
+            
+            // media query .cadre-mobile
+            @include mquery.desktop {  
+                max-height: 604px;
+            }  
+    }
     
 }
 
