@@ -92,7 +92,7 @@
 
                         <figure class="bloc-cadre">
                             <div class="cadre-mobile cadre-video">
-                                <video class="bloc-video" width="100%" height="auto" autoplay loop muted>
+                                <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                     <source src="video/showreel-mobile.webm" type="video/webm">
                                     <source src="video/showreel-mobile.mp4" type="video/mp4">
                                     Votre navigateur ne peut pas lire cette vidéo.
@@ -100,7 +100,7 @@
                             </div>
 
                             <div class="cadre-desktop cadre-video">
-                                <video class="bloc-video" width="100%" height="auto" autoplay loop muted>
+                                <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                     <source src="video/showreel-desktop.webm" type="video/webm">
                                     <source src="video/showreel-desktop.mp4" type="video/mp4">
                                     Votre navigateur ne peut pas lire cette vidéo.
@@ -118,42 +118,6 @@
             </div>
 
         </section>
-
-        <!-- ********** Section "showreel" ********** -->
-        <!--<section id="Showreel_projet" class="section-projet">
-            <div class="section-bloc">
-
-                <div class="section-ligne">
-
-                    <div class="section-colonne full-col">
-
-                        <figure class="bloc-cadre">
-                            <div class="cadre-mobile cadre-video">
-                                <video class="bloc-video" width="100%" height="auto" autoplay loop muted>
-                                    <source src="video/showreel-mobile.webm" type="video/webm">
-                                    <source src="video/showreel-mobile.mp4" type="video/mp4">
-                                    Votre navigateur ne peut pas lire cette vidéo.
-                                </video>
-                            </div>
-
-                            <div class="cadre-desktop cadre-video">
-                                <video class="bloc-video" width="100%" height="auto" autoplay loop muted>
-                                    <source src="video/showreel-desktop.webm" type="video/webm">
-                                    <source src="video/showreel-desktop.mp4" type="video/mp4">
-                                    Votre navigateur ne peut pas lire cette vidéo.
-                                </video>
-                            </div>
-
-                            <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, scrollez pour voir son processus de création</figcaption>
-
-                        </figure>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>-->
 
         <!-- ********** Section "objectifs" ********** -->
         <section id="Objectifs_projet" class="section-projet">
@@ -864,7 +828,7 @@
 
                         <figure class="bloc-visuel schema-code-lang">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/schema-code-lang.webm" type="video/webm">
                                 <source src="video/schema-code-lang.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -891,7 +855,7 @@
 
                         <figure class="bloc-visuel">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/video-chronologie-git.webm" type="video/webm">
                                 <source src="video/video-chronologie-git.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -933,7 +897,7 @@
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/anim-showcase-titres-accueil.webm" type="video/webm">
                                 <source src="video/anim-showcase-titres-accueil.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -977,7 +941,7 @@
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/anim-showcase-portrait.webm" type="video/webm">
                                 <source src="video/anim-showcase-portrait.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -1018,7 +982,7 @@
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/anim-showcase-module-parcours.webm" type="video/webm">
                                 <source src="video/anim-showcase-module-parcours.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -1058,7 +1022,7 @@
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/anim-showcase-bouton-cv.webm" type="video/webm">
                                 <source src="video/anim-showcase-bouton-cv.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -1099,7 +1063,7 @@
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/anim-showcase-miniature-projet.webm" type="video/webm">
                                 <source src="video/anim-showcase-miniature-projet.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.
@@ -1140,7 +1104,7 @@
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
-                            <video class="bloc-video" width="100%" height="auto" autoplay="" loop="" muted="">
+                            <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
                                 <source src="video/anim-showcase-modal-cookie.webm" type="video/webm">
                                 <source src="video/anim-showcase-modal-cookie.mp4" type="video/mp4">
                                 Votre navigateur ne peut pas lire cette vidéo.

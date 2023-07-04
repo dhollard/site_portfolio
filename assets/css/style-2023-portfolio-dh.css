@@ -835,6 +835,7 @@ footer .footer-container #footer-col-2 p span {
   display: block !important;
 }
 
+/* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
@@ -1643,6 +1644,8 @@ main {
   padding: 14px 10px;
   border-radius: 10px;
   pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1857,6 +1860,8 @@ main {
 }
 .cadre-content-wrapper .cadre-img-content {
   pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 @media (max-width: 768px) {
@@ -2569,6 +2574,21 @@ main {
   transition: none !important;
 }
 
+/* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
+@supports (-webkit-hyphens: none) {
+  .outil-blob {
+    transition: box-shadow 150ms ease;
+  }
+  .outil-blob:hover {
+    outline: 0px solid transparent !important;
+    box-shadow: 0 0 0 5px #FF6666;
+  }
+}
+/* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  /* problèmes liés à la propriété gap */
+}
 @font-face {
   font-family: "Playfair-showcase";
   src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");

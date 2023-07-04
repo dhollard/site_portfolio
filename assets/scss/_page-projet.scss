@@ -961,6 +961,8 @@ main {
     padding: 14px 10px;
     border-radius: 10px;
     pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1236,6 +1238,9 @@ main {
     .cadre-img-content {
         //nécessaire pour le vérouillage mobile
         pointer-events: none;
+        -webkit-user-select: none;
+	    user-select: none;
+
     }
 
 }
@@ -2029,4 +2034,38 @@ main {
 .resize-animation-stopper #Sommaire {
     animation: none !important;
     transition: none !important;
+}
+
+
+/* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
+@supports (-webkit-hyphens:none){
+    // Bulle des outils utilisés (fixe le mauvais rendu des outlines arrondies)
+    .outil-blob {
+        transition: box-shadow 150ms ease;
+
+        &:hover {
+            outline: 0px solid transparent!important;
+            box-shadow: 0 0 0 5px color.$primary-100;
+        }
+    }
+}
+
+
+/* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
+@media not all and (min-resolution:.001dpcm) {
+
+    
+}
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
+
+    /* problèmes liés à la propriété gap */
+    @media (min-width:1px) and (max-width:991px) {
+
+
+
+    }
+
+
 }

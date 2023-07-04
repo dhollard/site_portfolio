@@ -835,6 +835,7 @@ footer .footer-container #footer-col-2 p span {
   display: block !important;
 }
 
+/* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
