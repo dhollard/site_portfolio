@@ -2193,6 +2193,16 @@ main {
     padding-bottom: 10px;
   }
 }
+@media (min-width: 768px) {
+  .bloc-emoji-phrase .emoji {
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-emoji-phrase .emoji {
+    padding-bottom: 10px;
+  }
+}
 .bloc-emoji-phrase .phrase-illustrative {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
@@ -2632,7 +2642,173 @@ main {
 }
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  /* problèmes liés à la propriété gap */
+  #Sommaire #Sommaire_top_bar_desktop .top-desk-wrapper {
+    gap: 0;
+  }
+  #Sommaire #Sommaire_top_bar_desktop .top-desk-wrapper .top-desk-titre-ico {
+    margin-right: 8px;
+  }
+  #Sommaire #Sommaire_link_wrapper {
+    gap: 0;
+  }
+  #Sommaire #Sommaire_link_wrapper .som-link {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .section-bloc {
+    gap: 0;
+  }
+  .section-ligne {
+    gap: 0;
+    margin-bottom: 25px;
+  }
+  .section-ligne .section-colonne {
+    margin-bottom: var(--gap-section);
+  }
+  .section-ligne .section-colonne:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    .section-ligne .section-colonne {
+      margin-bottom: 0;
+      margin-right: var(--gap-section);
+    }
+    .section-ligne .section-colonne:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .section-ligne .section-colonne > * {
+    margin-bottom: 25px;
+  }
+  .section-ligne .section-colonne > *:last-child {
+    margin-bottom: 0;
+  }
+  .section-ligne.no-gap .section-colonne {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+  .bloc-texte {
+    gap: 0px;
+  }
+  .bloc-texte > * {
+    margin-bottom: 15px;
+  }
+  @media (min-width: 1600px) {
+    .bloc-texte > * {
+      margin-bottom: 18px;
+    }
+  }
+  .bloc-texte > *:last-child {
+    margin-bottom: 0px !important;
+  }
+  .navibar-cadre-desk .navivar-right {
+    gap: 0px;
+  }
+  .navibar-cadre-desk .navivar-right .navibar-ico {
+    margin-left: 12px;
+  }
+  .navibar-cadre-desk .navivar-right .navibar-ico:first-child {
+    margin-left: 0;
+  }
+  .post-it-wrapper {
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+  .post-it-wrapper .post-it-bloc {
+    margin-bottom: 18px;
+  }
+  .outil-languette {
+    gap: 0;
+  }
+  .outil-languette .outil-txt {
+    margin-right: 20px;
+  }
+  .outil-languette .outil-blob-wrapper {
+    gap: 0;
+  }
+  .outil-languette .outil-blob-wrapper .outil-blob {
+    margin-right: 18px;
+  }
+  .outil-languette .outil-blob-wrapper .outil-blob:last-of-type {
+    margin-right: 0px;
+  }
+  .bloc-emoji-phrase {
+    gap: 0px;
+  }
+  .bloc-emoji-phrase .emoji {
+    margin-bottom: 15px;
+  }
+  @media (min-width: 500px) {
+    .bloc-emoji-phrase .emoji {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+  @media (min-width: 768px) {
+    .bloc-emoji-phrase .emoji {
+      margin-bottom: 15px;
+      margin-right: 0px;
+    }
+  }
+  @media (min-width: 992px) {
+    .bloc-emoji-phrase .emoji {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+  #Resume_projet .module-resume {
+    gap: 0px;
+  }
+  #Resume_projet .module-resume .txt-resume-projet {
+    margin-bottom: 40px;
+  }
+  @media (min-width: 992px) {
+    #Resume_projet .module-resume .txt-resume-projet {
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+  }
+  @media (min-width: 1600px) {
+    #Resume_projet .module-resume .txt-resume-projet {
+      margin-right: 100px;
+    }
+  }
+  #Resume_projet .module-resume .infos-projet {
+    gap: 0;
+    justify-content: space-between;
+  }
+  #Resume_projet .module-resume .infos-projet > * {
+    margin-bottom: 20px;
+  }
+  .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure {
+    gap: 0px;
+  }
+  .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette {
+    margin-right: 15px;
+  }
+  @media (max-width: 400px) {
+    .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette {
+      margin-right: 10px;
+    }
+  }
+  @media (min-width: 500px) {
+    .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette {
+      margin-right: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette {
+      margin-right: 15px;
+    }
+  }
+  @media (min-width: 1600px) {
+    .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette {
+      margin-right: 25px;
+    }
+  }
+  .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette:last-of-type {
+    margin-right: 0px !important;
+  }
   .outil-languette .outil-blob::before {
     white-space: nowrap;
     width: auto;
@@ -3324,4 +3500,44 @@ main {
 }
 #Enseignements_appris .bloc-emoji-special-gap .section-ligne:nth-child(1), #Enseignements_appris .bloc-emoji-special-gap .section-ligne:nth-child(2) {
   margin-top: 0px;
+}
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #Bloc_compare_options_site .section-ligne .section-colonne:last-of-type {
+    margin-bottom: var(--gap-section);
+  }
+  #Bloc_compare_options_site .section-ligne .compare-col {
+    gap: 0px;
+  }
+  #Bloc_compare_options_site .compare-header {
+    gap: 0;
+  }
+  #Bloc_compare_options_site .compare-header .compare-icon {
+    margin-right: 10px;
+  }
+  @media (min-width: 768px) {
+    #Bloc_compare_options_site .compare-header .compare-icon {
+      margin-right: 0px;
+      margin-bottom: 4px;
+    }
+  }
+  #Identite_visuelle #Bloc_typo_couleur_projet .section-ligne {
+    gap: 0px;
+  }
+  #Identite_visuelle #Bloc_typo_couleur_projet .section-ligne .section-colonne {
+    margin-bottom: 150px;
+  }
+  #Identite_visuelle #Bloc_typo_couleur_projet .section-ligne .section-colonne:last-of-type {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    #Identite_visuelle #Bloc_typo_couleur_projet .section-ligne .section-colonne {
+      margin-bottom: 0;
+      margin-right: var(--gap-section);
+    }
+    #Identite_visuelle #Bloc_typo_couleur_projet .section-ligne .section-colonne:last-of-type {
+      margin-right: 0;
+    }
+  }
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */

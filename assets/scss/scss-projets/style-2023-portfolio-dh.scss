@@ -872,3 +872,66 @@
     }
     
 }
+
+
+
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
+
+    // ---------- problèmes liés à la propriété gap -------------
+
+    #Bloc_compare_options_site {
+        .section-ligne {
+            .section-colonne {
+                &:last-of-type {
+                    margin-bottom: var(--gap-section);
+                }
+            }
+
+            .compare-col {
+                gap: 0px;
+            }
+        }
+
+        .compare-header {
+            gap: 0;
+
+            .compare-icon {
+                margin-right: 10px;
+
+                // media query .compare-icon
+                @include mquery.landscape {   
+                    margin-right: 0px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    #Identite_visuelle {
+        #Bloc_typo_couleur_projet .section-ligne {
+            gap: 0px;
+
+            .section-colonne {
+                margin-bottom: 150px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                // media query .section-ligne
+                @include mquery.landscape {
+                    margin-bottom: 0;
+                    margin-right: var(--gap-section);
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

@@ -534,8 +534,6 @@ main {
 .section-projet {
     display: flex;
     flex-direction: column;
-    //padding: 0px 30px;
-    //margin: 0 auto 200px auto;
     margin: 0 auto;
     padding: 0 30px 200px 30px;
     scroll-margin-top: 140px;
@@ -545,8 +543,6 @@ main {
         flex-direction: row;
         flex-wrap: wrap;   
         max-width: 912px;
-        //margin: 0 auto 280px auto;
-        //padding: 0px;
         padding: 0 0 280px 0;
     }
 
@@ -1622,6 +1618,16 @@ main {
         @include mquery.tablet {
             padding-bottom: 10px;
         }
+
+        // media query .emoji
+        @include mquery.landscape {
+            padding-bottom: 0px;
+        }
+
+        // media query .emoji
+        @include mquery.laptop {
+            padding-bottom: 10px;
+        }
     }
 
     .phrase-illustrative {
@@ -1661,7 +1667,6 @@ main {
     .module-resume {
         z-index: 1;
         padding: 60px 30px;
-        //margin: 0 auto 150px auto;
         background: rgba(color.$ambiance-160, 0.8);
         backdrop-filter: blur(4px);
         display: flex;
@@ -1675,7 +1680,6 @@ main {
             border-radius: 20px;
             gap: 60px;
             padding: 40px 30px;
-            //margin: 0 auto 180px auto;
         }
 
         // media query section résumé
@@ -2112,12 +2116,240 @@ main {
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not(translate: none)) {
 
-    /* problèmes liés à la propriété gap */
-    @media (min-width:1px) and (max-width:991px) {
+    // ---------- problèmes liés à la propriété gap -------------
 
+    // Sommaire
+    #Sommaire {
 
+        #Sommaire_top_bar_desktop {
+            .top-desk-wrapper {
+                gap: 0;
 
+                .top-desk-titre-ico {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        #Sommaire_link_wrapper {
+            gap: 0;
+
+            .som-link {
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
     }
+
+    // Règles de sections
+    .section-bloc {
+        gap: 0;
+    }
+
+    .section-ligne {
+        gap: 0;
+        margin-bottom: 25px;
+
+        .section-colonne {
+            margin-bottom: var(--gap-section);
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            // media query .section-ligne
+            @include mquery.landscape {
+                margin-bottom: 0;
+                margin-right: var(--gap-section);
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+
+            // Contenu des colonnes
+            &>* {
+                margin-bottom: 25px;
+            }
+
+            &>*:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.no-gap {
+            .section-colonne {
+                margin-bottom: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+    }
+
+    // Paragraphes de texte de base
+    .bloc-texte {
+        gap: 0px;
+
+        &>* {
+            margin-bottom: 15px;
+
+            // media query contenu bloc texte
+            @include mquery.desktop-xl {
+                margin-bottom: 18px;
+            }
+        }
+
+        &>*:last-child {
+            margin-bottom: 0px !important;
+        }
+    }
+
+    // Barre des cadres maquette desktop
+    .navibar-cadre-desk {
+        .navivar-right {
+            gap: 0px;
+
+            .navibar-ico {
+                margin-left: 12px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    // Conteneur post-it
+    .post-it-wrapper {
+        gap: 0px;
+        justify-content: space-evenly;
+
+        .post-it-bloc {
+            margin-bottom: 18px;
+        }
+    }
+
+    // Languette blanche qui contient les outils utilisés pour une section
+    .outil-languette {
+        gap: 0;
+
+        .outil-txt {
+            margin-right: 20px;
+        }
+
+        .outil-blob-wrapper {
+            gap: 0;
+
+            .outil-blob {
+                margin-right: 18px;
+
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    // Phrase illustrée par un emoji
+    .bloc-emoji-phrase {
+        gap: 0px;
+
+        .emoji {
+            margin-bottom: 15px;
+
+            // media query .emoji
+            @include mquery.tablet {
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+
+            // media query .emoji
+            @include mquery.landscape {
+                margin-bottom: 15px;
+                margin-right: 0px;
+            }
+
+            // media query .emoji
+            @include mquery.laptop {
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    // Section "résumé"
+    #Resume_projet {
+        .module-resume {
+            gap: 0px;
+
+            .txt-resume-projet {
+                margin-bottom: 40px;
+
+                // media query .txt-resume-projet
+                @include mquery.laptop {
+                    margin-bottom: 0;
+                    margin-right: 60px;
+                }
+
+                // media query .txt-resume-projet
+                @include mquery.desktop-xl{
+                    margin-right: 100px;
+                }
+            }
+
+            .infos-projet { 
+                gap: 0;
+                justify-content: space-between;
+
+                & > * {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .bloc-palette-couleurs-projet {
+        // Bloc d'une palette de couleurs
+        .palette-couleurs-projet {
+            // Palette regroupant les sous-teintes
+            .palette-mineure {
+                gap: 0px;
+
+                .carre-palette {
+                    margin-right: 15px;
+
+                    // media query .carre-palette
+                    @include mquery.phone {  
+                        margin-right: 10px;
+                    }
+
+                    // media query .carre-palette
+                    @include mquery.tablet {  
+                        margin-right: 20px;
+                    }
+
+                    // media query .carre-palette
+                    @include mquery.landscape {  
+                        margin-right: 15px;
+                    }
+
+                    // media query .carre-palette
+                    @include mquery.desktop-xl {  
+                        margin-right: 25px;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0px!important;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+
+    // ---------- autres problèmes -------------
 
     // Problème de mise en forme étiquette "outil utilisé" à cause d'un non support de max-content
     .outil-languette {
