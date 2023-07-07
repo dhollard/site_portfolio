@@ -11,7 +11,7 @@
     <!-- SEO et identité page -->
     <link rel="canonical" href="https://darius-hollard.com/fr/projet/2023-portfolio-dh/" />
     <title>Site Portfolio - DH</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Projet réalisé en 2023 - Création du site portfolio de Darius Hollard" />
 
 </head>
 
@@ -93,16 +93,16 @@
                         <figure class="bloc-cadre">
                             <div class="cadre-mobile cadre-video">
                                 <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
-                                    <source src="video/showreel-mobile.webm" type="video/webm">
                                     <source src="video/showreel-mobile.mp4" type="video/mp4">
+                                    <source src="video/showreel-mobile.webm" type="video/webm">
                                     Votre navigateur ne peut pas lire cette vidéo.
                                 </video>
                             </div>
 
                             <div class="cadre-desktop cadre-video">
                                 <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
-                                    <source src="video/showreel-desktop.webm" type="video/webm">
                                     <source src="video/showreel-desktop.mp4" type="video/mp4">
+                                    <source src="video/showreel-desktop.webm" type="video/webm">
                                     Votre navigateur ne peut pas lire cette vidéo.
                                 </video>
                             </div>
@@ -150,7 +150,7 @@
                         <picture class="schema-objectifs">
                             <source srcset="img/schema-objectifs.webp" type="image/webp" width="100%" height="auto">
                             <source srcset="img/schema-objectifs.png" type="image/jpeg" width="100%" height="auto">
-                            <img src="img/schema-objectifs.png" width="100%" height="auto">
+                            <img src="img/schema-objectifs.png" width="100%" height="auto" alt="">
                         </picture>
                     </div>
 
@@ -193,7 +193,7 @@
 
                     <div class="section-colonne tiers-col compare-col">
                         <div class="compare-header">
-                            <img class="compare-icon" src="svg/ico-compare-negatif-blanc.svg" width="32px">
+                            <img class="compare-icon" src="svg/ico-compare-negatif-blanc.svg" width="32px" alt="icone d'une croix indiquant un sentiment négatif">
                             <p class="compare-titre">Réseaux sociaux<br class="retour-ligne"> uniquement</p>
                         </div>
                         <ul class="liste-puce-projet compare-list">
@@ -205,7 +205,7 @@
 
                     <div class="section-colonne tiers-col compare-col compare-focus">
                         <div class="compare-header">
-                            <img class="compare-icon" src="svg/ico-compare-positif-blanc.svg" width="32px">
+                            <img class="compare-icon" src="svg/ico-compare-positif-blanc.svg" width="32px" alt="icone d'un coche indiquant une validation positive">
                             <p class="compare-titre">Site portfolio<br class="retour-ligne"> original</p>
                         </div>
                         <ul class="liste-puce-projet compare-list">
@@ -217,7 +217,7 @@
 
                     <div class="section-colonne tiers-col compare-col">
                         <div class="compare-header">
-                            <img class="compare-icon" src="svg/ico-compare-negatif-blanc.svg" width="32px">
+                            <img class="compare-icon" src="svg/ico-compare-negatif-blanc.svg" width="32px" alt="icone d'une croix indiquant un sentiment négatif">
                             <p class="compare-titre">Template basique<br class="retour-ligne"> modifié</p>
                         </div>
                         <ul class="liste-puce-projet compare-list">
@@ -282,7 +282,7 @@
 
                         <figure class="bloc-visuel schema-arborescence">
 
-                            <img src="img/schema-arborescence-structure-site.png" width="100%">
+                            <img src="img/schema-arborescence-structure-site.png" width="100%" alt="schéma listant les pages du site et leurs rôles">
 
                             <figcaption class="legende-visuel">Arborescence planifiée du site après analyse des besoins</figcaption>
 
@@ -572,7 +572,7 @@
                                     <picture class="cadre-img-content">
                                         <source srcset="img/maquette-site-accueil-mobile.webp" type="image/webp" width="100%" height="auto">
                                         <source srcset="img/maquette-site-accueil-mobile.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-accueil-mobile.png" width="100%" height="auto">
+                                        <img src="img/maquette-site-accueil-mobile.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format mobile">
                                     </picture>
                                 </div>
 
@@ -590,7 +590,7 @@
                                     <picture class="cadre-img-content">
                                         <source srcset="img/maquette-site-accueil-desktop.webp" type="image/webp" width="100%" height="auto">
                                         <source srcset="img/maquette-site-accueil-desktop.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-accueil-desktop.png" width="100%" height="auto">
+                                        <img src="img/maquette-site-accueil-desktop.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format écran large">
                                     </picture>
                                 </div>
 
@@ -652,7 +652,7 @@
                                     <picture class="cadre-img-content">
                                         <source srcset="img/maquette-site-projets-mobile.webp" type="image/webp" width="100%" height="auto">
                                         <source srcset="img/maquette-site-projets-mobile.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-projets-mobile.png" width="100%" height="auto">
+                                        <img src="img/maquette-site-projets-mobile.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format mobile">
                                     </picture>
                                 </div>
 
@@ -670,7 +670,7 @@
                                     <picture class="cadre-img-content">
                                         <source srcset="img/maquette-site-projets-desktop.webp" type="image/webp" width="100%" height="auto">
                                         <source srcset="img/maquette-site-projets-desktop.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-projets-desktop.png" width="100%" height="auto">
+                                        <img src="img/maquette-site-projets-desktop.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format grand écran">
                                     </picture>
                                 </div>
 
@@ -734,7 +734,7 @@
                                     <picture class="cadre-img-content">
                                         <source srcset="img/maquette-site-parcours-mobile.webp" type="image/webp" width="100%" height="auto">
                                         <source srcset="img/maquette-site-parcours-mobile.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-parcours-mobile.png" width="100%" height="auto">
+                                        <img src="img/maquette-site-parcours-mobile.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format mobile">
                                     </picture>
                                 </div>
 
@@ -752,7 +752,7 @@
                                     <picture class="cadre-img-content">
                                         <source srcset="img/maquette-site-parcours-desktop.webp" type="image/webp" width="100%" height="auto">
                                         <source srcset="img/maquette-site-parcours-desktop.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-parcours-desktop.png" width="100%" height="auto">
+                                        <img src="img/maquette-site-parcours-desktop.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format grand écran">
                                     </picture>
                                 </div>
 

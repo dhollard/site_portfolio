@@ -4,7 +4,7 @@
     /*window.onscroll = function() {
         scrollFunction()
     };*/
-    window.addEventListener('scroll', scrollFunction);
+    window.addEventListener('scroll', scrollFunction, {passive: true});
 
 
     function scrollFunction() {
@@ -105,7 +105,7 @@
 
 <!-- Script qui masque le sommaire en début de page -->
 <script>
-    window.addEventListener('DOMContentLoaded', hideSom);
+    window.addEventListener('DOMContentLoaded', hideSom, {passive: true});
     window.addEventListener('scroll', hideSom);
 
     function hideSom() {
@@ -219,7 +219,7 @@
         }
     };
 
-    window.addEventListener('scroll', eyeCatchSommaire);
+    window.addEventListener('scroll', eyeCatchSommaire, {passive: true});
 
     function eyeCatchSommaire() {
 
@@ -247,7 +247,7 @@
 <!-- Script pour colorier le lien du sommaire correspondant à la partie en cours de consultation -->
 <script>
     window.addEventListener('resize', progresSom);
-    window.addEventListener('scroll', progresSom);
+    window.addEventListener('scroll', progresSom, {passive: true});
 
     function progresSom() {
 
