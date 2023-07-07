@@ -147,7 +147,11 @@
                     </div>
 
                     <div class="section-colonne demi-col">
-                        <img class="schema-objectifs" src="img/schema-objectifs.png" width="100%">
+                        <picture class="schema-objectifs">
+                            <source srcset="img/schema-objectifs.webp" type="image/webp" width="100%" height="auto">
+                            <source srcset="img/schema-objectifs.png" type="image/jpeg" width="100%" height="auto">
+                            <img src="img/schema-objectifs.png" width="100%" height="auto">
+                        </picture>
                     </div>
 
                 </div>
@@ -565,7 +569,11 @@
                         <figure id="Bloc_cadre_accueil" class="bloc-cadre">
                             <div class="cadre-mobile switch-off-cadre prevent-scrolling">
                                 <div class="cadre-content-wrapper">
-                                    <img class="cadre-img-content" src="img/maquette-site-accueil-mobile.png" width="100%" height="auto">
+                                    <picture class="cadre-img-content">
+                                        <source srcset="img/maquette-site-accueil-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-accueil-mobile.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <img src="img/maquette-site-accueil-mobile.png" width="100%" height="auto">
+                                    </picture>
                                 </div>
 
                                 <div class="cadre-instruction-tag">
@@ -579,7 +587,11 @@
                                 <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
                                 <div class="cadre-content-wrapper">
-                                    <img class="cadre-img-content" src="img/maquette-site-accueil-desktop.png" width="100%" height="auto">
+                                    <picture class="cadre-img-content">
+                                        <source srcset="img/maquette-site-accueil-desktop.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-accueil-desktop.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <img src="img/maquette-site-accueil-desktop.png" width="100%" height="auto">
+                                    </picture>
                                 </div>
 
                                 <div class="cadre-instruction-tag">
@@ -637,7 +649,11 @@
                         <figure id="Bloc_cadre_accueil" class="bloc-cadre">
                             <div class="cadre-mobile switch-off-cadre prevent-scrolling">
                                 <div class="cadre-content-wrapper">
-                                    <img class="cadre-img-content" src="img/maquette-site-projets-mobile.png" width="100%" height="auto">
+                                    <picture class="cadre-img-content">
+                                        <source srcset="img/maquette-site-projets-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-projets-mobile.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <img src="img/maquette-site-projets-mobile.png" width="100%" height="auto">
+                                    </picture>
                                 </div>
 
                                 <div class="cadre-instruction-tag">
@@ -651,7 +667,11 @@
                                 <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
                                 <div class="cadre-content-wrapper">
-                                    <img class="cadre-img-content" src="img/maquette-site-projets-desktop.png" width="100%" height="auto">
+                                    <picture class="cadre-img-content">
+                                        <source srcset="img/maquette-site-projets-desktop.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-projets-desktop.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <img src="img/maquette-site-projets-desktop.png" width="100%" height="auto">
+                                    </picture>
                                 </div>
 
                                 <div class="cadre-instruction-tag">
@@ -711,7 +731,11 @@
                         <figure id="Bloc_cadre_accueil" class="bloc-cadre">
                             <div class="cadre-mobile switch-off-cadre prevent-scrolling">
                                 <div class="cadre-content-wrapper">
-                                    <img class="cadre-img-content" src="img/maquette-site-parcours-mobile.png" width="100%" height="auto">
+                                    <picture class="cadre-img-content">
+                                        <source srcset="img/maquette-site-parcours-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-parcours-mobile.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <img src="img/maquette-site-parcours-mobile.png" width="100%" height="auto">
+                                    </picture>
                                 </div>
 
                                 <div class="cadre-instruction-tag">
@@ -725,7 +749,11 @@
                                 <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
                                 <div class="cadre-content-wrapper">
-                                    <img class="cadre-img-content" src="img/maquette-site-parcours-desktop.png" width="100%" height="auto">
+                                    <picture class="cadre-img-content">
+                                        <source srcset="img/maquette-site-parcours-desktop.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-parcours-desktop.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <img src="img/maquette-site-parcours-desktop.png" width="100%" height="auto">
+                                    </picture>
                                 </div>
 
                                 <div class="cadre-instruction-tag">
@@ -856,8 +884,8 @@
                         <figure class="bloc-visuel">
 
                             <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
-                                <source src="video/video-chronologie-git.webm" type="video/webm">
                                 <source src="video/video-chronologie-git.mp4" type="video/mp4">
+                                <source src="video/video-chronologie-git.webm" type="video/webm">
                                 Votre navigateur ne peut pas lire cette vidéo.
                             </video>
 

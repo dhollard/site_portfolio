@@ -187,10 +187,9 @@
 
 
 #Header_projet {
-    background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
+    background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 #Resume_projet {
@@ -226,7 +225,7 @@
 #Objectifs_projet {
 
 
-    .schema-objectifs {
+    .schema-objectifs, .schema-objectifs * {
         width: 100%;
         height: auto;
         max-width: 400px;
@@ -931,6 +930,11 @@
                 }
             }
         }
+    }
+
+    // Alternatives aux webp
+    #Header_projet {
+        background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
     }
 
     

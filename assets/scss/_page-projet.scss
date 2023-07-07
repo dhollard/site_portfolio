@@ -1253,7 +1253,7 @@ main {
     margin-bottom: -5px;
 
     // Contenu image du wrapper
-    .cadre-img-content {
+    .cadre-img-content, .cadre-img-content * {
         //nécessaire pour le vérouillage mobile
         pointer-events: none;
         -webkit-user-select: none;
@@ -2110,6 +2110,11 @@ main {
                 max-height: 604px;
             }  
     }
+
+    // Désactive la typo emoji Noto pour éviter des émojis manquants
+    .emoji {
+        font-family: sans-serif!important;
+    }
     
 }
 
@@ -2359,11 +2364,6 @@ main {
                 width: auto;
             }
         }
-    }
-
-    // Désactive la typo emoji Noto pour éviter des émojis manquants
-    .emoji {
-        font-family: sans-serif!important;
     }
 
 

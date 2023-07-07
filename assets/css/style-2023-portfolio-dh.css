@@ -1878,7 +1878,7 @@ main {
   overscroll-behavior: contain;
   margin-bottom: -5px;
 }
-.cadre-content-wrapper .cadre-img-content {
+.cadre-content-wrapper .cadre-img-content, .cadre-content-wrapper .cadre-img-content * {
   pointer-events: none;
   -webkit-user-select: none;
   user-select: none;
@@ -2639,6 +2639,9 @@ main {
       max-height: 604px;
     }
   }
+  .emoji {
+    font-family: sans-serif !important;
+  }
 }
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
@@ -2813,9 +2816,6 @@ main {
     white-space: nowrap;
     width: auto;
   }
-  .emoji {
-    font-family: sans-serif !important;
-  }
 }
 @font-face {
   font-family: "Playfair-showcase";
@@ -2944,7 +2944,7 @@ main {
   }
 }
 #Header_projet {
-  background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
+  background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2974,14 +2974,14 @@ main {
   }
 }
 
-#Objectifs_projet .schema-objectifs {
+#Objectifs_projet .schema-objectifs, #Objectifs_projet .schema-objectifs * {
   width: 100%;
   height: auto;
   max-width: 400px;
   margin: 0 auto;
 }
 @media (min-width: 992px) {
-  #Objectifs_projet .schema-objectifs {
+  #Objectifs_projet .schema-objectifs, #Objectifs_projet .schema-objectifs * {
     max-width: 100%;
   }
 }
@@ -3539,5 +3539,8 @@ main {
     #Identite_visuelle #Bloc_typo_couleur_projet .section-ligne .section-colonne:last-of-type {
       margin-right: 0;
     }
+  }
+  #Header_projet {
+    background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
   }
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */
