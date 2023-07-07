@@ -146,12 +146,12 @@
     font-display: swap;
   }
 }
-@font-face {
+/*@font-face {
   font-family: "Noto-Emoji";
   src: url("/assets/font/NotoColorEmoji-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
-}
+}*/
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -2205,10 +2205,19 @@ main {
   }
 }
 .bloc-emoji-phrase .emoji {
-  font-family: "Noto-Emoji";
+  /*font-family: "Noto-Emoji";
   font-size: 50px;
   text-align: center;
+  margin: 0;*/
+  min-width: 62px;
+  width: 62px;
+  min-height: 62px;
+  height: 62px;
   margin: 0;
+  /*background-image: url("../svg/emoji-placeholder.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
 }
 @media (min-width: 500px) {
   .bloc-emoji-phrase .emoji {
@@ -2223,6 +2232,10 @@ main {
 @media (min-width: 992px) {
   .bloc-emoji-phrase .emoji {
     padding-bottom: 10px;
+    min-width: 68px;
+    width: 68px;
+    min-height: 68px;
+    height: 68px;
   }
 }
 .bloc-emoji-phrase .phrase-illustrative {
@@ -2660,9 +2673,6 @@ main {
     .cadre-mobile {
       max-height: 604px;
     }
-  }
-  .emoji {
-    font-family: sans-serif !important;
   }
 }
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */

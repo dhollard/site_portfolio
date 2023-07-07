@@ -146,12 +146,12 @@
     font-display: swap;
   }
 }
-@font-face {
+/*@font-face {
   font-family: "Noto-Emoji";
   src: url("/assets/font/NotoColorEmoji-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
-}
+}*/
 *, ::before, ::after {
   box-sizing: border-box;
 }
