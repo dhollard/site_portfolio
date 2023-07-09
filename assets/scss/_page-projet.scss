@@ -1696,6 +1696,16 @@ main {
         gap: 40px;
 
         // media query section résumé
+        @include mquery.tablet { 
+            padding: 60px 80px;
+        }
+
+        // media query section résumé
+        @include mquery.landscape { 
+            padding: 60px 50px;
+        }
+
+        // media query section résumé
         @include mquery.laptop {   
             flex-direction: row;
             flex-wrap: nowrap;

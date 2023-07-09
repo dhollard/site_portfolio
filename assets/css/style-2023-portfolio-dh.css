@@ -2293,6 +2293,16 @@ main {
   flex-direction: column;
   gap: 40px;
 }
+@media (min-width: 500px) {
+  #Resume_projet .module-resume {
+    padding: 60px 80px;
+  }
+}
+@media (min-width: 768px) {
+  #Resume_projet .module-resume {
+    padding: 60px 50px;
+  }
+}
 @media (min-width: 992px) {
   #Resume_projet .module-resume {
     flex-direction: row;
