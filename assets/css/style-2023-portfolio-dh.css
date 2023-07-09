@@ -2269,6 +2269,7 @@ main {
   color: var(--couleur-texte-projet);
   font-size: 20px;
   margin: 0;
+  width: 100%;
 }
 @media (min-width: 500px) {
   .bloc-emoji-phrase .phrase-illustrative {
