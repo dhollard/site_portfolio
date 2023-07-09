@@ -172,6 +172,8 @@ main {
 #Sommaire {
     display: block;
     z-index: 4;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
     position: fixed;
@@ -344,7 +346,7 @@ main {
         // media query #Sommaire_link_wrapper
         @include mquery.landscape { 
            display: none;
-           max-height: 100%;
+           max-height: auto;
         }
 
         // Lien sommaire
@@ -485,21 +487,8 @@ main {
     }
 
     #Sommaire_top_bar_mobile {
-        //background-color: color.$primary-100;
         animation: eyecatchmobile 1s ease-out infinite;
         
-    }
-
-    #Sommaire_link_wrapper {
-        //background-color: color.$primary-100;
-        
-    }
-
-    #Sommaire_top_bar_mobile {
-
-        .top-mob-txt::before {
-            //color: color.$primary-100;
-        }
     }
 
     // Sur desktop
@@ -627,7 +616,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px;
-
 }
 
 // colonne 100% section
@@ -677,7 +665,6 @@ main {
     width: 100%;
     margin: 0;
     line-height: 1;
-
 
     // media query .titre-secondaire-section
     @include mquery.landscape {   
@@ -781,7 +768,6 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0;
-
 }
 
 // Cadre mobile contenant une vidéo ou une maquette
@@ -846,7 +832,6 @@ main {
     // Affichage .cadre-mobile
     &.switch-off-cadre { 
         display: none;
-
     }
 
     // media query .cadre-desktop
@@ -1631,19 +1616,11 @@ main {
     }
 
     .emoji {
-        /*font-family: "Noto-Emoji";
-        font-size: 50px;
-        text-align: center;
-        margin: 0;*/
         min-width: 62px;
         width: 62px;
         min-height: 62px;
         height: 62px;
         margin: 0;
-        /*background-image: url("../svg/emoji-placeholder.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;*/
 
         // media query .emoji
         @include mquery.tablet {
@@ -2155,11 +2132,6 @@ main {
             @include mquery.laptop {  
                 max-height: 604px;
             }  
-    }
-
-    // Désactive la typo emoji Noto pour éviter des émojis manquants
-    .emoji {
-        //font-family: sans-serif!important;
     }
     
 }

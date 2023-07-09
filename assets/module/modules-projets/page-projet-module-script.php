@@ -1,11 +1,6 @@
 <!-- Script réduction image en-tête au scroll -->
 <script>
-    //fonction qui déclenche les classes d'animation du header projet au scroll
-    /*window.onscroll = function() {
-        scrollFunction()
-    };*/
     window.addEventListener('scroll', scrollFunction, {passive: true});
-
 
     function scrollFunction() {
 

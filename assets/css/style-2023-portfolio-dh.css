@@ -1022,6 +1022,8 @@ main {
 #Sommaire {
   display: block;
   z-index: 4;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   position: fixed;
@@ -1172,7 +1174,7 @@ main {
 @media (min-width: 768px) {
   #Sommaire #Sommaire_link_wrapper {
     display: none;
-    max-height: 100%;
+    max-height: auto;
   }
 }
 #Sommaire #Sommaire_link_wrapper .som-link {
@@ -2229,19 +2231,11 @@ main {
   }
 }
 .bloc-emoji-phrase .emoji {
-  /*font-family: "Noto-Emoji";
-  font-size: 50px;
-  text-align: center;
-  margin: 0;*/
   min-width: 62px;
   width: 62px;
   min-height: 62px;
   height: 62px;
   margin: 0;
-  /*background-image: url("../svg/emoji-placeholder.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;*/
 }
 @media (min-width: 500px) {
   .bloc-emoji-phrase .emoji {

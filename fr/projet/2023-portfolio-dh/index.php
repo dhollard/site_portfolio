@@ -1175,7 +1175,6 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-emoji-phrase">
-                            <!--<p class="emoji">💼</p>-->
                             <img class="emoji" src="svg/emoji-resultat-01.svg" alt="emoji d'un cartable">
                             <p class="phrase-illustrative">Avec la finalisation de mon site, j’ai gagné une vitrine <span class="focus-color">professionnelle et qualitative.</span></p>
                         </div>
@@ -1195,7 +1194,6 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-emoji-phrase">
-                            <!--<p class="emoji">👀</p>-->
                             <img class="emoji" src="svg/emoji-resultat-02.svg" alt="emoji d'une paire d'yeux">
                             <p class="phrase-illustrative">Mes projets sont <span class="focus-color">devenus plus accessibles.</span></p>
                         </div>
@@ -1213,7 +1211,6 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-emoji-phrase">
-                            <!--<p class="emoji">🚀</p>-->
                             <img class="emoji" src="svg/emoji-resultat-03.svg" alt="emoji d'une fusée">
                             <p class="phrase-illustrative">Il reste encore <span class="focus-color">du chemin</span> à parcourir...</p>
                         </div>
@@ -1254,7 +1251,6 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-emoji-phrase">
-                            <!--<p class="emoji">🧠</p>-->
                             <img class="emoji" src="svg/emoji-enseignement-01.svg" alt="emoji d'un cerveau">
                             <p class="phrase-illustrative">J’ai aiguisé mon sens de l’organisation et de la <span class="focus-color">gestion de projet.</span></p>
                         </div>
@@ -1274,7 +1270,6 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-emoji-phrase">
-                            <!--<p class="emoji">🏆</p>-->
                             <img class="emoji" src="svg/emoji-enseignement-02.svg" alt="emoji d'un trophée">
                             <p class="phrase-illustrative"><span class="focus-color">Profiter</span> de la liberté totale de créer, mais <span class="focus-color">sans perdre de vue</span> la ligne d'arrivée.</p>
                         </div>
@@ -1294,7 +1289,6 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-emoji-phrase">
-                            <!--<p class="emoji">🤓</p>-->
                             <img class="emoji" src="svg/emoji-enseignement-03.svg" alt="emoji d'une personne avec des lunettes">
                             <p class="phrase-illustrative"><span class="focus-color">Ma polyvalence</span> fait déjà ma force, mais il y a toujours davantage à apprendre.</p>
                         </div>
