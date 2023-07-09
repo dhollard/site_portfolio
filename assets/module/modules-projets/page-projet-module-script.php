@@ -166,12 +166,12 @@
     });
 </script>
 
-<!-- Script pour masquer le sommaire quand on clic sur un lien mobile -->
+<!-- Script pour masquer le sommaire quand on clic sur un lien (sauf sur grand écran, où le sommaire ouvert ne gêne pas la lecture) -->
 <script>
     var root = document.getElementsByTagName('html')[0];
 
     $(".som-link").click(function() {
-        if ($(window).width() < 992) {
+        if ($(window).outerWidth() < 1800) {
 
             $("#Sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");
@@ -189,7 +189,7 @@
     var root = document.getElementsByTagName('html')[0];
 
     $("#Overlay_sommaire").click(function() {
-        if ($(window).width() < 992) {
+        if ($(window).outerWidth() < 768) {
 
             $("#Sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");

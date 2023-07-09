@@ -175,7 +175,6 @@ main {
     height: fit-content;
     width: 100%;
     position: fixed;
-    //bottom: -380px;
     bottom: 0;
     left: 0px;
     transform: translateY(100%) translateY(-58px);
@@ -186,16 +185,22 @@ main {
     transition: transform 300ms ease, box-shadow 400ms ease-out;
 
     // media query #Sommaire
-    @include mquery.laptop { 
+    @include mquery.landscape { 
         bottom: auto;
-        top: 140px;
-        left: 20px;
+        top: 100px;
+        left: 10px;
         transform: translate(0, 0);
         width: -moz-fit-content;
         width: fit-content;
         border-radius: 20px;
         background: rgba(25, 5, 23, 0.8);
         box-shadow: none;
+    }
+
+    // media query #Sommaire
+    @include mquery.laptop {
+        top: 140px;
+        left: 20px;
     }
 
 
@@ -216,7 +221,7 @@ main {
         transition: background-color 400ms ease-out;
 
         // media query #Sommaire_top_bar_mobile
-        @include mquery.laptop { 
+        @include mquery.landscape { 
             display: none;
         }
 
@@ -261,7 +266,7 @@ main {
         align-items: center;
 
         // media query #Sommaire_top_bar_desktop
-        @include mquery.laptop { 
+        @include mquery.landscape { 
             display: flex;
         }
 
@@ -328,10 +333,18 @@ main {
         padding: 12px 20px 40px 20px;
         gap: 6px;
         transition: background-color 400ms ease-out;
+        max-height: 90vh;
+        overflow: auto;
 
         // media query #Sommaire_link_wrapper
-        @include mquery.laptop { 
+        @include mquery.tablet {
+            padding: 12px 40px 40px 40px;
+        }
+
+        // media query #Sommaire_link_wrapper
+        @include mquery.landscape { 
            display: none;
+           max-height: 100%;
         }
 
         // Lien sommaire
@@ -351,7 +364,7 @@ main {
             }
 
             // media query .som-link
-            @include mquery.laptop { 
+            @include mquery.landscape { 
                 padding-top: 1px;
                 padding-bottom: 1px;
             }
@@ -391,7 +404,7 @@ main {
         
 
         // Règles sur desktop
-        @include mquery.laptop { 
+        @include mquery.landscape { 
             width: 330px;
 
             // Barre en haut du sommaire sur desktop
@@ -490,7 +503,7 @@ main {
     }
 
     // Sur desktop
-    @include mquery.laptop {
+    @include mquery.landscape {
         box-shadow: none;
         animation: eyecatchdesk 1s ease-out infinite;
     }
@@ -514,7 +527,7 @@ main {
         display: block;
 
         // media query overlay sommaire
-        @include mquery.laptop {
+        @include mquery.landscape {
             display: none;
         }
     }
@@ -526,7 +539,7 @@ main {
     overflow: hidden;
 
     // media query .no-scroll
-    @include mquery.laptop {
+    @include mquery.landscape {
         overflow: auto;
     }
 }
@@ -1702,7 +1715,7 @@ main {
 
         // media query section résumé
         @include mquery.landscape { 
-            padding: 60px 50px;
+            padding: 60px 60px;
         }
 
         // media query section résumé

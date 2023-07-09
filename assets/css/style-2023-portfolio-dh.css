@@ -1034,17 +1034,23 @@ main {
   border-radius: 20px 20px 0px 0px;
   transition: transform 300ms ease, box-shadow 400ms ease-out;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Sommaire {
     bottom: auto;
-    top: 140px;
-    left: 20px;
+    top: 100px;
+    left: 10px;
     transform: translate(0, 0);
     width: -moz-fit-content;
     width: fit-content;
     border-radius: 20px;
     background: rgba(25, 5, 23, 0.8);
     box-shadow: none;
+  }
+}
+@media (min-width: 992px) {
+  #Sommaire {
+    top: 140px;
+    left: 20px;
   }
 }
 @media (min-width: 2400px) {
@@ -1062,7 +1068,7 @@ main {
   border-radius: 20px 20px 0 0;
   transition: background-color 400ms ease-out;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Sommaire #Sommaire_top_bar_mobile {
     display: none;
   }
@@ -1099,7 +1105,7 @@ main {
   justify-content: start;
   align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Sommaire #Sommaire_top_bar_desktop {
     display: flex;
   }
@@ -1155,10 +1161,18 @@ main {
   padding: 12px 20px 40px 20px;
   gap: 6px;
   transition: background-color 400ms ease-out;
+  max-height: 90vh;
+  overflow: auto;
 }
-@media (min-width: 992px) {
+@media (min-width: 500px) {
+  #Sommaire #Sommaire_link_wrapper {
+    padding: 12px 40px 40px 40px;
+  }
+}
+@media (min-width: 768px) {
   #Sommaire #Sommaire_link_wrapper {
     display: none;
+    max-height: 100%;
   }
 }
 #Sommaire #Sommaire_link_wrapper .som-link {
@@ -1177,7 +1191,7 @@ main {
 #Sommaire #Sommaire_link_wrapper .som-link.current-link {
   color: #FF6666 !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Sommaire #Sommaire_link_wrapper .som-link {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -1200,7 +1214,7 @@ main {
 #Sommaire.show-sommaire #Sommaire_top_bar_mobile .top-mob-sep {
   opacity: 1;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Sommaire.show-sommaire {
     width: 330px;
   }
@@ -1262,7 +1276,7 @@ main {
 #Sommaire.eyecatch-anim #Sommaire_top_bar_mobile {
   animation: eyecatchmobile 1s ease-out infinite;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Sommaire.eyecatch-anim {
     box-shadow: none;
     animation: eyecatchdesk 1s ease-out infinite;
@@ -1282,7 +1296,7 @@ main {
 #Overlay_sommaire.show-overlay {
   display: block;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #Overlay_sommaire.show-overlay {
     display: none;
   }
@@ -1291,7 +1305,7 @@ main {
 .no-scroll {
   overflow: hidden;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .no-scroll {
     overflow: auto;
   }
@@ -2300,7 +2314,7 @@ main {
 }
 @media (min-width: 768px) {
   #Resume_projet .module-resume {
-    padding: 60px 50px;
+    padding: 60px 60px;
   }
 }
 @media (min-width: 992px) {
