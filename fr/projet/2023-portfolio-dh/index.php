@@ -44,11 +44,11 @@
                                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                                 <div class="bloc-texte">
-                                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets auprès de collaborateurs, d’amis ou de futurs recruteurs.</p>
+                                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets avec mes collaborateurs, mes amis ou de futurs recruteurs.</p>
 
-                                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre afin de réaliser ce site.</p>
+                                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre pour réaliser ce site.</p>
 
-                                    <p>Cette page retrace les différentes étapes du processus de création sous la forme d’une étude de cas.</p>
+                                    <p>Cette page retrace les différentes étapes de ce processus de création au travers d'un format d'étude de cas.</p>
                                 </div>
                             </div>
 
@@ -73,7 +73,7 @@
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
-                                    <p>Darius Hollard (moi-même)</p>
+                                    <p>Projet personnel</p>
                                 </span>
                             </div>
 
@@ -107,7 +107,7 @@
                                 </video>
                             </div>
 
-                            <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, scrollez pour voir son processus de création</figcaption>
+                            <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, continuez la lecture de cette page pour découvrir son processus de création</figcaption>
 
                         </figure>
 
@@ -135,13 +135,13 @@
                     <div class="section-colonne demi-col">
 
                         <div class="bloc-texte">
-                            <p>J’ai débuté la création de ce site pour me permettre d’afficher mes projets et mon parcours sur internet.</p>
+                            <p>J’ai débuté la création de ce site pour rendre accessibles mes projets et mon parcours sur internet.</p>
 
-                            <p>Son rôle principal est de me permettre de partager ce contenu rapidement avec n’importe qui.</p>
+                            <p>Son but principal est de me permettre de partager mon contenu rapidement avec quelqu'un.</p>
 
-                            <p>Le site portfolio terminé devra remplir le rôle d’un support de présentation esthétique et soigné.</p>
+                            <p>Une fois achevé, mon site portfolio devra remplir le rôle d’un support de présentation esthétique et soigné.</p>
 
-                            <p>Il servira aussi d’exemple concret de mon savoir-faire mis en application.</p>
+                            <p>Il servira aussi d’exemple concret de mon savoir-faire mis en œuvre.</p>
                         </div>
 
                     </div>
@@ -174,7 +174,7 @@
 
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
-                        <p class="phrase-forte">J’ai commencé par évaluer l’ampleur du projet et quelle approche choisir.</p>
+                        <p class="phrase-forte">J’ai commencé par évaluer l’ampleur du projet et pour quelle approche opter.</p>
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -199,7 +199,7 @@
                         <ul class="liste-puce-projet compare-list">
                             <li>Formats et règles imposés par la plateforme tierce (Behance, Instagram...)</li>
                             <li>Fiabilité incertaine dans le temps</li>
-                            <li>Portée aléatoire, accès pas toujours garanti sans compte ou application</li>
+                            <li>Référencement aléatoire, accès sans compte ou application parfois impossible</li>
                         </ul>
                     </div>
 
@@ -210,7 +210,7 @@
                         </div>
                         <ul class="liste-puce-projet compare-list">
                             <li>Design totalement libre et donc plus créatif et unique</li>
-                            <li>Permet de construire son image de marque à travers l’identité visuelle</li>
+                            <li>Permet de construire son image de marque à travers une identité visuelle</li>
                             <li>Une expérience utilisateur sur-mesure</li>
                         </ul>
                     </div>
@@ -235,7 +235,7 @@
                 <div class="section-ligne">
 
                     <div class="full-col">
-                        <p id="Conclusion_sec_processus">Après analyse, un site conçu et codé sur-mesure combiné aux réseaux sociaux, m’a semblé <span class="focus-color">plus complexe mais nettement plus efficace.</span></p>
+                        <p id="Conclusion_sec_processus">Après analyse, un site conçu et codé sur-mesure combiné aux réseaux sociaux, m’a semblé <span class="focus-color">plus ambitieux mais nettement plus efficace.</span></p>
                     </div>
 
                 </div>
@@ -332,7 +332,7 @@
 
                                 <div class="post-it-bloc">
                                     <div class="post-it-header"></div>
-                                    <p class="post-it-text">Personnaliser la page 404 et autres erreurs</p>
+                                    <p class="post-it-text">Personnaliser la page 404 et autres messages</p>
                                 </div>
 
                                 <div class="post-it-bloc">
@@ -382,15 +382,15 @@
 
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
-                        <p class="phrase-forte">J’ai choisi d’évoquer une ambiance moderne et raffinée au travers de la direction artistique.</p>
+                        <p class="phrase-forte">J’ai choisi d’évoquer une ambiance moderne et élégante au travers de la direction artistique.</p>
                     </div>
 
                     <div class="section-colonne demi-col">
 
                         <div class="bloc-texte">
-                            <p>Pour les couleurs, j’ai choisi un duo rouge clair et vert turquoise, associés à un gris anthracite qui recouvre l’ensemble des pages.</p>
+                            <p>Pour les couleurs de l'identité, j’ai sélectionné un duo rouge clair et vert turquoise, associé à un gris anthracite qui habille l’ensemble des pages.</p>
 
-                            <p>Pour les textes, j’ai testé plusieurs combinaisons avant d’opter pour deux typographies sans-serif rondes et élégantes.</p>
+                            <p>Pour les textes du site, j’ai testé plusieurs combinaisons avant d’opter pour deux typographies sans-serif rondes et élégantes.</p>
 
                             <p>Afin d’apporter une touche de caractère, j’ai aussi inclus une typo plus traditionnelle, réservée aux gros titres.</p>
                         </div>
@@ -636,7 +636,7 @@
 
                             <p>Je souhaite toutefois utiliser cette page en tant qu’archive numérique de mon parcours sur le long terme.</p>
 
-                            <p>Pour réconcilier ces deux réalités, l’utilisateur peut filtrer les projets sur plusieurs critères. Par défaut, la page affichera les dernières années uniquement.</p>
+                            <p>Pour réconcilier ces deux réalités, il sera possible de filtrer les projets sur plusieurs critères. Par défaut, la page affichera les dernières années uniquement.</p>
 
                         </div>
 
@@ -717,7 +717,7 @@
                             <ul class="liste-puce-projet">
                                 <li>Une lecture rapide sans ouvrir le module, qui résume les points clés de la période en question.</li>
 
-                                <li>Une lecture plus détaillée en appuyant sur “+ en savoir plus”, grâce au texte complémentaire placé à l’intérieur du module.</li>
+                                <li>Une lecture plus détaillée en appuyant sur “en savoir plus”, grâce au texte complémentaire placé à l’intérieur du module.</li>
                             </ul>
 
                         </div>
@@ -829,7 +829,7 @@
                         <div class="bloc-texte">
                             <p>Une fois la maquette du site finalisée, j’ai commencé à rédiger le code source de mon portfolio.</p>
 
-                            <p>N’ayant pas eu recours à un CMS ou à un template et à peu de bibliothèques, j’ai principalement codé de zéro sur VS Code.</p>
+                            <p>N’ayant pas eu recours à un CMS ou à un template, j’ai principalement codé de zéro sur Visual Studio Code.</p>
                         </div>
 
                     </div>
@@ -844,11 +844,11 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-texte">
-                            <p>J’ai préféré le SCSS plutôt que du CSS basique pour garder mon code organisé et facile à entretenir. Cela m’a permis également d’optimiser le nombre de requêtes envoyées au serveur.</p>
+                            <p>J’ai écrire du SCSS plutôt que du CSS basique, pour garder mon code organisé et facile à entretenir. Cela m’a permis également d’optimiser le nombre de requêtes envoyées au serveur.</p>
 
-                            <p>J’ai utilisé JavaScript, JQuery et PHP pour importer mon code de façon modulable et réagir aux interactions de l’utilisateur (notamment sur des animations et pour le formulaire de contact).</p>
+                            <p>J’ai utilisé JavaScript, JQuery et PHP pour importer mon code de façon modulaire et réagir aux actions de l’utilisateur (notamment sur des éléments intéractifs et pour le formulaire de contact).</p>
 
-                            <p>Les besoins de la V1 du site étant simples, j’ai choisi des langages simples que je maîtrise. Faire appel à des frameworks lourds pour utiliser 5% de leurs capacités m’a paru contre-productif.</p>
+                            <p>Les besoins de la V1.0 du site étant simples, j’ai limité le nombre de langages et de bibliothèques utilisés. Inclure des frameworks lourds pour appeler 5% de leurs capacités m’a paru contre-productif.</p>
                         </div>
                     </div>
 
@@ -897,7 +897,7 @@
                         <div class="bloc-texte">
                             <p>Je souhaite pouvoir entretenir et améliorer mon site portfolio sur le long terme.</p>
 
-                            <p>J’ai donc utilisé Git pour garder en mémoire un historique détaillé de mes avancées sur ce projet et créer du code durable.</p>
+                            <p>C'est pourquoi j'ai eu recours à Git pour garder en mémoire un historique détaillé de mes avancées sur ce projet et créer du code durable.</p>
 
                             <p>Cette démarche me permet aussi de rendre mon code public sur GitHub, pour valoriser davantage mes capacités de développeur front-end.</p>
                         </div>
@@ -985,9 +985,9 @@
 
                             <p>Le fait d’en apprendre plus sur l’auteur d’un portfolio rend l’expérience plus personnelle et mémorable selon moi.</p>
 
-                            <p>L’animation appliquée sur cet élément le rend plus dynamique et invite à visiter la page “mon parcours”.</p>
+                            <p>L’animation appliquée sur cet élément le rend plus dynamique et pousse à visiter la page “mon parcours”.</p>
 
-                            <p>Elle simule la locution d’une parole dans une bulle de texte minimaliste.</p>
+                            <p>Elle reproduit l'expression d’une parole dans une bulle de texte minimaliste.</p>
                         </div>
 
                     </div>
@@ -1087,7 +1087,7 @@
 
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
-                        <p class="phrase-forte">Mettre en valeur chaque projet pour donner envie d’en savoir plus.</p>
+                        <p class="phrase-forte">Mettre en valeur chaque projet pour donner l'envie d'explorer.</p>
 
                         <figure class="bloc-visuel anim-dev-showcase">
 
@@ -1103,9 +1103,9 @@
                     <div class="section-colonne demi-col">
 
                         <div class="bloc-texte">
-                            <p>Pour mettre en page les aperçus de mes projets, j’ai opté pour un système de grille adaptable au nombre croissant d’éléments.</p>
+                            <p>Pour mettre en page les aperçus de mes projets, j’ai opté pour un système de grille, facilement adaptable au nombre croissant d’éléments.</p>
 
-                            <p>Le visuel représentant chaque projet résume son identité graphique au travers d’une composition minimaliste.</p>
+                            <p>Le visuel représentant chaque projet évoque son identité graphique au travers d’une composition minimaliste.</p>
 
                             <p>L’animation de survol complète l’aperçu avec les informations clés du projet.</p>
 
@@ -1146,7 +1146,7 @@
                         <div class="bloc-texte">
                             <p>Le formulaire de préférences des cookies prend la forme d’un élément visuellement plaisant, qui ne perturbe pas la navigation.</p>
 
-                            <p>Trop de pages web sont devenues pénibles à visiter, à cause des demandes de consentement envahissantes et volontairement rendues trompeuses.</p>
+                            <p>Trop de pages web sont devenues pénibles à visiter, à cause des demandes de consentement envahissantes ou volontairement trompeuses.</p>
 
                             <p>Je compte maintenir à jour cet élément pour respecter les changements des normes RGPD, mais toujours en veillant au confort des utilisateurs.</p>
                         </div>
@@ -1226,8 +1226,8 @@
 
                             <ul class="liste-puce-projet">
                                 <li>Recueillir des retours d’utilisateurs pour identifier des pistes d’amélioration.</li>
-                                <li>Revenir sur mes idées non essentielles à la V1 laissées de côté.</li>
-                                <li>Continuer à peupler la page “mes projets” avec toutes mes créations passées et tenter de les ajouter au fur et à mesure à l’avenir.</li>
+                                <li>Revenir sur mes idées non essentielles à la V1.0 laissées de côté.</li>
+                                <li>Continuer à peupler la page “mes projets” avec toutes mes créations passées et tâcher de les ajouter au fur et à mesure à l’avenir.</li>
                             </ul>
                         </div>
                     </div>
@@ -1307,7 +1307,7 @@
 
                             <p>Cependant, j’ai aussi dû apprendre de nouvelles connaissances et surmonter des obstacles pour concrétiser ma vision du site.</p>
 
-                            <p>J’ai dû remettre à plus tard des idées trop ambitieuses. Certaines compétences me faisait défaut et les acquérir m’aurait coûté trop de temps.</p>
+                            <p>J’ai dû remettre à plus tard des idées trop ambitieuses. Certaines compétences me faisaient défaut et les acquérir m’aurait coûté trop de temps.</p>
                         </div>
                     </div>
                 </div>
