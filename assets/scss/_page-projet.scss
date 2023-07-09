@@ -74,21 +74,30 @@ main {
         background: var(--fond-titre-projet);
         transition: font-size 800ms ease, transform 800ms ease;
 
-        // media query conteneur paragraphes
+        // media query #Titre_page
         @include mquery.laptop {   
             font-size: 58px;
             transition: font-size 500ms ease, transform 500ms ease;
         }
 
+        // media query #Titre_page
+        @include mquery.tv {   
+            font-size: 90px;
+        }
+
         &.header-titre-scrolled {
             transform: translateY(110px);
 
-            // media query conteneur paragraphes
+            // media query #Titre_page
             @include mquery.laptop { 
                 transform: translateY(80px);  
                 font-size: 42px;
             }
-            
+
+            // media query #Titre_page
+            @include mquery.tv {   
+                font-size: 60px;
+            }
         }
     }
 

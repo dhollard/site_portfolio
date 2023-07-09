@@ -943,6 +943,11 @@ main {
     transition: font-size 500ms ease, transform 500ms ease;
   }
 }
+@media (min-width: 2400px) {
+  #Header_projet #Titre_page {
+    font-size: 90px;
+  }
+}
 #Header_projet #Titre_page.header-titre-scrolled {
   transform: translateY(110px);
 }
@@ -950,6 +955,11 @@ main {
   #Header_projet #Titre_page.header-titre-scrolled {
     transform: translateY(80px);
     font-size: 42px;
+  }
+}
+@media (min-width: 2400px) {
+  #Header_projet #Titre_page.header-titre-scrolled {
+    font-size: 60px;
   }
 }
 #Header_projet #Scroll_btn_header {
