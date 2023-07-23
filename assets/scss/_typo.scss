@@ -8,7 +8,7 @@
   src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"),
         url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 400 900;
-  font-display: swap;
+  font-display: block;
 }
 
 //Playfair (italique variable)
@@ -18,7 +18,7 @@
        url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 400 900;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Playfair fallback anciens navigateurs
@@ -30,7 +30,7 @@
     src: url("/assets/font/PlayfairDisplay-Regular.ttf");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
   }
 
   //Playfair (bold)
@@ -39,7 +39,7 @@
     src: url("/assets/font/PlayfairDisplay-Bold.ttf");
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
+    font-display: block;
   }
 
 }
@@ -51,7 +51,7 @@
   src: url("/assets/font/AlegreyaSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (thin italic)
@@ -60,7 +60,7 @@
   src: url("/assets/font/AlegreyaSans-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (light)
@@ -69,7 +69,7 @@
   src: url("/assets/font/AlegreyaSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (light italic)
@@ -78,7 +78,7 @@
   src: url("/assets/font/AlegreyaSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (regular)
@@ -87,7 +87,7 @@
   src: url("/assets/font/AlegreyaSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (regular italic)
@@ -96,7 +96,7 @@
   src: url("/assets/font/AlegreyaSans-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (medium)
@@ -105,7 +105,7 @@
   src: url("/assets/font/AlegreyaSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (medium italic)
@@ -114,7 +114,7 @@
   src: url("/assets/font/AlegreyaSans-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (bold)
@@ -123,7 +123,7 @@
   src: url("/assets/font/AlegreyaSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (bold italic)
@@ -132,7 +132,7 @@
   src: url("/assets/font/AlegreyaSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (extrabold)
@@ -141,7 +141,7 @@
   src: url("/assets/font/AlegreyaSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (extrabold italic)
@@ -150,7 +150,7 @@
   src: url("/assets/font/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
   font-weight: 800;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (black)
@@ -159,7 +159,7 @@
   src: url("/assets/font/AlegreyaSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 //Alegreya Sans (black italic)
@@ -168,7 +168,7 @@
   src: url("/assets/font/AlegreyaSans-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 
@@ -178,7 +178,7 @@
   src: url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype"),
         url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 200 800;
-  font-display: swap;
+  font-display: block;
 }
 
 //Assistant fallback anciens navigateurs
@@ -189,7 +189,7 @@
     font-family: "Assistant";
     src: url("/assets/font/Assistant-Regular.ttf");
     font-weight: 400;
-    font-display: swap;
+    font-display: block;
   }
 
   //Assistant (bold)
@@ -197,18 +197,10 @@
     font-family: "Assistant";
     src: url("/assets/font/Assistant-Bold.ttf");
     font-weight: 700;
-    font-display: swap;
+    font-display: block;
   }
 
 }
-
-//Noto Color Emoji (emoji 15.0)
-/*@font-face {
-  font-family: "Noto-Emoji";
-  src: url("/assets/font/NotoColorEmoji-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-}*/
 
 
 // --- MIXINGS DE TYPOGRAPHIE ---
