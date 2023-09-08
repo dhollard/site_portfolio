@@ -54,10 +54,10 @@
 
                         <div class="module-content">
                             <h3 class="mod-title">Études de Communication et de Design</h3>
-                            <p class="mod-txt">Mes deux premiers diplômes d’études supérieures m’ont permis d’apprendre les compétences théoriques et pratiques pour devenir un designer graphique professionnel.</p>
+                            <p class="mod-txt">Mes deux premiers diplômes d’études supérieures m’ont apportés les compétences théoriques et pratiques pour devenir un designer graphique professionnel.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Lors de mon BTS Communication, j'ai appris le savoir théorique des méthodes passées et actuelles pour communiquer auprès d'une audience ciblée.</p>
+                                <p class="mod-txt">Lors de mon BTS Communication, j'ai assimilé le savoir théorique des méthodes passées et actuelles pour communiquer auprès d'une audience ciblée.</p>
                                 <p class="mod-txt">Mon diplôme de Designer m’a apporté les compétences techniques nécessaires à la création de contenus visuels. Quelques exemples :</p>
                                 <ul>
                                     <li>Réalisation de sites web (HTML / CSS)</li>
@@ -92,13 +92,13 @@
 
                         <div class="module-content">
                             <h3 class="mod-title">Stages d'études</h3>
-                            <p class="mod-txt">En parallèle de mes diplômes, j’ai eu l’occasion de réaliser plusieurs stages en entreprise.</p>
-                            <p class="mod-txt">Lors de ces stages, j’ai pu mettre en pratique mes acquis et notamment faire mes premiers pas en rédaction de contenu et en gestion de site internet.</p>
+                            <p class="mod-txt">En parallèle de mes diplômes, j’ai effectué plusieurs stages en entreprise.</p>
+                            <p class="mod-txt">Grâce à ces expériences concrètes, j’ai pu mettre en pratique mes acquis et notamment faire mes premiers pas en rédaction de contenus et en gestion de sites internet.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Pendant mon BTS Communication, j’ai pu rédiger de nombreux articles pour la partie blog du site Meilleur Mobile.</p>
+                                <p class="mod-txt">Pendant mon BTS Communication, j’ai rédigé de nombreux articles pour la partie blog du site Meilleur Mobile.</p>
                                 <p class="mod-txt">Cette activité m’a sensibilisé aux problématiques du copywriting (ton, phrases courtes, référencement...).</p>
-                                <p class="mod-txt">Lors de mon diplôme de Designer Graphique, j’ai réalisé plusieurs missions lors d'un stage dans l’entreprise Papier Fleur :</p>
+                                <p class="mod-txt">Durant mon diplôme de Designer Graphique, j’ai accompli plusieurs missions lors d'un stage dans l’entreprise Papier Fleur :</p>
                                 <ul>
                                     <li>Amélioration de la structure de leur e-commerce</li>
                                     <li>Mockups et illustrations pour fiches produits</li>
@@ -132,12 +132,12 @@
 
                         <div class="module-content">
                             <h3 class="mod-title">Études de Motion Design</h3>
-                            <p class="mod-txt">Suite à mes deux premiers diplômes, j'ai obtenu une Licence Professionnelle de Motion Designer, dans le but d'apporter une nouvelle dimension à mes compétences.</p>
-                            <p class="mod-txt">J'y ai appris l’animation 2D par interpolation, ou comment donner vie aux créations numériques et les mettre au service d'un story telling.</p>
+                            <p class="mod-txt">Après mes deux premiers diplômes, j'ai obtenu une Licence Professionnelle de Motion Designer, dans le but d'apporter une nouvelle dimension à mes compétences.</p>
+                            <p class="mod-txt">J'ai ainsi appris l’animation 2D par interpolation, ou comment donner vie aux créations numériques et les mettre au service d'un story telling.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de solidifier mes compétences et de découvrir un domaine passionnant.</p>
-                                <p class="mod-txt">Le Motion Design était pour moi la pièce manquante du puzzle entre le design graphique et l'univers du développement web.</p>
+                                <p class="mod-txt">Major de promotion de ma classe, cette année m’a permis de d'accroître mes compétences et de découvrir un domaine passionnant.</p>
+                                <p class="mod-txt">Le Motion Design est aussi un moyen pour moi de connecter le design graphique et l'univers du développement web.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -166,12 +166,12 @@
 
                         <div class="module-content">
                             <h3 class="mod-title">Proxis Développement (alternance)</h3>
-                            <p class="mod-txt">J’ai travaillé une année en alternance au sein du groupe industriel Proxis Développement dans le cadre de mon diplôme de Motion Designer.</p>
+                            <p class="mod-txt">J’ai travaillé une année en alternance, au sein du groupe industriel Proxis Développement, dans le cadre de mon diplôme de Motion Designer.</p>
                             <p class="mod-txt">J’étais chargé de refondre ou créer de zéro les sites internet du groupe, ainsi que des visuels et animations.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">Mes missions furent variées et nombreuses lors de cette année, ce qui m'a permis d'apprendre et de progresser.</p>
-                                <p class="mod-txt">Travaillant avec beaucoup d’autonomie, en parallèle de mon apprentissage scolaire, cette expérience m’a permis de me dépasser et confirmer mes capacités dans un cadre professionnel.</p>
+                                <p class="mod-txt">Mes missions furent variées et nombreuses lors de cette année-là, ce qui m'a permis de beaucoup apprendre et de progresser.</p>
+                                <p class="mod-txt">Travaillant avec beaucoup d’autonomie, cette expérience m’a permis de me dépasser et confirmer mes capacités dans un cadre professionnel.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">
@@ -204,9 +204,9 @@
                             <p class="mod-txt">Recruté initialement pour la création de sites web, j’ai rapidement pu exercer mes autres compétences, en prenant en charge la communication visuelle et la gestion de projets.</p>
                             <div class="mod-toggled">
                                 <span class="mod-separator"></span>
-                                <p class="mod-txt">L'ampleur des missions qui m'ont été confiées a nécessité une approche de l’UI/UX plus poussée que mes travaux passées.</p>
+                                <p class="mod-txt">L'ampleur des missions qui m'ont été confiées a nécessité une approche de l’UI/UX plus poussée que mes travaux précédents.</p>
                                 <p class="mod-txt">Lors de ces missions, j'ai conçu des architectures web complexes, comme des tableaux de bord et des interfaces utilisateur accessibles et modernes.</p>
-                                <p class="mod-txt">J'ai également amélioré la conduite de projets de développements, en y introduisant l'usage de GIT. Ainsi qu'en instaurant des "stand-up meetings" hebdomadaires et l'usage d'outils de gestion dédiés.</p>
+                                <p class="mod-txt">J'ai également amélioré la conduite de projets de développements en proposant des outils de versioning, des "stand-up meetings" hebdomadaires et l'usage d'outils de gestion dédiés.</p>
                             </div>
                         </div>
                         <button class="mod-bottom-bar">

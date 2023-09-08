@@ -1822,8 +1822,6 @@ main {
       transform: scale(1) rotate(0deg);
     }
   }
-}
-@media (max-width: 768px) {
   @keyframes double-tap-gesture-desk {
     0%, 20% {
       transform: scale(1);
@@ -1844,8 +1842,6 @@ main {
       transform: scale(1);
     }
   }
-}
-@media (max-width: 768px) {
   .prevent-scrolling .cadre-instruction-tag .inst-tag-txt {
     font-size: 22px;
   }
