@@ -7,5 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
+# Rediriger domaine www vers non-www et forcer le HTTPS
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
