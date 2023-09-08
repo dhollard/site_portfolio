@@ -181,7 +181,7 @@
                         <div class="bloc-texte">
                             <p>La première étape a été de choisir entre différents moyens de mettre en avant mon parcours et mes projets.</p>
 
-                            <p>Réaliser un site portfolio bâti de zéro ? Avoir recourt à un template préfabriqué ? Miser uniquement sur les réseaux sociaux ?</p>
+                            <p>Réaliser un site portfolio bâti de zéro ? Avoir recours à un template préfabriqué ? Miser uniquement sur les réseaux sociaux ?</p>
                         </div>
                     </div>
                 </div>
@@ -513,7 +513,7 @@
 
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
-                        <p class="phrase-forte">Réaliser une maquette permet de tester ses idées rapidement et simplifier la phase de développement.</p>
+                        <p class="phrase-forte">Réaliser une maquette permet de tester ses idées rapidement et de simplifier la phase de développement.</p>
                     </div>
 
                     <div class="section-colonne demi-col">
@@ -538,7 +538,7 @@
 
                 <div class="section-ligne">
                     <div class="section-colonne full-col">
-                        <h3 class="titre-secondaire-section">Sélection de pages issus de la maquette</h3>
+                        <h3 class="titre-secondaire-section">Sélection de pages issues de la maquette</h3>
                         <span class="sep-ligne"></span>
                     </div>
                 </div>
@@ -844,9 +844,9 @@
                 <div class="section-ligne">
                     <div class="section-colonne demi-col">
                         <div class="bloc-texte">
-                            <p>J’ai écrire du SCSS plutôt que du CSS basique, pour garder mon code organisé et facile à entretenir. Cela m’a permis également d’optimiser le nombre de requêtes envoyées au serveur.</p>
+                            <p>J’ai rédigé du code SCSS plutôt que du simple CSS, pour garder mon code organisé et facile à entretenir. Cela m’a permis également d’optimiser le nombre de requêtes envoyées au serveur.</p>
 
-                            <p>J’ai utilisé JavaScript, JQuery et PHP pour importer mon code de façon modulaire et réagir aux actions de l’utilisateur (notamment sur des éléments intéractifs et pour le formulaire de contact).</p>
+                            <p>J’ai utilisé JavaScript, JQuery et PHP pour importer mon code de façon modulaire et réagir aux actions de l’utilisateur (notamment sur des éléments interactifs et pour le formulaire de contact).</p>
 
                             <p>Les besoins de la V1.0 du site étant simples, j’ai limité le nombre de langages et de bibliothèques utilisés. Inclure des frameworks lourds pour appeler 5% de leurs capacités m’a paru contre-productif.</p>
                         </div>
@@ -937,7 +937,7 @@
                     <div class="section-colonne demi-col">
 
                         <div class="bloc-texte">
-                            <p>Au chargement de la page d’accueil, l’utilisateur voit apparaitre trois lignes de textes.</p>
+                            <p>Au chargement de la page d’accueil, l’utilisateur voit apparaître trois lignes de textes.</p>
 
                             <p>Elles mettent chacune en avant l’un de mes domaines d’expertise à l’aide d’une petite animation.</p>
 
