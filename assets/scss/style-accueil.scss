@@ -621,7 +621,7 @@
 #sec-home-02 {
     position: relative;
     background: color.$ambiance-100;
-    padding: 110px 20px 40px 20px;
+    padding: 110px 30px 40px 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -632,31 +632,68 @@
         max-width: 850px;
         z-index: 2;
 
-        // titre
-        .sec-title {
-            @include typo.title($color:#ffffff);
-            font-size: 36px;
-            font-weight: 800;
+        // Contient le titre de section et le paragraphe de texte d'introduction au site
+        .welcome-bloc {
             margin: 0 auto 40px auto;
-            text-align: center;
-            width: -moz-fit-content;
-            width: fit-content;
 
-            // media query sec-title
+            // media query .welcome-bloc
             @include mquery.laptop { 
-                font-size: 58px;
                 margin: 0 auto 50px auto;
             }
+            
+            // titre section
+            .sec-title {
+                @include typo.title($color:#ffffff);
+                font-size: 36px;
+                font-weight: 800;
+                text-align: center;
+                width: -moz-fit-content;
+                width: fit-content;
+                margin: 0 auto 16px auto;
 
-            // media query sec-title
-            @include mquery.desktop-xl { 
-                font-size: 72px;
-        
+                // media query sec-title
+                @include mquery.laptop { 
+                    font-size: 58px;
+                    margin: 0 auto 10px auto;
+                }
+
+                // media query sec-title
+                @include mquery.desktop-xl { 
+                    font-size: 72px;
+                    margin: 0 0 10px 0;
+                    text-align: left;
+                }
+
+                span {
+                    color: color.$primary-100;
+                }
             }
 
-            span {
-                color: color.$primary-100;
+            // Paragraphe de texte d'introduction au site
+            .welcome-txt {
+                @include typo.text($color:#ffffff);
+                font-size: 17px;
+                margin: 0 auto 10px auto;
+                width: 100%;
+                max-width: 560px;
+
+                // media query .welcome-txt
+                @include mquery.landscape { 
+                    max-width: 680px;
+                }
+
+                // media query .welcome-txt
+                @include mquery.laptop { 
+                    font-size: 19px;
+                    margin: 0 auto 10px auto;
+                }
+
+                // media query .welcome-txt
+                @include mquery.desktop-xl { 
+                    max-width: 100%;
+                }
             }
+
         }
 
         //conteneur boutons

@@ -1437,7 +1437,7 @@ footer .footer-container #footer-col-2 p span {
 #sec-home-02 {
   position: relative;
   background: #342B33;
-  padding: 110px 20px 40px 20px;
+  padding: 110px 30px 40px 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1448,31 +1448,67 @@ footer .footer-container #footer-col-2 p span {
   max-width: 850px;
   z-index: 2;
 }
-#sec-home-02 .mid-container .sec-title {
+#sec-home-02 .mid-container .welcome-bloc {
+  margin: 0 auto 40px auto;
+}
+@media (min-width: 992px) {
+  #sec-home-02 .mid-container .welcome-bloc {
+    margin: 0 auto 50px auto;
+  }
+}
+#sec-home-02 .mid-container .welcome-bloc .sec-title {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   font-size: 36px;
   font-weight: 800;
-  margin: 0 auto 40px auto;
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 auto 16px auto;
 }
 @media (min-width: 992px) {
-  #sec-home-02 .mid-container .sec-title {
+  #sec-home-02 .mid-container .welcome-bloc .sec-title {
     font-size: 58px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 10px auto;
   }
 }
 @media (min-width: 1600px) {
-  #sec-home-02 .mid-container .sec-title {
+  #sec-home-02 .mid-container .welcome-bloc .sec-title {
     font-size: 72px;
+    margin: 0 0 10px 0;
+    text-align: left;
   }
 }
-#sec-home-02 .mid-container .sec-title span {
+#sec-home-02 .mid-container .welcome-bloc .sec-title span {
   color: #FF6666;
+}
+#sec-home-02 .mid-container .welcome-bloc .welcome-txt {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 17px;
+  margin: 0 auto 10px auto;
+  width: 100%;
+  max-width: 560px;
+}
+@media (min-width: 768px) {
+  #sec-home-02 .mid-container .welcome-bloc .welcome-txt {
+    max-width: 680px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-02 .mid-container .welcome-bloc .welcome-txt {
+    font-size: 19px;
+    margin: 0 auto 10px auto;
+  }
+}
+@media (min-width: 1600px) {
+  #sec-home-02 .mid-container .welcome-bloc .welcome-txt {
+    max-width: 100%;
+  }
 }
 #sec-home-02 .mid-container .btn-box {
   display: flex;

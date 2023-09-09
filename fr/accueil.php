@@ -84,8 +84,20 @@
 
                 <div class="mid-container">
 
-                    <div>
+                    <div class="welcome-bloc">
                         <h2 class="sec-title">Bienvenue sur mon <span>portfolio.</span></h2>
+
+                        <p class="welcome-txt">Je m'appelle Darius Hollard, j'ai 
+                        <?php
+                        // Calcul de mon âge automatiquement
+                        $anniversaire = 1995;
+                        $anActuel = date("Y");
+                        $age = $anActuel - $anniversaire;
+                        echo $age;
+                        ?>
+                         ans et j'espère que vous passerez un bon moment en consultant ce site !</p>
+
+                        <p class="welcome-txt">Je suis un designer polyvalent qui imagine et code des projets web. Je sais aussi créer des visuels, des animations 2D et faire pousser des tomates (on sait jamais, ça peut servir 👀🍅).</p>
                     </div>
 
                     <div class="btn-box">
