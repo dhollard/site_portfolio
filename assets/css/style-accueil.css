@@ -177,6 +177,10 @@ main {
   transition: none !important;
 }
 
+.stop-transitions {
+  transition: none !important;
+}
+
 .d-none {
   display: none;
 }
@@ -873,15 +877,20 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-home-01 {
   background: #342B33;
-  padding: 110px 20px 40px 20px;
+  padding: 100px 20px 40px 20px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px 100px;
+  align-items: center;
+  gap: 0px;
 }
 @media (min-width: 992px) {
   #sec-home-01 {
     padding: 125px 20px 40px 20px;
+    flex-direction: row;
+    align-items: start;
+    gap: 50px 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -903,6 +912,7 @@ footer .footer-container #footer-col-2 p span {
 #sec-home-01 .col-left {
   display: block;
   width: fit-content;
+  order: 2;
 }
 @media (max-width: 400px) {
   #sec-home-01 .col-left {
@@ -912,6 +922,7 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 992px) {
   #sec-home-01 .col-left {
     padding-top: 40px;
+    order: 1;
   }
 }
 @media (min-width: 1200px) {
@@ -930,7 +941,7 @@ footer .footer-container #footer-col-2 p span {
   font-weight: 700;
   color: #FF6666;
   font-size: 50px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 12px auto;
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
@@ -940,15 +951,9 @@ footer .footer-container #footer-col-2 p span {
     font-size: 12vw;
   }
 }
-@media (min-width: 500px) {
-  #sec-home-01 .col-left .sec-title {
-    font-size: 64px;
-  }
-}
 @media (min-width: 768px) {
   #sec-home-01 .col-left .sec-title {
-    font-size: 78px;
-    margin: 0 auto 30px auto;
+    font-size: 56px;
   }
 }
 @media (min-width: 992px) {
@@ -972,7 +977,7 @@ footer .footer-container #footer-col-2 p span {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 18px auto;
+  margin: 0 auto 14px auto;
   text-align: center;
   transition: transform 0.3s ease-out;
 }
@@ -1021,14 +1026,19 @@ footer .footer-container #footer-col-2 p span {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 36px;
   text-decoration: none;
   display: block;
   opacity: 1;
 }
 @media (max-width: 400px) {
   #sec-home-01 .col-left #job-1, #sec-home-01 .col-left #job-2, #sec-home-01 .col-left #job-3 {
-    font-size: 10vw;
+    font-size: 9vw;
+  }
+}
+@media (min-width: 768px) {
+  #sec-home-01 .col-left #job-1, #sec-home-01 .col-left #job-2, #sec-home-01 .col-left #job-3 {
+    font-size: 40px;
   }
 }
 @media (min-width: 1600px) {
@@ -1093,20 +1103,32 @@ footer .footer-container #footer-col-2 p span {
   transition: color 0.2s ease;
 }
 #sec-home-01 .col-right {
-  display: none;
+  display: flex;
   width: fit-content;
+  order: 1;
 }
 @media (min-width: 992px) {
   #sec-home-01 .col-right {
-    display: flex;
+    order: 2;
   }
 }
 #sec-home-01 .col-right .portrait-content {
   width: 100%;
-  max-width: 360px;
+  max-width: 200px;
   margin: auto 0 auto auto;
   position: relative;
-  padding: 40px 0px;
+  padding: 0px;
+}
+@media (hover: none) {
+  #sec-home-01 .col-right .portrait-content {
+    pointer-events: none;
+  }
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right .portrait-content {
+    max-width: 360px;
+    padding: 40px 0px;
+  }
 }
 @media (min-width: 1600px) {
   #sec-home-01 .col-right .portrait-content {
@@ -1115,17 +1137,26 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-home-01 .col-right .portrait-content #square-1 {
   background: #261624;
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
   transform-origin: center;
   position: absolute;
-  transform: translate(-50%, 0);
-  left: 50%;
-  top: -20px;
+  left: -35px;
+  top: 50%;
+  transform: translate(0, -50%);
   -webkit-mask-image: url("/assets/mask/mask-losange.svg");
   mask-image: url("/assets/mask/mask-losange.svg");
   transition: transform 0.3s ease-out;
   pointer-events: none;
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right .portrait-content #square-1 {
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: -20px;
+  }
 }
 @media (min-width: 1600px) {
   #sec-home-01 .col-right .portrait-content #square-1 {
@@ -1135,17 +1166,27 @@ footer .footer-container #footer-col-2 p span {
 }
 #sec-home-01 .col-right .portrait-content #square-2 {
   background: #261624;
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
   transform-origin: center;
   position: absolute;
-  transform: translate(-50%, 0);
-  left: 50%;
-  bottom: -18px;
+  right: -35px;
+  top: 50%;
+  transform: translate(0, -50%);
   -webkit-mask-image: url("/assets/mask/mask-losange.svg");
   mask-image: url("/assets/mask/mask-losange.svg");
   transition: transform 0.3s ease-out;
   pointer-events: none;
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right .portrait-content #square-2 {
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: -18px;
+    top: auto;
+    width: 200px;
+    height: 200px;
+  }
 }
 @media (min-width: 1600px) {
   #sec-home-01 .col-right .portrait-content #square-2 {
@@ -1165,19 +1206,36 @@ footer .footer-container #footer-col-2 p span {
   transform: scale(1.03);
 }
 #sec-home-01 .col-right .portrait-content:hover #square-1 {
-  transform: translate(-44%, -8%);
+  transform: translate(-6%, -50%);
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right .portrait-content:hover #square-1 {
+    transform: translate(-44%, -8%);
+  }
 }
 #sec-home-01 .col-right .portrait-content:hover #square-2 {
-  transform: translate(-56%, 8%);
+  transform: translate(6%, -50%);
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right .portrait-content:hover #square-2 {
+    transform: translate(-56%, 8%);
+  }
 }
 #sec-home-01 .col-right .portrait-content #parcours-box {
   position: absolute;
-  left: -100px;
-  top: 4%;
+  left: -120px;
+  top: -14%;
   width: 230px;
   height: auto;
   pointer-events: none;
-  transform: scale(0.8);
+  transform: scale(0.6);
+}
+@media (min-width: 992px) {
+  #sec-home-01 .col-right .portrait-content #parcours-box {
+    left: -100px;
+    top: 4%;
+    transform: scale(0.8);
+  }
 }
 @media (min-width: 1600px) {
   #sec-home-01 .col-right .portrait-content #parcours-box {
@@ -1218,6 +1276,13 @@ footer .footer-container #footer-col-2 p span {
 #sec-home-01 .bottom-tab {
   width: 100%;
   display: flex;
+  order: 3;
+  margin-top: 25px;
+}
+@media (min-width: 992px) {
+  #sec-home-01 .bottom-tab {
+    margin-top: 0px;
+  }
 }
 #sec-home-01 .bottom-tab .scroll-down {
   position: relative;

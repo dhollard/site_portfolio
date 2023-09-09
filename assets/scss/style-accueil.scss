@@ -6,16 +6,20 @@
 // section 01
 #sec-home-01 {
     background: color.$ambiance-100;
-    padding: 110px 20px 40px 20px;
+    padding: 100px 20px 40px 20px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px 100px;
+    align-items: center;
+    gap: 0px;
 
     // media query #sec-home-01
     @include mquery.laptop { 
         padding: 125px 20px 40px 20px;
-        
+        flex-direction: row;
+        align-items: start;
+        gap: 50px 100px;
     }
 
     // media query #sec-home-01
@@ -38,6 +42,7 @@
     .col-left {
         display: block;
         width: fit-content;
+        order: 2;
 
             // media query
             @include mquery.phone {    
@@ -47,6 +52,7 @@
             // media query
             @include mquery.laptop {    
                 padding-top: 40px;
+                order: 1;
             }
 
             // media query
@@ -63,7 +69,7 @@
         .sec-title {
             @include typo.special-title($color:color.$primary-100);
             font-size: 50px;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 12px auto;
             text-align: center;
             width: -moz-fit-content;
             width: fit-content;
@@ -74,14 +80,8 @@
                 }
 
                 // media query
-                @include mquery.tablet {    
-                    font-size: 64px;
-                }
-
-                // media query
                 @include mquery.landscape {    
-                    font-size: 78px;
-                    margin: 0 auto 30px auto;
+                    font-size: 56px;
                 }
 
                 // media query
@@ -105,7 +105,7 @@
             position: relative;
             width: -moz-fit-content;
             width: fit-content;
-            margin: 0 auto 18px auto;
+            margin: 0 auto 14px auto;
             text-align: center;
             transition: transform 0.3s ease-out;
 
@@ -168,14 +168,19 @@
         // liens métiers
         #job-1, #job-2, #job-3 {
             @include typo.title($color:#ffffff);
-            font-size: 40px;
+            font-size: 36px;
             text-decoration: none;
             display: block;
             opacity: 1;
 
                 // media query
                 @include mquery.phone {    
-                    font-size: 10vw;
+                    font-size: 9vw;
+                }
+
+                // media query
+                @include mquery.landscape {    
+                    font-size: 40px;
                 }
 
                 // media query
@@ -255,30 +260,40 @@
 
     // conteneur photo "mon parcours"
     .col-right {
-        display: none;
+        display: flex;
         width: fit-content;
+        order: 1;
 
             // media query .col-right
             @include mquery.laptop {    
-                display: flex;
+                order: 2;
             }
 
             // media query .col-right
             @include mquery.desktop {    
-                //width: 50%;
             }
 
             // media query .col-right
             @include mquery.desktop-xl {    
-                //width: 35%;
             }
 
             .portrait-content {
                 width: 100%;
-                max-width: 360px;
+                max-width: 200px;
                 margin: auto 0 auto auto;
                 position: relative;
-                padding: 40px 0px;
+                padding: 0px;
+
+                // Bloquer toute interaction sur un appareil tactile
+                @media (hover: none) {
+                    pointer-events: none;
+                }
+
+                // media query .portrait-content
+                @include mquery.laptop {    
+                    max-width: 360px;
+                    padding: 40px 0px;
+                }
 
                 // media query .portrait-content
                 @include mquery.desktop-xl {    
@@ -287,17 +302,26 @@
 
                 #square-1 {
                     background: color.$ambiance-120;
-                    width: 200px;
-                    height: 200px;
+                    width: 125px;
+                    height: 125px;
                     transform-origin: center;
                     position: absolute;
-                    transform: translate(-50%, 0);
-                    left: 50%;
-                    top: -20px;
+                    left: -35px;
+                    top: 50%;
+                    transform: translate(0, -50%);
                     -webkit-mask-image: url("/assets/mask/mask-losange.svg");
                     mask-image: url("/assets/mask/mask-losange.svg");
                     transition: transform 0.3s ease-out;
                     pointer-events: none;
+
+                    // media query #square-1
+                    @include mquery.laptop {
+                        width: 200px;
+                        height: 200px;
+                        transform: translate(-50%, 0);
+                        left: 50%;
+                        top: -20px;
+                    }
 
                     // media query #square-1
                     @include mquery.desktop-xl {    
@@ -308,17 +332,27 @@
 
                 #square-2 {
                     background: color.$ambiance-120;
-                    width: 200px;
-                    height: 200px;
+                    width: 125px;
+                    height: 125px;
                     transform-origin: center;
                     position: absolute;
-                    transform: translate(-50%, 0);
-                    left: 50%;
-                    bottom: -18px;
+                    right: -35px;
+                    top: 50%;
+                    transform: translate(0, -50%);
                     -webkit-mask-image: url("/assets/mask/mask-losange.svg");
                     mask-image: url("/assets/mask/mask-losange.svg");
                     transition: transform 0.3s ease-out;
                     pointer-events: none;
+
+                    // media query #square-2
+                    @include mquery.laptop { 
+                        transform: translate(-50%, 0);
+                        left: 50%;
+                        bottom: -18px;
+                        top: auto;   
+                        width: 200px;
+                        height: 200px;
+                    }
 
                     // media query #square-2
                     @include mquery.desktop-xl {    
@@ -341,21 +375,36 @@
                 }
 
                 &:hover #square-1 {
-                    transform: translate(-44%, -8%);
+                    transform: translate(-6%, -50%);
+
+                    @include mquery.laptop { 
+                        transform: translate(-44%, -8%);
+                    }
                 }
 
                 &:hover #square-2 {
-                    transform: translate(-56%, 8%);
+                    transform: translate(6%, -50%);
+
+                    @include mquery.laptop { 
+                        transform: translate(-56%, 8%);
+                    }
                 }
 
                 #parcours-box {
                     position: absolute;
-                    left: -100px;
-                    top: 4%;
+                    left: -120px;
+                    top: -14%;
                     width: 230px;
                     height: auto;
                     pointer-events: none;
-                    transform: scale(0.8);
+                    transform: scale(0.6);
+
+                    // media query #parcours-box
+                    @include mquery.laptop { 
+                        left: -100px;
+                        top: 4%;
+                        transform: scale(0.8);
+                    }
 
                     // media query #parcours-box
                     @include mquery.desktop-xl {    
@@ -409,6 +458,13 @@
     .bottom-tab {
         width: 100%;
         display: flex;
+        order: 3;
+        margin-top: 25px;
+
+        // media query .bottom-tab
+        @include mquery.laptop { 
+            margin-top: 0px;
+        }
 
         .scroll-down {
             position: relative;

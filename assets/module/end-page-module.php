@@ -10,8 +10,7 @@
             /* footer */
             url('/assets/svg/ico-linkedin-primary.svg') url('/assets/svg/ico-instagram-primary.svg') url('/assets/svg/ico-github-primary.svg') url('/assets/svg/ico-copyto-primary.svg')
             /* pages projets */
-            url('/assets/svg/ico-sommaire-full-blanc.svg') url('/assets/svg/ico-fleche-primary100.svg') url('/assets/svg/ico-fleche-rotative-primary.svg') url('/assets/svg/ico-main-gesture-amb120.svg') url('/assets/svg/ico-souris-gesture-amb120.svg') url('/assets/svg/ico-endbloc-projet-amb20.svg')
-            ;
+            url('/assets/svg/ico-sommaire-full-blanc.svg') url('/assets/svg/ico-fleche-primary100.svg') url('/assets/svg/ico-fleche-rotative-primary.svg') url('/assets/svg/ico-main-gesture-amb120.svg') url('/assets/svg/ico-souris-gesture-amb120.svg') url('/assets/svg/ico-endbloc-projet-amb20.svg');
     }
 </style>
 
@@ -22,14 +21,43 @@
 </div>
 
 <!-- Retire la classe qui délaie les transitions au chargement après un délai -->
-<script>document.addEventListener("DOMContentLoaded", function () {
-    var elements = document.querySelectorAll(".wait-for-load");
-        elements.forEach(function (element) {
-            setTimeout(function () {
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.querySelectorAll(".wait-for-load");
+        elements.forEach(function(element) {
+            setTimeout(function() {
                 element.classList.remove("wait-for-load");
             }, 10);
         });
     });
+</script>
+
+<!-- Script pout bloquer les transitions CSS en cas de redimensionnement du navigateur sur les éléments qui possèdent la classe .no-resize-transition -->
+<script>
+    (function() {
+        let timer = 0;
+        window.addEventListener('resize', function() {
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+            } else {
+                // Ajoute la classe 'stop-transitions' aux éléments qui ont la classe 'no-resize-transition'
+                const elements = document.querySelectorAll('.no-resize-transition');
+                elements.forEach(function(element) {
+                    element.classList.add('stop-transitions');
+                });
+            }
+
+            timer = setTimeout(function() {
+                // Retire la classe 'stop-transitions' des éléments qui ont la classe 'no-resize-transition'
+                const elements = document.querySelectorAll('.no-resize-transition');
+                elements.forEach(function(element) {
+                    element.classList.remove('stop-transitions');
+                });
+                timer = null;
+            }, 25);
+        });
+    })();
 </script>
 
 <!-- Script interactions navbar -->

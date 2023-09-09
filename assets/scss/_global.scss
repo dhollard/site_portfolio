@@ -34,6 +34,16 @@ main {
     transition: none !important;
 }
 
+// Class de ciblage à placer sur les elements dont les transitions CSS pose problème au resize fenêtre
+.no-resize-transition {
+    
+}
+
+// Classe qui bloque les transitions lors d'un resize de la fenêtre
+.stop-transitions {
+    transition: none !important;
+} 
+
 // Classe générique pour masquer un élément dynamiquement
 .d-none {
     display: none;

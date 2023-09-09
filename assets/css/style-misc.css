@@ -177,6 +177,10 @@ main {
   transition: none !important;
 }
 
+.stop-transitions {
+  transition: none !important;
+}
+
 .d-none {
   display: none;
 }

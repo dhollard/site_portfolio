@@ -53,8 +53,8 @@
                 <div class="col-right">
                     
                     <a class="portrait-content wait-for-load" href="/fr/parcours" aria-label="Voir mon parcours">
-                        <div id="square-1"></div>
-                        <div id="square-2"></div>
+                        <div id="square-1" class="no-resize-transition"></div>
+                        <div id="square-2" class="no-resize-transition"></div>
                         <img class="portrait" src="/assets/img/portrait-dh.jpg" alt="photo portrait de Darius Hollard">
                         <div id="parcours-box">
                             <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
