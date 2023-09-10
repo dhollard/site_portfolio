@@ -1798,12 +1798,6 @@ footer .footer-container #footer-col-2 p span {
     }
   }
   @media (min-width: 1px) and (max-width: 991px) {
-    #sec-home-01 {
-      gap: 0 !important;
-    }
-    #sec-home-01 .bottom-tab {
-      margin-top: 50px !important;
-    }
     .mid-container {
       gap: 0 !important;
     }
