@@ -28,6 +28,8 @@
     }
 </script>
 
+<!-- ********************* Scripts liés aux cadres scrollables ********************* -->
+
 <!-- Script pour masquer l'invitation à scroller un cadre -->
 <script>
     $(".cadre-content-wrapper").scroll(function() {
@@ -304,19 +306,5 @@
     $(document).on('mouseup touchend', function() {
         startY = 0;
     });
-    });
-</script>
-
-<!-- Script qui applique/retire la classe de blocage de transitions lors d'un window resize -->
-<script>
-    let resizeTimer;
-
-    window.addEventListener("resize", () => {
-        document.body.classList.add("resize-animation-stopper");
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            document.body.classList.remove("resize-animation-stopper");
-        }, 400);
-
     });
 </script>

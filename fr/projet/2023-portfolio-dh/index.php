@@ -1327,7 +1327,7 @@
 
     </div>
 
-    <div id="Sommaire" class="mask-sommaire">
+    <div id="Sommaire" class="mask-sommaire no-resize-transition">
 
         <div id="Sommaire_top_bar_mobile">
             <div class="top-mob-handle"></div>

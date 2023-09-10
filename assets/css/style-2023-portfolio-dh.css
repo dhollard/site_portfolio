@@ -2657,11 +2657,6 @@ main {
   }
 }
 
-.resize-animation-stopper #Sommaire {
-  animation: none !important;
-  transition: none !important;
-}
-
 /* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
 @supports (-webkit-hyphens: none) {
   .cadre-mobile {

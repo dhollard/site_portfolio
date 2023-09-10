@@ -448,7 +448,7 @@ main {
         0% {
             transform: translateY(0px);
         }
-
+ 
         50% {
             transform: translateY(-10px);
         }
@@ -2077,12 +2077,6 @@ main {
         }
 
     }
-}
-
-// Bloque les animations de transition lors d'un window resize pour les éléments où c'est impossible à éviter
-.resize-animation-stopper #Sommaire {
-    animation: none !important;
-    transition: none !important;
 }
 
 
