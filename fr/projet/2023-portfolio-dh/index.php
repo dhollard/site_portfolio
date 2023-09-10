@@ -1336,6 +1336,10 @@
         </div>
 
         <div id="Sommaire_top_bar_desktop">
+            <div class="eyecatch-desk-box">
+                <span class="eyecatch-desk-arrow"></span>
+                <p class="eyecatch-desk-txt">Afficher le sommaire</p>
+            </div>
             <button id="Sommaire_switch_desktop"></button>
             <div class="top-desk-wrapper">
                 <div class="top-desk-titre-ico"></div>

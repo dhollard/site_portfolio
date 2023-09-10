@@ -222,6 +222,9 @@ main {
         border-radius: 20px 20px 0 0;
         transition: background-color 400ms ease-out;
 
+        // Corrige le scintillement du texte sur Firefox Mobile
+        will-change: transform;
+
         // media query #Sommaire_top_bar_mobile
         @include mquery.landscape { 
             display: none;
@@ -320,6 +323,57 @@ main {
             @include typo.title($color:#ffffff, $weight:800);
             font-size: 28px;
             margin: 0;
+        }
+
+        // Conteneur qui explique aux nouveaux utilisateurs la présence du sommaire
+        .eyecatch-desk-box {
+            position: absolute;
+            top: 50%;
+            right: -225px;
+            transform: translate(0px, -50%);
+            display: none;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: center;
+            pointer-events: none;
+            filter: drop-shadow(0px 0px 3px #000);
+
+            // Animation passive pour attirer encore plus le regard
+            -webkit-animation: 500ms ease-in-out 0s infinite alternate eyecatch-desk-idle-anim;
+            animation: 500ms ease-in-out 0s infinite alternate eyecatch-desk-idle-anim;
+
+            @keyframes eyecatch-desk-idle-anim {
+                from {
+                  transform: translate(0px, -50%);
+                }
+              
+                to {
+                    transform: translate(-5px, -50%);
+                }
+              }
+
+            // Icone de flèche
+            .eyecatch-desk-arrow {
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                background-image: url(../svg/ico-fleche-blanc.svg);
+                background-position: center;
+                background-size: 30px;
+                background-repeat: no-repeat;
+            }
+
+            // Texte explicatif
+            .eyecatch-desk-txt {
+                @include typo.text($color:#ffffff, $weight:600);
+                font-size: 20px;
+                width: -moz-max-content;
+                width: max-content;
+                margin: 0;
+            }
+
         }
 
 
@@ -444,27 +498,13 @@ main {
 #Sommaire.eyecatch-anim {
     box-shadow: 0px -5px 28px 0px rgba(166, 156, 164, 0.2);
 
-    @keyframes eyecatchmobile-old {
-        0% {
-            transform: translateY(0px);
-        }
- 
-        50% {
-            transform: translateY(-10px);
-        }
-
-        100% {
-            transform: translateY(0px);
-        }
-    }
-
     @keyframes eyecatchmobile {
         0% {
             background: rgba(25, 5, 23, 0.9);
         }
 
         50% {
-            background: color.$ambiance-80;
+            background: color.$primary-100;
         }
 
         100% {
@@ -495,6 +535,11 @@ main {
     @include mquery.landscape {
         box-shadow: none;
         animation: eyecatchdesk 1s ease-out infinite;
+    }
+
+    // Afficher la mention texte tuto sur desktop
+    .eyecatch-desk-box {
+        display: flex!important;
     }
     
 }

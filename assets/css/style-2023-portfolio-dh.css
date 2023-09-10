@@ -1067,6 +1067,7 @@ main {
   cursor: pointer;
   border-radius: 20px 20px 0 0;
   transition: background-color 400ms ease-out;
+  will-change: transform;
 }
 @media (min-width: 768px) {
   #Sommaire #Sommaire_top_bar_mobile {
@@ -1151,6 +1152,49 @@ main {
   font-weight: 800;
   color: #ffffff;
   font-size: 28px;
+  margin: 0;
+}
+#Sommaire #Sommaire_top_bar_desktop .eyecatch-desk-box {
+  position: absolute;
+  top: 50%;
+  right: -225px;
+  transform: translate(0px, -50%);
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 3px #000);
+  -webkit-animation: 500ms ease-in-out 0s infinite alternate eyecatch-desk-idle-anim;
+  animation: 500ms ease-in-out 0s infinite alternate eyecatch-desk-idle-anim;
+}
+@keyframes eyecatch-desk-idle-anim {
+  from {
+    transform: translate(0px, -50%);
+  }
+  to {
+    transform: translate(-5px, -50%);
+  }
+}
+#Sommaire #Sommaire_top_bar_desktop .eyecatch-desk-box .eyecatch-desk-arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-image: url(../svg/ico-fleche-blanc.svg);
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+#Sommaire #Sommaire_top_bar_desktop .eyecatch-desk-box .eyecatch-desk-txt {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0;
 }
 #Sommaire #Sommaire_link_wrapper {
@@ -1240,23 +1284,12 @@ main {
 #Sommaire.eyecatch-anim {
   box-shadow: 0px -5px 28px 0px rgba(166, 156, 164, 0.2);
 }
-@keyframes eyecatchmobile-old {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 @keyframes eyecatchmobile {
   0% {
     background: rgba(25, 5, 23, 0.9);
   }
   50% {
-    background: #544953;
+    background: #FF6666;
   }
   100% {
     background: rgba(25, 5, 23, 0.9);
@@ -1281,6 +1314,9 @@ main {
     box-shadow: none;
     animation: eyecatchdesk 1s ease-out infinite;
   }
+}
+#Sommaire.eyecatch-anim .eyecatch-desk-box {
+  display: flex !important;
 }
 
 #Overlay_sommaire {

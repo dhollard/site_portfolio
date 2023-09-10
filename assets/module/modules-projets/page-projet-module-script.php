@@ -199,48 +199,6 @@
     });
 </script>
 
-<!-- Script pour animer le sommaire une fois, pour attirer l'attention -->
-<script>
-    let animOnce = 0;
-
-    window.addEventListener('DOMContentLoaded', loadSom(eyeCatchSommaire));
-
-    // Si au chargement le scroll est déjà bien entamé dans la page, ne pas jouer d'animation
-    function loadSom(callback) {
-        // Vérifie le niveau de scroll au chargement
-        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-            animOnce = 1;
-            callback();
-        } else {
-            // Ne rien faire
-        }
-    };
-
-    window.addEventListener('scroll', eyeCatchSommaire, {passive: true});
-
-    function eyeCatchSommaire() {
-
-        // Vérifie le niveau de scroll suffisant pour agir
-        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-            // Vérifie si l'animation a déjà été jouée une fois
-            if (animOnce == 0) {
-
-                $("#Sommaire").addClass("eyecatch-anim").delay(2000).queue(function() {
-                    $("#Sommaire").removeClass("eyecatch-anim").dequeue();
-                });
-                animOnce = 1;
-
-            } else if (animOnce == 1) {
-                // Ne rien faire
-            }
-        } else {
-            // Ne rien faire
-        }
-
-
-    }
-</script>
-
 <!-- Script pour colorier le lien du sommaire correspondant à la partie en cours de consultation -->
 <script>
     window.addEventListener('resize', progresSom);
@@ -270,6 +228,43 @@
             }
         });
     }
+</script>
+
+<!-- Script qui mémorise que l'utilisateur à déjà ouvert le sommaire au moins une fois et retire l'anim du sommaire -->
+<script>
+    function SetSommaireVisited() {
+        // Définir le contenu de la constante à ajouter au localStorage navigateur
+        const myConstant = "Affirmatif";
+        // Ajout de la constante
+        localStorage.setItem("SommaireVisited", myConstant);
+        // Suppression de l'animation du sommaire
+        $("#Sommaire").removeClass("eyecatch-anim");
+    }
+
+    // Appel de la fonction en cas de clic sur l'élément sommaire
+    document.getElementById("Sommaire").addEventListener("click", SetSommaireVisited);
+
+    // Appel de la fonction en cas de clic non relaché sur l'élément (nécessaire pour version petit format)
+    document.getElementById("Sommaire").addEventListener("mousedown", SetSommaireVisited);
+
+    // Appel de la fonction en cas d'appuie du doigt sur mobile
+    document.getElementById("Sommaire").addEventListener("touchstart", SetSommaireVisited);
+</script>
+
+<!-- Script qui applique une animation au sommaire si il n'a jamais été ouvert -->
+<script>
+    function checkSommaireStatus() {
+        // On vérifie si SommaireVisited présent dans localStorage est égal à "Affirmatif"
+        if (localStorage.getItem("SommaireVisited") !== "Affirmatif") {
+            // On ajoute une animation infinie sur le sommaire pour attirer l'attention de l'utilisateur
+            $("#Sommaire").addClass("eyecatch-anim");
+        } else {
+            // On n'ajoute pas d'animation aux éléments de sommaire car l'utilisateur les connaient déjà
+        }
+    }
+
+    // Appel de la fonction au chargement de la page
+    document.addEventListener("DOMContentLoaded", checkSommaireStatus);
 </script>
 
 <!-- Script pour que le sommaire mobile soit activable via glissement et pas juste clic -->
