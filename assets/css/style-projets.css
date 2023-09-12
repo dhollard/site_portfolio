@@ -1235,6 +1235,13 @@ footer .footer-container #footer-col-2 p span {
   background-image: url("/fr/projet/2023-portfolio-dh/projet-thumbnail.jpg") !important;
 }
 
+#Proj_teasing {
+  cursor: help;
+}
+#Proj_teasing .projet-date::after, #Proj_teasing .projet-marque::after {
+  background: none !important;
+}
+
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
 @supports not (aspect-ratio: auto) {
   .projet-miniature {

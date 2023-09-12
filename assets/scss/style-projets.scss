@@ -406,6 +406,15 @@
 
 }
 
+// projet teasing
+#Proj_teasing {
+    cursor: help;
+
+    .projet-date::after, .projet-marque::after {
+        background: none!important;
+    }
+}
+
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
 @media not all and (min-resolution:.001dpcm) { 
     

@@ -46,6 +46,19 @@
                         </div>
                     </a>
 
+                    <a id="Proj_teasing" class="projet-bloc">
+                        <h2 class="projet-titre">Prochainement...</h2>
+
+                        <p class="projet-date"></p>
+                        <span class="sepa-info"></span>
+                        <p class="projet-marque"></p>
+                        
+                        <div class="projet-visuel">
+                            <div class="projet-miniature"></div>
+                            <div class="projet-overlay"></div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
 
