@@ -206,7 +206,13 @@
   
   }
 
+// Règles globales page
+.trigger-instruction-tag {
+    background: color.$secondary-100!important;
+}
 
+
+// Règles par section
 #Header_projet {
     background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
     background-repeat: no-repeat;
@@ -215,30 +221,30 @@
 
 #Resume_projet {
 
-    .bloc-cadre {
+    .zone-cadre-video {
         padding: 0 30px;
 
-        // media query .bloc-cadre
+        // media query .zone-cadre-video
         @include mquery.laptop {   
             padding: 0;
         }
     }
 
-    .cadre-mobile {
-        display: flex;
+    #Video_showreel_mob {
+        display: block;
 
-        // media query .cadre-mobile
+        // media query #Video_showreel_mob
         @include mquery.laptop {   
             display: none;
         }
     }
 
-    .cadre-desktop {
+    #Video_showreel_desk {
         display: none;
 
-        // media query .cadre-desktop
+        // media query #Video_showreel_desk
         @include mquery.laptop {   
-            display: flex;
+            display: block;
         }
     }
 }
@@ -758,7 +764,10 @@
 #Maquette_site {
 
     // Bloc contenant les cadres maquette page d'accueil
-    #Bloc_cadre_accueil {
+    #Cadre_page_accueil .cadre-trigger,
+    #Cadre_page_projets .cadre-trigger,
+    #Cadre_page_parcours .cadre-trigger
+    {
         margin-top: 55px;
     }
 

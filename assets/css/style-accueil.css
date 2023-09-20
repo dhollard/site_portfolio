@@ -169,6 +169,10 @@ main {
   margin: auto;
 }
 
+.not-scrollable {
+  overflow: hidden !important;
+}
+
 .wait-for-load, .wait-for-load * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -182,7 +186,11 @@ main {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
 }
 
 .navbar {

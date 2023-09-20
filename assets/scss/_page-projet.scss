@@ -23,10 +23,18 @@
 
     // couleur lignes de séparation entre des éléments
     --couleur-ligne-projet: #{color.$ambiance-80};
+
+    // couleurs globale des cadres scrollables
+    --cadre-scroll-base-color:#E6E6E6;
+    --cadre-scroll-tab1-color:#D7D7D7;
+    --cadre-scroll-tab2-color:#B5B5B5;
+    --cadre-scroll-icons-color:#535353;
 }
 
 body {
     background: var(--fond-page-projet);
+
+    
 }
 
 main {
@@ -804,533 +812,735 @@ main {
     color: var(--couleur-focus-projet);
 }
 
-// --------------- Blocs cadres ---------------
+// --------------- Éléments liés aux cadres scrollables ---------------
 
-// Parent regroupant tous les éléments d'une zone cadre (version mobile, desktop, légende...)
-.bloc-cadre {
+// Conteneur version statique cliquable du cadre scrollable
+.cadre-trigger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-}
+    cursor: pointer;
 
-// Cadre mobile contenant une vidéo ou une maquette
-.cadre-mobile {
-    position: relative;
-    display: flex;
-    width: 100%;
-    max-width: 280px;
-    aspect-ratio: 9 / 16;
-    outline: 4px solid color.$ambiance-120;
-    border-radius: 20px;
-    box-shadow: 0px -10px 40px 0px rgba(166, 156, 164, 0.25);
-    overflow: hidden;
-    background: color.$ambiance-120;
-
-    // media query .cadre-mobile
-    @include mquery.landscape {   
-        max-width: 300px;
-    }
-
-    // media query .cadre-mobile
-    @include mquery.laptop {   
-        max-width: 340px;
-    }
-
-    // Affichage .cadre-mobile
-    &.switch-off-cadre { 
-
-        // media query pour masquer sur desktop, si non switché
-        @include mquery.laptop {   
-            display: none;
+    //Règles spéciales quand c'est la version cliquable pour ouvrir l'overlay
+    .cadre-scrollable {
+    
+        // Effet de hover de l'overlay noir
+        &:hover .cadre-trigger-overlay {
+            animation: hover-cadre-trigger 0.3s ease-out forwards;
         }
 
-    }
-
-    // Instructions complémentaires .cadre-instruction-tag mobile
-    .cadre-instruction-tag {
-        // media query .cadre-instruction-tag
-        @include mquery.laptop {   
-            top: 50%;
-            bottom: auto;
-            transform: translate(-50%, -50%);
-
+        // Effet de hover du tag instruction
+        &:hover .trigger-instruction-tag {
+            transform: translate(-50%, -50%) scale(1.05);
         }
     }
-}
 
-// Cadre desktop contenant une vidéo ou une maquette
-.cadre-desktop {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1160px;
-    aspect-ratio: 16 / 9;
-    outline: 4px solid color.$ambiance-120;
-    border-radius: 10px 10px 5px 5px;
-    box-shadow: 0px -10px 40px 0px rgba(166, 156, 164, 0.25);
-    overflow: hidden;
-    background: color.$ambiance-120;
-
-    // Affichage .cadre-mobile
-    &.switch-off-cadre { 
-        display: none;
+    // Overlay sur le contenu qui ouvre le vrai cadre scrollable
+    .cadre-trigger-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        animation: cadre-overlay-pulse 1.2s ease-in-out infinite alternate;
     }
 
-    // media query .cadre-desktop
-    @include mquery.laptop {   
+    @keyframes cadre-overlay-pulse {
+        from {
+            background: rgba(0, 0, 0, 0.4);
+        }
+      
+        to {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    // Bloc qui contient les instructions d'ouverture de l'overlay de cadre
+    .trigger-instruction-tag {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        background: var(--couleur-focus-projet);
+        box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+        width: 75%;
+        min-height: 60px;
+        padding: 14px 10px 18px 10px;
+        border-radius: 10px;
+        pointer-events: none;
+        -webkit-user-select: none;
+        user-select: none;
         display: flex;
-    }
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        transition: transform 200ms ease-in-out;
 
-    // Instructions complémentaires .cadre-instruction-tag desktop
-    .cadre-instruction-tag {
-        // media query .cadre-instruction-tag
-        @include mquery.laptop {   
-            max-width: 345px;
+        // media query .trigger-instruction-tag
+        @include mquery.laptop {
+            width: max-content;
             min-height: 70px;
             top: 50%;
             bottom: auto;
             transform: translate(-50%, -50%);
+            flex-direction: row;
+            padding: 14px 15px 14px 10px;
+        }
 
-            // icone dans l'étiquette
-            .inst-tag-ico {
+        // media query .trigger-instruction-tag
+        @include mquery.desktop-xl {
+            padding: 18px 22px 18px 15px;
+        }
+
+        // Icone de l'étiquette qui indique la gesture à suivre
+        .trigger-tag-ico {
+            min-width: 40px;
+            width: 40px;
+            min-height: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            -webkit-mask-image: url("../svg/ico-main-gesture-amb120.svg");
+            mask-image: url("../svg/ico-main-gesture-amb120.svg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 3px;
+            transform: translate(0, 0);
+            animation: click-gesture-mob 1.5s linear infinite;
+
+            // media query .trigger-tag-ico
+            @include mquery.laptop {
                 width: 40px;
                 height: 40px;
                 margin-right: 5px;
+                margin-bottom: 0px;
             }
 
-             // conteneur du texte de l'étiquette
-            .inst-tag-txt {
+            // media query .trigger-tag-ico
+            @include mquery.desktop-xl {
+                width: 50px;
+                height: 50px;
+            }
+
+            // Règle uniquement applicable aux appareils non-tactiles
+            @media (hover: hover) and (pointer: fine) {
+                -webkit-mask-image: url("../svg/ico-pointeur-souris-noir.svg");
+                mask-image: url("../svg/ico-pointeur-souris-noir.svg");
+                animation: click-gesture-desk 2s linear infinite;
+            }
+        }
+
+        // Texte de l'étiquette qui indique la gesture à suivre
+        .trigger-tag-txt {
+            font-family: "Alegreya", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 22px;
+            text-align: center;
+
+            // media query .trigger-tag-txt
+            @include mquery.laptop {
                 font-size: 28px;
+                text-align: left;
             }
 
-        }
-    } 
+            // media query .trigger-tag-txt
+            @include mquery.desktop-xl {
+                font-size: 32px;
+            }
 
-}
+            &::before {
+                content: "Appuyez pour découvrir";
 
-// Fausse top-bar de navigateur sur les cadres desktop
-.navibar-cadre-desk {
-    width: 100%;
-    min-height: 30px;
-    background: color.$ambiance-120;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    // Section gauche de la fausse barre
-    .navivar-left {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding-left: 4px;
-        align-items: end;
-    }
-
-    // Faux onglets
-    .navibar-tab {
-        width: 150px;
-        height: 26px;
-        border-radius: 30px 30px 0px 0px;
-        background: color.$ambiance-80;
-        position: relative;
-        z-index: 2;
-
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0; left: 0;
-            width: 70%;
-            height: 100%;
-            border-radius: 4px 0 0 0;
-            transform: skewX(-20deg);
-            background-color: inherit;
-            z-index: -1;
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0; right: 0;
-            width: 70%;
-            height: 100%;
-            border-radius: 0 4px 0 0;
-            transform: skewX(20deg);
-            background-color: inherit;
-            z-index: -1;
-        }
-
-        &:nth-child(2) {
-            background: color.$ambiance-100;
-            z-index: 1;
-            margin-left: 5px;
+                // Règle uniquement applicable aux appareils non-tactiles
+                @media (hover: hover) and (pointer: fine) {
+                    content: "Cliquez pour découvrir";
+                }
+            }
         }
     }
 
-    // Section droite de la fausse barre
-    .navivar-right {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding-right: 15px;
-        align-items: center;
-        gap: 12px;
-    }
-
-    // Fausses icones d'actions de la fenetre du navigateur
-    .navibar-ico {
-        width: 15px;
-        height: 15px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        &:nth-child(1) {
-            background-image: url("../svg/ico-navibar-reduire.svg");
-        }
-
-        &:nth-child(2) {
-            background-image: url("../svg/ico-navibar-agrandir.svg");
-        }
-
-        &:nth-child(3) {
-            background-image: url("../svg/ico-navibar-fermer.svg");
-        }
-    }
-}
-
-
-// Étiquette d'instruction présente dans les cadres desktop et mobile
-.cadre-instruction-tag {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
-    width: max-content;
-    max-width: 270px;
-    min-height: 60px;
-    padding: 14px 10px;
-    border-radius: 10px;
-    pointer-events: none;
-    -webkit-user-select: none;
-    user-select: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 400ms ease-out;
-    animation: pulse-tag-background 4s linear infinite;
-
-    // media query .cadre-instruction-tag
-    @include mquery.landscape {   
-        max-width: 290px;
-    }
-
-    // media query .cadre-instruction-tag
-    @include mquery.desktop {   
-        max-width: 320px;
-    }
-
-
-
-    //animation de la couleur de fond de .cadre-instruction-tag
-    @keyframes pulse-tag-background {
-        0% {
-            background: rgba(255, 255, 255, 0.6);
+    //animation icone mobile trigger cadre
+    @keyframes click-gesture-mob {
+        0%, 30% {
+            transform: scale(1) translateY(0px);
         }
 
         50% {
-            background: rgba(255, 255, 255, 1);
+            transform: scale(0.9) translateY(-2px);
+        }
+
+        70%, 100% {
+            transform: scale(1) translateY(0px);
+        } 
+    }
+
+    //animation icone ordi trigger cadre
+    @keyframes click-gesture-desk {
+        0%, 30% {
+            transform: scale(1) translate(0, 0);
+        }
+
+        40% {
+            transform: scale(0.85) translate(-1px, -1px);
+        }
+
+        50% {
+            transform: scale(1) translate(0, 0);
+        }
+
+        60% {
+            transform: scale(0.85) translate(-1px, -1px);
+        }
+
+        70%, 100% {
+            transform: scale(1) translate(0, 0);
+        } 
+    }
+
+    //animation hover trigger cadre
+    @keyframes hover-cadre-trigger {
+        0% {
+            background-color: rgba(0, 0, 0, 0.4);
         }
 
         100% {
-            background: rgba(255, 255, 255, 0.6);
+            background-color: rgba(0, 0, 0, 0.8);
         } 
-    }
-
-    &.fade-out-tag {
-        opacity: 0;
-    }
-
-    // icone dans l'étiquette
-    .inst-tag-ico {
-        width: 32px;
-        height: 32px;
-        background-image: url("../svg/ico-main-gesture-amb120.svg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-right: 5px;
-        transform: translate(0, 0);
-        animation: scroll-gesture-mob 1.5s linear infinite;
-
-        // media query .inst-tag-ico
-        @include mquery.laptop {   
-            background-image: url("../svg/ico-souris-gesture-amb120.svg");
-            animation: scroll-gesture-desk 2s linear infinite;
-        }
-
-    }
-
-    //animation sur mobile .inst-tag-ico
-    @keyframes scroll-gesture-mob {
-        0%, 20% {
-            transform: translate(0%, 0%) rotate(0deg);
-        }
-
-        30% {
-            transform: translate(0%, -3%) rotate(0deg);
-        }
-
-        50%, 60% {
-            transform: translate(0%, 12%) rotate(-5deg);
-        }
-
-        80%, 100% {
-            transform: translate(0%, 0%) rotate(0deg);
-        } 
-    }
-
-    //animation sur ordi .inst-tag-ico
-    @keyframes scroll-gesture-desk {
-        0%, 20% {
-            transform: translate(0%, 0%) rotate(0deg);
-        }
-
-        30% {
-            transform: translate(0%, -5%) rotate(0deg);
-        }
-
-        50%, 60% {
-            transform: translate(0%, 8%) rotate(0deg);
-        }
-
-        80%, 100% {
-            transform: translate(0%, 0%) rotate(0deg);
-        } 
-    }
-
-    // conteneur du texte de l'étiquette
-    .inst-tag-txt {
-        @include typo.title($color:color.$ambiance-120, $weight:800);
-        font-size: 22px;
-        text-align: left;
-
-        // caractères de texte
-        &::before {
-            content: 'Scrollez pour découvrir';
-        }
-
     }
 }
 
-// Variante de .cadre-instruction-tag quand scroll est bloqué
-.prevent-scrolling .cadre-instruction-tag {
-
-    // Ne pas prendre en compte sur ordi
-    @media (max-width: 768px) {
-        opacity: 1!important;
-
-
-        // Icone
-        .inst-tag-ico { 
-            animation: double-tap-gesture-mobile 2s linear infinite;
-    
-            // media query icone
-            @include mquery.laptop {   
-                animation: double-tap-gesture-desk 2s linear infinite;
-            }
-        }
-    
-        //animation dévérouillage sur mobile pour .inst-tag-ico
-        @keyframes double-tap-gesture-mobile {
-            0%, 20% {
-                transform: scale(1) rotate(0deg);
-            }
-    
-            30% {
-                transform: scale(1) rotate(0deg);
-            }
-    
-            40%, 45% {
-                transform: scale(0.9) rotate(5deg);
-            }
-    
-            50%, 55% {
-                transform: scale(1) rotate(0deg);
-            }
-    
-            60%, 65% {
-                transform: scale(0.9) rotate(5deg);
-            }
-    
-            80%, 100% {
-                transform: scale(1) rotate(0deg);
-            } 
-        }
-    
-        //animation dévérouillage pour .inst-tag-ico
-        @keyframes double-tap-gesture-desk {
-            0%, 20% {
-                transform: scale(1);
-            }
-    
-            30% {
-                transform: scale(1);
-            }
-    
-            40%, 45% {
-                transform: scale(0.9);
-            }
-    
-            50%, 55% {
-                transform: scale(1);
-            }
-    
-            60%, 65% {
-                transform: scale(0.9);
-            }
-    
-            80%, 100% {
-                transform: scale(1);
-            } 
-        }
-    
-        // conteneur du texte de l'étiquette
-        .inst-tag-txt {
-            font-size: 22px;
-    
-            // caractères de texte
-            &::before {
-                content: 'Appuyez deux fois';
-    
-                // media query
-                @include mquery.laptop {   
-                    content: 'Double cliquez';
-                }
-            }
-    
-        }
-
-    }
-
-
-}
-
-// Bouton pour permutter entre les versions mobiles et desktop d'un cadre
-.switch-cadre {
+// Conteneur parent d'un cadre scrollable
+.cadre-scrollable {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 340px;
-    min-height: 55px;
-    background: #F6F6F6;
-    border-radius: 0px 0px 50px 50px;
-    box-shadow: 0px 11px 9px 0px rgb(0, 0, 0, 0.2) inset;
-    flex-direction: row;
+    max-width: 280px;
+    aspect-ratio: 9/16;
+    outline: 5px solid var(--cadre-scroll-base-color);
+    outline-offset: -1px;
+    border-radius: 20px;
+    box-shadow: 0px -10px 40px 0px rgba(166, 156, 164, 0.25);
+    overflow: hidden;
+    background: var(--cadre-scroll-base-color);
+
+    // media query .cadre-scrollable
+    @include mquery.laptop {
+        max-width: 1160px;
+        aspect-ratio: 16/9;
+        border-radius: 10px 10px 5px 5px;
+    }
+
+    // Conteneur intermédiaire pour gérer l'intérieur du cadre si besoin
+    .cadre-content-wrapper {
+        position: relative;
+        overflow: hidden;
+        overscroll-behavior: contain;
+        border-radius: inherit;
+
+        // Fixe la petite marge fantôme en bas quand le scroll est actif
+        margin-bottom: -5px;
+
+        // Contenu image du wrapper
+        .cadre-img-content, .cadre-img-content * {
+            pointer-events: none;
+            -webkit-user-select: none;
+            user-select: none;
+
+        }
+
+    }
+
+    .cadre-content-mobile {
+        display: block;
+
+        // media query .cadre-content-mobile
+        @include mquery.laptop {
+           display: none;
+        }
+    }
+
+    .cadre-content-desktop {
+        display: none;
+
+        // media query .cadre-content-desktop
+        @include mquery.laptop {
+           display: block;
+        }
+    }
+
+    // Fausse top-bar de navigateur sur les cadres desktop
+    .navibar-cadre-desk {
+        width: 100%;
+        min-height: 15px;
+        height: 10vh;
+        max-height: 30px;
+        background: var(--cadre-scroll-base-color);
+        display: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+
+        // media query .navibar-cadre-desk
+        @include mquery.laptop {
+            display: flex;
+        }
+
+        // Section gauche de la fausse barre
+        .navivar-left {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding-left: 4px;
+            align-items: end;
+        }
+
+        // Faux onglets
+        .navibar-tab {
+            width: 150px;
+            height: 86%;
+            border-radius: 30px 30px 0px 0px;
+            background: var(--cadre-scroll-tab1-color);
+            position: relative;
+            z-index: 2;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 70%;
+                height: 100%;
+                border-radius: 4px 0 0 0;
+                transform: skewX(-20deg);
+                background-color: inherit;
+                z-index: -1;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 70%;
+                height: 100%;
+                border-radius: 0 4px 0 0;
+                transform: skewX(20deg);
+                background-color: inherit;
+                z-index: -1;
+            }
+
+            &:nth-child(2) {
+                background: var(--cadre-scroll-tab2-color);
+                z-index: 1;
+                margin-left: 5px;
+            }
+        }
+
+        // Section droite de la fausse barre
+        .navivar-right {
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding-right: 15px;
+            align-items: center;
+            gap: 12px;
+        }
+
+        // Fausses icones d'actions de la fenetre du navigateur
+        .navibar-ico {
+            min-height: 10px;
+            height: 50%;
+            min-width: 10px;
+            width: auto;
+            aspect-ratio: 1/1;
+            background-color: var(--cadre-scroll-icons-color);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &:nth-child(1) {
+                -webkit-mask-image: url("../svg/ico-navibar-reduire.svg");
+                mask-image: url("../svg/ico-navibar-reduire.svg");
+            }
+
+            &:nth-child(2) {
+                -webkit-mask-image: url("../svg/ico-navibar-agrandir.svg");
+                mask-image: url("../svg/ico-navibar-agrandir.svg");
+            }
+
+            &:nth-child(3) {
+                -webkit-mask-image: url("../svg/ico-navibar-fermer.svg");
+                mask-image: url("../svg/ico-navibar-fermer.svg");
+            }
+        }
+
+    }
+}
+
+// zone plein écran en overlay qui contient un cadre scrollable et ses éléments complémentaires
+.zone-fullscreen-cadre {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    gap: 5vh;
     align-items: center;
-    padding-bottom: 4px;
-    cursor: pointer;
-    display: none;
+    padding: 50px 15px 15px 15px;
 
-    // media query .switch-cadre
-    @include mquery.laptop {   
+    overflow: hidden;
+
+    // media query .zone-fullscreen-cadre
+    @include mquery.laptop {
+        padding: 50px 15px 35px 15px;
+    }
+
+    &.open-overlay {
         display: flex;
     }
 
-    // Version mobile affichée
-    &.switch-to-desktop {
-        max-width: 305px;
+    /* Overlay noir de fond cliquable pour fermer le mode plein écran */
+    .fullcadre-back-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+    }
 
-        // Changement texte
-        .switch-cadre-txt {
+    // Bouton qui permet de fermer l'overlay
+    .hide-cadre-btn {
+        position: absolute;
+        background: #ffffff;
+        -webkit-mask-image: url(../svg/ico-close-fullcadre.svg);
+        mask-image: url(../svg/ico-close-fullcadre.svg);
+        border: none;
+        outline: none;
+        right: 15px;
+        top: 15px;
+        min-width: 30px;
+        width: 30px;
+        min-height: 30px;
+        height: 30px;
+        cursor: pointer;
 
-            &::before {
-                content: 'Voir version ordinateur';
+        &:hover {
+            background: color.$primary-100;
+        }
+
+        // media query .hide-cadre-btn
+        @include mquery.laptop {
+            top: 30px;
+            right: 30px;
+        }
+
+        // media query .hide-cadre-btn
+        @include mquery.desktop-xl {
+            height: 40px;
+            width: 40px;
+        }
+
+
+    }
+
+    // Zone au dessus du cadre scrollable
+    .fullcadre-top-zone {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        pointer-events: none;
+
+        .legende-visuel-fullcadre {
+            @include typo.title($color:#ffffff, $weight:500);
+            text-align: center;
+            font-size: 26px;
+            margin: 0 0 3px 0;
+            width: -moz-fit-content;
+            width: fit-content;
+
+            // media query .legende-visuel-fullcadre
+            @include mquery.desktop-xl {
+                font-size: 28px;
             }
         }
+
+        .fullcadre-instruction {
+            @include typo.text($color:#ffffff, $weight:400);
+            font-size: 18px;
+            margin: 0;
+            text-align: center;
+            font-style: italic;
+            width: -moz-fit-content;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+            // media query .legende-visuel-fullcadre
+            @include mquery.desktop-xl {
+                font-size: 20px;
+            }
+
+            // Icone qui aide la compréhension des instructions
+            .fullcadre-instruction-ico {
+                display: inline-block;
+                min-width: 25px;
+                width: 25px;
+                min-height: 25px;
+                height: 25px;
+                background-color: #ffffff;
+                -webkit-mask-image: url("../svg/ico-main-gesture-amb120.svg");
+                mask-image: url("../svg/ico-main-gesture-amb120.svg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: auto 3px auto 0;
+                transform: translate(0, 0);
+                animation: scroll-gesture-mob 1.5s linear infinite;
+
+                // Fixe un bug sur Firefox qui créé une fausse bordure au moment d'animation rotate
+                filter: blur(1px);
+
+                // media query .legende-visuel-fullcadre
+                @include mquery.desktop-xl {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                // Règle uniquement applicable aux appareils non-tactiles
+                @media (hover: hover) and (pointer: fine) {
+                    -webkit-mask-image: url("../svg/ico-souris-gesture-amb120.svg");
+                    mask-image: url("../svg/ico-souris-gesture-amb120.svg");
+                    animation: scroll-gesture-desk 2s linear infinite;
+                }
+            }
+
+            // Mot de la phrase a modifier sur mobile/desktop
+            .keyword-fullcadre-instru {
+
+                &::before {
+                    content: 'doigt';
+                    margin-left: 5px;
+
+                    // Règle uniquement applicable aux appareils non-tactiles
+                    @media (hover: hover) and (pointer: fine) {
+                        content: 'souris';
+                    }
+                }
+
+            }
+        }
+
+        // Animation sur mobile icone d'instruction de scroll
+        @keyframes scroll-gesture-mob {
+            0%, 20% {
+                transform: translate(0%, 0%) rotate(0deg);
+            }
+
+            30% {
+                transform: translate(0%, -3%) rotate(0deg);
+            }
+
+            50%, 60% {
+                transform: translate(0%, 12%) rotate(-5deg);
+            }
+
+            80%, 100% {
+                transform: translate(0%, 0%) rotate(0deg);
+            } 
+        }
+
+        // Animation sur ordi icone d'instruction de scroll
+        @keyframes scroll-gesture-desk {
+            0%, 20% {
+                transform: translate(0%, 0%) rotate(0deg);
+            }
+
+            30% {
+                transform: translate(0%, -5%) rotate(0deg);
+            }
+
+            50%, 60% {
+                transform: translate(0%, 8%) rotate(0deg);
+            }
+
+            80%, 100% {
+                transform: translate(0%, 0%) rotate(0deg);
+            } 
+        }
     }
 
-    // Icone
-    .switch-cadre-ico {
-        width: 30px;
-        height: 30px;
-        background-image: url("../svg/ico-fleche-rotative.svg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-right: 10px;
-        transform: rotate(0deg);
-        transition: transform 200ms ease-in-out;
+    // Règles spécifiques au cadre scrollable dans le contexte fullscreen
+    .cadre-scrollable {
+        width: auto;
+        height: 80%;
+        min-height: 300px;
+        max-height: 500px;
+
+        // media query .cadre-scrollable
+        @include mquery.laptop {
+            max-width: unset;
+            max-height: 50vw;
+        }
+
+        // Règles supplémentaires pour activer le mode "force-mobile" afin d'afficher la version mobile de la masquette sur grand format
+        &.force-mobile {
+            aspect-ratio: 9/16;
+            border-radius: 20px;
+
+            // media query .cadre-scrollable
+            @include mquery.laptop {
+                // Limiter un peu plus la taille pour éviter que la version mobile soit trop grosse
+                max-height: 40vw;
+            }
+
+            // Masquer fausse top-bar de navigateur sur les cadres desktop
+            .navibar-cadre-desk {
+                display: none;
+            }
+
+            // Afficher visuel maquette mobile
+            .cadre-content-mobile {
+                display: block;
+            }
+
+            // Masquer visuel maquette mobile
+            .cadre-content-desktop {
+                display: none;
+            }
+
+            // Changer le texte du bouton de switch quand force mobile est actif
+            & ~ .fullcadre-bottom-zone .switch-cadre .switch-cadre-txt {
+
+                &::before {
+                    content: 'Voir version ordinateur';
+                }
+
+            }
+
+        }
+
+        // Rendre le conteneur intermédiaire scrollable en mode fullscreen
+        .cadre-content-wrapper {
+            overflow-y: auto;
+        }
+
+        
     }
 
-    &:hover .switch-cadre-ico {
-        transform: rotate(90deg);
-        background-image: url("../svg/ico-fleche-rotative-primary.svg");
-    }
+    // Zone en dessous du cadre scrollable
+    .fullcadre-bottom-zone {
+        display: flex;
 
-    // Conteneur du texte
-    .switch-cadre-txt {
-        @include typo.text($color:color.$base-text, $weight:600);
-        font-size: 20px;
-        margin: 0;
+        // Button permutteur entre la version mobile/desktop du cadre
+        .switch-cadre {
+            width: -moz-fit-content;
+            width: fit-content;
+            background: var(--couleur-focus-projet);
+            border-radius: 8px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 15px;
+            cursor: pointer;
+            display: none;
 
-        &::before {
-            content: 'Voir version mobile';
+            &:hover {
+                background: var(--couleur-focus-bis-projet);
+            }
+
+            // media query .switch-cadre
+            @include mquery.laptop {
+                display: flex;
+            }
+
+            // Icone
+            .switch-cadre-ico {
+                width: 30px;
+                height: 30px;
+                background-color: #ffffff;
+                -webkit-mask-image: url("../svg/ico-fleche-rotative.svg");
+                mask-image: url("../svg/ico-fleche-rotative.svg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-right: 10px;
+                transform: rotate(0deg);
+                transition: transform 200ms ease-in-out;
+
+                // Fixe un bug sur Firefox qui créé une fausse bordure au moment d'animation rotate
+                filter: blur(1px);
+            }
+
+            &:hover .switch-cadre-ico {
+                transform: rotate(90deg);
+            }
+
+            // Conteneur du texte
+            .switch-cadre-txt {
+                @include typo.text($color:#ffffff, $weight:600);
+                font-size: 20px;
+                margin: 0;
+
+                &::before {
+                    content: 'Voir version mobile';
+                }
+
+            }
+
         }
 
     }
-
-    &:hover .switch-cadre-txt {
-        color: color.$primary-100;
-    }
-
 }
 
-// Conteneur intermédiaire pour gérer l'intérieur du cadre si besoin
-.cadre-content-wrapper {
-    overflow-y: auto;
-    overscroll-behavior: contain;
+// Parent wrapper qui entoure les éléments d'un cadre scrollable décliné en vidéo
+.zone-cadre-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 
-    // Fixe la petite marge fantôme en bas quand le scroll est actif
-    margin-bottom: -5px;
-
-    // Contenu image du wrapper
-    .cadre-img-content, .cadre-img-content * {
-        //nécessaire pour le vérouillage mobile
-        pointer-events: none;
-        -webkit-user-select: none;
-	    user-select: none;
-
+    // Permettre à la vidéo de dépasser un peu le ratio 16/9 pour ne pas être coupée
+    .cadre-scrollable {
+        aspect-ratio: unset!important;
     }
 
-}
-
-// Variante de .cadre-content-wrapper quand scroll est bloqué
-.prevent-scrolling .cadre-content-wrapper {
-
-    // Ne pas prendre en compte sur ordi
-    @media (max-width: 768px) {
-        overflow-y: hidden;
+    // Retirer la contre-marge, car le cadre n'est pas scrollable dans cet état de toute façon
+    .cadre-content-wrapper {
+        margin-bottom: 0!important;
     }
-    
 }
 
-// Video dans un cadre
+// Bloc contenant une vidéo
 .bloc-video {
     width: 100%;
     height: auto;
 }
 
+// Conteneur d'un visuel (image ou vidéo)
 .bloc-visuel {
     display: flex;
     flex-direction: column;
@@ -2128,16 +2338,15 @@ main {
 /* Code de rétrocompatibilité ciblant Safari iOS 16 ou antérieur */
 @supports (-webkit-hyphens:none){
 
-    // Cadre mobile vidéo ou maquette (fixe le mauvais rendu des outlines arrondies)
-    .cadre-mobile {
-        outline: 0px solid color.$ambiance-120;
-        box-shadow: 0 0 0 4px color.$ambiance-120;
+    // Cadre scrollable vidéo ou maquette (fixe le mauvais rendu des outlines arrondies)
+    .cadre-scrollable {
+        outline: 0px solid var(--cadre-scroll-base-color);
+        box-shadow: 0 0 0 4px var(--cadre-scroll-base-color);
     }
 
-    // Cadre desktop vidéo ou maquette (fixe le mauvais rendu des outlines arrondies)
-    .cadre-desktop {
-        outline: 0px solid color.$ambiance-120;
-        box-shadow: 0 0 0 4px color.$ambiance-120;
+    // Nécessaire pour éviter que les angles inférieurs du cadre soit "rognés" par .cadre-content-wrapper
+    .cadre-content-wrapper {
+        height: 100%;
     }
 
 
@@ -2157,7 +2366,7 @@ main {
 @media not all and (min-resolution:.001dpcm) {
 
     // Fixe le non-support d'aspect ratio qui cause une hauteur trop grande
-    .cadre-mobile {
+    .cadre-scrollable {
         height: 144vw;
         max-height: 497px;
 

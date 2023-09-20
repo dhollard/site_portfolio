@@ -90,21 +90,27 @@
 
                     <div class="section-colonne full-col">
 
-                        <figure class="bloc-cadre">
-                            <div class="cadre-mobile cadre-video">
-                                <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
-                                    <source src="video/showreel-mobile.mp4" type="video/mp4">
-                                    <source src="video/showreel-mobile.webm" type="video/webm">
-                                    Votre navigateur ne peut pas lire cette vidéo.
-                                </video>
-                            </div>
+                        <figure class="zone-cadre-video">
 
-                            <div class="cadre-desktop cadre-video">
-                                <video class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
-                                    <source src="video/showreel-desktop.mp4" type="video/mp4">
-                                    <source src="video/showreel-desktop.webm" type="video/webm">
-                                    Votre navigateur ne peut pas lire cette vidéo.
-                                </video>
+                            <div class="cadre-scrollable">
+                                <!-- Fausse barre de navigateur -->
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+
+                                <div class="cadre-content-wrapper">
+                                    <!-- Vidéo format mobile -->
+                                    <video id="Video_showreel_mob" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                        <source src="video/showreel-mobile.mp4" type="video/mp4">
+                                        <source src="video/showreel-mobile.webm" type="video/webm">
+                                        Votre navigateur ne peut pas lire cette vidéo.
+                                    </video>
+
+                                    <!-- Vidéo format ordinateur -->
+                                    <video id="Video_showreel_desk" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                        <source src="video/showreel-desktop.webm" type="video/webm">
+                                        <source src="video/showreel-desktop.mp4" type="video/mp4">
+                                        Votre navigateur ne peut pas lire cette vidéo.
+                                    </video>
+                                </div>
                             </div>
 
                             <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, continuez la lecture de cette page pour découvrir son processus de création</figcaption>
@@ -564,50 +570,89 @@
                 </div>
 
                 <div class="section-ligne">
-                    <div class="section-colonne full-col">
+                    <div id="Cadre_page_accueil" class="section-colonne full-col">
 
-                        <figure id="Bloc_cadre_accueil" class="bloc-cadre">
-                            <div class="cadre-mobile switch-off-cadre prevent-scrolling">
-                                <div class="cadre-content-wrapper">
-                                    <picture class="cadre-img-content">
-                                        <source srcset="img/maquette-site-accueil-mobile.webp" type="image/webp" width="100%" height="auto">
-                                        <source srcset="img/maquette-site-accueil-mobile.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-accueil-mobile.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format mobile">
-                                    </picture>
-                                </div>
-
-                                <div class="cadre-instruction-tag">
-                                    <div class="inst-tag-ico"></div>
-                                    <div class="inst-tag-txt"></div>
-                                </div>
-
-                            </div>
-
-                            <div class="cadre-desktop">
+                        <div class="cadre-trigger">
+                            <div class="cadre-scrollable force-mobile">
+                                <!-- Fausse barre de navigateur -->
                                 <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
+                                <!-- Conteneur visuels -->
                                 <div class="cadre-content-wrapper">
-                                    <picture class="cadre-img-content">
+                                    <!-- Mobile -->
+                                    <picture class="cadre-img-content cadre-content-mobile">
+                                        <source srcset="img/maquette-site-accueil-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-accueil-mobile.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-accueil-mobile.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format mobile">
+                                    </picture>
+
+                                    <!-- Desktop -->
+                                    <picture class="cadre-img-content cadre-content-desktop">
                                         <source srcset="img/maquette-site-accueil-desktop.webp" type="image/webp" width="100%" height="auto">
-                                        <source srcset="img/maquette-site-accueil-desktop.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <source srcset="img/maquette-site-accueil-desktop.png" type="image/jpeg" width="100%" height="auto">
                                         <img src="img/maquette-site-accueil-desktop.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format écran large">
                                     </picture>
-                                </div>
 
-                                <div class="cadre-instruction-tag">
-                                    <div class="inst-tag-ico"></div>
-                                    <div class="inst-tag-txt"></div>
+                                    <!-- Overlay trigger -->
+                                    <div class="cadre-trigger-overlay">  
+                                        <div class="trigger-instruction-tag">
+                                            <div class="trigger-tag-ico"></div>
+                                            <div class="trigger-tag-txt"></div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="switch-cadre">
-                                <div class="switch-cadre-ico"></div>
-                                <p class="switch-cadre-txt"></p>
+                            <figcaption class="legende-visuel">Maquette de la page "accueil"</figcaption>
+                        </div>
+
+                        <div class="zone-fullscreen-cadre">
+
+                            <button class="hide-cadre-btn"></button>
+                            
+                            <div class="fullcadre-top-zone">
+                                <figcaption class="legende-visuel-fullcadre">Maquette de la page "accueil"</figcaption>
+                                <p class="fullcadre-instruction">
+                                    <span class="fullcadre-instruction-ico"></span>
+                                    Scrollez la page avec votre
+                                    <span class="keyword-fullcadre-instru"></span></p>
+                            </div>
+                            
+
+                            <div class="cadre-scrollable">
+                                <!-- Fausse barre de navigateur -->
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+
+                                <!-- Conteneur visuels -->
+                                <div class="cadre-content-wrapper">
+                                    <!-- Mobile -->
+                                    <picture class="cadre-img-content cadre-content-mobile">
+                                        <source srcset="img/maquette-site-accueil-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-accueil-mobile.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-accueil-mobile.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format mobile">
+                                    </picture>
+
+                                    <!-- Desktop -->
+                                    <picture class="cadre-img-content cadre-content-desktop">
+                                        <source srcset="img/maquette-site-accueil-desktop.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-accueil-desktop.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-accueil-desktop.png" width="100%" height="auto" alt="image de la maquette de la page d'accueil du site en format écran large">
+                                    </picture>
+
+                                </div> 
                             </div>
 
-                            <figcaption class="legende-visuel">Maquette de la page d’accueil</figcaption>
+                            <div class="fullcadre-bottom-zone">
+                                <div class="switch-cadre">
+                                    <div class="switch-cadre-ico"></div>
+                                    <p class="switch-cadre-txt"></p>
+                                </div>
+                            </div>
+                            
 
-                        </figure>
+                            <span class="fullcadre-back-overlay"></span>
+                        </div>
 
                     </div>
                 </div>
@@ -644,50 +689,89 @@
                 </div>
 
                 <div class="section-ligne">
-                    <div class="section-colonne full-col">
+                    <div id="Cadre_page_projets" class="section-colonne full-col">
 
-                        <figure id="Bloc_cadre_accueil" class="bloc-cadre">
-                            <div class="cadre-mobile switch-off-cadre prevent-scrolling">
-                                <div class="cadre-content-wrapper">
-                                    <picture class="cadre-img-content">
-                                        <source srcset="img/maquette-site-projets-mobile.webp" type="image/webp" width="100%" height="auto">
-                                        <source srcset="img/maquette-site-projets-mobile.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-projets-mobile.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format mobile">
-                                    </picture>
-                                </div>
-
-                                <div class="cadre-instruction-tag">
-                                    <div class="inst-tag-ico"></div>
-                                    <div class="inst-tag-txt"></div>
-                                </div>
-
-                            </div>
-
-                            <div class="cadre-desktop">
+                        <div class="cadre-trigger">
+                            <div class="cadre-scrollable force-mobile">
+                                <!-- Fausse barre de navigateur -->
                                 <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
+                                <!-- Conteneur visuels -->
                                 <div class="cadre-content-wrapper">
-                                    <picture class="cadre-img-content">
+                                    <!-- Mobile -->
+                                    <picture class="cadre-img-content cadre-content-mobile">
+                                        <source srcset="img/maquette-site-projets-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-projets-mobile.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-projets-mobile.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format mobile">
+                                    </picture>
+
+                                    <!-- Desktop -->
+                                    <picture class="cadre-img-content cadre-content-desktop">
                                         <source srcset="img/maquette-site-projets-desktop.webp" type="image/webp" width="100%" height="auto">
-                                        <source srcset="img/maquette-site-projets-desktop.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <source srcset="img/maquette-site-projets-desktop.png" type="image/jpeg" width="100%" height="auto">
                                         <img src="img/maquette-site-projets-desktop.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format grand écran">
                                     </picture>
-                                </div>
 
-                                <div class="cadre-instruction-tag">
-                                    <div class="inst-tag-ico"></div>
-                                    <div class="inst-tag-txt"></div>
+                                    <!-- Overlay trigger -->
+                                    <div class="cadre-trigger-overlay">  
+                                        <div class="trigger-instruction-tag">
+                                            <div class="trigger-tag-ico"></div>
+                                            <div class="trigger-tag-txt"></div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="switch-cadre">
-                                <div class="switch-cadre-ico"></div>
-                                <p class="switch-cadre-txt"></p>
+                            <figcaption class="legende-visuel">Maquette de la page "mes projets"</figcaption>
+                        </div>
+
+                        <div class="zone-fullscreen-cadre">
+
+                            <button class="hide-cadre-btn"></button>
+                            
+                            <div class="fullcadre-top-zone">
+                                <figcaption class="legende-visuel-fullcadre">Maquette de la page "mes projets"</figcaption>
+                                <p class="fullcadre-instruction">
+                                    <span class="fullcadre-instruction-ico"></span>
+                                    Scrollez la page avec votre
+                                    <span class="keyword-fullcadre-instru"></span></p>
+                            </div>
+                            
+
+                            <div class="cadre-scrollable">
+                                <!-- Fausse barre de navigateur -->
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+
+                                <!-- Conteneur visuels -->
+                                <div class="cadre-content-wrapper">
+                                    <!-- Mobile -->
+                                    <picture class="cadre-img-content cadre-content-mobile">
+                                        <source srcset="img/maquette-site-projets-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-projets-mobile.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-projets-mobile.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format mobile">
+                                    </picture>
+
+                                    <!-- Desktop -->
+                                    <picture class="cadre-img-content cadre-content-desktop">
+                                        <source srcset="img/maquette-site-projets-desktop.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-projets-desktop.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-projets-desktop.png" width="100%" height="auto" alt="image de la maquette de la page des projets du site en format grand écran">
+                                    </picture>
+
+                                </div> 
                             </div>
 
-                            <figcaption class="legende-visuel">Maquette de la page “mes projets”</figcaption>
+                            <div class="fullcadre-bottom-zone">
+                                <div class="switch-cadre">
+                                    <div class="switch-cadre-ico"></div>
+                                    <p class="switch-cadre-txt"></p>
+                                </div>
+                            </div>
+                            
 
-                        </figure>
+                            <span class="fullcadre-back-overlay"></span>
+                        </div>
 
                     </div>
                 </div>
@@ -726,50 +810,89 @@
                 </div>
 
                 <div class="section-ligne">
-                    <div class="section-colonne full-col">
+                    <div id="Cadre_page_parcours" class="section-colonne full-col">
 
-                        <figure id="Bloc_cadre_accueil" class="bloc-cadre">
-                            <div class="cadre-mobile switch-off-cadre prevent-scrolling">
-                                <div class="cadre-content-wrapper">
-                                    <picture class="cadre-img-content">
-                                        <source srcset="img/maquette-site-parcours-mobile.webp" type="image/webp" width="100%" height="auto">
-                                        <source srcset="img/maquette-site-parcours-mobile.png" type="image/jpeg" width="100%" height="auto"> 
-                                        <img src="img/maquette-site-parcours-mobile.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format mobile">
-                                    </picture>
-                                </div>
-
-                                <div class="cadre-instruction-tag">
-                                    <div class="inst-tag-ico"></div>
-                                    <div class="inst-tag-txt"></div>
-                                </div>
-
-                            </div>
-
-                            <div class="cadre-desktop">
+                        <div class="cadre-trigger">
+                            <div class="cadre-scrollable force-mobile">
+                                <!-- Fausse barre de navigateur -->
                                 <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
 
+                                <!-- Conteneur visuels -->
                                 <div class="cadre-content-wrapper">
-                                    <picture class="cadre-img-content">
+                                    <!-- Mobile -->
+                                    <picture class="cadre-img-content cadre-content-mobile">
+                                        <source srcset="img/maquette-site-parcours-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-parcours-mobile.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-parcours-mobile.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format mobile">
+                                    </picture>
+
+                                    <!-- Desktop -->
+                                    <picture class="cadre-img-content cadre-content-desktop">
                                         <source srcset="img/maquette-site-parcours-desktop.webp" type="image/webp" width="100%" height="auto">
-                                        <source srcset="img/maquette-site-parcours-desktop.png" type="image/jpeg" width="100%" height="auto"> 
+                                        <source srcset="img/maquette-site-parcours-desktop.png" type="image/jpeg" width="100%" height="auto">
                                         <img src="img/maquette-site-parcours-desktop.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format grand écran">
                                     </picture>
-                                </div>
 
-                                <div class="cadre-instruction-tag">
-                                    <div class="inst-tag-ico"></div>
-                                    <div class="inst-tag-txt"></div>
+                                    <!-- Overlay trigger -->
+                                    <div class="cadre-trigger-overlay">  
+                                        <div class="trigger-instruction-tag">
+                                            <div class="trigger-tag-ico"></div>
+                                            <div class="trigger-tag-txt"></div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="switch-cadre">
-                                <div class="switch-cadre-ico"></div>
-                                <p class="switch-cadre-txt"></p>
+                            <figcaption class="legende-visuel">Maquette de la page "mon parcours"</figcaption>
+                        </div>
+
+                        <div class="zone-fullscreen-cadre">
+
+                            <button class="hide-cadre-btn"></button>
+                            
+                            <div class="fullcadre-top-zone">
+                                <figcaption class="legende-visuel-fullcadre">Maquette de la page "mon parcours"</figcaption>
+                                <p class="fullcadre-instruction">
+                                    <span class="fullcadre-instruction-ico"></span>
+                                    Scrollez la page avec votre
+                                    <span class="keyword-fullcadre-instru"></span></p>
+                            </div>
+                            
+
+                            <div class="cadre-scrollable">
+                                <!-- Fausse barre de navigateur -->
+                                <?php include('../../../assets/module/modules-projets/navibar-cadre-desk.php'); ?>
+
+                                <!-- Conteneur visuels -->
+                                <div class="cadre-content-wrapper">
+                                    <!-- Mobile -->
+                                    <picture class="cadre-img-content cadre-content-mobile">
+                                        <source srcset="img/maquette-site-parcours-mobile.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-parcours-mobile.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-parcours-mobile.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format mobile">
+                                    </picture>
+
+                                    <!-- Desktop -->
+                                    <picture class="cadre-img-content cadre-content-desktop">
+                                        <source srcset="img/maquette-site-parcours-desktop.webp" type="image/webp" width="100%" height="auto">
+                                        <source srcset="img/maquette-site-parcours-desktop.png" type="image/jpeg" width="100%" height="auto">
+                                        <img src="img/maquette-site-parcours-desktop.png" width="100%" height="auto" alt="image de la maquette de la page mon parcours du site en format grand écran">
+                                    </picture>
+
+                                </div> 
                             </div>
 
-                            <figcaption class="legende-visuel">Maquette de la page “mon parcours”</figcaption>
+                            <div class="fullcadre-bottom-zone">
+                                <div class="switch-cadre">
+                                    <div class="switch-cadre-ico"></div>
+                                    <p class="switch-cadre-txt"></p>
+                                </div>
+                            </div>
+                            
 
-                        </figure>
+                            <span class="fullcadre-back-overlay"></span>
+                        </div>
 
                     </div>
                 </div>

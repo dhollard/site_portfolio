@@ -30,69 +30,95 @@
 
 <!-- ********************* Scripts liés aux cadres scrollables ********************* -->
 
-<!-- Script pour masquer l'invitation à scroller un cadre -->
+<!-- Déclaration des variables nécessaire au bon fonctionnement de la bibliothèque Body Scroll Lock -->
 <script>
-    $(".cadre-content-wrapper").scroll(function() {
+    
+</script>
 
-        $(this).delay(600).queue(function() {
-            $(this).siblings(".cadre-instruction-tag").addClass("fade-out-tag").dequeue();
-        });
+<!-- Script pour afficher la version plein écran d'un cadre scrollable -->
+<script>
+    $(".cadre-trigger").click(function() {
+        // Ajoute la classe .open-overlay au .zone-fullscreen-cadre voisin pour l'afficher
+        $(this).siblings(".zone-fullscreen-cadre").addClass("open-overlay");
 
+        // Appelle la fonction qui bloque/débloque le scroll sur la page en fonction de l'état d'ouverture de l'overlay
+        fullscreenStopScrollPage();
     });
 </script>
 
-<!-- Script pour permutter entre la version mobile et desktop d'un cadre -->
+<!-- Script pour masquer la version plein écran d'un cadre scrollable -->
+<script>
+
+    // En cliquant sur la croix prévu à cet effet
+    $(".hide-cadre-btn").click(function() {
+        // Retire la classe .open-overlay au .zone-fullscreen-cadre parent pour le masquer
+        $(this).parents(".zone-fullscreen-cadre").removeClass("open-overlay");
+
+        // Appelle la fonction qui bloque/débloque le scroll sur la page en fonction de l'état d'ouverture de l'overlay
+        fullscreenStopScrollPage();
+
+    });
+
+    // En cliquant sur l'overlay noir
+    $(".fullcadre-back-overlay").click(function() {
+        // Retire la classe .open-overlay au .zone-fullscreen-cadre parent pour le masquer
+        $(this).parent(".zone-fullscreen-cadre").removeClass("open-overlay");
+
+        // Appelle la fonction qui bloque/débloque le scroll sur la page en fonction de l'état d'ouverture de l'overlay
+        fullscreenStopScrollPage();
+
+        
+    });
+
+</script>
+
+<!-- Fonction pour bloquer le scroll de la page lorsque le mode fullscreen d'un cadre est ouvert -->
+<script>
+function fullscreenStopScrollPage() {
+  if ($('html').has('.zone-fullscreen-cadre.open-overlay').length > 0) {
+    // Si l'élément ".zone-fullscreen-cadre" avec ".open-overlay" existe, ajoute la classe ".not-scrollable" à <html>
+    $('html').addClass('not-scrollable');
+
+    // Désactive le scroll de la page via le plugin body scroll lock
+    const targetElement = document.querySelectorAll('.cadre-content-wrapper');
+
+    targetElement.forEach((element) => {
+        bodyScrollLock.disableBodyScroll(element);
+    });
+
+  } else {
+    // Si l'élément ".zone-fullscreen-cadre" avec ".open-overlay" n'existe pas, retire la classe ".not-scrollable" de <html>
+    $('html').removeClass('not-scrollable');
+
+    // Réactiver le scroll de la page via le plugin body scroll lock
+    const targetElement = document.querySelectorAll('.cadre-content-wrapper');
+
+    targetElement.forEach((element) => {
+        bodyScrollLock.enableBodyScroll(element);
+    });
+  }
+}
+</script>
+
+<!-- Script pour permutter entre la version mobile et desktop d'un cadre quand cela est possible -->
 <script>
     $(".switch-cadre").click(function() {
 
-        // Vérifie si le cadre mobile voisin est masqué
-        if ($(this).siblings(".cadre-mobile").hasClass("switch-off-cadre")) {
-            $(this).siblings(".cadre-mobile").removeClass("switch-off-cadre");
-            $(this).siblings(".cadre-desktop").addClass("switch-off-cadre");
-            $(this).addClass("switch-to-desktop");
+        // Vérifie si le cadre scrollable voisin ne possède PAS déjà la classe .force-mobile et l'applique le cas échéant
+        if (!$(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").hasClass("force-mobile")) {
+            
+            $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").addClass("force-mobile");
 
-            // Vérifie le cas échéant, si le cadre desktop voisin est masqué
-        } else if ($(this).siblings(".cadre-desktop").hasClass("switch-off-cadre")) {
-            $(this).siblings(".cadre-desktop").removeClass("switch-off-cadre");
-            $(this).siblings(".cadre-mobile").addClass("switch-off-cadre");
-            $(this).removeClass("switch-to-desktop");
-        } else {
+            // Remise à zéro de la position de scroll du cadre
+            $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").find('.cadre-content-wrapper').scrollTop(0);
+            
+            // Retire la classe .force-mobile
+        }   else {
 
-        }
+            $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").removeClass("force-mobile");
 
-    });
-</script>
-
-<!-- Script pour déverouiller un cadre maquette afin de pouvoir le scroller -->
-<script>
-    $(".cadre-mobile.prevent-scrolling").on("dblclick", function() {
-
-        $(this).removeClass("prevent-scrolling");
-
-    });
-</script>
-
-<!-- Script pour re-vérouiller un cadre maquette quand on clique en dehors -->
-<script>
-    // Vérouiller si on clique sur autre chose qu'un contenu mobile
-    $(document).click(function(e) {
-        if (!$(e.target).hasClass("cadre-content-wrapper")) {
-
-            $(".cadre-mobile").addClass("prevent-scrolling");
-
-        } else {
-
-        }
-
-    });
-
-    $(document).scroll(function(e) {
-        if (!$(e.target).hasClass("cadre-content-wrapper")) {
-
-            $(".cadre-mobile").addClass("prevent-scrolling");
-
-        } else {
-
+            // Remise à zéro de la position de scroll du cadre
+            $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").find('.cadre-content-wrapper').scrollTop(0);
         }
 
     });

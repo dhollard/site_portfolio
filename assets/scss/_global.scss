@@ -25,6 +25,11 @@ main {
     margin: auto;
 }
 
+// Classe générique pour stopper le scroll entièrement sur un élément temporairement
+.not-scrollable {
+    overflow: hidden!important;
+}
+
 //classe pour retarder les effets de transitions qui se déclenchent au chargement
 .wait-for-load, .wait-for-load * {
     -webkit-transition: none !important;
@@ -46,7 +51,12 @@ main {
 
 // Classe générique pour masquer un élément dynamiquement
 .d-none {
-    display: none;
+    display: none!important;
+}
+
+// Classe générique pour afficher un élément en flexbox
+.d-flex{
+    display: flex!important;
 }
 
 // navbar
