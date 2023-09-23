@@ -30,11 +30,6 @@
 
 <!-- ********************* Scripts liés aux cadres scrollables ********************* -->
 
-<!-- Déclaration des variables nécessaire au bon fonctionnement de la bibliothèque Body Scroll Lock -->
-<script>
-    
-</script>
-
 <!-- Script pour afficher la version plein écran d'un cadre scrollable -->
 <script>
     $(".cadre-trigger").click(function() {
@@ -54,7 +49,7 @@
         // Retire la classe .open-overlay au .zone-fullscreen-cadre parent pour le masquer
         $(this).parents(".zone-fullscreen-cadre").removeClass("open-overlay");
 
-        // Appelle la fonction qui bloque/débloque le scroll sur la page en fonction de l'état d'ouverture de l'overlay
+        // Appelle la fonction qui bloque/débloque le scroll sur la page
         fullscreenStopScrollPage();
 
     });
@@ -64,40 +59,12 @@
         // Retire la classe .open-overlay au .zone-fullscreen-cadre parent pour le masquer
         $(this).parent(".zone-fullscreen-cadre").removeClass("open-overlay");
 
-        // Appelle la fonction qui bloque/débloque le scroll sur la page en fonction de l'état d'ouverture de l'overlay
+        // Appelle la fonction qui bloque/débloque le scroll sur la page
         fullscreenStopScrollPage();
 
         
     });
 
-</script>
-
-<!-- Fonction pour bloquer le scroll de la page lorsque le mode fullscreen d'un cadre est ouvert -->
-<script>
-function fullscreenStopScrollPage() {
-  if ($('html').has('.zone-fullscreen-cadre.open-overlay').length > 0) {
-    // Si l'élément ".zone-fullscreen-cadre" avec ".open-overlay" existe, ajoute la classe ".not-scrollable" à <html>
-    $('html').addClass('not-scrollable');
-
-    // Désactive le scroll de la page via le plugin body scroll lock
-    const targetElement = document.querySelectorAll('.cadre-content-wrapper');
-
-    targetElement.forEach((element) => {
-        bodyScrollLock.disableBodyScroll(element);
-    });
-
-  } else {
-    // Si l'élément ".zone-fullscreen-cadre" avec ".open-overlay" n'existe pas, retire la classe ".not-scrollable" de <html>
-    $('html').removeClass('not-scrollable');
-
-    // Réactiver le scroll de la page via le plugin body scroll lock
-    const targetElement = document.querySelectorAll('.cadre-content-wrapper');
-
-    targetElement.forEach((element) => {
-        bodyScrollLock.enableBodyScroll(element);
-    });
-  }
-}
 </script>
 
 <!-- Script pour permutter entre la version mobile et desktop d'un cadre quand cela est possible -->
@@ -140,7 +107,7 @@ function fullscreenStopScrollPage() {
         } else {
             $("#Sommaire").addClass("mask-sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");
-            $(root).removeClass("no-scroll");
+            $(root).removeClass("sommaire-no-scroll");
         }
     };
 </script>
@@ -154,13 +121,13 @@ function fullscreenStopScrollPage() {
 
             $("#Sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");
-            $(root).removeClass("no-scroll");
+            $(root).removeClass("sommaire-no-scroll");
 
         } else {
 
             $("#Sommaire").addClass("show-sommaire");
             $("#Overlay_sommaire").addClass("show-overlay");
-            $(root).addClass("no-scroll");
+            $(root).addClass("sommaire-no-scroll");
 
         }
 
@@ -176,13 +143,13 @@ function fullscreenStopScrollPage() {
 
             $("#Sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");
-            $(root).removeClass("no-scroll");
+            $(root).removeClass("sommaire-no-scroll");
 
         } else {
 
             $("#Sommaire").addClass("show-sommaire");
             $("#Overlay_sommaire").addClass("show-overlay");
-            $(root).addClass("no-scroll");
+            $(root).addClass("sommaire-no-scroll");
 
         }
 
@@ -198,7 +165,7 @@ function fullscreenStopScrollPage() {
 
             $("#Sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");
-            $(root).removeClass("no-scroll");
+            $(root).removeClass("sommaire-no-scroll");
 
         } else {
 
@@ -216,7 +183,7 @@ function fullscreenStopScrollPage() {
 
             $("#Sommaire").removeClass("show-sommaire");
             $("#Overlay_sommaire").removeClass("show-overlay");
-            $(root).removeClass("no-scroll");
+            $(root).removeClass("sommaire-no-scroll");
 
         } else {
 
@@ -313,12 +280,12 @@ function fullscreenStopScrollPage() {
         // Glissement vers le bas, masquer #Sommaire
         $('#Sommaire').removeClass('show-sommaire');
         $("#Overlay_sommaire").removeClass("show-overlay");
-        $(root).removeClass("no-scroll");
+        $(root).removeClass("sommaire-no-scroll");
         } else if (distance < -threshold) {
         // Glissement vers le haut, afficher #Sommaire
         $('#Sommaire').addClass('show-sommaire');
         $("#Overlay_sommaire").addClass("show-overlay");
-        $(root).addClass("no-scroll");
+        $(root).addClass("sommaire-no-scroll");
         } else {
         // Glissement pas assez prononcé, ne rien faire
         }

@@ -103,3 +103,17 @@
         boite.insertAdjacentHTML('afterbegin', string);
     });
 </script>
+
+<!-- Fonction pour bloquer le scroll de la page lorsqu'un élément (ex: modal) le requiert -->
+<script>
+function fullscreenStopScrollPage() {
+  if ($('html').hasClass('modal-is-open')) {
+    // Si <html> possède déjà la classe "modal-is-open", on lui retire
+    $('html').removeClass('modal-is-open');
+
+  } else if(!$('html').hasClass('modal-is-open')) {
+    // Si <html> NE possède PAS déjà la classe "modal-is-open", on lui applique
+    $('html').addClass('modal-is-open');
+  }
+}
+</script>

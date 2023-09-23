@@ -169,8 +169,9 @@ main {
   margin: auto;
 }
 
-.not-scrollable {
+.modal-is-open, .modal-is-open body {
   overflow: hidden !important;
+  touch-action: none !important;
 }
 
 .wait-for-load, .wait-for-load * {

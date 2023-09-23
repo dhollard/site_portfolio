@@ -576,13 +576,15 @@ main {
 
 }
 
-// Bloquer le scroll quand l'overlay est actif
-.no-scroll {
-    overflow: hidden;
+// Bloquer le scroll quand l'overlay du sommaire est actif
+.sommaire-no-scroll, .sommaire-no-scroll body {
+    overflow: hidden!important;
+    touch-action: none!important;
 
-    // media query .no-scroll
+    // media query .sommaire-no-scroll
     @include mquery.landscape {
         overflow: auto;
+        touch-action: auto;
     }
 }
 
@@ -1203,7 +1205,7 @@ main {
     gap: 5vh;
     align-items: center;
     padding: 50px 15px 15px 15px;
-
+    touch-action: auto;
     overflow: hidden;
 
     // media query .zone-fullscreen-cadre

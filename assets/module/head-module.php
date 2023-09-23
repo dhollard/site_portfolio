@@ -22,6 +22,3 @@
 
 <!-- Appel JQuery -->
 <script src="/assets/libraries/JQuery/jquery-3.7.0.min.js"></script>
-
-<!-- Appel Body Scroll Lock (gestion du scroll avec modal ouvert) -->
-<script src="/assets/libraries/BodyScrollLock/bodyScrollLock.min.js"></script>

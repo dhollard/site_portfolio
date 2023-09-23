@@ -25,9 +25,10 @@ main {
     margin: auto;
 }
 
-// Classe générique pour stopper le scroll entièrement sur un élément temporairement
-.not-scrollable {
+// Classe qui bloque le scroll de la page si un modal plein écran est ouvert
+.modal-is-open, .modal-is-open body {
     overflow: hidden!important;
+    touch-action:none!important;
 }
 
 //classe pour retarder les effets de transitions qui se déclenchent au chargement
