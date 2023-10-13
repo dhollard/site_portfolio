@@ -58,7 +58,7 @@
                                     <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
                                     <p>Design graphique</p>
                                     <p>Dev front end</p>
-                                    <p>UX design</p>
+                                    <p>UI/UX design</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">

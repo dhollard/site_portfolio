@@ -1,0 +1,971 @@
+@use '../color';
+@use '../mquery';
+@use '../typo';
+@use '../global';
+@use '../page-projet';
+
+// --- APPELS DES TYPOS POUR CETTE PAGE (cas spécial cas conflit avec typos actuels site) ---
+
+//Playfair (normale variable)
+@font-face {
+    font-family: "Playfair-showcase";
+    src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"),
+          url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 400 900;
+    font-display: swap;
+  }
+  
+  //Playfair (italique variable)
+  @font-face {
+    font-family: "Playfair-showcase";
+    src: url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype"),
+         url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 400 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Playfair fallback anciens navigateurs
+  @supports not (font-variation-settings: normal) {
+    
+    //Playfair (regular)
+    @font-face {
+      font-family: "Playfair-showcase";
+      src: url("/assets/font/PlayfairDisplay-Regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  
+    //Playfair (bold)
+    @font-face {
+      font-family: "Playfair-showcase";
+      src: url("/assets/font/PlayfairDisplay-Bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  
+  }
+  
+  
+  //Alegreya Sans (thin)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (thin italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (light)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (light italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (regular)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (regular italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (medium)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (medium italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (bold)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (bold italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (extrabold)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (extrabold italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (black)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Alegreya Sans (black italic)
+  @font-face {
+    font-family: "Alegreya-showcase";
+    src: url("/assets/font/AlegreyaSans-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  
+  //Assistant (normale variable)
+  @font-face {
+    font-family: "Assistant-showcase";
+    src: url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype"),
+          url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 200 800;
+    font-display: swap;
+  }
+  
+  //Assistant fallback anciens navigateurs
+  @supports not (font-variation-settings: normal) {
+    
+    //Assistant (regular)
+    @font-face {
+      font-family: "Assistant-showcase";
+      src: url("/assets/font/Assistant-Regular.ttf");
+      font-weight: 400;
+      font-display: swap;
+    }
+  
+    //Assistant (bold)
+    @font-face {
+      font-family: "Assistant-showcase";
+      src: url("/assets/font/Assistant-Bold.ttf");
+      font-weight: 700;
+      font-display: swap;
+    }
+  
+  }
+
+// Règles globales page
+.trigger-instruction-tag {
+    background: color.$secondary-100!important;
+}
+
+
+// Règles par section
+#Header_projet {
+    background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Resume_projet {
+
+    .zone-cadre-video {
+        padding: 0 30px;
+
+        // media query .zone-cadre-video
+        @include mquery.laptop {   
+            padding: 0;
+        }
+    }
+
+    #Video_showreel_mob {
+        display: block;
+
+        // media query #Video_showreel_mob
+        @include mquery.laptop {   
+            display: none;
+        }
+    }
+
+    #Video_showreel_desk {
+        display: none;
+
+        // media query #Video_showreel_desk
+        @include mquery.laptop {   
+            display: block;
+        }
+    }
+}
+
+#Objectifs_projet {
+
+
+    .schema-objectifs, .schema-objectifs * {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 0 auto;
+
+        // media query .schema-objectifs
+        @include mquery.laptop {
+           max-width: 100%;   
+            
+        }
+
+    }
+
+}
+
+#Processus_projet {
+
+    #Bloc_compare_options_site {
+
+        .section-ligne {
+            --gap-section: 50px;
+
+            // media query #Ligne_compare_options_site
+            @include mquery.landscape {   
+                --gap-section: 30px;
+            }
+    
+            // media query #Ligne_compare_options_site
+            @include mquery.laptop {   
+                --gap-section: 45px;
+            }
+        }
+
+        // Colonnes comparatives
+        .compare-col {
+            gap: 15px;
+
+            // media query .compare-col
+            @include mquery.landscape {   
+                gap: 20px;
+            }
+        }
+        
+    }
+
+    // bloc d'en-tête de la colonne comparative
+    .compare-header {
+        padding: 12px 15px;
+        background: color.$ambiance-80;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+
+        // media query .compare-header
+        @include mquery.phone {   
+            padding: 12px 12px;
+        }
+
+        // media query .compare-header
+        @include mquery.tablet {   
+            justify-content: center;
+            padding: 15px 15px;
+        }
+
+        // media query .compare-header
+        @include mquery.landscape {   
+            border-radius: 20px;
+            flex-direction: column;
+            gap: 4px;
+            padding: 15px 5px;
+        }
+
+        .compare-icon {
+            width: 32px;
+            height: 32px;
+
+            // media query .compare-icon
+            @include mquery.landscape {   
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        .compare-titre {
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 28px;
+            margin: 0;
+            line-height: 1.1;
+            padding-top: 2px;
+
+            // media query .compare-titre
+            @include mquery.phone {   
+                font-size: 24px;
+            }
+
+            // media query .compare-titre
+            @include mquery.landscape {   
+                text-align: center;
+                padding-top: 0px;
+            }
+
+            .retour-ligne {
+                display: none;
+                
+                // media query .retour-ligne
+                @include mquery.landscape {   
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // bloc liste à puce comparatif
+    .compare-list {
+        
+        li {
+            // media query .compare-list li
+            @include mquery.desktop-xl {   
+                font-size: 22px;
+            }
+
+            &::before {
+                background: color.$ambiance-40;
+            }
+        }
+    }
+
+    // colonne mise en valeur
+    .compare-focus {
+        order: 3;
+
+        // media query .compare-focus
+        @include mquery.landscape {   
+            order: unset;
+        }
+        
+        .compare-header {
+            background: var(--couleur-focus-projet);
+
+        }
+
+        li::before {
+            background: var(--couleur-focus-projet);
+        }
+    }
+
+    #Conclusion_sec_processus {
+        @include typo.title($color:#ffffff, $weight:700);
+        font-size: 28px;
+        text-align: left;
+
+        // media query #Conclusion_sec_processus
+        @include mquery.phone {   
+            font-size: 22px;
+        }
+
+        // media query #Conclusion_sec_processus
+        @include mquery.tablet {   
+            text-align: center;
+        }
+
+        // media query #Conclusion_sec_processus
+        @include mquery.laptop {   
+            font-size: 36px;
+        }
+    }
+}
+
+#Structure_site {
+
+    // schéma illustrant l'arborescence du site
+    .schema-arborescence {
+        padding: 25px 0 0 0;
+
+        // media query .schema-arborescence
+        @include mquery.landscape {   
+            padding: 65px 30px 0 30px;
+        }
+
+        // media query .schema-arborescence
+        @include mquery.desktop-xl {   
+            padding: 65px 50px 0 50px;
+        }
+    }
+
+    // Conteneur idées post-it
+    .bloc-visuel {
+        padding: 25px 0 0 0;
+
+        // media query .bloc-visuel
+        @include mquery.landscape {   
+            padding: 65px 0 0 0;
+        }
+    }
+}
+
+#Identite_visuelle {
+
+    #Bloc_typo_couleur_projet .section-ligne {
+        gap: 150px;
+
+        // media query #Bloc_typo_couleur_projet
+        @include mquery.landscape {  
+            gap: var(--gap-section);
+        }
+    }
+
+    .titre-typo {
+        margin: 0 0 20px 0;
+    }
+
+    // Typo showcase n°1 : Playfair Display
+    #Typo_projet_01 {
+
+        .typo-showcase {
+            font-family: 'Playfair-showcase';
+            font-weight: 600;
+            font-size: 46px;
+
+        // media query .typo-showcase 01
+        @include mquery.phone {  
+            font-size: 40px;
+        }
+    
+        // media query .typo-showcase 01
+        @include mquery.tablet {  
+            font-size: 56px;
+        }
+
+        // media query .typo-showcase 01
+        @include mquery.landscape {  
+            font-size: 46px;
+        }
+        
+        // media query .typo-showcase 01
+        @include mquery.laptop {  
+            font-size: 56px;
+        }
+
+        // media query .typo-showcase 01
+        @include mquery.desktop-xl {  
+            font-size: 73px;
+        }
+
+        }
+
+        .typo-contexte {
+            font-family: 'Playfair-showcase';
+            font-weight: 400;
+            font-size: 24px;
+
+            // media query .typo-contexte 01
+            @include mquery.phone {  
+                font-size: 22px;
+            }
+
+            // media query .typo-contexte 01
+            @include mquery.tablet {  
+                font-size: 28px;
+            }
+
+            // media query .typo-contexte 01
+            @include mquery.landscape {  
+                font-size: 24px;
+            }
+
+            // media query .typo-contexte 01
+            @include mquery.laptop {  
+                font-size: 28px;
+            }
+
+            // media query .typo-contexte 01
+            @include mquery.desktop-xl {  
+                font-size: 34px;
+            }
+        }
+    }
+
+    // Typo showcase n°2 : Alegreya Sans
+    #Typo_projet_02 {
+
+        .typo-showcase {
+            font-family: 'Alegreya-showcase';
+            font-weight: 700;
+            font-size: 42px;
+
+        // media query .typo-showcase 02
+        @include mquery.tablet {  
+            font-size: 48px;
+        }
+
+        // media query .typo-showcase 02
+        @include mquery.landscape {  
+            font-size: 42px;
+        }
+
+        // media query .typo-showcase 02
+        @include mquery.laptop {  
+            font-size: 48px;
+        }
+
+        // media query .typo-showcase 02
+        @include mquery.desktop-xl {  
+            font-size: 60px;
+        }
+
+        }
+
+        .typo-contexte {
+            font-family: 'Alegreya-showcase';
+            font-weight: 400;
+            font-size: 20px;
+
+            // media query .typo-contexte 02
+            @include mquery.tablet {  
+                font-size: 26px;
+            }
+
+            // media query .typo-contexte 02
+            @include mquery.landscape {  
+                font-size: 20px;
+            }
+
+            // media query .typo-contexte 02
+            @include mquery.laptop {  
+                font-size: 26px;
+            }
+
+            // media query .typo-contexte 02
+            @include mquery.desktop-xl {  
+                font-size: 32px;
+            }
+        }
+    }
+
+    // Typo showcase n°3 : Assistant
+    #Typo_projet_03 {
+
+        .typo-showcase {
+            font-family: 'Assistant-showcase';
+            font-weight: 700;
+            font-size: 34px;
+
+        // media query .typo-showcase 03
+        @include mquery.tablet {  
+            font-size: 42px;
+        }
+
+        // media query .typo-showcase 03
+        @include mquery.landscape {  
+            font-size: 34px;
+        }
+
+        // media query .typo-showcase 03
+        @include mquery.laptop {  
+            font-size: 42px;
+        }
+
+        // media query .typo-showcase 03
+        @include mquery.desktop-xl {  
+            font-size: 56px;
+        }
+
+        }
+
+        .typo-contexte {
+            font-family: 'Assistant-showcase';
+            font-weight: 400;
+            font-size: 18px;
+
+            // media query .typo-contexte 03
+            @include mquery.tablet {  
+                font-size: 22px;
+            }
+
+            // media query .typo-contexte 03
+            @include mquery.landscape {  
+                font-size: 18px;
+            }
+
+            // media query .typo-contexte 03
+            @include mquery.laptop {  
+                font-size: 22px;
+            }
+
+            // media query .typo-contexte 03
+            @include mquery.desktop-xl {  
+                font-size: 26px;
+            }
+        }
+    }
+
+    .titre-couleurs {
+        margin: 0 0 45px 0;
+    }
+
+    // Palette de couleurs du projet n°1 (rouge)
+    #Palette_projet_01 {
+
+        .palette-majeure {
+            background: #FF6666;
+        }
+
+        .palette-mineure {
+
+            .carre-palette:nth-child(1) {
+                background: #FFCCC6;
+            }
+
+            .carre-palette:nth-child(2) {
+                background: #FF9892;
+            }
+
+            .carre-palette:nth-child(3) {
+                background: #FF6666;
+            }
+
+            .carre-palette:nth-child(4) {
+                background: #E93B39;
+            }
+
+            .carre-palette:nth-child(5) {
+                background: #BD0906;
+            }
+
+            .carre-palette:nth-child(6) {
+                background: #7C0101;
+            }
+        }
+    }
+
+    // Palette de couleurs du projet n°2 (vert)
+    #Palette_projet_02 {
+
+        .palette-majeure {
+            background: #439A86;
+        }
+
+        .palette-mineure {
+
+            .carre-palette:nth-child(1) {
+                background: #BEDDD6;
+            }
+
+            .carre-palette:nth-child(2) {
+                background: #84BCB0;
+            }
+
+            .carre-palette:nth-child(3) {
+                background: #439A86;
+            }
+
+            .carre-palette:nth-child(4) {
+                background: #238A70;
+            }
+
+            .carre-palette:nth-child(5) {
+                background: #067A5B;
+            }
+
+            .carre-palette:nth-child(6) {
+                background: #00593E;
+            }
+        }
+    }
+
+    // Palette de couleurs du projet n°3 (gris anthracite)
+    #Palette_projet_03 {
+
+        .palette-majeure {
+            background: #342B33;
+            border: 2px solid #D8D6D8;
+        }
+
+        .palette-mineure {
+
+            .carre-palette:nth-child(1) {
+                background: #D8D6D8;
+            }
+
+            .carre-palette:nth-child(2) {
+                background: #A69CA4;
+            }
+
+            .carre-palette:nth-child(3) {
+                background: #544953;
+            }
+
+            .carre-palette:nth-child(4) {
+                background: #342B33;
+                border: 2px solid #D8D6D8;
+            }
+
+            .carre-palette:nth-child(5) {
+                background: #261624;
+            }
+
+            .carre-palette:nth-child(6) {
+                background: #190517;
+            }
+        }
+    }
+}
+
+#Maquette_site {
+
+    // Bloc contenant les cadres maquette page d'accueil
+    #Cadre_page_accueil .cadre-trigger,
+    #Cadre_page_projets .cadre-trigger,
+    #Cadre_page_parcours .cadre-trigger
+    {
+        margin-top: 55px;
+    }
+
+    // Bloc à la fin de la section, qui renvoie vers le lien figma de la maquette
+    .bloc-conclusion-maquette {
+        background: color.$ambiance-120;
+        padding: 30px 15px 40px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .conclusion-maquette-txt {
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 24px;
+            text-align: center;
+            margin: 0 0 12px 0;
+
+            // media query .conclusion-maquette-txt
+            @include mquery.phone {   
+                font-size: 22px;
+            }
+
+            // media query .conclusion-maquette-txt
+            @include mquery.landscape {   
+                font-size: 28px;
+            }
+        }
+
+        .conclusion-maquette-btn {
+            background: color.$primary-100;
+            border-radius: 10px;
+            padding: 18px 25px;
+            margin: 15px 0 0 0;
+
+            @include typo.title($color:#ffffff, $weight:700);
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+
+            &:hover {
+                background: color.$primary-120;
+            }
+
+            // media query .conclusion-maquette-btn
+            @include mquery.landscape {   
+                font-size: 24px;
+            }
+        }
+
+
+    }
+
+}
+
+#Developpement_web {
+
+    .schema-code-lang video {
+        max-width: 450px;
+
+        // media query .schema-code-lang video
+        @include mquery.landscape {   
+            max-width: 100%;
+        }
+    }
+
+    .github-btn-link {
+        background: color.$primary-100;
+        border-radius: 10px;
+        padding: 18px 25px;
+        margin: 15px auto 0 auto;
+        max-width: 350px;
+        width: 100%;
+
+        @include typo.title($color:#ffffff, $weight:700);
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            background: color.$primary-120;
+        }
+
+        // media query .conclusion-maquette-btn
+        @include mquery.landscape {   
+            font-size: 24px;
+            max-width: 100%;
+        }
+    }
+
+    .anim-dev-showcase video {
+        max-width: 450px;
+
+        // media query .anim-dev-showcase video
+        @include mquery.landscape {   
+            max-width: 100%;
+        }
+    }
+}
+
+#Resultat_obtenu {
+
+    .bloc-emoji-special-gap .section-ligne {
+        margin-top: 25px;
+
+        // media query marge spéciale
+        @include mquery.tablet {   
+            margin-top: 55px;
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+            margin-top: 0px;
+        }
+    }
+}
+
+#Enseignements_appris {
+
+    .bloc-emoji-special-gap .section-ligne {
+        margin-top: 25px;
+
+        // media query marge spéciale
+        @include mquery.tablet {   
+            margin-top: 55px;
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+            margin-top: 0px;
+        }
+    }
+    
+}
+
+
+
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
+
+    // ---------- problèmes liés à la propriété gap -------------
+
+    #Bloc_compare_options_site {
+        .section-ligne {
+            .section-colonne {
+                &:last-of-type {
+                    margin-bottom: var(--gap-section);
+                }
+            }
+
+            .compare-col {
+                gap: 0px;
+            }
+        }
+
+        .compare-header {
+            gap: 0;
+
+            .compare-icon {
+                margin-right: 10px;
+
+                // media query .compare-icon
+                @include mquery.landscape {   
+                    margin-right: 0px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    #Identite_visuelle {
+        #Bloc_typo_couleur_projet .section-ligne {
+            gap: 0px;
+
+            .section-colonne {
+                margin-bottom: 150px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                // media query .section-ligne
+                @include mquery.landscape {
+                    margin-bottom: 0;
+                    margin-right: var(--gap-section);
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // Alternatives aux webp
+    #Header_projet {
+        background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
+    }
+
+    
+}
