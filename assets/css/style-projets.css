@@ -964,28 +964,33 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 992px) {
   #sec-proj-01 .projet-grid {
     background-repeat: repeat;
-    width: 856px;
+    width: 775px;
     flex-direction: row;
-    gap: 70px 90px;
+    gap: 50px;
     justify-content: start;
     flex-wrap: wrap;
     align-items: center;
   }
 }
+@media (min-width: 1200px) {
+  #sec-proj-01 .projet-grid {
+    width: 1050px;
+  }
+}
 @media (min-width: 1600px) {
   #sec-proj-01 .projet-grid {
-    width: 1170px;
+    width: 1325px;
   }
 }
 @media (min-width: 1900px) {
   #sec-proj-01 .projet-grid {
-    width: 1600px;
-    gap: 100px;
+    width: 1510px;
+    gap: 70px;
   }
 }
 @media (min-width: 2400px) {
   #sec-proj-01 .projet-grid {
-    width: 2025px;
+    width: 1905px;
   }
 }
 #sec-proj-01 .projet-grid .projet-bloc {
@@ -1199,7 +1204,7 @@ footer .footer-container #footer-col-2 p span {
 }
 @media (min-width: 992px) {
   #sec-proj-01 .projet-grid .projet-bloc .projet-visuel .projet-miniature {
-    transition: transform 350ms linear, background-size 350ms linear;
+    transition: background-size 250ms ease-in-out;
   }
 }
 #sec-proj-01 .projet-grid .projet-bloc .projet-visuel .projet-overlay {
@@ -1207,7 +1212,7 @@ footer .footer-container #footer-col-2 p span {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -1215,28 +1220,28 @@ footer .footer-container #footer-col-2 p span {
 @media (min-width: 992px) {
   #sec-proj-01 .projet-grid .projet-bloc .projet-visuel .projet-overlay {
     display: block;
-    transition: transform 350ms linear;
-  }
-}
-@media (min-width: 992px) {
-  #sec-proj-01 .projet-grid .projet-bloc:hover .projet-visuel {
-    transform: rotate(-45deg);
+    transition: background-color 150ms ease-out;
   }
 }
 @media (min-width: 992px) {
   #sec-proj-01 .projet-grid .projet-bloc:hover .projet-miniature {
-    transform: scale(1.65) rotate(45deg);
-    background-size: 100%;
+    background-size: 148%;
   }
 }
 @media (min-width: 992px) {
-  #sec-proj-01 .projet-grid .projet-bloc .projet-date, #sec-proj-01 .projet-grid .projet-bloc .projet-titre, #sec-proj-01 .projet-grid .projet-bloc .projet-marque, #sec-proj-01 .projet-grid .projet-bloc .projet-overlay {
+  #sec-proj-01 .projet-grid .projet-bloc .projet-date, #sec-proj-01 .projet-grid .projet-bloc .projet-titre, #sec-proj-01 .projet-grid .projet-bloc .projet-marque {
     opacity: 0;
+    transition: opacity 150ms ease-out;
   }
 }
 @media (min-width: 992px) {
-  #sec-proj-01 .projet-grid .projet-bloc:hover .projet-date, #sec-proj-01 .projet-grid .projet-bloc:hover .projet-titre, #sec-proj-01 .projet-grid .projet-bloc:hover .projet-marque, #sec-proj-01 .projet-grid .projet-bloc:hover .projet-overlay {
+  #sec-proj-01 .projet-grid .projet-bloc:hover .projet-date, #sec-proj-01 .projet-grid .projet-bloc:hover .projet-titre, #sec-proj-01 .projet-grid .projet-bloc:hover .projet-marque {
     opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  #sec-proj-01 .projet-grid .projet-bloc:hover .projet-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 

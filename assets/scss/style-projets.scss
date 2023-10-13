@@ -85,29 +85,40 @@
         // media query grille projet
         @include mquery.laptop {  
             background-repeat: repeat;
-            width: 856px;
+            // width: 856px;
+            width: 775px;
             flex-direction: row;
-            gap: 70px 90px;
+            // gap: 70px 90px;
+            gap: 50px;
             justify-content: start;
             flex-wrap: wrap;
             align-items: center;
         }
 
         // media query grille projet
-        @include mquery.desktop-xl {  
-            width: 1170px;
+        @include mquery.desktop {  
+            width: 1050px;
             
         }
 
         // media query grille projet
+        @include mquery.desktop-xl {  
+            // width: 1170px;
+            width: 1325px;
+        }
+
+        // media query grille projet
         @include mquery.widescreen {  
-            width: 1600px;
-            gap: 100px;
+            // width: 1600px;
+            // gap: 100px;
+            width: 1510px;
+            gap: 70px;
         }
 
         // media query grille projet
         @include mquery.tv {  
-            width: 2025px;
+            // width: 2025px;
+            width: 1905px;
         }
 
 
@@ -329,7 +340,8 @@
 
                     // media query miniature projet
                     @include mquery.laptop {   
-                        transition: transform 350ms linear, background-size 350ms linear;
+                        //transition: transform 350ms linear, background-size 350ms linear;
+                        transition: background-size 250ms ease-in-out;
                     }
                 }
 
@@ -339,7 +351,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0);
                     width: 100%;
                     height: 100%;
                     z-index: 2;
@@ -348,7 +360,8 @@
                     // media query overlay miniature
                     @include mquery.laptop {   
                         display: block;
-                        transition: transform 350ms linear;
+                        // transition: transform 350ms linear;
+                        transition: background-color 150ms ease-out;
                     }
                 }
             }
@@ -357,32 +370,41 @@
             &:hover .projet-visuel {
                 
                 @include mquery.laptop {   
-                    transform: rotate(-45deg);
+                    //transform: rotate(-45deg);
                 }
             }
 
             &:hover .projet-miniature {
     
                 @include mquery.laptop {   
-                    transform: scale(1.65) rotate(45deg);
-                    background-size: 100%;
+                    //transform: scale(1.65) rotate(45deg);
+                    //background-size: 100%;
+                    background-size: 148%;
                 }
             }
 
             // elements visibles en hover
-            .projet-date, .projet-titre, .projet-marque, .projet-overlay {
+            .projet-date, .projet-titre, .projet-marque {
 
                 // media query elements de hover projet
                 @include mquery.laptop {   
                     opacity: 0;
+                    transition: opacity 150ms ease-out;
                 }
             }
 
-            &:hover .projet-date, &:hover .projet-titre, &:hover .projet-marque, &:hover .projet-overlay {
+            &:hover .projet-date, &:hover .projet-titre, &:hover .projet-marque {
                 
 
                 @include mquery.laptop {   
                     opacity: 1;
+                }
+            }
+
+            &:hover .projet-overlay {
+                // media query elements de hover projet
+                @include mquery.laptop {   
+                    background-color: rgba(0, 0, 0, 0.6);
                 }
             }
 
