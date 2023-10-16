@@ -85,10 +85,8 @@
         // media query grille projet
         @include mquery.laptop {  
             background-repeat: repeat;
-            // width: 856px;
             width: 775px;
             flex-direction: row;
-            // gap: 70px 90px;
             gap: 50px;
             justify-content: start;
             flex-wrap: wrap;
@@ -103,21 +101,17 @@
 
         // media query grille projet
         @include mquery.desktop-xl {  
-            // width: 1170px;
             width: 1325px;
         }
 
         // media query grille projet
         @include mquery.widescreen {  
-            // width: 1600px;
-            // gap: 100px;
             width: 1510px;
             gap: 70px;
         }
 
         // media query grille projet
         @include mquery.tv {  
-            // width: 2025px;
             width: 1905px;
         }
 
@@ -340,7 +334,6 @@
 
                     // media query miniature projet
                     @include mquery.laptop {   
-                        //transition: transform 350ms linear, background-size 350ms linear;
                         transition: background-size 250ms ease-in-out;
                     }
                 }
@@ -367,18 +360,9 @@
             }
 
             // animation miniature au survol
-            &:hover .projet-visuel {
-                
-                @include mquery.laptop {   
-                    //transform: rotate(-45deg);
-                }
-            }
-
             &:hover .projet-miniature {
     
                 @include mquery.laptop {   
-                    //transform: scale(1.65) rotate(45deg);
-                    //background-size: 100%;
                     background-size: 148%;
                 }
             }

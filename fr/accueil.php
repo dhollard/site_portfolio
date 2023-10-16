@@ -30,21 +30,21 @@
                     <div class="job-box">
                         <div id="p-code-left" class="wait-for-load">&lt;p&gt;</div>
                         <a href="/fr/projets" id="job-1">
-                            <p><span id="job-1-txt1">Web</span> <span id="job-1-txt2">Designer</span></p>
+                            <p><span id="job-1-txt1">Web</span> <span id="job-1-txt2">design</span></p>
                         </a>
                         <div id="p-code-right" class="wait-for-load">&lt;/p&gt;</div>
                     </div>
                     
                     <div class="job-box">
                         <a href="/fr/projets" id="job-2">
-                            <p>Motion designer</p>
-                            <p>Motion designer</p>
+                            <p>Motion design</p>
+                            <p>Motion design</p>
                         </a>
                     </div>
                 
                     <div class="job-box">
                         <a href="/fr/projets" id="job-3">
-                            <p><span id="job-3-txt1">Graphic</span> <span id="job-3-txt2">Designer</span></p>
+                            <p><span id="job-3-txt1">Graphic</span> <span id="job-3-txt2">design</span></p>
                         </a>
                     </div>
                     
