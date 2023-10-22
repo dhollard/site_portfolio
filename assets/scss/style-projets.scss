@@ -42,6 +42,109 @@
         }
     }
 
+    // Bandeau qui contient les filtres de projets
+    .wrapper-filtre-projet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: color.$ambiance-120;
+        padding: 15px 20px 25px 20px;
+
+        // media query .wrapper-filtre-projet
+        @include mquery.landscape {   
+            padding: 25px 40px 30px 40px;
+        }
+
+        /* Conteneur de menu filtres pour ferré à gauche ou à droite */
+        .zone-01 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-basis: 100%;
+            gap: 20px;
+
+            // media query .zone-01
+            @include mquery.landscape {   
+                gap: 30px;
+            }
+        }
+
+        /* Conteneur parent d'un filtre */
+        .bloc-filtre {
+            display: flex;
+            flex-direction: column;
+
+            .filtre-label {
+                @include typo.text($color:#ffffff, $weight:600);
+                margin: 0 0 8px 0;
+                font-size: 17px;
+
+                // media query .filtre-label
+                @include mquery.landscape {   
+                    font-size: 18px;
+                }
+
+                // media query .filtre-label
+                @include mquery.laptop {   
+                    margin: 0 0 12px 0;
+                }
+            }
+
+            .filtre-btn-bloc {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 7px;
+
+                // media query .filtre-btn-bloc
+                @include mquery.laptop {   
+                    gap: 10px;
+                }
+
+                button {
+                    padding: 5px 10px;
+                    background-color: color.$ambiance-80;
+                    outline: unset;
+                    border: unset;
+                    @include typo.text($color:#ffffff, $weight:500);
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: color.$secondary-70;
+                        color: #000;
+                    }
+
+                    &:focus, &:focus-visible {
+                        outline: 1px solid color.$secondary-100;
+                    }
+
+                    // media query button (filtre)
+                    @include mquery.laptop {   
+                        font-size: 18px;
+                        padding: 7px 14px;
+                    }
+                }
+
+                .active-filter {
+                    background-color: color.$secondary-100;
+                    pointer-events: none;
+                    cursor: initial;
+
+                    &:hover {
+                        background-color: color.$secondary-100;
+                    }
+                }
+            }
+        }
+
+        // Règles propres au filtre par catégorie
+        #Filtre_proj_categorie {
+
+        }
+    }
+
     .grid-wrapper {
         width: 100%;
         min-height: 90vh;
@@ -121,6 +224,7 @@
             position: relative;
             background: color.$ambiance-120;
             padding: 15px 20px 20px 20px;
+            // display: none;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -471,15 +575,6 @@
 
     .projet-miniature {
         background-image: url("/fr/projet/2020-site-cawibox/projet-thumbnail.jpg")!important;
-    }
-}
-
-// projet teasing
-#Proj_teasing {
-    cursor: help;
-
-    .projet-date::after, .projet-marque::after {
-        background: none!important;
     }
 }
 

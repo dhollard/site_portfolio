@@ -923,6 +923,99 @@ footer .footer-container #footer-col-2 p span {
     font-size: 90px;
   }
 }
+#sec-proj-01 .wrapper-filtre-projet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #261624;
+  padding: 15px 20px 25px 20px;
+  /* Conteneur de menu filtres pour ferré à gauche ou à droite */
+  /* Conteneur parent d'un filtre */
+}
+@media (min-width: 768px) {
+  #sec-proj-01 .wrapper-filtre-projet {
+    padding: 25px 40px 30px 40px;
+  }
+}
+#sec-proj-01 .wrapper-filtre-projet .zone-01 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 100%;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #sec-proj-01 .wrapper-filtre-projet .zone-01 {
+    gap: 30px;
+  }
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre {
+  display: flex;
+  flex-direction: column;
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-label {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-size: 17px;
+}
+@media (min-width: 768px) {
+  #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-label {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-label {
+    margin: 0 0 12px 0;
+  }
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+@media (min-width: 992px) {
+  #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc {
+    gap: 10px;
+  }
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button {
+  padding: 5px 10px;
+  background-color: #544953;
+  outline: unset;
+  border: unset;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:hover {
+  background-color: #84BCB0;
+  color: #000;
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:focus, #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:focus-visible {
+  outline: 1px solid #439A86;
+}
+@media (min-width: 992px) {
+  #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button {
+    font-size: 18px;
+    padding: 7px 14px;
+  }
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc .active-filter {
+  background-color: #439A86;
+  pointer-events: none;
+  cursor: initial;
+}
+#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc .active-filter:hover {
+  background-color: #439A86;
+}
 #sec-proj-01 .grid-wrapper {
   width: 100%;
   min-height: 90vh;
@@ -1279,13 +1372,6 @@ footer .footer-container #footer-col-2 p span {
 
 #Proj_web_site_cawibox_2020 .projet-miniature {
   background-image: url("/fr/projet/2020-site-cawibox/projet-thumbnail.jpg") !important;
-}
-
-#Proj_teasing {
-  cursor: help;
-}
-#Proj_teasing .projet-date::after, #Proj_teasing .projet-marque::after {
-  background: none !important;
 }
 
 /* Code de rétrocompatibilité ciblant Safari iOS 15.5 ou antérieur */
