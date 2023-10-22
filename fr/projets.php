@@ -72,7 +72,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="web" data-type="resume">
+                    <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="web motion" data-type="resume">
                         <h2 class="projet-titre">Site internet</h2>
 
                         <p class="projet-date">2021</p>
@@ -182,49 +182,51 @@
 
         // --- Mettre à jour les variables de filtre au clic d'un bouton ---
         $(".cat, .type").click(function() {
-            // Récupérer la valeur de catégorie et de type depuis les boutons
+            // Récupération et stockage des valeurs de filtre catégorie et type du bouton cliqué
             var clickedCat = $(this).data("cat");
             var clickedType = $(this).data("type");
 
-            // Vérifier si un bouton cat est cliqué avant de mettre à jour la variable catFilter
+            // Si le bouton cliqué est de type "catégorie", met à jour le filtre par catégorie
             if ($(this).hasClass("cat")) {
-            catFilter = clickedCat;
+                catFilter = clickedCat;
             }
-
-            // Vérifier si un bouton type est cliqué avant de mettre à jour la variable typeFilter
-            if ($(this).hasClass("type")) {
+            // Si le bouton cliqué est de type "type", met à jour le filtre par type de projet
+            else if ($(this).hasClass("type")) {
             typeFilter = clickedType;
             }
 
-            // --- Afficher les éléments correspondant aux filtres sélectionnés ---
-
-            // Si tous les filtres sont sur la valeur "tout"
-            if (catFilter === "tout" && typeFilter === "tout") {
-            $(".projet-bloc").show();
-            }
-            // Si le filtre de catégorie est sur la valeur "tout"
-            else if (catFilter === "tout") {
-            $(".projet-bloc[data-type='" + typeFilter + "']").show();
-            $(".projet-bloc[data-type!='" + typeFilter + "']").hide();
-            }
-            // Si le filtre de type est sur la valeur "tout"
-            else if (typeFilter === "tout") {
-            $(".projet-bloc[data-cat='" + catFilter + "']").show();
-            $(".projet-bloc[data-cat!='" + catFilter + "']").hide();
-            }
-            // Si acun des filtres n'est sur la valeur "tout"
-            else {
+            // Masque tous les éléments .projet-bloc dans un premier temps
             $(".projet-bloc").hide();
-            $(".projet-bloc[data-cat='" + catFilter + "'][data-type='" + typeFilter + "']").show();
+
+            // --- Afficher les éléments correspondant aux filtres sélectionnés ---
+            if (catFilter === "tout" && typeFilter === "tout") {
+            // Si les deux filtres sont sur "tout", affiche tous les projets
+            $(".projet-bloc").show();
+
+            } else if (catFilter === "tout") {
+            // Si le filtre catégorie est sur "tout", filtre par "type de projet" uniquement
+            $(".projet-bloc[data-type='" + typeFilter + "']").show();
+
+            } else if (typeFilter === "tout") {
+            // Si le filtre type est sur "tout", filtre par catégorie(s) uniquement
+            var catFilterValues = catFilter.split(" ");
+            //Boucle à travers le tableau des valeurs pour afficher les projets correspondants
+            // L'usage du caractère "*" dans le sélecteur CSS permet de cibler un élément contenant plusieurs valeurs dans l'attribut data-cat
+            for (var i = 0; i < catFilterValues.length; i++) {
+                $(".projet-bloc[data-cat*='" + catFilterValues[i] + "']").show();
+            }
+            
+            } else {
+            // Si les deux filtres sont spécifiques, filtre par catégorie et type
+            // L'usage du caractère "*" dans le sélecteur CSS permet de cibler un élément contenant plusieurs valeurs dans l'attribut data-cat
+            $(".projet-bloc[data-cat*='" + catFilter + "'][data-type='" + typeFilter + "']").show();
             }
 
-            // Ajouter la classe .active-filter sur le bouton cliqué, puis la retirer de tous les boutons du même menu de filtre
-            $(this).addClass("active-filter");
-            $(this).siblings("." + (clickedCat ? "cat" : "type")).removeClass("active-filter");
+            // Gestion de la classe .active-filter pour les boutons de filtre
+            $(this).addClass("active-filter"); // Ajoute la classe au bouton cliqué
+            $(this).siblings("." + ($(this).hasClass("cat") ? "cat" : "type")).removeClass("active-filter"); // Retire la classe des autres boutons du même type (catégorie ou type)
         });
     </script>
-
-
 
     <!-- Appels et scripts de fin de page -->
     <?php include_once('../assets/module/end-page-module.php'); ?>
