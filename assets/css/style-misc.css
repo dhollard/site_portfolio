@@ -182,7 +182,7 @@ main {
   transition: none !important;
 }
 
-.stop-transitions {
+.stop-transitions, .stop-transitions * {
   transition: none !important;
 }
 

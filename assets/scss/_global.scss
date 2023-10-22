@@ -46,7 +46,7 @@ main {
 }
 
 // Classe qui bloque les transitions lors d'un resize de la fenêtre
-.stop-transitions {
+.stop-transitions, .stop-transitions * {
     transition: none !important;
 } 
 

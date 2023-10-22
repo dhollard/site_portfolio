@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="grid-wrapper">
+            <div class="grid-wrapper no-resize-transition">
                 <div class="projet-grid">
 
                     <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="/fr/projet/2023-portfolio-dh/" data-cat="web" data-type="etude">

@@ -110,10 +110,15 @@
                     @include typo.text($color:#ffffff, $weight:500);
                     border-radius: 5px;
                     cursor: pointer;
+                    -webkit-user-select: none;
+                    user-select: none;
 
-                    &:hover {
-                        background-color: color.$secondary-70;
-                        color: #000;
+                    // Règle uniquement applicable aux appareils non-tactiles
+                    @media (hover: hover) and (pointer: fine) {
+                        &:hover {
+                            background-color: color.$secondary-70;
+                            color: #000;
+                        }
                     }
 
                     &:focus, &:focus-visible {
@@ -139,10 +144,6 @@
             }
         }
 
-        // Règles propres au filtre par catégorie
-        #Filtre_proj_categorie {
-
-        }
     }
 
     .grid-wrapper {

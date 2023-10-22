@@ -182,7 +182,7 @@ main {
   transition: none !important;
 }
 
-.stop-transitions {
+.stop-transitions, .stop-transitions * {
   transition: none !important;
 }
 
@@ -994,10 +994,14 @@ footer .footer-container #footer-col-2 p span {
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
 }
-#sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:hover {
-  background-color: #84BCB0;
-  color: #000;
+@media (hover: hover) and (pointer: fine) {
+  #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:hover {
+    background-color: #84BCB0;
+    color: #000;
+  }
 }
 #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:focus, #sec-proj-01 .wrapper-filtre-projet .bloc-filtre .filtre-btn-bloc button:focus-visible {
   outline: 1px solid #439A86;
