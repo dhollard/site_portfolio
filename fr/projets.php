@@ -38,9 +38,10 @@
                         <label class="filtre-label">Trier par domaine d'expertise</label>
                         <div class="filtre-btn-bloc">
                             <button class="cat active-filter" data-cat="tout">Tout</button>
-                            <button class="cat" data-cat="web">Web design</button>
-                            <button class="cat" data-cat="motion">Motion design</button>
-                            <button class="cat" data-cat="design">Graphisme</button>
+                            <button class="cat" data-cat="ux">User Interface</button>
+                            <button class="cat" data-cat="dev">Développement</button>
+                            <button class="cat" data-cat="motion">Motion</button>
+                            <button class="cat" data-cat="graph">Graphisme</button>
                         </div>
                     </div>
 
@@ -59,7 +60,7 @@
             <div class="grid-wrapper no-resize-transition">
                 <div class="projet-grid">
 
-                    <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="/fr/projet/2023-portfolio-dh/" data-cat="web" data-type="etude">
+                    <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="/fr/projet/2023-portfolio-dh/" data-cat="ux dev" data-type="etude">
                         <h2 class="projet-titre">Site portfolio</h2>
 
                         <p class="projet-date">2023</p>
@@ -72,7 +73,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="web motion" data-type="resume">
+                    <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="ux dev motion" data-type="resume">
                         <h2 class="projet-titre">Site internet</h2>
 
                         <p class="projet-date">2021</p>
@@ -85,7 +86,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_site_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-site-wotbus/" data-cat="web" data-type="resume">
+                    <a id="Proj_web_site_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-site-wotbus/" data-cat="ux dev" data-type="resume">
                         <h2 class="projet-titre">Site internet</h2>
 
                         <p class="projet-date">2022</p>
@@ -98,7 +99,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_ui_voyageur_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-ui-voyageur-wotbus/" data-cat="web" data-type="resume">
+                    <a id="Proj_web_ui_voyageur_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-ui-voyageur-wotbus/" data-cat="ux dev" data-type="resume">
                         <h2 class="projet-titre">Interface utilisateur</h2>
 
                         <p class="projet-date">2022/2023</p>
@@ -111,7 +112,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_dashboard_wiavis_2022" class="projet-bloc" href="/fr/projet/2022-dashboard-wi-avis/" data-cat="web" data-type="resume">
+                    <a id="Proj_web_dashboard_wiavis_2022" class="projet-bloc" href="/fr/projet/2022-dashboard-wi-avis/" data-cat="ux" data-type="resume">
                         <h2 class="projet-titre">Tableau de bord</h2>
 
                         <p class="projet-date">2022</p>
@@ -124,7 +125,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_site_dataoptique_2022" class="projet-bloc" href="/fr/projet/2022-site-dataoptique/" data-cat="web" data-type="resume">
+                    <a id="Proj_web_site_dataoptique_2022" class="projet-bloc" href="/fr/projet/2022-site-dataoptique/" data-cat="ux dev" data-type="resume">
                         <h2 class="projet-titre">Site internet</h2>
 
                         <p class="projet-date">2022</p>
@@ -137,7 +138,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_design_com_wotbus_2023" class="projet-bloc" href="/fr/projet/2023-communication-wotbus/" data-cat="design" data-type="resume">
+                    <a id="Proj_design_com_wotbus_2023" class="projet-bloc" href="/fr/projet/2023-communication-wotbus/" data-cat="graph" data-type="resume">
                         <h2 class="projet-titre">Communication visuelle</h2>
 
                         <p class="projet-date">2023</p>
@@ -150,7 +151,7 @@
                         </div>
                     </a>
 
-                    <a id="Proj_web_site_cawibox_2020" class="projet-bloc" href="/fr/projet/2020-site-cawibox/" data-cat="web" data-type="resume">
+                    <a id="Proj_web_site_cawibox_2020" class="projet-bloc" href="/fr/projet/2020-site-cawibox/" data-cat="ux dev" data-type="resume">
                         <h2 class="projet-titre">Site internet</h2>
 
                         <p class="projet-date">2020</p>
