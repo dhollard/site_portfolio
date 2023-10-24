@@ -1,0 +1,1 @@
+<p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>

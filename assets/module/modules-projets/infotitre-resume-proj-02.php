@@ -1,0 +1,1 @@
+<p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>

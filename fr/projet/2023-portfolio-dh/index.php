@@ -55,24 +55,23 @@
 
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
-                                    <p>Design graphique</p>
-                                    <p>Dev front end</p>
+                                    <?php include('../../../assets/module/modules-projets/infotitre-resume-proj-01.php'); ?>
                                     <p>UI/UX design</p>
+                                    <p>Développement</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
-                                    <p>Gestion du projet de A à Z</p>
+                                    <?php include('../../../assets/module/modules-projets/infotitre-resume-proj-02.php'); ?>
+                                    <p>Conception et réalisation du projet de A à Z</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
+                                    <?php include('../../../assets/module/modules-projets/infotitre-resume-proj-03.php'); ?>
                                     <p>250h de travail (2022 - 2023)</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
+                                    <?php include('../../../assets/module/modules-projets/infotitre-resume-proj-04.php'); ?>
                                     <p>Projet personnel</p>
                                 </span>
                             </div>
@@ -615,7 +614,7 @@
                                 <figcaption class="legende-visuel-fullcadre">Maquette de la page "accueil"</figcaption>
                                 <p class="fullcadre-instruction">
                                     <span class="fullcadre-instruction-ico"></span>
-                                    Scrollez la page avec votre
+                                    Scrollez la page avec
                                     <span class="keyword-fullcadre-instru"></span></p>
                             </div>
                             

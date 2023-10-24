@@ -583,8 +583,8 @@ main {
 
     // media query .sommaire-no-scroll
     @include mquery.landscape {
-        overflow: auto;
-        touch-action: auto;
+        overflow: auto!important;
+        touch-action: auto!important;
     }
 }
 
@@ -1342,12 +1342,12 @@ main {
             .keyword-fullcadre-instru {
 
                 &::before {
-                    content: 'doigt';
+                    content: 'votre doigt';
                     margin-left: 5px;
 
                     // Règle uniquement applicable aux appareils non-tactiles
                     @media (hover: hover) and (pointer: fine) {
-                        content: 'souris';
+                        content: 'la molette de votre souris';
                     }
                 }
 

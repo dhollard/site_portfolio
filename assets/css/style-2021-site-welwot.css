@@ -1357,8 +1357,8 @@ main {
 }
 @media (min-width: 768px) {
   .sommaire-no-scroll, .sommaire-no-scroll body {
-    overflow: auto;
-    touch-action: auto;
+    overflow: auto !important;
+    touch-action: auto !important;
   }
 }
 
@@ -2030,12 +2030,12 @@ main {
   }
 }
 .zone-fullscreen-cadre .fullcadre-top-zone .fullcadre-instruction .keyword-fullcadre-instru::before {
-  content: "doigt";
+  content: "votre doigt";
   margin-left: 5px;
 }
 @media (hover: hover) and (pointer: fine) {
   .zone-fullscreen-cadre .fullcadre-top-zone .fullcadre-instruction .keyword-fullcadre-instru::before {
-    content: "souris";
+    content: "la molette de votre souris";
   }
 }
 @keyframes scroll-gesture-mob {

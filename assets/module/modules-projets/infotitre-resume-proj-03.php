@@ -1,0 +1,1 @@
+<p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>

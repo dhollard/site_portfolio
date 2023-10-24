@@ -62,7 +62,6 @@
         // Appelle la fonction qui bloque/débloque le scroll sur la page
         fullscreenStopScrollPage();
 
-        
     });
 
 </script>
