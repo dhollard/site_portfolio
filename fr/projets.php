@@ -61,107 +61,162 @@
                 <div class="projet-grid">
 
                     <a id="Proj_web_site_portfolio_DH_2023" class="projet-bloc" href="/fr/projet/2023-portfolio-dh/" data-cat="ux dev" data-type="etude">
-                        <h2 class="projet-titre">Site portfolio</h2>
 
-                        <p class="projet-date">2023</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">DH</p>
-                        
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Site portfolio</h2>
+                            <p class="projet-commanditaire">pour Darius Hollard</p>
+                        </div>
+
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2023</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX |</span>
+                            <span class="txt-tag-projet">Dev</span>
+                        </p>
                     </a>
 
                     <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="ux dev motion" data-type="resume">
-                        <h2 class="projet-titre">Site internet</h2>
-
-                        <p class="projet-date">2021</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">Welwot</p>
+                        
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Site internet</h2>
+                            <p class="projet-commanditaire">pour Welwot</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2021</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX |</span>
+                            <span class="txt-tag-projet">Dev |</span>
+                            <span class="txt-tag-projet">Motion</span>
+                        </p>
                     </a>
 
                     <a id="Proj_web_site_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-site-wotbus/" data-cat="ux dev" data-type="resume">
-                        <h2 class="projet-titre">Site internet</h2>
 
-                        <p class="projet-date">2022</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">WotBus</p>
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Site internet</h2>
+                            <p class="projet-commanditaire">pour WotBus</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2022</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX |</span>
+                            <span class="txt-tag-projet">Dev</span>
+                        </p>
                     </a>
 
                     <a id="Proj_web_ui_voyageur_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-ui-voyageur-wotbus/" data-cat="ux dev" data-type="resume">
-                        <h2 class="projet-titre">Interface utilisateur</h2>
 
-                        <p class="projet-date">2022/2023</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">WotBus</p>
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Interface utilisateur</h2>
+                            <p class="projet-commanditaire">pour WotBus</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2022/2023</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX |</span>
+                            <span class="txt-tag-projet">Dev</span>
+                        </p>
                     </a>
 
                     <a id="Proj_web_dashboard_wiavis_2022" class="projet-bloc" href="/fr/projet/2022-dashboard-wi-avis/" data-cat="ux" data-type="resume">
-                        <h2 class="projet-titre">Tableau de bord</h2>
 
-                        <p class="projet-date">2022</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">Wi-avis</p>
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Tableau de bord</h2>
+                            <p class="projet-commanditaire">pour Wi-avis</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2022</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX</span>
+                        </p>
                     </a>
 
                     <a id="Proj_web_site_dataoptique_2022" class="projet-bloc" href="/fr/projet/2022-site-dataoptique/" data-cat="ux dev" data-type="resume">
-                        <h2 class="projet-titre">Site internet</h2>
 
-                        <p class="projet-date">2022</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">DataOptique</p>
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Site internet</h2>
+                            <p class="projet-commanditaire">pour DataOptique</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2022</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX |</span>
+                            <span class="txt-tag-projet">Dev</span>
+                        </p>
                     </a>
 
                     <a id="Proj_design_com_wotbus_2023" class="projet-bloc" href="/fr/projet/2023-communication-wotbus/" data-cat="graph" data-type="resume">
-                        <h2 class="projet-titre">Communication visuelle</h2>
 
-                        <p class="projet-date">2023</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">WotBus</p>
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Communication visuelle</h2>
+                            <p class="projet-commanditaire">pour WotBus</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2023</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">Graphisme</span>
+                        </p>
                     </a>
 
                     <a id="Proj_web_site_cawibox_2020" class="projet-bloc" href="/fr/projet/2020-site-cawibox/" data-cat="ux dev" data-type="resume">
-                        <h2 class="projet-titre">Site internet</h2>
 
-                        <p class="projet-date">2020</p>
-                        <span class="sepa-info">-</span>
-                        <p class="projet-marque">Cawibox</p>
+                        <div class="projet-ttr-bloc">
+                            <h2 class="projet-titre">Site internet</h2>
+                            <p class="projet-commanditaire">pour Cawibox</p>
+                        </div>
                         
                         <div class="projet-visuel">
                             <div class="projet-miniature"></div>
                             <div class="projet-overlay"></div>
                         </div>
+
+                        <p class="projet-date">2020</p>
+
+                        <p class="projet-tags">
+                            <span class="txt-tag-projet">UI/UX |</span>
+                            <span class="txt-tag-projet">Dev</span>
+                        </p>
                     </a>
 
                 </div>

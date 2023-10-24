@@ -225,11 +225,11 @@
             position: relative;
             background: color.$ambiance-120;
             padding: 15px 20px 20px 20px;
-            // display: none;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
             width: 100%;
             max-width: 350px;
             text-decoration: none;
@@ -243,7 +243,7 @@
             // media query bloc projet
             @include mquery.landscape {
                 max-width: 300px;
-                align-content: space-between;
+                align-content: start;
             }
 
             // media query bloc projet
@@ -256,7 +256,7 @@
                 background: none;
                 aspect-ratio: 1/1;
                 max-width: 325px;
-                padding: 20px 0 30px 0;
+                padding: 10px 20px 15px 20px;
                 box-shadow: none;
                 transition: none;
 
@@ -269,64 +269,91 @@
             @include mquery.widescreen {   
                 height: 325px;
                 width: 325px;
+                padding: 12px 25px 20px 25px;
             }
 
-            .projet-titre {
-                @include typo.title($color:#ffffff, $weight:700);
-                font-size: 26px;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
+            // Bloc contenant le titre et le nom du commanditaire du projet
+            .projet-ttr-bloc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 z-index: 3;
                 order: 1;
-                line-height: 1;
-                margin-bottom: 5px;
 
-                // media query titre projet
-                @include mquery.landscape {   
-                    font-size: 22px;
-                }
-
-                // media query titre projet
+                // media query .projet-ttr-bloc
                 @include mquery.laptop {   
                     order: 2;
-                    font-size: 30px;
-                    margin-bottom: 0;
                 }
 
-                // media query titre projet
-                @include mquery.widescreen {
-                    font-size: 42px;
+                .projet-titre {
+                    @include typo.title($color:#ffffff, $weight:700);
+                    font-size: 28px;
+                    margin: 0 auto;
+                    text-align: center;
+                    line-height: 1;
+                    margin-bottom: 3px;
+                    width: -moz-fit-content;
+                    width: fit-content;
+
+                    // media query titre projet
+                    @include mquery.landscape {   
+                        font-size: 23px;
+                        margin-bottom: 2px;
+                    }
+
+                    // media query titre projet
+                    @include mquery.laptop {   
+                        font-size: 30px;
+                        margin-bottom: 4px;
+                    }
+
+                    // media query titre projet
+                    @include mquery.widescreen {
+                        font-size: 42px;
+                    }
                 }
-            }
+
+                // Texte contenant le nom du commanditaire projet
+                .projet-commanditaire {
+                    @include typo.title($color:#ffffff, $weight:600);
+                    font-size: 16px;
+                    margin: 0;
+                    text-align: center;
+                    line-height: 1;
+                    width: -moz-fit-content;
+                    width: fit-content;
+
+                    // media query .projet-commanditaire
+                    @include mquery.landscape {   
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
+            } 
 
             // texte listant l'année du projet
             .projet-date {
-                @include typo.title($color:#ffffff, $weight:700);
+                @include typo.text($color:#ffffff, $weight:700);
                 margin: 0;
                 z-index: 3;
-                order: 2;
-                font-size: 20px;
-
-                // media query date projet
-                @include mquery.landscape {   
-                    font-size: 18px;
-                }
+                order: 3;
+                font-size: 17px;
+                text-align: center; 
+                width: -moz-fit-content;
+                width: fit-content;
 
                 // media query date projet
                 @include mquery.laptop {
                     position: relative;  
-                    width: fit-content;
                     margin: 0 auto;
-                    text-align: center; 
                     order: 1;
-                    font-size: 24px;
+                    font-weight: 700;
                     padding-bottom: 6px;
 
                     &::after {
                         position: absolute;
-                        width: 100px;
-                        height: 2px;
+                        width: 180px;
+                        height: 1px;
                         background: #ffffff;
                         content: "";
                         left: 50%;
@@ -338,10 +365,10 @@
 
                 // media query date projet
                 @include mquery.widescreen {
-                    font-size: 36px;
+                    font-size: 22px;
 
                     &::after {
-                        width: 160px;
+                        width: 270px;
                     }
                 }
             }
@@ -361,34 +388,36 @@
             }
 
             // texte listant le commanditaire du projet
-            .projet-marque {
-                @include typo.title($color:#ffffff, $weight:700);
+            .projet-tags {
+                @include typo.text($color:#ffffff, $weight:600);
                 margin: 0;
                 z-index: 3;
                 order: 4;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 1.5;
+                text-align: center;
 
                 // media query commanditaire projet
                 @include mquery.landscape {   
-                    font-size: 16px;
+                    font-size: 15px;
                 }
 
                 // media query commanditaire projet
                 @include mquery.laptop { 
                     position: relative;
-                    text-align: center; 
-                    width: 70%;
+                    text-align: center;
+                    width: -moz-fit-content; 
+                    width: fit-content;
                     margin: 0 auto;
                     order: 3;
-                    font-size: 17px;
+                    font-size: 14px;
                     padding-top: 6px;
                     line-height: 1.2;
 
                     &::after {
                         position: absolute;
-                        width: 100px;
-                        height: 2px;
+                        width: 180px;
+                        height: 1px;
                         background: #ffffff;
                         content: "";
                         left: 50%;
@@ -400,11 +429,16 @@
 
                 // media query commanditaire projet
                 @include mquery.widescreen {
-                    font-size: 24px;
+                    font-size: 18px;
 
                     &::after {
-                        width: 160px;
+                        width: 270px;
                     }
+                }
+
+                // Bloc de texte listant un tag de catégorie du projet
+                .txt-tag-projet {
+                    white-space: nowrap;
                 }
             }
 
@@ -412,8 +446,8 @@
             .projet-visuel {
                 width: 100%;
                 z-index: 1;
-                order: 5;
-                margin-top: 8px;
+                order: 2;
+                margin: 13px 0 8px 0;
 
                 // media query conteneur visuel
                 @include mquery.laptop {   
@@ -424,7 +458,8 @@
                     top: 0;
                     transition: transform 350ms linear;
                     box-shadow: 0px 0px 20px 0px rgba(255,255,255,0.08);
-                    margin-top: 0px;
+                    margin: 0px;
+                    order: unset;
                 }
 
                 // image de miniature d'un projet
@@ -458,7 +493,6 @@
                     // media query overlay miniature
                     @include mquery.laptop {   
                         display: block;
-                        // transition: transform 350ms linear;
                         transition: background-color 150ms ease-out;
                     }
                 }
@@ -473,7 +507,7 @@
             }
 
             // elements visibles en hover
-            .projet-date, .projet-titre, .projet-marque {
+            .projet-date, .projet-ttr-bloc, .projet-tags {
 
                 // media query elements de hover projet
                 @include mquery.laptop {   
@@ -482,7 +516,7 @@
                 }
             }
 
-            &:hover .projet-date, &:hover .projet-titre, &:hover .projet-marque {
+            &:hover .projet-date, &:hover .projet-ttr-bloc, &:hover .projet-tags {
                 
 
                 @include mquery.laptop {   
@@ -493,7 +527,7 @@
             &:hover .projet-overlay {
                 // media query elements de hover projet
                 @include mquery.laptop {   
-                    background-color: rgba(0, 0, 0, 0.6);
+                    background-color: rgba(0, 0, 0, 0.7);
                 }
             }
 
