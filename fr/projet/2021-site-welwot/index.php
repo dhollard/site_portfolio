@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/style-2021-site-welwot.css">
 
     <!-- SEO et identité page -->
-    <link rel="canonical" href="https://darius-hollard.com/fr/projet/2023-portfolio-dh/" />
+    <link rel="canonical" href="https://darius-hollard.com/fr/projet/2021-site-welwot/" />
     <title>Site internet - Welwot</title>
     <meta name="description" content="Projet réalisé en 2021 - Création du site internet de l'entreprise Welwot" />
 
@@ -56,9 +56,9 @@
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
-                                    <p>Design graphique</p>
-                                    <p>Dev front end</p>
                                     <p>UI/UX design</p>
+                                    <p>Développement</p>
+                                    <p>Motion design</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
