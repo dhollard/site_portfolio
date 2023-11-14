@@ -240,12 +240,41 @@
     background: color.$secondary-100!important;
 }
 
+// personnalisation du highlight texte
+//code firefox
+::-moz-selection {
+  color: #ffffff;
+  background: #2196F3;
+}
+
+::selection {
+  color: #ffffff;
+  background: #2196F3;
+}
+
 
 // Règles par section
 #Header_projet {
     background-image: url("../../../fr/projet/2021-site-welwot/img/projet-page-header.webp");
     background-repeat: no-repeat;
     background-size: cover;
+
+    #Titre_page {
+      background: rgba(39, 22, 37, 0.9);
+    }
+
+    #Scroll_btn_header {
+      background: color.$ambiance-100;
+      box-shadow: 0px 0px 18px 0 rgba(91, 51, 120, 0.5);
+
+      .scroll-btn-header-icon {
+        background-image: url("../svg/ico-fleche-scroll-blanc.svg");
+      }
+    }
+
+    #Scroll_btn_header:hover {
+      box-shadow: 0px 0px 20px 0 rgba(91, 51, 120, 0.75);
+    }
 }
 
 #Resume_projet {

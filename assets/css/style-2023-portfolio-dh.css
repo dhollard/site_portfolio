@@ -194,6 +194,11 @@ main {
   display: flex !important;
 }
 
+/* Classe générique à appliquer à des morceaux de textes pour les rendre inséparables */
+.txt-hard-group {
+  white-space: nowrap;
+}
+
 .navbar {
   background: rgba(38, 22, 36, 0.8);
   backdrop-filter: blur(4px);
@@ -945,7 +950,7 @@ main {
   line-height: 1.3;
   margin: auto;
   padding: 18px 30px 24px 30px;
-  background: var(--fond-titre-projet);
+  background: rgba(66, 153, 133, 0.9);
   transition: font-size 800ms ease, transform 800ms ease;
 }
 @media (min-width: 992px) {
@@ -1532,12 +1537,6 @@ main {
     font-size: 20px;
   }
 }
-@media (min-width: 1600px) {
-  .bloc-texte * {
-    font-size: 22px;
-  }
-}
-
 .liste-puce-projet {
   margin: 0;
   padding-inline-start: 20px;
@@ -2632,13 +2631,21 @@ main {
   font-size: 18px;
   margin: 0;
 }
+#Resume_projet .module-resume .infos-projet .bloc-infos-projet *:not(:last-child) {
+  margin: 0 0 2px 0;
+}
 #Resume_projet .module-resume .infos-projet .bloc-infos-projet .titre-infos-projet {
   font-family: "Alegreya", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--fond-titre-projet);
   font-size: 22px;
-  margin: 0 0 5px 0;
+  margin: 0 0 3px 0;
+}
+#Resume_projet .module-resume .infos-projet .info-projet-secondaire {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
 }
 @container infos-projet (max-width: 300px) {
   #Resume_projet .module-resume .bloc-infos-projet {

@@ -194,6 +194,11 @@ main {
   display: flex !important;
 }
 
+/* Classe générique à appliquer à des morceaux de textes pour les rendre inséparables */
+.txt-hard-group {
+  white-space: nowrap;
+}
+
 .navbar {
   background: rgba(38, 22, 36, 0.8);
   backdrop-filter: blur(4px);

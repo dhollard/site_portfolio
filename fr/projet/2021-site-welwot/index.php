@@ -44,11 +44,13 @@
                                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                                 <div class="bloc-texte">
-                                    <p>Texte.</p>
+                                    <p>Peu après la création de la start-up Welwot début 2021, j'ai été chargé de créer l'ensemble de son identité visuelle.</p>
 
-                                    <p>Texte.</p>
+                                    <p>Cette démarche nécessitait la création d'un site internet pour mettre en avant des solutions SaaS et permettre l'accès à un espace client.</p>
 
-                                    <p>Texte.</p>
+                                    <p>Ce projet m'a donné l'opportunité d'exprimer ma créativité en réalisant un travail important d'illustration et d'animation. J'ai veillé à souligner l'aspect moderne et innovant des solutions de Welwot au travers du site.</p>
+
+                                    <p>Pour intégrer ces nombreux visuels au site, j'ai opté pour une technologie d'animation SVG orientée web (Lottie). Son approche 100 % SVG permet en effet d'afficher des animations complexes en ayant un impact quasi-nul sur le temps de chargement.</p>
                                 </div>
                             </div>
 
@@ -63,17 +65,19 @@
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
-                                    <p>Product Designer et développeur, sauf pour partie backend</p>
+                                    <p>Product Designer et développeur</p>
+                                    <p class="info-projet-secondaire">sauf pour partie backend</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
-                                    <p>h de travail (2022 - 2023)</p>
+                                    <p>4 mois sur l'année 2021</p>
+                                    <p class="info-projet-secondaire">puis mises à jours ponctuelles en 2022 et 2023</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
-                                    <p>Welwot</p>
+                                    <p>Welwot (start-up IoT)</p>
                                 </span>
                             </div>
 
@@ -99,8 +103,8 @@
                                 <div class="cadre-content-wrapper">
                                     <!-- Vidéo format mobile -->
                                     <video id="Video_showreel_mob" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
-                                        <source src="video/showreel-mobile.mp4" type="video/mp4">
                                         <source src="video/showreel-mobile.webm" type="video/webm">
+                                        <source src="video/showreel-mobile.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.
                                     </video>
 
@@ -113,7 +117,7 @@
                                 </div>
                             </div>
 
-                            <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, continuez la lecture de cette page pour découvrir son processus de création</figcaption>
+                            <figcaption class="legende-visuel">Démo vidéo du site www.welwot.com, <a href="https://www.welwot.com/" target="_blank">cliquez-ici pour découvrir le site.</a></figcaption>
 
                         </figure>
 

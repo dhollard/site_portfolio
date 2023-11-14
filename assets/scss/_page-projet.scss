@@ -79,7 +79,7 @@ main {
         line-height: 1.3;
         margin: auto;
         padding: 18px 30px 24px 30px;
-        background: var(--fond-titre-projet);
+        background: rgba(66, 153, 133, 0.9);
         transition: font-size 800ms ease, transform 800ms ease;
 
         // media query #Titre_page
@@ -768,7 +768,7 @@ main {
 
     // media query paragraphes de texte
     @include mquery.desktop-xl {   
-        font-size: 22px;
+        // font-size: 22px;
     }
 }
 
@@ -2024,7 +2024,7 @@ main {
             // media query .infos-projet
             @include mquery.desktop-xl {  
                 width: 22%;
-        }
+            }
 
             // Bloc info clés
             .bloc-infos-projet {
@@ -2048,11 +2048,22 @@ main {
                     margin: 0;
                 }
 
-                & .titre-infos-projet {
-                    @include typo.title($color:#ffffff, $weight:700);
-                    font-size: 22px;
-                    margin: 0 0 5px 0;
+                & *:not(:last-child) {
+                    margin: 0 0 2px 0;
                 }
+
+                & .titre-infos-projet {
+                    @include typo.title($color:var(--fond-titre-projet), $weight:700);
+                    font-size: 22px;
+                    margin: 0 0 3px 0;
+                }
+            }
+
+            // Phrase moins importante dans les infos résumé du projet
+            .info-projet-secondaire {
+                font-size: 15px;
+                font-weight: 400;
+                font-style: italic;
             }
         }
 

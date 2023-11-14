@@ -112,7 +112,7 @@
                                 </div>
                             </div>
 
-                            <figcaption class="legende-visuel">Démo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, continuez la lecture de cette page pour découvrir son processus de création</figcaption>
+                            <figcaption class="legende-visuel">Démo vidéo du site <a href="https://darius-hollard.com/" target="_blank">darius-hollard.com</a>, continuez la lecture de cette page pour découvrir son processus de création</figcaption>
 
                         </figure>
 
@@ -795,7 +795,7 @@
                     <div class="section-colonne demi-col">
 
                         <div class="bloc-texte">
-                            <p>Cette page liste mes expériences par ordre chronologique, sous la forme de blocs dépliables permettant deux niveaux de lecture :</p>
+                            <p>Cette page liste mes expériences par ordre chronologique, sous la forme de blocs dépliables permettant deux niveaux de <span class="txt-hard-group">lecture :</span></p>
 
                             <ul class="liste-puce-projet">
                                 <li>Une lecture rapide sans ouvrir le module, qui résume les points clés de la période en question.</li>
