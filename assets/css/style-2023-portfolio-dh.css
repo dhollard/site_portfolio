@@ -3112,13 +3112,13 @@ main {
 }
 @font-face {
   font-family: "Playfair-showcase";
-  src: url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("/fr/projet/2023-portfolio-dh/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"), url("/fr/projet/2023-portfolio-dh/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 400 900;
   font-display: swap;
 }
 @font-face {
   font-family: "Playfair-showcase";
-  src: url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype"), url("/assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("/fr/projet/2023-portfolio-dh/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype"), url("/fr/projet/2023-portfolio-dh/font/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 400 900;
   font-style: italic;
   font-display: swap;
@@ -3126,14 +3126,14 @@ main {
 @supports not (font-variation-settings: normal) {
   @font-face {
     font-family: "Playfair-showcase";
-    src: url("/assets/font/PlayfairDisplay-Regular.ttf");
+    src: url("/fr/projet/2023-portfolio-dh/font/PlayfairDisplay-Regular.ttf");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Playfair-showcase";
-    src: url("/assets/font/PlayfairDisplay-Bold.ttf");
+    src: url("/fr/projet/2023-portfolio-dh/font/PlayfairDisplay-Bold.ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -3141,105 +3141,105 @@ main {
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Thin.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-ThinItalic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Light.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-LightItalic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Regular.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Italic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Medium.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-MediumItalic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Bold.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-BoldItalic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-ExtraBold.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-Black.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Alegreya-showcase";
-  src: url("/assets/font/AlegreyaSans-BlackItalic.ttf") format("truetype");
+  src: url("/fr/projet/2023-portfolio-dh/font/AlegreyaSans-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Assistant-showcase";
-  src: url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype"), url("/assets/font/Assistant-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("/fr/projet/2023-portfolio-dh/font/Assistant-VariableFont_wght.ttf") format("truetype"), url("/fr/projet/2023-portfolio-dh/font/Assistant-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 200 800;
   font-display: swap;
 }
@@ -3262,9 +3262,37 @@ main {
 }
 
 #Header_projet {
-  background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
+  background-image: url("/fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
   background-repeat: no-repeat;
   background-size: cover;
+}
+#Header_projet #Titre_page {
+  background: rgba(66, 153, 133, 0.9);
+  font-family: "Playfair-showcase", serif;
+  line-height: 1.3;
+  font-size: 42px;
+  font-weight: 800;
+  padding: 18px 30px 24px 30px;
+}
+@media (min-width: 992px) {
+  #Header_projet #Titre_page {
+    font-size: 58px;
+  }
+}
+@media (min-width: 2400px) {
+  #Header_projet #Titre_page {
+    font-size: 90px;
+  }
+}
+@media (min-width: 992px) {
+  #Header_projet #Titre_page.header-titre-scrolled {
+    font-size: 42px;
+  }
+}
+@media (min-width: 2400px) {
+  #Header_projet #Titre_page.header-titre-scrolled {
+    font-size: 60px;
+  }
 }
 
 #Resume_projet .zone-cadre-video {
@@ -3861,6 +3889,6 @@ main {
     }
   }
   #Header_projet {
-    background-image: url("../../../fr/projet/2023-portfolio-dh/img/projet-page-header.png");
+    background-image: url("/fr/projet/2023-portfolio-dh/img/projet-page-header.png");
   }
 }/*# sourceMappingURL=style-2023-portfolio-dh.css.map */

@@ -71,13 +71,14 @@
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
-                                    <p>4 mois sur l'année 2021</p>
+                                    <p>4 mois (2021)</p>
                                     <p class="info-projet-secondaire">puis mises à jours ponctuelles en 2022 et 2023</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
-                                    <p>Welwot (start-up IoT)</p>
+                                    <p>Welwot</p>
+                                    <p class="info-projet-secondaire">(start-up IoT)</p>
                                 </span>
                             </div>
 

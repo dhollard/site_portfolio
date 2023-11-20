@@ -1,0 +1,173 @@
+@use '../color';
+@use '../mquery';
+@use '../typo';
+@use '../global';
+@use '../page-projet';
+
+// --- (RE)DÉFINITION DES COULEURS DE LA PAGE PROJET ---
+:root {
+    //couleur de fond de la page
+    --fond-page-projet: #{color.$ambiance-100};
+
+    // fond et couleur de texte des encarts gros titres du header et des sections du projet
+    --fond-titre-projet: #F07E13;
+    --couleur-titre-projet: #ffffff;
+
+    // couleur des paragraphes de texte
+    --couleur-texte-projet: #ffffff;
+
+    // couleur distinctive du projet, utilisée sur les boutons, bullet points, petits titres...
+    --couleur-focus-projet: #5F9BF2;
+    --couleur-focus-bis-projet: #4B84DB;
+
+    // couleur des éléments en opposition avec le fond (bloc blanc sur fond sombre par ex)
+    --couleur-contraste-projet: #ffffff;
+
+    // couleur lignes de séparation entre des éléments
+    --couleur-ligne-projet: #{color.$ambiance-80};
+
+    // couleurs globale des cadres scrollables
+    --cadre-scroll-base-color:#E6E6E6;
+    --cadre-scroll-tab1-color:#D7D7D7;
+    --cadre-scroll-tab2-color:#B5B5B5;
+    --cadre-scroll-icons-color:#535353;
+}
+
+// --- APPELS DES TYPOS POUR CETTE PAGE (cas spécial cas conflit avec typos actuels site) ---
+    
+  //Signika Negative (regular)
+  @font-face {
+    font-family: "Signika-showcase";
+    src: url("/fr/projet/2020-site-cawibox/font/SignikaNegative-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Signika Negative (semi-bold)
+  @font-face {
+    font-family: "Signika-showcase";
+    src: url("/fr/projet/2020-site-cawibox/font/SignikaNegative-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  //Signika Negative (bold)
+  @font-face {
+    font-family: "Signika-showcase";
+    src: url("/fr/projet/2020-site-cawibox/font/SignikaNegative-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Signika Negative (light)
+  @font-face {
+    font-family: "Signika-showcase";
+    src: url("/fr/projet/2020-site-cawibox/font/SignikaNegative-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+// Règles globales page
+.trigger-instruction-tag {
+    background: color.$secondary-100!important;
+}
+
+// personnalisation du highlight texte
+//code firefox
+::-moz-selection {
+  color: #ffffff;
+  background: #2196F3;
+}
+
+::selection {
+  color: #ffffff;
+  background: #2196F3;
+}
+
+
+// Règles par section
+#Header_projet {
+    background-image: url("/fr/projet/2020-site-cawibox/img/projet-page-header.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #Titre_page {
+      font-family: 'Signika-showcase', sans-serif;
+      background: rgba(240, 126, 20, 0.9);
+      line-height: 1.2;
+      font-size: 40px;
+      font-weight: 700;
+      padding: 20px 30px 22px 30px;
+
+      // media query #Titre_page
+      @include mquery.laptop {   
+          font-size: 56px;
+      }
+
+      // media query #Titre_page
+      @include mquery.tv {   
+          font-size: 90px;
+      }
+
+      &.header-titre-scrolled {
+          // media query #Titre_page
+          @include mquery.laptop { 
+              font-size: 42px;
+          }
+
+          // media query #Titre_page
+          @include mquery.tv {   
+              font-size: 60px;
+          }
+      }
+  }
+}
+
+#Resume_projet {
+
+    .zone-cadre-video {
+        padding: 0 30px;
+
+        // media query .zone-cadre-video
+        @include mquery.laptop {   
+            padding: 0;
+        }
+    }
+
+    #Video_showreel_mob {
+        display: block;
+
+        // media query #Video_showreel_mob
+        @include mquery.laptop {   
+            display: none;
+        }
+    }
+
+    #Video_showreel_desk {
+        display: none;
+
+        // media query #Video_showreel_desk
+        @include mquery.laptop {   
+            display: block;
+        }
+    }
+}
+
+
+
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
+
+    // Alternatives aux webp
+    #Header_projet {
+        background-image: url("/fr/projet/2020-site-cawibox/img/projet-page-header.png");
+    }
+
+    
+}
