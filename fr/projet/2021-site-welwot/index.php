@@ -51,6 +51,8 @@
                                     <p>Ce projet m'a donné l'opportunité d'exprimer ma créativité en réalisant un travail important d'illustration et d'animation. J'ai veillé à souligner l'aspect moderne et innovant des solutions de Welwot au travers du site.</p>
 
                                     <p>Pour intégrer ces nombreux visuels au site, j'ai opté pour une technologie d'animation SVG orientée web (Lottie). Son approche 100 % SVG permet en effet d'afficher des animations complexes en ayant un impact quasi-nul sur le temps de chargement.</p>
+
+                                    <p>J'ai travaillé en collaboration avec un autre développeur pour certains éléments back-end du site et pour expériementer avec Lottie. Le reste du design, des animations et du code a été produit par mes soins et validé au fur et à mesure avec ma hiérarchie.</p>
                                 </div>
                             </div>
 

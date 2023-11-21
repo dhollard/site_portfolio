@@ -50,9 +50,11 @@
 
                                     <p>J'ai dû partir pratiquement de zéro pour imaginer ce site, à l'exception du logo et d'une ébauche de site très brut déjà faite par l'entreprise.</p>
 
-                                    <p>J'ai gardé de cette ébauche des idées de structure, une partie du texte et la dominance de la couleur orange (présente dans le logo). Je l'ai associé à du bleu (couleur complémentaire) et j'ai joué sur cette dualité aux travers des illustrations du site.</p>
+                                    <p>De cette ébauche, j'ai gardé des idées de structure, une partie du texte et la dominance de la couleur orange (présente dans le logo). Je l'ai associé à du bleu (couleur complémentaire) et j'ai joué sur cette dualité aux travers des illustrations du site.</p>
 
                                     <p>J'ai opté pour un site one-page simple et très visuel pour expliquer rapidement le concept de Cawibox et permettre aux prospects de nous contacter.</p>
+
+                                    <p>J'ai réalisé la maquette et les visuels du site. Pendant la phase de développement, j'ai été assisté par un autre développeur de l'équipe pour accélérer la sortie du site.</p>
                                 </div>
                             </div>
 

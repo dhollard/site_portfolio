@@ -44,9 +44,9 @@
                                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                                 <div class="bloc-texte">
-                                    <p>Depuis plusieurs années, je souhaite créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets avec mes collaborateurs, mes amis ou de futurs recruteurs.</p>
+                                    <p>Depuis plusieurs années, je souhaitais créer mon site portfolio sur-mesure pour valoriser mes compétences et partager mes projets avec mes collaborateurs, mes amis ou de futurs recruteurs.</p>
 
-                                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai travaillé sur mon temps libre pour réaliser ce site.</p>
+                                    <p>En fin d’année 2022, j’ai décidé de me lancer et j’ai utilisé la majeure partie de mon temps libre pour réaliser mon site.</p>
 
                                     <p>Cette page retrace les différentes étapes de ce processus de création au travers d'un format d'étude de cas.</p>
                                 </div>
