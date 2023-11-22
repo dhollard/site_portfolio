@@ -1,0 +1,322 @@
+@use '../color';
+@use '../mquery';
+@use '../typo';
+@use '../global';
+@use '../page-projet';
+
+// --- (RE)DÉFINITION DES COULEURS DE LA PAGE PROJET ---
+:root {
+    //couleur de fond de la page
+    --fond-page-projet: #{color.$ambiance-100};
+
+    // fond et couleur de texte des encarts gros titres du header et des sections du projet
+    --fond-titre-projet: #F22370;
+    --couleur-titre-projet: #ffffff;
+
+    // couleur des paragraphes de texte
+    --couleur-texte-projet: #ffffff;
+
+    // couleur distinctive du projet, utilisée sur les boutons, bullet points, petits titres...
+    --couleur-focus-projet: #FFE5EF;
+    --couleur-focus-bis-projet: #F22370;
+
+    // couleur des éléments en opposition avec le fond (bloc blanc sur fond sombre par ex)
+    --couleur-contraste-projet: #ffffff;
+
+    // couleur lignes de séparation entre des éléments
+    --couleur-ligne-projet: #{color.$ambiance-80};
+
+    // couleurs globale des cadres scrollables
+    --cadre-scroll-base-color:#E6E6E6;
+    --cadre-scroll-tab1-color:#D7D7D7;
+    --cadre-scroll-tab2-color:#B5B5B5;
+    --cadre-scroll-icons-color:#535353;
+}
+
+// --- APPELS DES TYPOS POUR CETTE PAGE (cas spécial cas conflit avec typos actuels site) ---
+    
+  //Ubuntu (regular)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Ubuntu (regular italic)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Ubuntu (medium)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Ubuntu (medium italic)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Ubuntu (bold)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Ubuntu (bold italic)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Ubuntu (light)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Ubuntu (light italic)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Ubuntu (thin)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Thin.ttf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Ubuntu (thin italic)
+  @font-face {
+    font-family: "Ubuntu-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Roboto (regular)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Roboto (regular italic)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Roboto (medium)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Roboto (medium italic)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Roboto (bold)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Roboto (bold italic)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Roboto (black)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Roboto (black italic)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Roboto (light)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Roboto (light italic)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  //Roboto (thin)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  //Roboto (thin italic)
+  @font-face {
+    font-family: "Roboto-showcase";
+    src: url("/fr/projet/2022-dashboard-wi-avis/font/Roboto-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+
+
+// Règles globales page
+.trigger-instruction-tag {
+    background: color.$secondary-100!important;
+}
+
+// personnalisation du highlight texte
+//code firefox
+::-moz-selection {
+  color: #ffffff;
+  background: #2196F3;
+}
+
+::selection {
+  color: #ffffff;
+  background: #2196F3;
+}
+
+
+// Règles par section
+#Header_projet {
+    // PNG moins lourd que WEBP dans ce cas précis
+    background-image: url("/fr/projet/2022-dashboard-wi-avis/img/projet-page-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #Titre_page {
+      font-family: 'Ubuntu-showcase', sans-serif;
+      background: rgba(242, 33, 110, 0.9);
+      line-height: 1.2;
+      font-size: 42px;
+      font-weight: 700;
+      padding: 20px 30px 22px 30px;
+
+      // media query #Titre_page
+      @include mquery.laptop {   
+          font-size: 58px;
+      }
+
+      // media query #Titre_page
+      @include mquery.tv {   
+          font-size: 90px;
+      }
+
+      &.header-titre-scrolled {
+          // media query #Titre_page
+          @include mquery.laptop { 
+              font-size: 42px;
+          }
+
+          // media query #Titre_page
+          @include mquery.tv {   
+              font-size: 60px;
+          }
+      }
+  }
+}
+
+#Resume_projet {
+
+    .zone-cadre-video {
+        padding: 0 30px;
+
+        // media query .zone-cadre-video
+        @include mquery.laptop {   
+            padding: 0;
+        }
+    }
+
+    #Video_showreel_mob {
+        display: block;
+
+        // media query #Video_showreel_mob
+        @include mquery.laptop {   
+            display: none;
+        }
+    }
+
+    #Video_showreel_desk {
+        display: none;
+
+        // media query #Video_showreel_desk
+        @include mquery.laptop {   
+            display: block;
+        }
+    }
+}

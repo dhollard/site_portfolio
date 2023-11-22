@@ -2019,6 +2019,9 @@ main {
                 width: 28%;
                 gap: 20px;
                 justify-content: start;
+                flex-direction: column;
+                height: 100%;
+                padding-top: 5px;
             }
 
             // media query .infos-projet
