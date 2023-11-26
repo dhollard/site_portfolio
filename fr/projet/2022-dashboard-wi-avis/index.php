@@ -44,15 +44,15 @@
                                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                                 <div class="bloc-texte">
-                                    <p>Pendant ma collaboration au sein de l'entreprise DataOptique, j'ai travaillé plusieurs mois sur un concept nommé Wi-avis. Son objectif était d'apporter aux commerçants un moyen innovant pour interagir avec leurs clients, sans avoir recours à un site ou une application dédiée.</p>
+                                    <p>Pendant ma collaboration au sein de l'entreprise DataOptique, j'ai travaillé plusieurs mois sur un concept nommé Wi-avis. Son objectif était d'apporter aux commerçants un moyen innovant d'interagir avec leurs clients, sans avoir recours à un site ou à une application dédiée.</p>
 
-                                    <p>Bien que le projet soit resté à l'état de prototype abandonné, la réflexion autour de son UI/UX a été pour moi une occasion intéressante de progresser.</p>
+                                    <p>Le développement de ce concept a été annulé à l'étape de prototype interactif. Néanmoins, la réflexion autour de son UI/UX a été pour moi une occasion intéressante de progresser.</p>
 
-                                    <p>Le projet comportait beaucoup de contraintes complexes et il a donc fallu redoubler d'ingéniosité pour rendre l'ensemble de ce tableau à la fois ergonomique, mobile-friendly et attirant visuellement.</p>
+                                    <p>Ce projet comportait beaucoup de contraintes complexes de par sa nature. Il a donc fallu faire preuve d'ingéniosité pour rendre l'ensemble de l'interface ergonomique, mobile-friendly et attirante visuellement.</p>
 
-                                    <p>Cela m'a donné la possibilité de mettre au point méticuleusement toute une panoplie de composants UI, d'articuler leurs interactions et de designer des sets d'icones uniques.</p>
+                                    <p>Cela m'a donné la possibilité de mettre au point toute une panoplie de composants UI et d'articuler soigneusement leurs interactions.</p>
 
-                                    <p>Vous trouverez sur cette page un aperçu du prototype Figma que j'ai réalisé pour ce projet.</p>
+                                    <p>Vous trouverez sur cette page un aperçu du prototype Figma que j'ai réalisé dans le cadre de ce projet.</p>
                                 </div>
                             </div>
 

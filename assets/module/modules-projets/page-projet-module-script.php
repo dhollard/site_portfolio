@@ -1,6 +1,8 @@
 <!-- Script réduction image en-tête au scroll -->
 <script>
-    window.addEventListener('scroll', scrollFunction, {passive: true});
+    window.addEventListener('scroll', scrollFunction, {
+        passive: true
+    });
 
     function scrollFunction() {
 
@@ -43,7 +45,6 @@
 
 <!-- Script pour masquer la version plein écran d'un cadre scrollable -->
 <script>
-
     // En cliquant sur la croix prévu à cet effet
     $(".hide-cadre-btn").click(function() {
         // Retire la classe .open-overlay au .zone-fullscreen-cadre parent pour le masquer
@@ -63,7 +64,6 @@
         fullscreenStopScrollPage();
 
     });
-
 </script>
 
 <!-- Script pour permutter entre la version mobile et desktop d'un cadre quand cela est possible -->
@@ -72,14 +72,14 @@
 
         // Vérifie si le cadre scrollable voisin ne possède PAS déjà la classe .force-mobile et l'applique le cas échéant
         if (!$(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").hasClass("force-mobile")) {
-            
+
             $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").addClass("force-mobile");
 
             // Remise à zéro de la position de scroll du cadre
             $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").find('.cadre-content-wrapper').scrollTop(0);
-            
+
             // Retire la classe .force-mobile
-        }   else {
+        } else {
 
             $(this).parent(".fullcadre-bottom-zone").siblings(".cadre-scrollable").removeClass("force-mobile");
 
@@ -94,7 +94,9 @@
 
 <!-- Script qui masque le sommaire en début de page -->
 <script>
-    window.addEventListener('DOMContentLoaded', hideSom, {passive: true});
+    window.addEventListener('DOMContentLoaded', hideSom, {
+        passive: true
+    });
     window.addEventListener('scroll', hideSom);
 
     function hideSom() {
@@ -194,7 +196,9 @@
 <!-- Script pour colorier le lien du sommaire correspondant à la partie en cours de consultation -->
 <script>
     window.addEventListener('resize', progresSom);
-    window.addEventListener('scroll', progresSom, {passive: true});
+    window.addEventListener('scroll', progresSom, {
+        passive: true
+    });
 
     function progresSom() {
 
@@ -262,36 +266,129 @@
 <!-- Script pour que le sommaire mobile soit activable via glissement et pas juste clic -->
 <script>
     $(document).ready(function() {
-    var startY = 0;
-    var threshold = 50; // Sensibilité ajustable du glissement
+        var startY = 0;
+        var threshold = 50; // Sensibilité ajustable du glissement
 
-    $('#Sommaire_top_bar_mobile').on('mousedown touchstart', function(event) {
-        startY = event.clientY || event.originalEvent.touches[0].clientY;
-    });
+        $('#Sommaire_top_bar_mobile').on('mousedown touchstart', function(event) {
+            startY = event.clientY || event.originalEvent.touches[0].clientY;
+        });
 
-    $(document).on('mousemove touchmove', function(event) {
-        if (startY === 0) return;
+        $(document).on('mousemove touchmove', function(event) {
+            if (startY === 0) return;
 
-        var currentPosition = event.clientY || event.originalEvent.touches[0].clientY;
-        var distance = currentPosition - startY;
+            var currentPosition = event.clientY || event.originalEvent.touches[0].clientY;
+            var distance = currentPosition - startY;
 
-        if (distance > threshold) {
-        // Glissement vers le bas, masquer #Sommaire
-        $('#Sommaire').removeClass('show-sommaire');
-        $("#Overlay_sommaire").removeClass("show-overlay");
-        $(root).removeClass("sommaire-no-scroll");
-        } else if (distance < -threshold) {
-        // Glissement vers le haut, afficher #Sommaire
-        $('#Sommaire').addClass('show-sommaire');
-        $("#Overlay_sommaire").addClass("show-overlay");
-        $(root).addClass("sommaire-no-scroll");
-        } else {
-        // Glissement pas assez prononcé, ne rien faire
-        }
-    });
+            if (distance > threshold) {
+                // Glissement vers le bas, masquer #Sommaire
+                $('#Sommaire').removeClass('show-sommaire');
+                $("#Overlay_sommaire").removeClass("show-overlay");
+                $(root).removeClass("sommaire-no-scroll");
+            } else if (distance < -threshold) {
+                // Glissement vers le haut, afficher #Sommaire
+                $('#Sommaire').addClass('show-sommaire');
+                $("#Overlay_sommaire").addClass("show-overlay");
+                $(root).addClass("sommaire-no-scroll");
+            } else {
+                // Glissement pas assez prononcé, ne rien faire
+            }
+        });
 
-    $(document).on('mouseup touchend', function() {
-        startY = 0;
-    });
+        $(document).on('mouseup touchend', function() {
+            startY = 0;
+        });
     });
 </script>
+
+<!-- Script de gestion des éléments carrousel -->
+<script>
+    // Utiliser la fonction initializeCarrousel sur chaque carrousel présent sur la page
+    $(document).ready(function() {
+        $(".carrousel").each(function() {
+            initializeCarrousel($(this));
+        });
+    });
+
+    // Récupère le contenu du carrousel
+    function initializeCarrousel(carrousel) {
+        const currentIndexAttr = "data-current-index";
+        const pictures = carrousel.find(".carrousel-inner figure");
+        const totalPictures = pictures.length;
+
+        // Récupère le bouton précédent et lui attribut la valeur "-1" au clic
+        carrousel.find(".prev-btn-carrousel").on("click", function() {
+            navigateCarrousel(carrousel, -1);
+        });
+
+        // Récupère le bouton précédent et lui attribut la valeur "+1" au clic
+        carrousel.find(".next-btn-carrousel").on("click", function() {
+            navigateCarrousel(carrousel, 1);
+        });
+
+        // Permet de permutter entre les images du carrousel en modifiant la valeur de "data-current-index" et en ajoutant/retirant la classe hide-carrousel
+        function navigateCarrousel(carrousel, direction) {
+            let currentIndex = parseInt(carrousel.attr(currentIndexAttr));
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = totalPictures - 1;
+            } else if (currentIndex >= totalPictures) {
+                currentIndex = 0;
+            }
+
+            pictures.addClass("hide-carrousel");
+            pictures.eq(currentIndex).removeClass("hide-carrousel");
+
+            carrousel.attr(currentIndexAttr, currentIndex);
+        }
+
+        // Masquer tous les éléments sauf le premier lors de l'initialisation (redondance avec le HTML au cas où)
+        pictures.not(":first").addClass("hide-carrousel");
+    }
+</script>
+
+<!-- <script>
+    // Utiliser la fonction initializeCarrousel sur chaque carrousel présent sur la page
+    $(document).ready(function() {
+        $(".carrousel").each(function() {
+            initializeCarrousel($(this));
+        });
+    });
+
+    // Récupère le contenu du carrousel
+    function initializeCarrousel(carrousel) {
+        const currentIndexAttr = "data-current-index";
+        const pictures = carrousel.find(".carrousel-inner picture");
+        const totalPictures = pictures.length;
+
+        // Récupère le bouton précédent et lui attribut la valeur "-1" au clic
+        carrousel.find(".prev-btn-carrousel").on("click", function() {
+            navigateCarrousel(carrousel, -1);
+        });
+
+        // Récupère le bouton précédent et lui attribut la valeur "+1" au clic
+        carrousel.find(".next-btn-carrousel").on("click", function() {
+            navigateCarrousel(carrousel, 1);
+        });
+
+        // Permet de permutter entre les images du carrousel en modifiant la valeur de "data-current-index" et en ajoutant/retirant la classe hide-carrousel
+        function navigateCarrousel(carrousel, direction) {
+            let currentIndex = parseInt(carrousel.attr(currentIndexAttr));
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = totalPictures - 1;
+            } else if (currentIndex >= totalPictures) {
+                currentIndex = 0;
+            }
+
+            pictures.addClass("hide-carrousel");
+            pictures.eq(currentIndex).removeClass("hide-carrousel");
+
+            carrousel.attr(currentIndexAttr, currentIndex);
+        }
+
+        // Masquer tous les éléments sauf le premier lors de l'initialisation (redondance avec le HTML au cas où)
+        pictures.not(":first").addClass("hide-carrousel");
+    }
+</script> -->

@@ -17,8 +17,8 @@
     --couleur-texte-projet: #ffffff;
 
     // couleur distinctive du projet, utilisée sur les boutons, bullet points, petits titres...
-    --couleur-focus-projet: #FFE5EF;
-    --couleur-focus-bis-projet: #F22370;
+    --couleur-focus-projet: #F22370;
+    --couleur-focus-bis-projet: #e41c66;
 
     // couleur des éléments en opposition avec le fond (bloc blanc sur fond sombre par ex)
     --couleur-contraste-projet: #ffffff;
@@ -237,18 +237,6 @@
 // Règles globales page
 .trigger-instruction-tag {
     background: color.$secondary-100!important;
-}
-
-// personnalisation du highlight texte
-//code firefox
-::-moz-selection {
-  color: #ffffff;
-  background: #2196F3;
-}
-
-::selection {
-  color: #ffffff;
-  background: #2196F3;
 }
 
 

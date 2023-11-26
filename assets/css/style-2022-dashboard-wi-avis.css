@@ -904,6 +904,16 @@ footer .footer-container #footer-col-2 p span {
   --cadre-scroll-icons-color:#535353;
 }
 
+::-moz-selection {
+  color: #ffffff;
+  background: var(--couleur-focus-projet);
+}
+
+::selection {
+  color: #ffffff;
+  background: var(--couleur-focus-projet);
+}
+
 body {
   background: var(--fond-page-projet);
 }
@@ -941,6 +951,12 @@ main {
   height: 400px;
 }
 #Header_projet #Titre_page {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   font-family: "Playfair", serif;
   font-size: 42px;
   font-weight: 800;
@@ -2204,6 +2220,96 @@ main {
   color: var(--couleur-focus-bis-projet);
 }
 
+.hide-carrousel {
+  display: none;
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.carrousel .carrousel-inner picture {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.carrousel .carrousel-inner img {
+  filter: drop-shadow(0px 0px 10px rgba(166, 156, 164, 0.15));
+  max-height: 80vh;
+  min-width: 200px;
+  max-width: 100%;
+}
+.carrousel .carrousel-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .carrousel .carrousel-controls {
+    gap: 50px;
+  }
+}
+.carrousel .carrousel-controls .prev-btn-carrousel,
+.carrousel .carrousel-controls .next-btn-carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 35px;
+  width: 35px;
+  min-height: 35px;
+  height: 35px;
+  padding: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: unset;
+  outline: unset;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 992px) {
+  .carrousel .carrousel-controls .prev-btn-carrousel,
+  .carrousel .carrousel-controls .next-btn-carrousel {
+    min-width: 50px;
+    width: 50px;
+    min-height: 50px;
+    height: 50px;
+  }
+}
+.carrousel .carrousel-controls .prev-btn-carrousel:hover,
+.carrousel .carrousel-controls .next-btn-carrousel:hover {
+  background-color: #D8D6D8;
+}
+.carrousel .carrousel-controls .prev-btn-carrousel .ico-btn-carrousel,
+.carrousel .carrousel-controls .next-btn-carrousel .ico-btn-carrousel {
+  display: block;
+  width: 60%;
+  height: 60%;
+  background-color: #190517;
+  -webkit-mask-image: url(/assets/svg/ico-chevron-simple.svg);
+  mask-image: url(/assets/svg/ico-chevron-simple.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.carrousel .carrousel-controls .prev-btn-carrousel .ico-btn-carrousel {
+  transform: rotate(180deg);
+}
+.carrousel .legende-visuel {
+  margin-top: 8px;
+}
+
 .post-it-wrapper {
   --post-it-size:130px;
   display: flex;
@@ -3108,6 +3214,17 @@ main {
   .bloc-palette-couleurs-projet .palette-couleurs-projet .palette-mineure .carre-palette:last-of-type {
     margin-right: 0px !important;
   }
+  .carrousel-controls {
+    gap: 0px;
+  }
+  .carrousel-controls .prev-btn-carrousel {
+    margin-right: 30px;
+  }
+  @media (min-width: 992px) {
+    .carrousel-controls .prev-btn-carrousel {
+      margin-right: 50px;
+    }
+  }
   .outil-languette .outil-blob::before {
     white-space: nowrap;
     width: auto;
@@ -3118,8 +3235,8 @@ main {
   --fond-titre-projet: #F22370;
   --couleur-titre-projet: #ffffff;
   --couleur-texte-projet: #ffffff;
-  --couleur-focus-projet: #FFE5EF;
-  --couleur-focus-bis-projet: #F22370;
+  --couleur-focus-projet: #F22370;
+  --couleur-focus-bis-projet: #e41c66;
   --couleur-contraste-projet: #ffffff;
   --couleur-ligne-projet: #544953;
   --cadre-scroll-base-color:#E6E6E6;
@@ -3284,16 +3401,6 @@ main {
 }
 .trigger-instruction-tag {
   background: #439A86 !important;
-}
-
-::-moz-selection {
-  color: #ffffff;
-  background: #2196F3;
-}
-
-::selection {
-  color: #ffffff;
-  background: #2196F3;
 }
 
 #Header_projet {

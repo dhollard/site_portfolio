@@ -31,6 +31,18 @@
     --cadre-scroll-icons-color:#535353;
 }
 
+// personnalisation du highlight texte
+//code firefox
+::-moz-selection {
+    color: #ffffff;
+    background: var(--couleur-focus-projet);
+}
+  
+::selection {
+    color: #ffffff;
+    background: var(--couleur-focus-projet);
+}
+
 body {
     background: var(--fond-page-projet);
 
@@ -73,6 +85,12 @@ main {
 
     // Titre du projet
     #Titre_page {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
         @include typo.special-title($color:var(--couleur-titre-projet), $weight:800);
         font-size: 42px;
         text-align: center;
@@ -1573,6 +1591,118 @@ main {
     }
 }
 
+// --------------- Style liés aux carrousels d'images -----------------
+
+// Classe qui sert à cacher les éléments du carrousel au chargement puis en cliquant sur les boutons suivant/précédent
+.hide-carrousel {
+    display: none;
+}
+
+// Parent conteneur du reste des éléments logiques du carrousel d'images
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .carrousel-inner {
+
+        picture {
+            width: -moz-fit-content;
+            width: fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+        }
+
+        img {
+            filter: drop-shadow(0px 0px 10px rgba(166, 156, 164, 0.15));
+            max-height: 80vh;
+            min-width: 200px;
+            max-width: 100%;
+        }
+    }
+
+    .carrousel-controls {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+        gap: 30px;
+
+        // media query .carrousel-controls
+        @include mquery.laptop {   
+            gap: 50px;
+        }
+
+        // Boutons précédent/suivant permettant de changer d'image
+        .prev-btn-carrousel,
+        .next-btn-carrousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 35px;
+            width: 35px;
+            min-height: 35px;
+            height: 35px;
+            padding: 0;
+            background-color: #ffffff;
+            cursor: pointer;
+            border: unset;
+            outline: unset;
+            border-radius: 5px;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+
+            // media query .prev-btn-carrousel et .next-btn-carrousel
+            @include mquery.laptop {   
+                min-width: 50px;
+                width: 50px;
+                min-height: 50px;
+                height: 50px;
+            }
+
+            &:hover {
+                background-color: color.$ambiance-30;
+            }
+
+            .ico-btn-carrousel {
+                display: block;
+                width: 60%;
+                height: 60%;
+                background-color: color.$ambiance-160;
+
+                -webkit-mask-image: url(/assets/svg/ico-chevron-simple.svg);
+                mask-image: url(/assets/svg/ico-chevron-simple.svg);
+
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-position: center;
+                mask-position: center;
+                -webkit-mask-size: contain;
+                mask-size: contain;
+            }
+
+            
+        }
+
+        // Règles pour adapter l'icone commune aux besoins du bouton précédent
+        .prev-btn-carrousel .ico-btn-carrousel {
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .legende-visuel {
+        margin-top: 8px;
+    }
+
+}
+
+
+
 // --------------- Style des éléments post-it ---------------
 
 // Conteneur post-it
@@ -2630,6 +2760,20 @@ main {
 
                 }
             }
+        }
+    }
+
+    // Module carrousel
+    .carrousel-controls {
+        gap: 0px;
+
+        .prev-btn-carrousel {
+            margin-right: 30px;
+
+            // media query .prev-btn-carrousel (safari)
+            @include mquery.laptop {  
+                margin-right: 50px;
+            }  
         }
     }
 

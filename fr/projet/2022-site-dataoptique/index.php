@@ -46,13 +46,13 @@
                                 <div class="bloc-texte">
                                     <p>Au début de l'année 2021, j'ai été chargé de créer le site vitrine de l'entreprise DataOptique.</p>
 
-                                    <p>J'avais déjà créé d'autres sites ciblés pour certains des produits et services de DataOptique, mais le besoin d'un site général pour regrouper son identité et ses différentes solutions se faisait ressentir.</p>
+                                    <p>J'avais déjà eu pour mission de concevoir d'autres sites pour les services proposés par cette entreprise. Cependant, le besoin d'une plateforme regroupant l'ensemble de ses solutions et son identité se faisait ressentir.</p>
 
-                                    <p>La contrainte de temps étant un facteur important, j'ai fait le choix d'un design "classique" de site vitrine d'entreprise. J'ai pu ainsi raccourcir la durée du projet en me passant de prototypes complexes ou d'animations optionnelles.</p>
+                                    <p>Il était nécessaire de réaliser ce site dans un délai court, ce qui m'a amené vers un design allant à l'essentiel. J'ai gagné du temps sur la durée totale du projet, en limitant la phase de recherche et de prototypage.</p>
 
                                     <p>Le site dans son ensemble reprend l'identité visuelle de DataOptique (orange et gris) et chaque solution est associée à une couleur afin d'aider les clients à les différencier.</p>
 
-                                    <p>J'ai mené à bien ce projet en collaboration avec d'autres collaborateurs de DataOptique, principalement pour l'écriture et la validation des textes du site. J'ai pris en charge l'intégralité du design et du développement front-end du produit final.</p>
+                                    <p>J'ai mené à bien ce projet avec d'autres collaborateurs de DataOptique, principalement pour l'écriture des textes et leurs validations. J'ai pris en charge l'intégralité du design et du développement du produit.</p>
                                 </div>
                             </div>
 

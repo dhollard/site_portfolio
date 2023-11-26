@@ -77,18 +77,6 @@
     background: color.$secondary-100!important;
 }
 
-// personnalisation du highlight texte
-//code firefox
-::-moz-selection {
-  color: #ffffff;
-  background: #2196F3;
-}
-
-::selection {
-  color: #ffffff;
-  background: #2196F3;
-}
-
 
 // Règles par section
 #Header_projet {
