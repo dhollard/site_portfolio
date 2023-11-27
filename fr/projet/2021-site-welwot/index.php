@@ -52,7 +52,7 @@
 
                                     <p>Pour intégrer ces nombreux visuels au site, j'ai opté pour une technologie d'animation SVG orientée web (Lottie). Son approche 100 % SVG permet en effet d'afficher des animations complexes en ayant un impact quasi-nul sur le temps de chargement.</p>
 
-                                    <p>J'ai travaillé en collaboration avec un autre développeur pour certains éléments back-end du site et pour expériementer avec Lottie. Le reste du design, des animations et du code a été produit par mes soins et validé au fur et à mesure avec ma hiérarchie.</p>
+                                    <p>J'ai travaillé en collaboration avec d'autres développeurs pour certains éléments back-end du site et pour expérimenter avec Lottie. La gestion du projet, le design, les animations et le code front ont été à ma charge et validés au fur et à mesure avec ma hiérarchie.</p>
                                 </div>
                             </div>
 
@@ -60,6 +60,7 @@
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
+                                    <p>Gestion de projet</p>
                                     <p>UI/UX design</p>
                                     <p>Développement</p>
                                     <p>Motion design</p>
@@ -67,8 +68,7 @@
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
-                                    <p>Product Designer et développeur</p>
-                                    <p class="info-projet-secondaire">sauf pour partie backend</p>
+                                    <p>Chef de projet, product Designer et développeur</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">

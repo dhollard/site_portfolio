@@ -40,6 +40,7 @@
                             <button class="cat active-filter" data-cat="tout">Tout</button>
                             <button class="cat" data-cat="ux">User Interface</button>
                             <button class="cat" data-cat="dev">Développement</button>
+                            <button class="cat" data-cat="lead">Gestion de projet</button>
                             <button class="cat" data-cat="motion">Motion</button>
                             <button class="cat" data-cat="graph">Graphisme</button>
                         </div>
@@ -80,7 +81,7 @@
                         </p>
                     </a>
 
-                    <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="ux dev motion" data-type="resume">
+                    <a id="Proj_web_site_welwot_2021" class="projet-bloc" href="/fr/projet/2021-site-welwot/" data-cat="ux dev motion lead" data-type="resume">
                         
                         <div class="projet-ttr-bloc">
                             <h2 class="projet-titre">Site internet</h2>
@@ -95,13 +96,14 @@
                         <p class="projet-date">2021</p>
 
                         <p class="projet-tags">
+                            <span class="txt-tag-projet">Gestion |</span>
                             <span class="txt-tag-projet">UI/UX |</span>
                             <span class="txt-tag-projet">Dev |</span>
                             <span class="txt-tag-projet">Motion</span>
                         </p>
                     </a>
 
-                    <a id="Proj_web_site_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-site-wotbus/" data-cat="ux dev" data-type="resume">
+                    <a id="Proj_web_site_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-site-wotbus/" data-cat="ux dev lead" data-type="resume">
 
                         <div class="projet-ttr-bloc">
                             <h2 class="projet-titre">Site internet</h2>
@@ -116,12 +118,13 @@
                         <p class="projet-date">2022</p>
 
                         <p class="projet-tags">
+                            <span class="txt-tag-projet">Gestion |</span>
                             <span class="txt-tag-projet">UI/UX |</span>
                             <span class="txt-tag-projet">Dev</span>
                         </p>
                     </a>
 
-                    <a id="Proj_web_ui_voyageur_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-ui-voyageur-wotbus/" data-cat="ux dev" data-type="resume">
+                    <a id="Proj_web_ui_voyageur_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-ui-voyageur-wotbus/" data-cat="ux dev lead" data-type="resume">
 
                         <div class="projet-ttr-bloc">
                             <h2 class="projet-titre">Interface utilisateur</h2>
@@ -136,6 +139,7 @@
                         <p class="projet-date">2022/2023</p>
 
                         <p class="projet-tags">
+                            <span class="txt-tag-projet">Gestion |</span>
                             <span class="txt-tag-projet">UI/UX |</span>
                             <span class="txt-tag-projet">Dev</span>
                         </p>
