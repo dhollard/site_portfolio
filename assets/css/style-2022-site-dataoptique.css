@@ -3444,10 +3444,6 @@ main {
   font-style: normal;
   font-display: swap;
 }
-.trigger-instruction-tag {
-  background: #439A86 !important;
-}
-
 #Header_projet {
   background-image: url("/fr/projet/2022-site-dataoptique/img/projet-page-header.webp");
 }

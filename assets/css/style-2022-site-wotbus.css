@@ -3256,7 +3256,7 @@ main {
 }
 :root {
   --fond-page-projet: #342B33;
-  --fond-titre-projet: #794C99;
+  --fond-titre-projet: #87185D;
   --couleur-titre-projet: #ffffff;
   --couleur-texte-projet: #ffffff;
   --couleur-focus-projet: #2196F3;
@@ -3271,84 +3271,74 @@ main {
 
 @font-face {
   font-family: "Teko-showcase";
-  src: url("/fr/projet/2021-site-welwot/font/Teko-Regular.ttf");
+  src: url("/fr/projet/2022-site-wotbus/font/Teko-Regular.ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Teko-showcase";
-  src: url("/fr/projet/2021-site-welwot/font/Teko-Medium.ttf");
+  src: url("/fr/projet/2022-site-wotbus/font/Teko-Medium.ttf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Teko-showcase";
-  src: url("/fr/projet/2021-site-welwot/font/Teko-SemiBold.ttf");
+  src: url("/fr/projet/2022-site-wotbus/font/Teko-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Teko-showcase";
-  src: url("/fr/projet/2021-site-welwot/font/Teko-Bold.ttf");
+  src: url("/fr/projet/2022-site-wotbus/font/Teko-Bold.ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Teko-showcase";
-  src: url("/fr/projet/2021-site-welwot/font/Teko-Light.ttf");
+  src: url("/fr/projet/2022-site-wotbus/font/Teko-Light.ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 #Header_projet {
-  background-image: url("/fr/projet/2021-site-welwot/img/projet-page-header.webp");
+  background-image: url("/fr/projet/2022-site-wotbus/img/projet-page-header.webp");
 }
 #Header_projet #Titre_page {
-  background: rgba(39, 22, 37, 0.9);
-  font-family: "Teko-showcase", sans-serif;
-  line-height: 1;
-  font-size: 44px;
-  font-weight: 600;
-  padding: 24px 30px 18px 30px;
+  font-family: "Signika-showcase", sans-serif;
+  background: rgba(135, 23, 92, 0.9);
+  line-height: 1.2;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 20px 30px 22px 30px;
 }
 @media (min-width: 992px) {
   #Header_projet #Titre_page {
-    font-size: 62px;
+    font-size: 56px;
   }
 }
 @media (min-width: 2400px) {
   #Header_projet #Titre_page {
-    font-size: 94px;
+    font-size: 90px;
   }
 }
 @media (min-width: 992px) {
   #Header_projet #Titre_page.header-titre-scrolled {
-    font-size: 46px;
+    font-size: 42px;
   }
 }
 @media (min-width: 2400px) {
   #Header_projet #Titre_page.header-titre-scrolled {
-    font-size: 62px;
+    font-size: 60px;
   }
-}
-#Header_projet #Scroll_btn_header {
-  background: #342B33;
-  box-shadow: 0px 0px 18px 0 rgba(91, 51, 120, 0.5);
-}
-#Header_projet #Scroll_btn_header .scroll-btn-header-icon {
-  background-image: url("../svg/ico-fleche-scroll-blanc.svg");
-}
-#Header_projet #Scroll_btn_header:hover {
-  box-shadow: 0px 0px 20px 0 rgba(91, 51, 120, 0.75);
 }
 
 /* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   #Header_projet {
-    background-image: url("/fr/projet/2021-site-welwot/img/projet-page-header.png");
+    background-image: url("/fr/projet/2020-site-cawibox/img/projet-page-header.png");
   }
-}/*# sourceMappingURL=style-2021-site-welwot.css.map */
+}/*# sourceMappingURL=style-2022-site-wotbus.css.map */

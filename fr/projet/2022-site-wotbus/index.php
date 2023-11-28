@@ -6,12 +6,12 @@
     <?php include_once('../../../assets/module/head-module.php'); ?>
 
     <!-- Appels ressources page -->
-    <link rel="stylesheet" href="/assets/css/style-2020-site-cawibox.css">
+    <link rel="stylesheet" href="/assets/css/style-2022-site-wotbus.css">
 
     <!-- SEO et identité page -->
-    <link rel="canonical" href="https://darius-hollard.com/fr/projet/2020-site-cawibox/" />
-    <title>Site internet - Cawibox</title>
-    <meta name="description" content="Projet réalisé en 2020 - Création du site internet de la solution Cawibox" />
+    <link rel="canonical" href="https://darius-hollard.com/fr/projet/2022-site-wotbus/" />
+    <title>Site internet - WotBus</title>
+    <meta name="description" content="Projet réalisé en 2022 - Création du site internet de la solution WotBus" />
 
 </head>
 
@@ -24,7 +24,7 @@
 
         <!-- ********** Section en-tête page projet ********** -->
         <section id="Header_projet">
-            <h1 id="Titre_page">Site internet Cawibox</h1>
+            <h1 id="Titre_page">Site internet WotBus</h1>
             <div id="Scroll_btn_header" onclick="headerScrollButton()">
                 <span class="scroll-btn-header-icon"></span>
             </div>
@@ -44,17 +44,15 @@
                                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                                 <div class="bloc-texte">
-                                    <p>La création de ce site internet est l'un des premiers projets qui m'a été confié pendant ma collaboration au sein de DataOptique.</p>
+                                    <p>Texte.</p>
 
-                                    <p>Le but pour DataOptique était de disposer d'un site moderne et valorisant pour vendre sa nouvelle solution d'enquête : le boitier Cawibox.</p>
+                                    <p>Texte.</p>
 
-                                    <p>J'avais comme point de départ le logo Cawibox, ainsi qu'une ébauche de site très brute déjà faite par l'entreprise.</p>
+                                    <p>Texte.</p>
 
-                                    <p>De cette ébauche, j'ai conservé quelques idées et du texte, ainsi que la dominance de la couleur orange du logo. Je l'ai associé à du bleu (couleur complémentaire) et j'ai joué sur cette dualité au travers des illustrations du site.</p>
+                                    <p>Texte.</p>
 
-                                    <p>J'ai opté pour un site one-page très visuel pour expliquer rapidement le concept de Cawibox et permettre aux prospects de nous contacter facilement.</p>
-
-                                    <p>J'ai réalisé la maquette et les visuels du site. Puis, pendant la phase de développement, j'ai été assisté par un autre développeur de l'équipe pour terminer le projet plus vite.</p>
+                                    <p>Texte.</p>
                                 </div>
                             </div>
 
@@ -62,25 +60,25 @@
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
+                                    <p>Gestion de projet</p>
                                     <p>UI/UX design</p>
                                     <p>Développement</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
-                                    <p>Product Designer et développeur</p>
-                                    <p class="info-projet-secondaire">sauf pour partie backend</p>
+                                    <p>Chef de projet, product Designer et développeur</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
-                                    <p>3 mois (2020)</p>
+                                    <p>4 mois (2022)</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
-                                    <p>DataOptique</p>
-                                    <p class="info-projet-secondaire">(spécialiste collecte de données d'enquête)</p>
+                                    <p>Welwot</p>
+                                    <p class="info-projet-secondaire">(start-up IoT)</p>
                                 </span>
                             </div>
 
