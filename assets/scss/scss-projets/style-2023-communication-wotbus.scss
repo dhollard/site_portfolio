@@ -4,7 +4,7 @@
 @use '../global';
 @use '../page-projet';
 
-// --- (RE)DÉFINITION DES COULEURS DE LA PAGE PROJET ---
+// --- DÉFINITION DES VARIABLES COULEURS DE LA PAGE PROJET ---
 :root {
     //couleur de fond de la page
     --fond-page-projet: #{color.$ambiance-100};
@@ -33,30 +33,9 @@
     --cadre-scroll-icons-color:#535353;
 }
 
-// --- APPELS DES TYPOS POUR CETTE PAGE (cas spécial cas conflit avec typos actuels site) ---
-    
-  // //Ubuntu (regular)
-  // @font-face {
-  //   font-family: "Ubuntu-showcase";
-  //   src: url("/fr/projet/2022-dashboard-wi-avis/font/Ubuntu-Regular.ttf");
-  //   font-weight: 400;
-  //   font-style: normal;
-  //   font-display: swap;
-  // }
-
-
-
-// Règles globales page
-.trigger-instruction-tag {
-    background: color.$secondary-100!important;
-}
-
-
 // Règles par section
 #Header_projet {
     background-image: url("/fr/projet/2023-communication-wotbus/img/projet-page-header.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
 
     #Titre_page {
       font-family: 'Ubuntu-showcase', sans-serif;

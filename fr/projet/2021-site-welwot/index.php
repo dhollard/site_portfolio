@@ -105,14 +105,14 @@
 
                                 <div class="cadre-content-wrapper">
                                     <!-- Vidéo format mobile -->
-                                    <video id="Video_showreel_mob" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                    <video class="bloc-video mobile-video" width="100%" height="auto" autoplay playsinline loop muted>
                                         <source src="video/showreel-mobile.webm" type="video/webm">
                                         <source src="video/showreel-mobile.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.
                                     </video>
 
                                     <!-- Vidéo format ordinateur -->
-                                    <video id="Video_showreel_desk" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                    <video class="bloc-video desktop-video" width="100%" height="auto" autoplay playsinline loop muted>
                                         <source src="video/showreel-desktop.webm" type="video/webm">
                                         <source src="video/showreel-desktop.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.

@@ -65,9 +65,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../svg/pattern-proj-header-placeholder-01.svg");
-    background-repeat: repeat;
-    background-size: 145px;
+    background-image: url("../img/page-header-placeholder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     box-shadow: 0 8px 25px 0 rgba(216, 214, 216, 0.2);
     transition: height 800ms ease;
@@ -1552,6 +1552,24 @@ main {
     .cadre-content-wrapper {
         margin-bottom: 0!important;
     }
+
+    .mobile-video {
+        display: block;
+
+        // media query .mobile-video
+        @include mquery.laptop {   
+            display: none;
+        }
+    }
+
+    .desktop-video {
+        display: none;
+
+        // media query .desktop-video
+        @include mquery.laptop {   
+            display: block;
+        }
+    }
 }
 
 // Bloc contenant une vidéo
@@ -2208,6 +2226,16 @@ main {
             
         }
         
+    }
+
+    // Version showreel du cadre vidéo (compensation 0 padding de la section Résumé)
+    .zone-cadre-video {
+        padding: 0 30px;
+
+        // media query .zone-cadre-video
+        @include mquery.laptop {   
+            padding: 0;
+        }
     }
 }
 

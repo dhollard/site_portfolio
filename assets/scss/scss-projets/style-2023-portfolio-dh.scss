@@ -4,7 +4,7 @@
 @use '../global';
 @use '../page-projet';
 
-// --- APPELS DES TYPOS POUR CETTE PAGE (cas spécial cas conflit avec typos actuels site) ---
+// --- APPELS DES TYPOS UNIQUES AU PROJET ---
 
 //Playfair (normale variable)
 @font-face {
@@ -47,8 +47,7 @@
     }
   
   }
-  
-  
+
   //Alegreya Sans (thin)
   @font-face {
     font-family: "Alegreya-showcase";
@@ -211,12 +210,9 @@
     background: color.$secondary-100!important;
 }
 
-
 // Règles par section
 #Header_projet {
     background-image: url("/fr/projet/2023-portfolio-dh/img/projet-page-header.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
 
     #Titre_page {
         background: rgba(66, 153, 133, 0.9);
@@ -250,38 +246,7 @@
       }
 }
 
-#Resume_projet {
-
-    .zone-cadre-video {
-        padding: 0 30px;
-
-        // media query .zone-cadre-video
-        @include mquery.laptop {   
-            padding: 0;
-        }
-    }
-
-    #Video_showreel_mob {
-        display: block;
-
-        // media query #Video_showreel_mob
-        @include mquery.laptop {   
-            display: none;
-        }
-    }
-
-    #Video_showreel_desk {
-        display: none;
-
-        // media query #Video_showreel_desk
-        @include mquery.laptop {   
-            display: block;
-        }
-    }
-}
-
 #Objectifs_projet {
-
 
     .schema-objectifs, .schema-objectifs * {
         width: 100%;

@@ -101,14 +101,14 @@
 
                                 <div class="cadre-content-wrapper">
                                     <!-- Vidéo format mobile -->
-                                    <video id="Video_showreel_mob" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                    <video class="bloc-video mobile-video" width="100%" height="auto" autoplay playsinline loop muted>
                                         <source src="video/video-mobile-page-questionnaires.webm" type="video/webm">
                                         <source src="video/video-mobile-page-questionnaires.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.
                                     </video>
 
                                     <!-- Vidéo format ordinateur -->
-                                    <video id="Video_showreel_desk" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                    <video class="bloc-video desktop-video" width="100%" height="auto" autoplay playsinline loop muted>
                                         <source src="video/video-page-questionnaires.webm" type="video/webm">
                                         <source src="video/video-page-questionnaires.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.
@@ -140,14 +140,14 @@
 
                                 <div class="cadre-content-wrapper">
                                     <!-- Vidéo format mobile -->
-                                    <video id="Video_showreel_mob" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                    <video class="bloc-video mobile-video" width="100%" height="auto" autoplay playsinline loop muted>
                                         <source src="video/video-mobile-page-boitiers.webm" type="video/webm">
                                         <source src="video/video-mobile-page-boitiers.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.
                                     </video>
 
                                     <!-- Vidéo format ordinateur -->
-                                    <video id="Video_showreel_desk" class="bloc-video" width="100%" height="auto" autoplay playsinline loop muted>
+                                    <video class="bloc-video desktop-video" width="100%" height="auto" autoplay playsinline loop muted>
                                         <source src="video/video-page-boitiers.webm" type="video/webm">
                                         <source src="video/video-page-boitiers.mp4" type="video/mp4">
                                         Votre navigateur ne peut pas lire cette vidéo.

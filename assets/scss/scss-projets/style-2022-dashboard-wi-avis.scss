@@ -33,7 +33,7 @@
     --cadre-scroll-icons-color:#535353;
 }
 
-// --- APPELS DES TYPOS POUR CETTE PAGE (cas spécial cas conflit avec typos actuels site) ---
+// --- APPELS DES TYPOS UNIQUES AU PROJET ---
     
   //Ubuntu (regular)
   @font-face {
@@ -233,19 +233,10 @@
     font-display: swap;
   }
 
-
-// Règles globales page
-.trigger-instruction-tag {
-    background: color.$secondary-100!important;
-}
-
-
 // Règles par section
 #Header_projet {
     // PNG moins lourd que WEBP dans ce cas précis
     background-image: url("/fr/projet/2022-dashboard-wi-avis/img/projet-page-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
     #Titre_page {
       font-family: 'Ubuntu-showcase', sans-serif;
@@ -277,34 +268,4 @@
           }
       }
   }
-}
-
-#Resume_projet {
-
-    .zone-cadre-video {
-        padding: 0 30px;
-
-        // media query .zone-cadre-video
-        @include mquery.laptop {   
-            padding: 0;
-        }
-    }
-
-    #Video_showreel_mob {
-        display: block;
-
-        // media query #Video_showreel_mob
-        @include mquery.laptop {   
-            display: none;
-        }
-    }
-
-    #Video_showreel_desk {
-        display: none;
-
-        // media query #Video_showreel_desk
-        @include mquery.laptop {   
-            display: block;
-        }
-    }
 }

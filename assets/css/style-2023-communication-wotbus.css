@@ -933,9 +933,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../svg/pattern-proj-header-placeholder-01.svg");
-  background-repeat: repeat;
-  background-size: 145px;
+  background-image: url("../img/page-header-placeholder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   box-shadow: 0 8px 25px 0 rgba(216, 214, 216, 0.2);
   transition: height 800ms ease;
@@ -2183,6 +2183,22 @@ main {
 .zone-cadre-video .cadre-content-wrapper {
   margin-bottom: 0 !important;
 }
+.zone-cadre-video .mobile-video {
+  display: block;
+}
+@media (min-width: 992px) {
+  .zone-cadre-video .mobile-video {
+    display: none;
+  }
+}
+.zone-cadre-video .desktop-video {
+  display: none;
+}
+@media (min-width: 992px) {
+  .zone-cadre-video .desktop-video {
+    display: block;
+  }
+}
 
 .bloc-video {
   width: 100%;
@@ -2761,6 +2777,14 @@ main {
     width: 100% !important;
   }
 }
+#Resume_projet .zone-cadre-video {
+  padding: 0 30px;
+}
+@media (min-width: 992px) {
+  #Resume_projet .zone-cadre-video {
+    padding: 0;
+  }
+}
 
 .bloc-typographie-projet {
   display: flex;
@@ -3251,8 +3275,6 @@ main {
 
 #Header_projet {
   background-image: url("/fr/projet/2023-communication-wotbus/img/projet-page-header.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #Header_projet #Titre_page {
   font-family: "Ubuntu-showcase", sans-serif;
