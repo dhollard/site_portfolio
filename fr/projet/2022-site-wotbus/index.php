@@ -59,24 +59,24 @@
 
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
+                                    <p id="Info_resume_01" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-01.php'); ?></p>
                                     <p>Gestion de projet</p>
                                     <p>UI/UX design</p>
                                     <p>Développement</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
-                                    <p>Chef de projet, product Designer et développeur</p>
+                                    <p id="Info_resume_02" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-02.php'); ?></p>
+                                    <p>Chef de projet, Product Designer et développeur</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
+                                    <p id="Info_resume_03" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-03.php'); ?></p>
                                     <p>4 mois (2022)</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
+                                    <p id="Info_resume_04" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-04.php'); ?></p>
                                     <p>Welwot</p>
                                     <p class="info-projet-secondaire">(start-up IoT)</p>
                                 </span>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
 
-                            <figcaption class="legende-visuel">Démo vidéo du site www.cawibox.fr, <a href="https://www.cawibox.fr/" target="_blank">cliquez-ici pour découvrir le site.</a></figcaption>
+                            <figcaption class="legende-visuel">Démo vidéo du site www.wotbus.com, <a href="https://www.wotbus.com/" target="_blank">cliquez-ici pour découvrir le site.</a></figcaption>
 
                         </figure>
 

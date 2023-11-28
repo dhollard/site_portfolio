@@ -59,7 +59,7 @@
 
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
+                                    <p id="Info_resume_01" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-01.php'); ?></p>
                                     <p>Gestion de projet</p>
                                     <p>UI/UX design</p>
                                     <p>Développement</p>
@@ -67,18 +67,18 @@
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
+                                    <p id="Info_resume_02" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-02.php'); ?></p>
                                     <p>Chef de projet, product Designer et développeur</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
+                                    <p id="Info_resume_03" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-03.php'); ?></p>
                                     <p>4 mois (2021)</p>
                                     <p class="info-projet-secondaire">puis mises à jours ponctuelles en 2022 et 2023</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
+                                    <p id="Info_resume_04" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-04.php'); ?></p>
                                     <p>Welwot</p>
                                     <p class="info-projet-secondaire">(start-up IoT)</p>
                                 </span>

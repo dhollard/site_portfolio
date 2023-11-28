@@ -59,22 +59,22 @@
 
                             <div class="infos-projet">
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_01" class="titre-infos-projet">Type de projet</p>
+                                    <p id="Info_resume_01" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-01.php'); ?></p>
                                     <p>UI/UX design</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_02" class="titre-infos-projet">Rôle effectué</p>
+                                    <p id="Info_resume_02" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-02.php'); ?></p>
                                     <p>Product Designer</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_03" class="titre-infos-projet">Durée du projet</p>
+                                    <p id="Info_resume_03" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-03.php'); ?></p>
                                     <p>2 mois (2021)</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">
-                                    <p id="Info_resume_04" class="titre-infos-projet">Commanditaire</p>
+                                    <p id="Info_resume_04" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-04.php'); ?></p>
                                     <p>DataOptique</p>
                                     <p class="info-projet-secondaire">(spécialiste collecte de données d'enquête)</p>
                                 </span>
