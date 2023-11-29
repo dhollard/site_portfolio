@@ -44,15 +44,17 @@
                                 <h2 class="titre-section">01 - Résumé du projet</h2>
 
                                 <div class="bloc-texte">
-                                    <p>Texte.</p>
+                                    <p>L'entreprise Welwot a déployé son nouveau service intitulé "WotBus" pendant l'année 2022. J'ai été chargé de superviser la création d'un site pour accompagner ce lancement.</p>
 
-                                    <p>Texte.</p>
+                                    <p>Le concept de WotBus est de fournir aux utilisateurs de bus une plateforme qui regroupe des infos, des petites annonces ainsi qu'un accompagnement à bord en temps réel. Le point fort du site est de géolocaliser son contenu à proximité des lignes de bus, le rendant facilement accessible en transport.</p>
 
-                                    <p>Texte.</p>
+                                    <p>J'ai dû imaginer un site simple mais visuellement plaisant, dans un délai court et en répondant à plusieurs objectifs bien distincts.</p>
 
-                                    <p>Texte.</p>
+                                    <p>Premièrement, faire office de vitrine explicative pour le produit. Ensuite, donner un point d'accès au service pour les voyageurs et les créateurs des petites annonces (commerçants).</p>
 
-                                    <p>Texte.</p>
+                                    <p>Je me suis inspiré de la logique des sites de produits ciblant à la fois des consommateurs et des commerces, comme ceux de livraison de nourriture par exemple.</p>
+
+                                    <p>J'ai designé la maquette et les visuels du site, développé la majeure partie du front-end et coordonné le projet, afin que les autres collaborateurs présents avancent efficacement en respectant les délais prévus.</p>
                                 </div>
                             </div>
 
@@ -72,7 +74,7 @@
 
                                 <span class="bloc-infos-projet">
                                     <p id="Info_resume_03" class="titre-infos-projet"><?php include('../../../assets/module/modules-projets/infotitre-resume-proj-03.php'); ?></p>
-                                    <p>4 mois (2022)</p>
+                                    <p>3 mois (2022)</p>
                                 </span>
 
                                 <span class="bloc-infos-projet">

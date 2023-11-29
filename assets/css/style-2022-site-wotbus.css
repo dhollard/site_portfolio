@@ -3305,40 +3305,33 @@ main {
   font-display: swap;
 }
 #Header_projet {
-  background-image: url("/fr/projet/2022-site-wotbus/img/projet-page-header.webp");
+  background-image: url("/fr/projet/2022-site-wotbus/img/projet-page-header.png");
 }
 #Header_projet #Titre_page {
-  font-family: "Signika-showcase", sans-serif;
   background: rgba(135, 23, 92, 0.9);
-  line-height: 1.2;
-  font-size: 40px;
-  font-weight: 700;
-  padding: 20px 30px 22px 30px;
+  font-family: "Teko-showcase", sans-serif;
+  line-height: 1;
+  font-size: 44px;
+  font-weight: 600;
+  padding: 24px 30px 18px 30px;
 }
 @media (min-width: 992px) {
   #Header_projet #Titre_page {
-    font-size: 56px;
+    font-size: 62px;
   }
 }
 @media (min-width: 2400px) {
   #Header_projet #Titre_page {
-    font-size: 90px;
+    font-size: 94px;
   }
 }
 @media (min-width: 992px) {
   #Header_projet #Titre_page.header-titre-scrolled {
-    font-size: 42px;
+    font-size: 46px;
   }
 }
 @media (min-width: 2400px) {
   #Header_projet #Titre_page.header-titre-scrolled {
-    font-size: 60px;
-  }
-}
-
-/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  #Header_projet {
-    background-image: url("/fr/projet/2020-site-cawibox/img/projet-page-header.png");
+    font-size: 62px;
   }
 }/*# sourceMappingURL=style-2022-site-wotbus.css.map */

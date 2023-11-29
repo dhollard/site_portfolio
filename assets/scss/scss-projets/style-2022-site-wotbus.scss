@@ -85,47 +85,37 @@
 
 // Règles par section
 #Header_projet {
-    background-image: url("/fr/projet/2022-site-wotbus/img/projet-page-header.webp");
+    // PNG meilleur compromis poids/qualité dans ce cas
+    background-image: url("/fr/projet/2022-site-wotbus/img/projet-page-header.png");
 
-    #Titre_page {
-      font-family: 'Signika-showcase', sans-serif;
-      background: rgba(135, 23, 92, 0.9);
-      line-height: 1.2;
-      font-size: 40px;
-      font-weight: 700;
-      padding: 20px 30px 22px 30px;
+  #Titre_page {
+    background: rgba(135, 23, 92, 0.9);
+    font-family: 'Teko-showcase', sans-serif;
+    line-height: 1;
+    font-size: 44px;
+    font-weight: 600;
+    padding: 24px 30px 18px 30px;
 
-      // media query #Titre_page
-      @include mquery.laptop {   
-          font-size: 56px;
-      }
-
-      // media query #Titre_page
-      @include mquery.tv {   
-          font-size: 90px;
-      }
-
-      &.header-titre-scrolled {
-          // media query #Titre_page
-          @include mquery.laptop { 
-              font-size: 42px;
-          }
-
-          // media query #Titre_page
-          @include mquery.tv {   
-              font-size: 60px;
-          }
-      }
-  }
-}
-
-/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
-@supports (-webkit-touch-callout: none) and (not(translate: none)) {
-
-    // Alternatives aux webp
-    #Header_projet {
-        background-image: url("/fr/projet/2020-site-cawibox/img/projet-page-header.png");
+    // media query #Titre_page
+    @include mquery.laptop {   
+        font-size: 62px;
     }
 
-    
+    // media query #Titre_page
+    @include mquery.tv {   
+        font-size: 94px;
+    }
+
+    &.header-titre-scrolled {
+        // media query #Titre_page
+        @include mquery.laptop { 
+            font-size: 46px;
+        }
+
+        // media query #Titre_page
+        @include mquery.tv {   
+            font-size: 62px;
+        }
+    }
+  }
 }
