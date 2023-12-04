@@ -1649,11 +1649,11 @@ main {
         justify-content: center;
         align-items: center;
         margin-top: 18px;
-        gap: 30px;
+        gap: 20px;
 
         // media query .carrousel-controls
         @include mquery.laptop {   
-            gap: 50px;
+            gap: 40px;
         }
 
         // Boutons précédent/suivant permettant de changer d'image
@@ -1709,6 +1709,18 @@ main {
         // Règles pour adapter l'icone commune aux besoins du bouton précédent
         .prev-btn-carrousel .ico-btn-carrousel {
             transform: rotate(180deg);
+        }
+
+        .carrousel-current-num {
+            @include typo.text($color:#ffffff, $weight:500);
+            font-size: 16px;
+            text-align: center;
+            margin: auto 0;
+
+            // media query .carrousel-current-num
+            @include mquery.laptop {   
+                font-size: 18px;
+            }
         }
 
     }

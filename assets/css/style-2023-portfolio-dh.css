@@ -2267,11 +2267,11 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 18px;
-  gap: 30px;
+  gap: 20px;
 }
 @media (min-width: 992px) {
   .carrousel .carrousel-controls {
-    gap: 50px;
+    gap: 40px;
   }
 }
 .carrousel .carrousel-controls .prev-btn-carrousel,
@@ -2321,6 +2321,20 @@ main {
 }
 .carrousel .carrousel-controls .prev-btn-carrousel .ico-btn-carrousel {
   transform: rotate(180deg);
+}
+.carrousel .carrousel-controls .carrousel-current-num {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  margin: auto 0;
+}
+@media (min-width: 992px) {
+  .carrousel .carrousel-controls .carrousel-current-num {
+    font-size: 18px;
+  }
 }
 .carrousel .legende-visuel {
   margin-top: 8px;

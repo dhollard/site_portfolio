@@ -124,7 +124,7 @@
                         </p>
                     </a>
 
-                    <a id="Proj_web_ui_voyageur_wotbus_2022" class="projet-bloc" href="/fr/projet/2022-ui-voyageur-wotbus/" data-cat="ux dev lead" data-type="resume">
+                    <a id="Proj_web_ui_voyageur_wotbus_2023" class="projet-bloc" href="/fr/projet/2023-ui-voyageur-wotbus/" data-cat="ux dev lead" data-type="resume">
 
                         <div class="projet-ttr-bloc">
                             <h2 class="projet-titre">Interface utilisateur</h2>
@@ -136,7 +136,7 @@
                             <div class="projet-overlay"></div>
                         </div>
 
-                        <p class="projet-date">2022/2023</p>
+                        <p class="projet-date">2023</p>
 
                         <p class="projet-tags">
                             <span class="txt-tag-projet">Gestion |</span>

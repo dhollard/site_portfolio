@@ -1,0 +1,202 @@
+@use '../color';
+@use '../mquery';
+@use '../typo';
+@use '../global';
+@use '../page-projet';
+
+// --- (RE)DÉFINITION DES COULEURS DE LA PAGE PROJET ---
+:root {
+    //couleur de fond de la page
+    --fond-page-projet: #{color.$ambiance-100};
+
+    // fond et couleur de texte des encarts gros titres du header et des sections du projet
+    --fond-titre-projet: #2196F3;
+    --couleur-titre-projet: #ffffff;
+
+    // couleur des paragraphes de texte
+    --couleur-texte-projet: #ffffff;
+
+    // couleur distinctive du projet, utilisée sur les boutons, bullet points, petits titres...
+    --couleur-focus-projet: #A5217F;
+    --couleur-focus-bis-projet: #87185D;
+
+    // couleur des éléments en opposition avec le fond (bloc blanc sur fond sombre par ex)
+    --couleur-contraste-projet: #ffffff;
+
+    // couleur lignes de séparation entre des éléments
+    --couleur-ligne-projet: #{color.$ambiance-80};
+
+    // couleurs globale des cadres scrollables
+    --cadre-scroll-base-color:#E6E6E6;
+    --cadre-scroll-tab1-color:#D7D7D7;
+    --cadre-scroll-tab2-color:#B5B5B5;
+    --cadre-scroll-icons-color:#535353;
+
+
+}
+
+// --- APPELS DES TYPOS UNIQUES AU PROJET ---
+    
+//Roboto (regular)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto (regular italic)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+//Roboto (medium)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto (medium italic)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+//Roboto (bold)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto (bold italic)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+//Roboto (black)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto (black italic)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+//Roboto (light)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto (light italic)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+//Roboto (thin)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Roboto (thin italic)
+@font-face {
+  font-family: "Roboto-showcase";
+  src: url("/fr/projet/2023-ui-voyageur-wotbus/font/Roboto-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Règles par section
+#Header_projet {
+    background-image: url("/fr/projet/2023-ui-voyageur-wotbus/img/projet-page-header.webp");
+
+  #Titre_page {
+    background: rgba(42, 36, 53, 0.9);
+    font-family: 'Roboto-showcase', sans-serif;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 18px 30px 24px 30px;
+
+    // media query #Titre_page
+    @include mquery.laptop {   
+        font-size: 60px;
+    }
+
+    // media query #Titre_page
+    @include mquery.tv {   
+        font-size: 90px;
+    }
+
+    &.header-titre-scrolled {
+        // media query #Titre_page
+        @include mquery.laptop { 
+            font-size: 44px;
+        }
+
+        // media query #Titre_page
+        @include mquery.tv {   
+            font-size: 60px;
+        }
+    }
+  }
+
+  #Scroll_btn_header {
+    background: #2A2435;
+
+    .scroll-btn-header-icon {
+      background-image: url("../svg/ico-fleche-scroll-blanc.svg");
+    }
+  }
+
+}
+
+/* CODE DE RETROCOMPATIBILITE DEDIE A SAFARI iOS 13.7 ou antérieur */
+@supports (-webkit-touch-callout: none) and (not(translate: none)) {
+
+  // Alternatives aux webp
+  #Header_projet {
+      background-image: url("/fr/projet/2023-ui-voyageur-wotbus/img/projet-page-header.png");
+  }
+
+  
+}

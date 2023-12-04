@@ -119,6 +119,8 @@
                                     <button class="prev-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
+
+                                    <p class="carrousel-current-num">1/2</p>
                                     
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
@@ -140,6 +142,8 @@
                                     <button class="prev-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
+
+                                    <p class="carrousel-current-num">2/2</p>
 
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
@@ -187,6 +191,8 @@
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
 
+                                    <p class="carrousel-current-num">1/3</p>
+
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
@@ -207,6 +213,8 @@
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
 
+                                    <p class="carrousel-current-num">2/3</p>
+
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
@@ -226,6 +234,8 @@
                                     <button class="prev-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
+
+                                    <p class="carrousel-current-num">3/3</p>
 
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
@@ -271,6 +281,8 @@
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
 
+                                    <p class="carrousel-current-num">1/3</p>
+
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
@@ -291,6 +303,8 @@
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
 
+                                    <p class="carrousel-current-num">2/3</p>
+
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
@@ -310,6 +324,8 @@
                                     <button class="prev-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
+
+                                    <p class="carrousel-current-num">3/3</p>
 
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
@@ -355,6 +371,8 @@
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
 
+                                    <p class="carrousel-current-num">1/3</p>
+
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
@@ -375,6 +393,8 @@
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
 
+                                    <p class="carrousel-current-num">2/3</p>
+
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
@@ -394,6 +414,8 @@
                                     <button class="prev-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>
                                     </button>
+
+                                    <p class="carrousel-current-num">3/3</p>
 
                                     <button class="next-btn-carrousel">
                                         <span class="ico-btn-carrousel"></span>

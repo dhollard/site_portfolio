@@ -116,7 +116,7 @@
                                 </div>
                             </div>
 
-                            <figcaption class="legende-visuel">Page dédiée à la gestion de questionnaires (exemple issu du prototype Figma du projet).</a></figcaption>
+                            <figcaption class="legende-visuel">Page dédiée à la gestion de questionnaires (exemple issu du prototype Figma du projet).</figcaption>
 
                         </figure>
 
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
 
-                            <figcaption class="legende-visuel">Page dédiée à la gestion des boitiers Wi-avis (exemple issu du prototype Figma du projet).</a></figcaption>
+                            <figcaption class="legende-visuel">Page dédiée à la gestion des boitiers Wi-avis (exemple issu du prototype Figma du projet).</figcaption>
 
                         </figure>
 

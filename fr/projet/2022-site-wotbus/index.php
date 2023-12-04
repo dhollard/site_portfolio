@@ -46,7 +46,7 @@
                                 <div class="bloc-texte">
                                     <p>L'entreprise Welwot a déployé son nouveau service intitulé "WotBus" pendant l'année 2022. J'ai été chargé de superviser la création d'un site pour accompagner ce lancement.</p>
 
-                                    <p>Le concept de WotBus est de fournir aux utilisateurs de bus une plateforme qui regroupe des infos, des petites annonces ainsi qu'un accompagnement à bord en temps réel. Le point fort du site est de géolocaliser son contenu à proximité des lignes de bus, le rendant facilement accessible en transport.</p>
+                                    <p>Le concept de WotBus est de fournir aux utilisateurs de bus une plateforme qui regroupe des infos, des petites annonces ainsi qu'un accompagnement à bord en temps réel. Le point fort du site est de garantir la proximité entre ce contenu et les lignes de bus, le rendant ainsi facilement accessible en transport.</p>
 
                                     <p>J'ai dû imaginer un site simple mais visuellement plaisant, dans un délai court et en répondant à plusieurs objectifs bien distincts.</p>
 
