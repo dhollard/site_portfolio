@@ -48,9 +48,9 @@
 
                                     <p>Le but pour DataOptique était de disposer d'un site moderne et valorisant pour vendre sa nouvelle solution d'enquête : le boitier Cawibox.</p>
 
-                                    <p>J'avais comme point de départ le logo Cawibox, ainsi qu'une ébauche de site très brute déjà faite par l'entreprise.</p>
+                                    <p>J'avais comme point de départ le logo Cawibox, ainsi qu'une ébauche de site très brute déjà produite par l'entreprise.</p>
 
-                                    <p>De cette ébauche, j'ai conservé quelques idées et du texte, ainsi que la dominance de la couleur orange du logo. Je l'ai associé à du bleu (couleur complémentaire) et j'ai joué sur cette dualité au travers des illustrations du site.</p>
+                                    <p>De cette ébauche, j'ai conservé quelques idées et du texte, ainsi que la dominance de la couleur orange du logo. Je l'ai associée à du bleu (couleur complémentaire) et j'ai joué sur cette dualité au travers des illustrations du site.</p>
 
                                     <p>J'ai opté pour un site one-page très visuel pour expliquer rapidement le concept de Cawibox et permettre aux prospects de nous contacter facilement.</p>
 
